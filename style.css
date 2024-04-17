@@ -1,0 +1,844 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+
+@font-face {
+  font-family: "LoveRegular";
+  src: url("https://assets.awwwards.com/assets/fonts/love/Love-Regular.woff");
+  font-style: normal;
+  font-weight: 200;
+}
+
+.reg{
+  /* font-family: LoveRegular; */
+  /* font-style: italic; */
+  z-index: 20;
+}
+/* FONTS */
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  /* font-size: 32px; */
+  font-style: normal;
+}
+
+
+.invert {
+  /* filter: grayscale(85%) brightness(0.8); */
+  filter: invert(100%);
+}
+/*  */
+
+#invert-button {
+  position: fixed;
+  top: 42px;
+  right: 450px;
+  z-index: 85;
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  /* mix-blend-mode: difference; */
+  /* background-color: #fff; */
+  transition: var(--transition-duration);
+  background-image: url('https://subha-py-c.github.io/Noni/sun.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#invert-button:hover {
+  /* background-color: rgba(168, 168, 168, 0.8); */
+  transform: scale(1.414);
+  transition: 0.3s;
+}
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* Keyframes */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes inverse-color {
+    0%{
+        background-color: transparent;
+        color: #000;
+    }
+    100%{
+        background-color: #000;
+        color: whitesmoke;
+    }
+}
+
+@keyframes underline {
+    0% {
+      width: 0; 
+      margin-left: 0; 
+    }
+    
+    100% {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/*ANIMATION CLASSES >>>*/
+.animated-div {
+  opacity: 0;
+  animation: fadeIn 0.8s forwards;
+}
+
+/* Letter */
+.letter {
+  display: inline-block;
+  margin-right: -0.08em;
+}
+
+/* CREATES AN UNDERLINE, ACTUALLY WRONG BUT NEED THE ANALYSIS, UNDERLINE LOOKED GOOD THOUGH */
+.animated-underline{
+    display: inline-block; 
+    border-bottom: 2px solid rgb(0, 0, 0);
+    animation: underline 1s ease-in forwards; 
+}
+  
+/* GRADUAL UNDERLINE ANIMATION */
+.animated-underline-proper {
+  position: relative; 
+  text-decoration: none; 
+  color: inherit; 
+}
+/* Define the underline */
+.animated-underline-proper::before {
+  content: ''; /* Required for pseudo-element */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0; 
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  transition: width 0.3s ease-in; 
+}
+/* Define the hover effect */
+.animated-underline-proper:hover::before {
+  width: 100%; /* Width of the underline on hover */
+}
+
+
+/* HIGHLIGHT THE TEXT ONLY ANIMATION */
+/* Define the default state */
+.animated-highlight {
+    color: black; /* Default text color */
+    transition: color 0.3s ease-in; /* Transition effect */
+}
+/* Define the hover effect */
+.animated-highlight:hover {
+    color: red;
+}
+  
+
+/* PROPER HIGHLIGHT */
+/* Define the default state */
+.animated-text-highlight {
+    color: black; /* Default text color */
+    position: relative; /* Required for absolute positioning */
+}
+/* Define the highlight effect */
+.animated-text-highlight::before {
+    content: ''; /* Required for pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* Initial width of the highlight */
+    height: 100%;
+    background-color: yellow;
+    z-index: -1; /* Ensure the highlight is behind the text */
+    transition: width 0.4s ease-in-out;
+}
+/* Define the hover effect */
+.animated-text-highlight:hover::before {
+    width: 100%; /* Width of the highlight on hover */
+}
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+/* BODY */
+body {
+    background-color: bisque;
+    color: #131316;
+    font-family: 'Poppins', sans-serif;
+    /* padding: 0; */
+    /* margin: 0; */
+}
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* NAV */
+:root{
+  /* nav */
+  --difference: 20px;
+
+  /* nav li */
+  --initial-height-of-nav-li: 0px;
+  --height-of-one-nav-li: 46.66px;
+  --total-nav-li: 7;
+
+  /* container nav || .nav */
+  --initial-height-of-container-nav-div: 40px;
+  --final-height-of-container-nav-div: calc(var(--height-of-one-nav-li) * var(--total-nav-li));
+  --width-of-container-nav-div: 400px;
+  --bg1: rgba(228, 167, 144, 0.6);
+  --bg2: rgba(168, 43, 43, 0.8);
+
+  /* nav */
+  --initial-height-of-nav: calc(var(--initial-height-of-container-nav-div) + var(--difference));
+  --final-height-of-nav: calc(var(--final-height-of-container-nav-div) + var(--difference));
+  --width-of-nav: calc(var(--width-of-container-nav-div) + var(--difference));
+
+  /* positioning */
+  --top: 30px;
+  --right: 20px;
+
+  /* delays */
+  --transition-delay: 0.2s;
+  --transition-duration: 0.3s;
+
+  --radius: 45px;
+  --z-value: 100;
+
+  --font-size: 1.2rem;
+  /* section */
+}
+/* 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #000;
+} */
+
+nav{
+  /* position: absolute; */
+  position: fixed;
+  top: var(--top);
+  right: var(--right);
+  z-index: var(--z-value);
+
+  width: var(--width-of-nav);
+  height: var(--initial-height-of-nav);
+  border-radius: var(--radius);
+  background-color: var(--bg1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0;
+
+  transition: var(--transition-duration);
+  transition-delay: var(--transition-delay);
+
+  /* mix-blend-mode: difference; */
+}
+
+
+.nav{
+  z-index: var(--z-value);
+  width: var(--width-of-container-nav-div);
+  height: var(--initial-height-of-container-nav-div);
+  border-radius: var(--radius);
+  background-color: var(--bg1);
+
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+
+  font-size: 0;
+
+  transition: var(--transition-duration);
+  transition-delay: var(--transition-delay);
+}
+
+
+.nav .ul{
+  position: relative;
+  height: var(--initial-height-of-container-nav-div);
+  width: var(--width-of-container-nav-div);
+  font-size: 0;
+  z-index: var(--z-value);
+
+  display: flex;
+  flex-direction: column;
+
+  transition: var(--transition-duration);
+  transition-delay: var(--transition-delay);
+
+  /* border: 5px solid rgb(17, 0, 255); */
+}
+
+.nav .ul .li{
+  z-index: var(--z-value);
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0px;
+
+  height: var(--initial-height-of-nav-li);
+  border-bottom: 0px solid black;
+  /* border: 1px solid red; */
+
+  font-size: 0;
+  
+
+  transition: var(--transition-duration);
+  transition-delay: var(--transition-delay);
+}
+
+.nav .ul .li a{
+  position: relative;
+  z-index: var(--z-value);
+  text-decoration: none;
+  color: #000;
+  font-size: 0;
+
+  transition: var(--transition-duration);
+  transition-delay: var(--transition-delay);
+}
+
+nav:hover{
+  height: var(--final-height-of-nav);
+}
+nav:hover .nav{
+  height: var(--final-height-of-container-nav-div);
+  border: 1px solid black;
+
+  /* background-color: var(--bg2); */
+}
+nav:hover .nav .ul{
+  height: var(--final-height-of-container-nav-div);
+}
+nav:hover .nav .ul .li{
+  height: var(--height-of-one-nav-li);
+  font-size: var(--font-size);
+  padding-left: 50px;
+  padding-top: 10px;
+  border-bottom: 1px solid black;
+  font-style: italic;
+}
+nav:hover .nav .ul .li:last-child{
+  border-bottom: none;
+}
+nav:hover .nav .ul .li a{
+  font-size: var(--font-size);
+}
+
+.nav .ul .li:hover{
+  background-color: var(--bg2);
+}
+
+.nav .ul .li:hover:first-child{
+  background-color: inherit;
+}
+
+.nav .ul .li:hover:last-child{
+  background-color: inherit;
+}
+
+.nav .ul .li a:active{
+  color: red;
+}
+
+.nav .ul .li a:hover{
+  text-decoration: none;
+} 
+
+/* ------------------------------ */
+
+/* cursor */
+.cursor {
+  z-index: 77;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fffcef;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%) scale(1);
+  /* transition: 0.1s; */
+}
+
+.div1:hover + .cursor {
+  transform: translate(-50%, -50%) scale(2.4); 
+}
+
+
+.underline-hover {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  mix-blend-mode: difference;
+  transition: color 0.3s ease-out;
+}
+
+/* Style for the underline */
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #ffffff;
+  mix-blend-mode: difference;
+  transition: width 0.3s ease;
+}
+
+/* Hover effect */
+.underline-hover:hover::after {
+  width: 100%;
+}
+
+/* Hover effect for the text color */
+.underline-hover:hover {
+  color: #ffffff;
+  mix-blend-mode: difference;
+}
+
+
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+/* LINKS */
+a {
+    color:rgb(152, 14, 88);
+    text-decoration: none;
+    border-bottom: 1px dotted #000;
+}
+
+a:hover {
+    background: linear-gradient(to right, red, rgb(255, 162, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+a:active {
+    color: rgb(255, 162, 0);
+}
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+/* IDs */
+#hello {
+    font-size: 11.8rem;
+    font-weight: 900;
+    margin: 30px;
+    margin-left: 70px;
+    letter-spacing: -0.06em;
+    animation: slideIn 1.2s ease-out;
+    /* border: 2px dotted rgb(25, 0, 255); */
+}
+
+#div1 { animation-delay: 0s;
+  /* border: 6px solid rgb(255, 136, 0); */
+ }
+#div2 { animation-delay: 1.2s;
+  /* border: 6px solid rgb(255, 0, 128); */
+ }
+#div3 { animation-delay: 1.68s; }
+/* 0,1.2,1.68 */
+#i1 { animation-delay: 0s;}
+#i2 { animation-delay: 0.2s;}
+#i3 { animation-delay: 0.4s;}
+#i4 { animation-delay: 0.6s;}
+#i5 { animation-delay: 0.8s;}
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+/* CLASSES */
+
+/* hello:- in id section*/
+/* name */
+
+.div1{
+  margin-top: 250px;
+  /* border: 2px solid red; */
+}
+
+.name {
+  margin: 30px;
+  margin-left: 70px;
+  font-weight: 500;
+  font-size: 1.8em;
+  /* border: 2px solid red; */
+
+}
+
+.name span{
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-size: 1.3em;
+  font-style: normal;
+}
+
+.name span:hover{
+  animation: underline 1s forwards;
+}
+
+/* INTRO */
+.intro {
+  margin: 30px;
+  margin-left: 70px;
+  font-weight: 400;
+  font-size: 1.5em;
+  /* border: 2px solid red; */
+}
+
+.d1-2{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* border: 8px solid rgb(255, 13, 0); */
+  margin: 0;
+  padding: 0;
+}
+
+.d3{
+  position: relative;
+  margin: 0;
+  /* border: 8px solid red; */
+  padding-top: 90px;
+}
+
+.exp{
+  padding-top: 60px;
+  margin: 30px;
+  margin-left: 70px;
+
+  margin-top: 200px;
+  font-size: 3.7em;
+  font-weight: 550;
+}
+
+
+.p-list{
+  /* border: 2px solid rgb(0, 255, 21); */
+  height: 60vh;
+  margin-top: 20px;
+  padding-left: 90px;
+  font-size: 1.6em;
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
+
+.fs{
+  height: 40vh;
+  margin-top: 20px;
+  padding-left: 90px;
+  font-size: 1.6em;
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.first {
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 8px; 
+    /* font-size: 1.2em; */
+    font-style: normal;
+    /* font-weight: 400; */
+}
+
+.middle {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 60px;
+    margin-right: 60px;
+    /* font-size: 1.2em; */
+    font-style: normal;
+    /* font-weight: 400; */
+}
+
+.last {
+  margin-top: 8px;
+  margin-bottom: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
+  /* font-size: 1.2em; */
+  font-style: normal;
+  /* font-weight: 400;  */
+}
+
+/* INVERSE */
+.inverse {
+  z-index: 80;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 10px;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transition: 0.4s;
+  border-left: 1px solid;
+}
+
+.inverse:hover {
+    opacity: 1;
+    /* background-color: rgb(0, 0, 0); */
+    /* color: #ffffff; */
+    transform: translateX(20px);
+    transition: 0.4s;
+    /* animation: inverse-color 400ms forwards; */
+}
+
+.inverse:hover span {
+    animation: none;
+}
+
+.container{
+  display: flex;
+}
+
+.email-box{
+  position: relative;
+  margin-left: 300px;
+  z-index: 78;
+  background-color: rgb(200, 81, 26);
+  /* top: calc(230vh + 200px); */
+  /* right: 130px; */
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+}
+
+.box{
+  position: relative;
+  width: 570px;
+  height: 370px;
+  border: 3px dotted black;
+  border-radius: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#email{
+  width: 330px;
+  height: 40px;
+  opacity: 0.5;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+#message{
+  height: 200px;
+  width: 500px;
+  font-size: 17px;
+  opacity: 0.5;
+  border-radius: 45px;
+  margin: 0 0 15px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#submit{
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(163, 19, 19);
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+/* Sections */
+section {
+    height: 100vh;
+    /* 120vh */
+    z-index: 1;
+    background-color: bisque;
+}
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+/* Hidden Class */
+.hidden h1 {
+    font-size: 2.1em;
+    font-style: inherit;
+    font-weight: 450;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s ;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+
+
+
+
+
+
+/* FOR SMALLER SCREENS */
+@media screen and (max-width: 510px) {
+    /* Body */
+    body {
+      background-color: bisque;
+      color: #131316;
+      font-family: 'Poppins', sans-serif;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li a:hover{
+      opacity: 1;
+      transform: none;
+    }
+
+    #hello {
+        font-size: 4.3rem;
+        font-weight: 700;
+        margin: 10px;
+    }
+    
+    .name {
+        margin: 15px;
+        font-weight: 300;
+        font-size: 1.3em;
+    }
+    
+    .intro {
+        margin: 15px;
+        font-weight: 200;
+        font-size: 0.8em;
+    }
+    
+    .exp {
+        padding-top: 30px;
+        margin: 15px;
+        font-size: 1.8em;
+        font-weight: 350;
+    }
+    
+    .first {
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 4px; 
+        font-size: 0.5em;
+        font-style: normal;
+        font-weight: 200;
+    }
+    
+    .middle {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 0.5em;
+        font-style: normal;
+        font-weight: 200;
+    }
+    
+    .last {
+        margin-top: 4px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 0.5em;
+        font-style: normal;
+        font-weight: 200; 
+    }
+
+    .inverse:hover{
+      opacity: 1;
+      transform: none;
+    }
+
+    section {
+        display: grid;
+        place-items: center; 
+        align-content: center; 
+        min-height: 15vh;
+    }
+
+    *:hover {
+       opacity: 1;
+       transform: none;
+    }
+
+    a {
+        text-decoration: none;
+        border-bottom: 1px dotted #000;
+    }
+
+    .hidden h1 {
+        font-size: 0.9em;
+        font-style: inherit;
+        font-weight: 250;
+    }
+}
