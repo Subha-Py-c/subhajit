@@ -744,7 +744,7 @@ section {
 
 
 /* FOR SMALLER SCREENS */
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 768px) {
     /* Body */
     body {
       background-color: bisque;
@@ -820,15 +820,15 @@ section {
     }
 
     section {
-        display: grid;
-        place-items: center; 
-        align-content: center; 
-        min-height: 15vh;
+        height: 100vh;
+        z-index: 1;
+        background-color: bisque;
     }
 
     *:hover {
        opacity: 1;
-       transform: none;
+       transform: none !important;
+       animation: none !important;
     }
 
     a {
