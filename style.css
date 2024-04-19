@@ -54,6 +54,7 @@
   background-image: url('https://subha-py-c.github.io/Noni/sun.png');
   background-size: cover;
   background-repeat: no-repeat;
+  transition: transform 0.3s;
 }
 
 #invert-button:hover {
@@ -391,13 +392,8 @@ nav:hover .nav .ul .li a{
   pointer-events: none;
   mix-blend-mode: difference;
   transform: translate(-50%, -50%) scale(1);
-  /* transition: 0.1s; */
+  transition: transform 0.3s;
 }
-
-.div1:hover + .cursor {
-  transform: translate(-50%, -50%) scale(2.4); 
-}
-
 
 .underline-hover {
   position: relative;
@@ -463,6 +459,7 @@ a:active {
     margin-left: 70px;
     letter-spacing: -0.06em;
     animation: slideIn 1.2s ease-out;
+    display: inline;
     /* border: 2px dotted rgb(25, 0, 255); */
 }
 
@@ -707,8 +704,19 @@ section {
     /* 120vh */
     z-index: 1;
     background-color: bisque;
+    opacity: 0;
+    transform: translateY(20px); /* Move the section down */
+    transition: opacity 0.6s, transform 0.6s;
 }
 
+#s1{
+  opacity: 1;
+}
+
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+ }
 /* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
 
 /* Hidden Class */
