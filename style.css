@@ -38,12 +38,13 @@
 #invert-button {
   position: fixed;
   top: 42px;
-  right: 450px;
+  right: 95px;
   z-index: 85;
   width: 36px;
   height: 36px;
   margin: 0;
   padding: 0;
+  font-size: 0;
   opacity: 1;
   border-radius: 50%;
   background-color: transparent;
@@ -183,6 +184,36 @@
 }
 
 /* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* scroll-bar */
+/* Change the width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  height: 12px; /* Height of the scrollbar */
+}
+
+/* Change the track (the area behind the scrollbar) */
+::-webkit-scrollbar-track {
+  background: bisque; /* Background color */
+}
+
+/* Change the appearance of the scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar handle */
+  border-radius: 6px; /* Rounded corners */
+}
+
+/* Change the appearance when hovering over the scrollbar */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar handle on hover */
+}
+
+.invert ::-webkit-scrollbar-track{
+  background: #001B3B;
+}
+/* 
+.invert body{
+  background: bisque;
+} */
 /* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
 
 /* BODY */
@@ -209,7 +240,7 @@ body {
   /* container nav || .nav */
   --initial-height-of-container-nav-div: 40px;
   --final-height-of-container-nav-div: calc(var(--height-of-one-nav-li) * var(--total-nav-li));
-  --width-of-container-nav-div: 400px;
+  --width-of-container-nav-div: 40px;
   --bg1: rgba(228, 167, 144, 0.6);
   --bg2: rgba(168, 43, 43, 0.8);
 
@@ -230,21 +261,22 @@ body {
   --z-value: 100;
 
   --font-size: 1.2rem;
-  /* section */
 }
-/* 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Show the SVG icon by default */
+.nav-icon {
+  fill: #000; /* Color of the icon */
+  width: 30px; /* Size of the icon */
+  height: 30px;
 }
 
-body{
-  background: #000;
-} */
+/* Hide the nav by default */
+.nav-hidden .nav {
+  display: none;
+}
+
+/* Adjust other styles as needed */
 
 nav{
-  /* position: absolute; */
   position: fixed;
   top: var(--top);
   right: var(--right);
@@ -254,6 +286,7 @@ nav{
   height: var(--initial-height-of-nav);
   border-radius: var(--radius);
   background-color: var(--bg1);
+  background-color: transparent;
 
   display: flex;
   justify-content: center;
@@ -285,6 +318,7 @@ nav{
 
   transition: var(--transition-duration);
   transition-delay: var(--transition-delay);
+  display: none;
 }
 
 
@@ -503,7 +537,7 @@ a:active {
 
 .name span{
   font-family: "Tangerine", cursive;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 1.3em;
   font-style: normal;
 }
@@ -683,7 +717,7 @@ a:active {
 .email-box{
   position: relative;
   margin-left: 300px;
-  z-index: 78;
+  z-index: 79;
   background-color: rgb(200, 81, 26);
   /* top: calc(230vh + 200px); */
   /* right: 130px; */

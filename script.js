@@ -121,6 +121,14 @@ con.addEventListener('mouseout', function(){
 //   span.style.fontSize = '0px';
 // });
 
+const nav = document.getElementById('nav');
+const navIcon = document.getElementById('nav-icon');
+
+// Toggle the visibility of the nav when the SVG icon is clicked
+navIcon.addEventListener('click', () => {
+    nav.classList.toggle('nav-hidden');
+});
+
 
 
 // DARK MODE AND LOCAL STORAGE
@@ -202,8 +210,8 @@ function scrollToTarget(targetOffset, duration) {
  
 // Easing function for smooth transition
 function easeInOutCubic(t) {
-  // return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
-  return t * t * t * (t * (t * 6 - 15) + 10);
+  return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+  // return t * t * t * (t * (t * 6 - 15) + 10);
 }
 
 
