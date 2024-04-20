@@ -264,6 +264,7 @@ nav{
   transition: var(--transition-duration);
   transition-delay: var(--transition-delay);
 
+  /* transition: transform 0.3s; */
   /* mix-blend-mode: difference; */
 }
 
@@ -460,6 +461,7 @@ a:active {
     letter-spacing: -0.06em;
     animation: slideIn 1.2s ease-out;
     display: inline;
+    transition: transform 0.3s;
     /* border: 2px dotted rgb(25, 0, 255); */
 }
 
@@ -614,22 +616,65 @@ a:active {
   position: relative;
   overflow: hidden;
   transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-  transition: 0.4s;
+  transition: 0.3s;
   border-left: 1px solid;
+  animation: padd 400ms forwards;
+  /* border-bottom: 1px solid; */
 }
 
 .inverse:hover {
     opacity: 1;
-    /* background-color: rgb(0, 0, 0); */
-    /* color: #ffffff; */
-    transform: translateX(20px);
-    transition: 0.4s;
-    /* animation: inverse-color 400ms forwards; */
+    /* transform: translateX(20px); */
+    transition: 0.3s;
+    /* animation: pad 400ms forwards; */
+    /* transform: animation; */
+    /* border-bottom: 1px dotted; */
+}
+/* 
+#one{
+  animation: pad 0.3s forwards;
+} */
+
+.inverse:hover .strech{
+  transition-duration: 0.3s;
+  font-size: 30px;
+  width: 35px;
+  /* height: 1px; */
+  /* margin-left: 40px ; */
+  /* border: 1px solid; */
+
 }
 
+.strech{
+  background-color: rgba(0, 255, 255, 0);
+  font-size: 0px;
+  width: 0px;
+  /* border: 1px solid; */
+  transition-duration: 0.3s;
+}
+
+@keyframes pad {
+  0%{
+    padding-left: 10px;
+  }
+  100%{
+    padding-left: 30px;
+  }
+}
+
+
+@keyframes padd {
+  0%{
+    padding-left: 30px;
+  }
+  100%{
+    padding-left: 10px;
+  }
+}
+/* 
 .inverse:hover span {
     animation: none;
-}
+} */
 
 .container{
   display: flex;

@@ -17,8 +17,6 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 
 
-
-
 // CURSOR 
 const cursor = document.querySelector('.cursor');
 document.addEventListener('mousemove', (e) => {
@@ -53,13 +51,40 @@ invert_button.addEventListener('mouseout', function(){
 });
 
 
+// const skillWidth = skill.offsetWidth;
+// console.log(skillWidth);
 skill.addEventListener('mouseover', function(){
   cursor.style.transform = 'scale(3)';
+  // cursor.style.transition = 'width 0.3s, height 0.3s, border-radius 0.3s'; // Add transition
+  // cursor.style.width = skillWidth + 'px';
+  // cursor.style.height = '3em';
+  // cursor.style.borderRadius = '5px';
 });
 
 skill.addEventListener('mouseout', function(){
+  // cursor.style.transition = 'width 0.3s, height 0.3s, border-radius 0.3s'; // Add transition
   cursor.style.transform = 'scale(1)';
+  // cursor.style.width ='20px';
+  // cursor.style.height = '20px';
+  // cursor.style.borderRadius = '50%';
 });
+
+// const li_true = document.querySelector('.li-true');
+// const naav = document.getElementById('n');
+// const li_width = li_true.offsetWidth / 2;
+// naav.addEventListener('mouseover', function(){
+//   cursor.style.transition = 'width 0.3s, height 0.3s, border-radius 0.3s'; 
+//   cursor.style.width = li_width + 'px';
+//   cursor.style.height = '3em';
+//   cursor.style.borderRadius = '5px';
+// });
+
+// naav.addEventListener('mouseout', function(){
+//   cursor.style.transition = 'width 0.3s, height 0.3s, border-radius 0.3s'; 
+//   cursor.style.width ='20px';
+//   cursor.style.height = '20px';
+//   cursor.style.borderRadius = '50%';
+// });
 
 
 pro.addEventListener('mouseover', function(){
@@ -83,6 +108,18 @@ con.addEventListener('mouseout', function(){
 
 
 
+// const span = document.querySelector('.strech');
+// const inv = document.querySelector('.inverse');
+
+// inv.addEventListener('mouseover', function(){
+//   span.style.transition = 'fontSize 0.4s';
+//   span.style.fontSize = '30px';
+// });
+
+// inv.addEventListener('mouseout', function(){
+//   span.style.transition = 'fontSize 0.4s';
+//   span.style.fontSize = '0px';
+// });
 
 
 
@@ -118,37 +155,32 @@ function toggleDarkMode() {
   localStorage.setItem('darkMode', isDarkMode);
 }
 
-
-
-
-
-
-
-
-
-// Smooth scroll functionality with transition effect for all anchor tags
 document.querySelectorAll('a').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
      // Check if the href is an external link or a link to a section within the same page
      if (this.getAttribute('href').startsWith('#') || !this.getAttribute('href').startsWith('http')) {
        e.preventDefault(); // Prevent the default jump to the target
  
-       const target = document.querySelector(this.getAttribute('href'));
+       const targetId = this.getAttribute('href');
+       const target = document.querySelector(targetId);
        if (!target) return; // If the target doesn't exist, exit
  
-       const targetOffset = target.offsetTop;
+       const targetRect = target.getBoundingClientRect(); // Get the target's position relative to the viewport IMP
+       const targetOffset = targetRect.top + window.pageYOffset; // Calculate the target's offset from the top of the document
+ 
        const scrollDistance = Math.abs(targetOffset - window.scrollY);
        const scrollDuration = Math.min(1000, scrollDistance); // Adjust duration as needed
  
-       // Smoothly scroll to the target
+       // Smoothly scroll to the target with the corrected offset
        scrollToTarget(targetOffset, scrollDuration);
      }
   });
  });
  
- function scrollToTarget(targetOffset, duration) {
+function scrollToTarget(targetOffset, duration) {
   const startingY = window.pageYOffset;
   const diff = targetOffset - startingY;
+  console.log(startingY, diff)
   let start;
  
   // Use requestAnimationFrame for smoother animation
@@ -158,7 +190,7 @@ document.querySelectorAll('a').forEach(anchor => {
      const percent = Math.min(time / duration, 1);
  
      // Easing function: You can adjust this for different easing effects
-     const easedT = easeInOutQuad(percent);
+     const easedT = easeInOutCubic(percent); // Use easeInOutCubic for smoother scrolling
  
      window.scrollTo(0, startingY + diff * easedT);
  
@@ -166,20 +198,13 @@ document.querySelectorAll('a').forEach(anchor => {
        window.requestAnimationFrame(step);
      }
   });
- }
+}
  
- // Easing function for smooth transition
- function easeInOutQuad(t) {
-  return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
- }
-
-
-
-
-
-
-
-
+// Easing function for smooth transition
+function easeInOutCubic(t) {
+  // return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+  return t * t * t * (t * (t * 6 - 15) + 10);
+}
 
 
 
