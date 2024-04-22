@@ -226,6 +226,24 @@ body {
 }
 
 /* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* js claasses  */
+
+.visible{
+  display: flex;
+}
+
+.clear{
+  display: block;
+}
+
+.invisible{
+  display: none;
+}
+
+.appear{
+  opacity: 1;
+}
+
 /* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
 /* NAV */
 :root{
@@ -640,6 +658,123 @@ a:active {
   /* font-weight: 400;  */
 }
 
+
+#SK{
+  border: 1px solid red;
+  border: none;
+}
+
+#SS{
+  border: 1px solid;
+  border: none;
+}
+
+.skill-wrapper{
+  border: 5px solid green;
+  display: flex;
+  align-items: center;
+  border: none;
+
+}
+
+#skill-list{
+  border: 1px solid;
+  border: none;
+
+}
+
+.card-container{
+  border: 1px solid;
+  width: 300px;
+  height: 500px;
+  margin-left: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.card{
+  border: 1px solid;
+  width: 280px;
+  height: 480px;
+  border-radius: 30px;
+  background-color: #55555536;
+  padding: 0px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+.card:hover{
+  background-color: #555555;
+  transition: 0.3s;
+}
+
+.card h1{
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.card p{
+  font-size: 1.2em;
+  font-weight: 200;
+  margin: 0;
+}
+
+.card img{
+  border: 1px solid;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.card img:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+} */
+
+.default {
+  display: block;
+}
+
+.python{
+  display: none;
+  /* display: block; */
+}
+
+.ai-tools{
+  display: none;
+}
+
+.html-css{
+  display: none;
+}
+
+.ui-ux{
+  display: none;
+}
+
+.js{
+  display: none;
+}
+
+.react{
+  display: none;
+}
+.c-cpp{
+  display: none;
+}
+.git{
+  display: none;
+}
+.others{
+  display: none;
+}
+
 /* INVERSE */
 .inverse {
   z-index: 80;
@@ -653,6 +788,9 @@ a:active {
   transition: 0.3s;
   border-left: 1px solid;
   animation: padd 400ms forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /* border-bottom: 1px solid; */
 }
 
