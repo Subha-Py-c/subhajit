@@ -41,8 +41,11 @@ hr{
 
 #invert-button {
   position: fixed;
-  top: 42px;
-  right: 95px;
+  /* top: 42px; */
+  top: 38px;
+  /* right: 95px; */
+  right: 455px;
+
   z-index: 85;
   width: 36px;
   height: 36px;
@@ -151,7 +154,6 @@ hr{
   width: 100%; /* Width of the underline on hover */
 }
 
-
 /* HIGHLIGHT THE TEXT ONLY ANIMATION */
 /* Define the default state */
 .animated-highlight {
@@ -248,11 +250,14 @@ body {
   opacity: 1;
 }
 
+.blur-dark{
+  filter: blur(3px);
+}
 /* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
 /* NAV */
 :root{
   /* nav */
-  --difference: 20px;
+  --difference: 10px;
 
   /* nav li */
   --initial-height-of-nav-li: 0px;
@@ -262,9 +267,13 @@ body {
   /* container nav || .nav */
   --initial-height-of-container-nav-div: 40px;
   --final-height-of-container-nav-div: calc(var(--height-of-one-nav-li) * var(--total-nav-li));
-  --width-of-container-nav-div: 40px;
-  --bg1: rgba(228, 167, 144, 0.6);
-  --bg2: rgba(168, 43, 43, 0.8);
+  --width-of-container-nav-div: 400px;
+  /* 40px */
+  /* --bg1: rgba(228, 167, 144, 0.6);
+  --bg2: rgba(168, 43, 43, 0.8); */
+
+  --bg1: rgba(0, 0, 0, 0.5);
+  --bg2: rgb(0, 0, 0, 1);
 
   /* nav */
   --initial-height-of-nav: calc(var(--initial-height-of-container-nav-div) + var(--difference));
@@ -289,12 +298,15 @@ body {
   fill: #000; /* Color of the icon */
   width: 30px; /* Size of the icon */
   height: 30px;
+
+  display: none;
+
 }
 
 /* Hide the nav by default */
-.nav-hidden .nav {
+/* .nav-hidden .nav {
   display: none;
-}
+} */
 
 /* Adjust other styles as needed */
 
@@ -308,7 +320,9 @@ nav{
   height: var(--initial-height-of-nav);
   border-radius: var(--radius);
   background-color: var(--bg1);
-  background-color: transparent;
+  /* background-color: rgba(228, 166, 144, 0.333); */
+  ;
+  /* background-color: transparent; */
 
   display: flex;
   justify-content: center;
@@ -321,6 +335,8 @@ nav{
 
   /* transition: transform 0.3s; */
   /* mix-blend-mode: difference; */
+
+  color: white;
 }
 
 
@@ -340,7 +356,7 @@ nav{
 
   transition: var(--transition-duration);
   transition-delay: var(--transition-delay);
-  display: none;
+  /* display: none; */
 }
 
 
@@ -387,6 +403,7 @@ nav{
 
   transition: var(--transition-duration);
   transition-delay: var(--transition-delay);
+  color: white;
 }
 
 nav:hover{

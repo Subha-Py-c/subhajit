@@ -121,13 +121,26 @@ con.addEventListener('mouseout', function(){
 //   span.style.fontSize = '0px';
 // });
 
-const nav = document.getElementById('nav');
-const navIcon = document.getElementById('nav-icon');
 
-// Toggle the visibility of the nav when the SVG icon is clicked
-navIcon.addEventListener('click', () => {
-    nav.classList.toggle('nav-hidden');
-});
+
+
+
+
+
+
+
+// const nav = document.getElementById('nav');
+// const navIcon = document.getElementById('nav-icon');
+
+// // Toggle the visibility of the nav when the SVG icon is clicked
+// navIcon.addEventListener('click', () => {
+//     nav.classList.toggle('nav-hidden');
+// });
+
+
+
+
+
 
 
 
@@ -369,3 +382,31 @@ function easeInOutCubic(t) {
    Default.style.display = 'block';
    other.style.display = 'none';
  });
+
+// const section1 = document.querySelector('.sec1');
+// const section2 = document.querySelector('.sec2');
+// const section3 = document.querySelector('.sec3');
+// const section4 = document.querySelector('.sec4');
+// const section5 = document.querySelector('.sec5');
+const ulr = document.getElementById('ultimate-wrapper');
+const nav = document.getElementById('n');
+
+nav.addEventListener('mouseover', function(){
+  // section1.classList.add('blur-dark');
+  // section2.classList.add('blur-dark');
+  // section3.classList.add('blur-dark');
+  // section4.classList.add('blur-dark');
+  // section5.classList.add('blur-dark');
+
+  ulr.classList.add('blur-dark');
+});
+
+nav.addEventListener('mouseout', function(){
+  // section1.classList.remove('blur-dark');
+  // section2.classList.remove('blur-dark');
+  // section3.classList.remove('blur-dark');
+  // section4.classList.remove('blur-dark');
+  // section5.classList.remove('blur-dark');
+
+  ulr.classList.remove('blur-dark');
+});
