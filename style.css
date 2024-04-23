@@ -696,6 +696,9 @@ a:active {
   justify-content: center;
   align-items: center;
   border-radius: 30px;
+  /* box-shadow: rgba(30, 30, 30, 0.475) 10px 10px 20px; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+
 }
 
 .card{
