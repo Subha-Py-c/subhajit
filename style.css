@@ -28,6 +28,10 @@
   font-style: normal;
 }
 
+hr{
+  height: 1px;
+  /* background-color: black; */
+}
 
 .invert {
   /* filter: grayscale(85%) brightness(0.8); */
@@ -738,8 +742,20 @@ a:active {
 } */
 
 .default {
+  width: 90px;
+  height: 90px;
   display: block;
+  /* border: 1px solid red; */
+  border-radius: 50%;
 }
+
+.spann{
+  width: 90px;
+  height: 90px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
 
 .python{
   display: none;

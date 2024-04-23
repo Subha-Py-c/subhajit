@@ -248,6 +248,7 @@ function easeInOutCubic(t) {
 //  const react = document.querySelector('.react');
  const c_cpp = document.querySelector('.c-cpp');
  const git = document.querySelector('.git');
+ const other = document.querySelector('.others');
 
 //  const card = document.querySelector('.card');
 
@@ -261,6 +262,8 @@ function easeInOutCubic(t) {
  const c = document.getElementById('c');
  const cpp = document.getElementById('cpp');
  const g = document.getElementById('git');
+ const gimp = document.getElementById('gimp');
+ const script = document.getElementById('script');
 
 
  p.addEventListener('mouseover', function(){
@@ -293,9 +296,24 @@ function easeInOutCubic(t) {
    c_cpp.style.display = 'block';
  });
 
+ cpp.addEventListener('mouseover', function(){
+   Default.style.display = 'none';
+   c_cpp.style.display = 'block';
+ });
+
  g.addEventListener('mouseover', function(){
    Default.style.display = 'none';
    git.style.display = 'block';
+ });
+
+ gimp.addEventListener('mouseover', function(){
+   Default.style.display = 'none';
+   other.style.display = 'block';
+ });
+
+ script.addEventListener('mouseover', function(){
+   Default.style.display = 'none';
+   other.style.display = 'block';
  });
 
 
@@ -332,7 +350,22 @@ function easeInOutCubic(t) {
    c_cpp.style.display = 'none';
  });
 
+ cpp.addEventListener('mouseout', function(){
+   Default.style.display = 'block';
+   c_cpp.style.display = 'none';
+ });
+
  g.addEventListener('mouseout', function(){
    Default.style.display = 'block';
    git.style.display = 'none';
+ });
+
+ gimp.addEventListener('mouseout', function(){
+   Default.style.display = 'block';
+   other.style.display = 'none';
+ });
+
+ script.addEventListener('mouseout', function(){
+   Default.style.display = 'block';
+   other.style.display = 'none';
  });
