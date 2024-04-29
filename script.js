@@ -383,30 +383,49 @@ function easeInOutCubic(t) {
    other.style.display = 'none';
  });
 
-// const section1 = document.querySelector('.sec1');
-// const section2 = document.querySelector('.sec2');
-// const section3 = document.querySelector('.sec3');
-// const section4 = document.querySelector('.sec4');
-// const section5 = document.querySelector('.sec5');
-const ulr = document.getElementById('ultimate-wrapper');
-const nav = document.getElementById('n');
 
-nav.addEventListener('mouseover', function(){
-  // section1.classList.add('blur-dark');
-  // section2.classList.add('blur-dark');
-  // section3.classList.add('blur-dark');
-  // section4.classList.add('blur-dark');
-  // section5.classList.add('blur-dark');
+const nav = document.getElementById('nav');
+const svg = document.getElementById('svg');
+const ul = document.getElementById('ul');
+const li = document.querySelector('.li');
+const l1 = document.getElementById('l1');
+const l2 = document.getElementById('l2');
+const l3 = document.getElementById('l3');
+const l4 = document.getElementById('l4');
+const s1 = document.getElementById('s1');
+const s1d1 = document.getElementById('s1d1');
+// const navSpan = document.querySelector('span');
+const sp1 = document.getElementById('sp1');
+const sp2 = document.getElementById('sp2');
+const sp3 = document.getElementById('sp3');
+const sp4 = document.getElementById('sp4');
 
-  ulr.classList.add('blur-dark');
-});
+svg.addEventListener('click', function() {
+  s1.classList.toggle('invisible');
+  nav.classList.toggle('visible');
+  ul.classList.toggle('visible');
 
-nav.addEventListener('mouseout', function(){
-  // section1.classList.remove('blur-dark');
-  // section2.classList.remove('blur-dark');
-  // section3.classList.remove('blur-dark');
-  // section4.classList.remove('blur-dark');
-  // section5.classList.remove('blur-dark');
+  l1.classList.toggle('animate-li');
+  l1.style.animationDelay = '0ms';
+  l2.classList.toggle('animate-li');
+  l2.style.animationDelay = '200ms';
+  l3.classList.toggle('animate-li');
+  l3.style.animationDelay = '400ms';
+  l4.classList.toggle('animate-li');
+  l4.style.animationDelay = '600ms';
 
-  ulr.classList.remove('blur-dark');
+  if(nav.classList.contains('visible')){
+    // svg.innerHTML = 'X';
+    // navSpan.classList.toggle('appear');
+    sp1.classList.add('appear');
+    sp2.classList.add('appear');
+    sp3.classList.add('appear');
+    sp4.classList.add('appear');
+  }else{
+    // svg.innerHTML = 'NAV';
+    sp1.classList.remove('appear');
+    sp2.classList.remove('appear');
+    sp3.classList.remove('appear');
+    sp4.classList.remove('appear');
+  }
 });
