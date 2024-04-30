@@ -224,8 +224,8 @@ hr{
 
 /* BODY */
 body {
-    background-color: bisque;
-    color: #131316;
+    background-color: var(--bg3);
+    color: var(--tc);
     font-family: 'Poppins', sans-serif;
     /* padding: 0; */
     /* margin: 0; */
@@ -289,6 +289,9 @@ body {
 /* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
 /* NAV */
 :root{
+  /* body */
+  --tc: rgb(38, 22, 5);
+  --bg3: rgb(215, 202, 179);
   /* nav */
 
     /* change all come in times for speed */
@@ -418,7 +421,10 @@ body {
   padding: 0;
   width: var(--li-width);
   height: 0vh;
-  background-color: rgb(231, 173, 122);
+  /* background-color: rgb(231, 173, 122); */
+  /* background-color: #431717; */
+  /* d8d891; */
+  background-color: #d8d891;
   color: wheat;
   display: flex;
   justify-content: center;
@@ -710,7 +716,9 @@ a:active {
   width: 280px;
   height: 480px;
   border-radius: 30px;
-  background-color: rgba(113, 209, 148, 0.63);
+  /* background-color: rgba(113, 209, 148, 0.63); */
+  /* rgb(191 209 113 / 63%); */
+  background-color: rgba(191, 209, 113, 0.63);
   padding: 0px 30px 0px 30px;
   display: flex;
   flex-direction: column;
@@ -849,7 +857,8 @@ a:active {
   position: relative;
   margin-left: 300px;
   z-index: 79;
-  background-color: rgb(233, 132, 16);
+  /* background-color: rgb(233, 132, 16); */
+  background-color: #d8d891;
   /* top: calc(230vh + 200px); */
   /* right: 130px; */
   width: 600px;
@@ -901,7 +910,9 @@ a:active {
   width: 150px;
   height: 40px;
   border-radius: 20px;
-  background-color: rgb(67, 23, 23);
+  /* background-color: rgb(67, 23, 23); */
+  /* #ffa200 */
+  background-color: #ffa200;
   color: #fff;
   margin-left: auto;
   margin-right: auto;
@@ -913,7 +924,7 @@ section {
     height: 100vh;
     /* 120vh */
     z-index: 1;
-    background-color: bisque;
+    background-color: var(--bg3);
     opacity: 0;
     transform: translateY(20px); /* Move the section down */
     transition: opacity 0.6s, transform 0.6s;
@@ -1071,10 +1082,10 @@ section {
     .cursor{
       display: none;
     }
-
+/* 
     nav{
       display: none;
-    }
+    } */
     #invert-button{
       display: none;
     }

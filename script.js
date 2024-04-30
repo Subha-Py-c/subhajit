@@ -160,6 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+
 function toggleDarkMode() {
   const root = document.documentElement;
   const sunIcon = document.getElementById("sun-icon");
@@ -175,6 +176,7 @@ function toggleDarkMode() {
   const isDarkMode = root.classList.contains('invert');
   localStorage.setItem('darkMode', isDarkMode);
 }
+
 
 document.querySelectorAll('a').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
