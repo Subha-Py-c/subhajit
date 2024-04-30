@@ -21,12 +21,37 @@
       border-radius: 50%;
       font-size: 2.7em;
       font-weight: 50;
-      background-color: antiquewhite;
+      background-color: rgba(197, 126, 33, 0);
       display: flex;
       justify-content: center;
       align-items: center;
     }
+    .material-symbols-outlined-icon {
+      width: 64px; /* Set the desired width */
+      height: 64px; /* Set the desired height */
+      border-radius: 50%;
+      font-size: 2.7em;
+      font-weight: 50;
+      background-color: rgba(197, 126, 33, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999999999;
+      display: none;
+    }
     </style>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> -->
+<!--     
+    <style>
+      .material-symbols-outlined-cross {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+      </style> -->
 </head>
 <!-- 
 <body>
@@ -62,7 +87,7 @@
     <div class="nav" id="nav">
       <div class="ul" id="ul">
         <div class="li" id="l1"><span id="sp1"><a href="#s1">Home</a></span></div>
-        <div class="li" id="l2"><span id="sp2"><a href="#SK">Academics and Skills</a></span></div>
+        <div class="li" id="l2"><span id="sp2"><a href="#SK">Skills</a></span></div>
         <div class="li" id="l3"><span id="sp3"><a href="#div3">Projects</a></span></div>
         <div class="li" id="l4"><span id="sp4"><a href="#div4">Contact</a></span></div>
       </div>
@@ -72,6 +97,14 @@
         <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z"></path>
     </svg>
     </div>
+      <span class="material-symbols-outlined-icon">
+        <i>S</i>
+      </span>
+      <!-- <div class="close" id="close">
+        <span class="material-symbols-outlined">
+          close
+          </span>
+      </div> -->
   </nav>
 
   <button id="invert-button" class="filters" onclick="toggleDarkMode()">

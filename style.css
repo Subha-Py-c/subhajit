@@ -233,10 +233,10 @@ body {
 
 /* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
 /* js claasses  */
-
+/* 
 .visible{
   display: flex;
-}
+} */
 
 .clear{
   display: block;
@@ -246,6 +246,39 @@ body {
   display: none;
 }
 
+.animate-li{
+  animation: come-in 600ms forwards;
+}
+
+.nav.visible{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+.appear{
+  animation: appear 600ms forwards;
+}
+@keyframes appear {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.fade{
+  animation: fade 0.2s forwards;
+}
+@keyframes fade {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
 .appear{
   opacity: 1;
 }
@@ -257,6 +290,9 @@ body {
 /* NAV */
 :root{
   /* nav */
+
+    /* change all come in times for speed */
+
   --difference: 10px;
 
   /* nav li */
@@ -293,15 +329,8 @@ body {
 
   --font-size: 1.2rem;
 
-  --nav-height : 100vh;
+  --nav-height : 10vh;
   --li-width: 25%;
-}
-
-.nav.visible{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 1;
 }
 
 .li.clear{
@@ -375,7 +404,7 @@ body {
   padding: 0;
   position: relative;
   width: 100%;
-  height: calc(var(--nav-height) - 0%);
+  height: 100%;
   display: flex;
   background-color: rgba(211, 211, 23, 0);
 }
@@ -389,16 +418,13 @@ body {
   padding: 0;
   width: var(--li-width);
   height: 0vh;
-  background-color: rgb(25, 194, 135);
+  background-color: rgb(231, 173, 122);
   color: wheat;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: come-in 1s forwards;
-}
-
-.animate-li{
-  animation: come-in 1s forwards;
+  animation: come-in 600ms forwards;
+  /* change all come in times for speed */
 }
 
 #l1{animation-delay: 0ms;}
@@ -414,29 +440,6 @@ body {
   opacity: 1;
 }
 
-.appear{
-  animation: appear 1s forwards;
-}
-@keyframes appear {
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
-}
-
-.fade{
-  animation: fade 0.2s forwards;
-}
-@keyframes fade {
-  0%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-  }
-}
 /* ------------------------------ */
 
 /* cursor */
@@ -707,7 +710,7 @@ a:active {
   width: 280px;
   height: 480px;
   border-radius: 30px;
-  background-color: rgba(233, 132, 16, 0.632);
+  background-color: rgba(113, 209, 148, 0.63);
   padding: 0px 30px 0px 30px;
   display: flex;
   flex-direction: column;
@@ -997,6 +1000,14 @@ section {
         margin: 15px;
         font-size: 1.8em;
         font-weight: 350;
+    }
+
+    .card-container {
+        display: none; 
+    }
+
+    .card {
+        display: none;
     }
     
     .first {

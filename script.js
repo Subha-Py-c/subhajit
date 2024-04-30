@@ -201,7 +201,7 @@ document.querySelectorAll('a').forEach(anchor => {
 function scrollToTarget(targetOffset, duration) {
   const startingY = window.pageYOffset;
   const diff = targetOffset - startingY;
-  console.log(startingY, diff)
+  // console.log(startingY, diff)
   let start;
  
   // Use requestAnimationFrame for smoother animation
@@ -401,7 +401,6 @@ const sp3 = document.getElementById('sp3');
 const sp4 = document.getElementById('sp4');
 
 svg.addEventListener('click', function() {
-  s1.classList.toggle('invisible');
   nav.classList.toggle('visible');
   ul.classList.toggle('visible');
 
