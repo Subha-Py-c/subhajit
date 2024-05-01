@@ -24,10 +24,26 @@ const h = document.querySelector('.letter')
 const skill = document.getElementById('skill')
 const pro = document.getElementById('pro')
 const con = document.getElementById('con')
+const cardCaontainer = document.querySelector('.card-container')
+const hand = document.getElementById('ta-ta');
+
 hello.addEventListener('mouseover', function() {
   cursor.style.transform = 'scale(3)'
 });
 hello.addEventListener('mouseout', function() {
+  cursor.style.transform = 'scale(1)'
+});
+
+hand.addEventListener('mouseover', function() {
+  cursor.style.transform = 'scale(2)'
+});
+hand.addEventListener('mouseout', function() {
+  cursor.style.transform = 'scale(1)'
+});
+cardCaontainer.addEventListener('mouseover', function() {
+  cursor.style.transform = 'scale(4.5)'
+});
+cardCaontainer.addEventListener('mouseout', function() {
   cursor.style.transform = 'scale(1)'
 });
 invert_button.addEventListener('mouseover', function() {
