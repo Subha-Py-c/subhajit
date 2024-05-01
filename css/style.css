@@ -200,6 +200,7 @@ hr{
 /* Change the track (the area behind the scrollbar) */
 ::-webkit-scrollbar-track {
   background: bisque; /* Background color */
+  background: var(--bg3);
 }
 
 /* Change the appearance of the scrollbar handle */
