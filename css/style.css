@@ -328,8 +328,16 @@ body {
 :root {
   /* body */
   --tc: rgb(38, 22, 5);
+  /* tc > text color */
+  
   --bg33: rgb(215, 202, 179);
   --bg3: #d7cac3;
+
+  --nav-li-color: #e45681;
+  --card-container-color: #e456819a;
+  --email-box-color: #e456819f;
+  --submit-button-color: #401a1a;
+  --s-btn-text-color: #ffffff;
   /* nav */
 
   /* change all come in times for speed */
@@ -486,7 +494,7 @@ body {
   /* background-color: rgb(231, 173, 122); */
   /* background-color: #431717; */
   /* d8d891; */
-  background-color: #e45681;
+  background-color: var(--nav-li-color);
   color: rgb(247, 237, 218) !important;
   display: flex;
   justify-content: center;
@@ -857,8 +865,8 @@ a:active {
   width: 280px;
   height: 480px;
   border-radius: 30px;
-  background-color: rgba(196, 88, 131, 0.63);
-  background-color: #e456819a;
+  /* background-color: rgba(196, 88, 131, 0.63); */
+  background-color: var(--card-container-color);
   padding: 0px 30px 0px 30px;
   display: flex;
   flex-direction: column;
@@ -872,7 +880,7 @@ a:active {
 
 #sec3{
   /* border: 1px solid; */
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 img{
@@ -919,7 +927,7 @@ img:hover{
 .project_data{
   position: absolute;
   color: black;
-  font-size: 2.8rem;
+  font-size: 1.8rem;
   font-weight: 600;
   z-index: 10;
   opacity: 0;
@@ -1182,7 +1190,7 @@ img:hover{
   position: relative;
   margin-left: 300px;
   /* background-color: #d44a94; */
-  background-color: #e456819f;
+  background-color: var(--email-box-color);
   width: 600px;
   height: 400px;
   display: flex;
@@ -1242,8 +1250,8 @@ img:hover{
 
   border-radius: 20px;
 
-  background-color: #401a1a;
-  color: #fff;
+  background-color: var(--submit-button-color);
+  color: var(--s-btn-text-color);
   margin-left: auto;
   margin-right: auto;
   transition: 300ms;
