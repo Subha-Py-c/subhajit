@@ -26,6 +26,15 @@ const pro = document.getElementById('pro')
 const con = document.getElementById('con')
 const cardCaontainer = document.querySelector('.card-container')
 const hand = document.getElementById('ta-ta');
+const gallery = document.getElementById('gallery');
+
+
+gallery.addEventListener('mouseover', function() {
+  cursor.style.transform = 'scale(4)'
+});
+gallery.addEventListener('mouseout', function() {
+  cursor.style.transform = 'scale(1)'
+});
 
 hello.addEventListener('mouseover', function() {
   cursor.style.transform = 'scale(3)'
@@ -89,6 +98,17 @@ function toggleDarkMode() {
   const sunIcon = document.getElementById("sun-icon");
   const moonIcon = document.getElementById("moon-icon");
   root.classList.toggle('invert');
+  // gallery.classList.toggle('un-invert');
+  if(root.classList.contains('invert')){
+    gallery.style.filter = 'invert(100%)';
+    hand.style.filter = 'invert(100%)';
+    // gallery.classList.toggle('invert');
+  }
+  else{
+    gallery.style.filter = 'invert(0%)';
+    hand.style.filter = 'invert(0%)';
+    // gallery.classList.toggle('un-invert');
+  }
   sunIcon.style.display = sunIcon.style.display === "none" ? "inline" : "none";
   moonIcon.style.display = moonIcon.style.display === "none" ? "inline" : "none";
   const isDarkMode = root.classList.contains('invert');
@@ -308,3 +328,4 @@ eBox.addEventListener('mouseover', function() {
 eBox.addEventListener('mouseout', function() {
   cursor.style.display = 'block';
 });
+

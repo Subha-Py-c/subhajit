@@ -6,8 +6,8 @@
     <title>Subhajit Gorai - Portfolio</title>
   
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/min.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- <link rel="stylesheet" href="css/min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
   
     <!-- Favicon -->
     <link rel="shortcut icon" href="others/favicon.png" type="image/x-icon">
@@ -109,7 +109,8 @@
   <button id="invert-button" class="filters" onclick="toggleDarkMode()">
     <!-- why does it need a font? -->sun-icon
         <i id="sun-icon" class="fas fa-sun"></i> 
-        <i id="moon-icon" class="fas fa-moon"></i>
+        <i id="moon-icon" class="fas fa-moon"></i> 
+        <!-- donot remove, or else js error -->
   </button>
 
 <div id="ultimate-wrapper" class="ultimate-wrapper">
@@ -267,16 +268,14 @@
       </div>
     </section>
 
-    <section class="sec3 PROJECTS-LIST">
+    <section id="sec3" class="sec3 PROJECTS-LIST">
       <div id="div3" class="animated-div d3">
         <h4 id="EN">
           <span id="pro" class="exp animated-underline-proper">
             Some of My Projects
           </span>
         </h4>
-        <!-- animation needed here, sob project gulo oi left er line theke radially beriye aasbe, 
-        diye por left line always fixed, and hover korle , | Project(i) >>> |-- Project(i)  hoye jabe-->
-        <div class="p-list">
+        <div id="pppp" class="p-list">
           <div id="one" class="first inverse">
             <span class="strech">➻</span>
             My First Website @
@@ -308,12 +307,6 @@
             <a rel="noopener" href="https://subhajit3498.pythonanywhere.com" target="_blank"
               title="Go to https://subhajit3498.pythonanywhere.com">YT Vid</a>
           </div>
-          <div class="middle inverse hh1">
-            <span class="strech">➻</span>
-            Or Sure-shot python code @
-            <a rel="noopener" href="github-link-will-be-uploaded" target="_blank"
-              title="Go to github-link-will-be-uploaded">PyDownloader</a>
-          </div>
           <div class="middle inverse">
             <span class="strech">➻</span>
             Historical arts collection @
@@ -333,15 +326,160 @@
               title="Go to https://subha-py-c.github.io/science-today-016/">Science Today 016{in making}</a>
           </div>
       
-          <div class="last inverse hh1">
-            <span class="strech">➻</span>
-            Just made because I wanted to @
-            <a rel="noopener" href="https://subha-py-c.github.io/Different_Works/" target="_blank"
-              title="Go to https://subha-py-c.github.io/Different_Works/">Can You Find It?</a>
-          </div>
+          
         </div>
 
       </div>
+
+      <!-- it will be the scroller dial! eta ke scroll korle project card gulo asbe. -->
+      <!-- <div class="projects-card-container" id="pc1">
+        <div class="p-cards"></div>
+        <div class="p-cards"></div>
+        <div class="p-cards"></div>
+        <div class="p-cards"></div>
+        <div class="p-cards"></div>
+        <div class="p-cards"></div>
+      </div> -->
+
+      <div id="gallery" class="projects__gallery">
+        <div id="i_1" class="gallery__pannels">
+            <img src="images/1.jpg" alt="">
+            <div class="project_data p1">
+                MY FIRST<br> WEBSITE
+                <br>
+                <a rel="noopener" href="https://subha-py-c.github.io/first-WEBs/www2.html" target="_blank"
+                    title="Go to https://subha-py-c.github.io/first-WEBs/www2.html">
+                    <div class="xxds">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" id="xds" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="i_2" class="gallery__pannels">
+            <img src="images/2.png" alt="">
+            <div class="project_data p2">
+                CLASS SCHEDULE<br> TELLER
+                <br>
+                <a rel="noopener" href="https://subha-py-c.github.io/class-timing/" target="_blank"
+                    title="Go to https://subha-py-c.github.io/class-timing/">
+                    <div class="xxds">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" id="xds" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="i_3" class="gallery__pannels">
+            <img src="images/3.jpg" alt="">
+            <div class="project_data p3">
+                FUN WITH<br> ENCRYPTION
+                <br>
+                <a rel="noopener" href="https://subha-py-c.github.io/Secret-message/" target="_blank"
+                    title="Go to https://subha-py-c.github.io/Secret-message/">
+                    <div class="xxds">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" id="xds" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="i_4" class="gallery__pannels">
+            <img src="images/4.jpg" alt="">
+            <div class="project_data p4">
+                RELAX WITH<br> MELODY
+                <br>
+                <a rel="noopener" href="https://dream-world-coder.github.io/Proper-Music/" target="_blank"
+                    title="Go to https://dream-world-coder.github.io/Proper-Music/">
+                    <div class="xxds">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" id="xds" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="i_5" class="gallery__pannels">
+            <img src="images/5.jpg" alt="">
+            <div class="project_data p5">
+                YOUTUBE VIDEO<br> DOWNLOADER
+                <br>
+                <a rel="noopener" href="https://subhajit3498.pythonanywhere.com" target="_blank"
+                    title="Go to https://subhajit3498.pythonanywhere.com">
+                    <div class="xxds">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" id="xds" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="i_6" class="gallery__pannels">
+            <img src="images/6.jpg" alt="">
+            <div class="project_data p6">
+                ARTS<br>COLLECTION
+                <br>
+                <a rel="noopener" href="https://subha-py-c.github.io/Neon/" target="_blank"
+                    title="Go to https://subha-py-c.github.io/Neon/">
+                    <div class="xxds">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" id="xds" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="i_7" class="gallery__pannels">
+            <img src="images/7.jpeg" alt="">
+            <div class="project_data p7">
+                MUSIC & MELODY
+                <br>
+                <a rel="noopener" href="https://subha-py-c.github.io/Noni/" target="_blank"
+                    title="Go to https://subha-py-c.github.io/Noni/">
+                    <div class="xxds">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" id="xds" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="i_8" class="gallery__pannels">
+            <img src="images/8.jpeg" alt="">
+            <div class="project_data p8">
+                SCIENCE BLOG<br> & JOURNAL
+                <br>
+                <a rel="noopener" href="https://subha-py-c.github.io/science-today-016/" target="_blank"
+                    title="Go to https://subha-py-c.github.io/science-today-016/">
+                    <div class="xxds">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" id="xds" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+      </div>
+
     </section>
 
     <section  id="s4-contacts" class="sec4 CONTACTS-DETAILS">
@@ -375,10 +513,10 @@
     
     <div class="cursor" id="cursor"></div>
     <script type="text/javascript" src="https://www.free-counters.org/count/fejc"></script><br>
-    <a href='https://www.acadoo-medizin.com/'>acadoo-medizin.com</a> <script type='text/javascript' src='https://www.whomania.com/ctr?id=fea1f15918c0dee19f0ee14617c400c124451dca'></script>
+    <!-- <a href='https://www.acadoo-medizin.com/'>acadoo-medizin.com</a> <script type='text/javascript' src='https://www.whomania.com/ctr?id=fea1f15918c0dee19f0ee14617c400c124451dca'></script> -->
   </div>
   <!-- <script src="js/script.js"></script> -->
-  <!-- <script src="js/main.js"></script> -->
-  <script src="js/min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- <script src="js/min.js"></script> -->
 </body>
 </html>
