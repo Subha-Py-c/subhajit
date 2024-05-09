@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+@font-face {
+  font-family: "LoveRegular";
+  src: url("https://assets.awwwards.com/assets/fonts/love/Love-Regular.woff");
+  font-style: normal;
+  font-weight: 200;
+}
+
+.reg {
+  z-index: 20;
+}
+
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+hr {
+  height: 1px;
+}

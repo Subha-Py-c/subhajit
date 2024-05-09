@@ -1,0 +1,264 @@
+/* KEYFRAMES */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes inverse-color {
+  0% {
+    background-color: transparent;
+    color: #000;
+  }
+
+  100% {
+    background-color: #000;
+    color: whitesmoke;
+  }
+}
+
+@keyframes underline {
+  0% {
+    width: 0;
+    margin-left: 0;
+  }
+
+  100% {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+
+/* -------------------------------------------------------------------- */
+
+/*ANIMATION CLASSES >>>*/
+.animated-div {
+  opacity: 0;
+  animation: fadeIn 0.8s forwards;
+}
+
+/* Letter */
+.letter {
+  display: inline-block;
+  margin-right: -0.08em;
+}
+
+/* CREATES AN UNDERLINE, ACTUALLY WRONG BUT NEED THE ANALYSIS, UNDERLINE LOOKED GOOD THOUGH */
+.animated-underline {
+  display: inline-block;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  animation: underline 1s ease-in forwards;
+}
+
+/* GRADUAL UNDERLINE ANIMATION */
+.animated-underline-proper {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Define the underline */
+.animated-underline-proper::before {
+  content: '';
+  /* Required for pseudo-element */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  transition: width 0.3s ease-in;
+}
+
+/* Define the hover effect */
+.animated-underline-proper:hover::before {
+  width: 100%;
+  /* Width of the underline on hover */
+}
+
+/* HIGHLIGHT THE TEXT ONLY ANIMATION */
+/* Define the default state */
+.animated-highlight {
+  color: black;
+  /* Default text color */
+  transition: color 0.3s ease-in;
+  /* Transition effect */
+}
+
+/* Define the hover effect */
+.animated-highlight:hover {
+  color: red;
+}
+
+
+/* PROPER HIGHLIGHT */
+/* Define the default state */
+.animated-text-highlight {
+  color: black;
+  /* Default text color */
+  position: relative;
+  /* Required for absolute positioning */
+}
+
+/* Define the highlight effect */
+.animated-text-highlight::before {
+  content: '';
+  /* Required for pseudo-element */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  /* Initial width of the highlight */
+  height: 100%;
+  background-color: yellow;
+  z-index: -1;
+  /* Ensure the highlight is behind the text */
+  transition: width 0.4s ease-in-out;
+}
+
+/* Define the hover effect */
+.animated-text-highlight:hover::before {
+  width: 100%;
+  /* Width of the highlight on hover */
+}
+
+
+.underline-hover {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  mix-blend-mode: difference;
+  transition: color 0.3s ease-out;
+}
+
+/* Style for the underline */
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #ffffff;
+  mix-blend-mode: difference;
+  transition: width 0.3s ease;
+}
+
+/* Hover effect */
+.underline-hover:hover::after {
+  width: 100%;
+}
+
+/* Hover effect for the text color */
+.underline-hover:hover {
+  color: #ffffff;
+  mix-blend-mode: difference;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* JS CLASSES AND KEYFRAMES */
+
+
+.visible {
+  display: block;
+}
+
+.clear {
+  display: block;
+}
+
+.invisible {
+  display: none;
+}
+
+.animate-li {
+  animation: come-in 600ms forwards;
+}
+
+.nav.visible {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.appear {
+  animation: appear 600ms forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade {
+  animation: fade 0.2s forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.appear {
+  opacity: 1;
+}
+
+.blur-dark {
+  filter: blur(3px);
+}
+
+/* -------------------------------------------------------------------- */
+/* Hidden Class */
+.hidden h1 {
+  font-size: 2.1em;
+  font-style: inherit;
+  font-weight: 450;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+/* -------------------------------------------------------------------- */

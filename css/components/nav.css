@@ -1,0 +1,148 @@
+
+
+.li.clear {
+  display: flex;
+}
+
+.animate-nav {
+  animation: slideIn 0.5s forwards;
+}
+
+.svg {
+  z-index: var(--svg-z-index);
+  position: fixed;
+  top: var(--top);
+  right: 20px;
+
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-icon {
+  width: 39px;
+  height: 39px;
+  position: fixed;
+  top: var(--top);
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  z-index: var(--svg-z-index);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+@keyframes slideIn {
+  0% {
+    height: 0%;
+  }
+
+  100% {
+    height: var(--nav-height);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes come-in {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 100%;
+  }
+}
+
+.nav {
+  z-index: 999999;
+  height: var(--nav-height);
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 128, 0, 0);
+  display: flex;
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.ul {
+  z-index: 999999;
+
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(211, 211, 23, 0);
+}
+
+.li {
+  z-index: 999999;
+
+  position: relative;
+  /* list-style: none; */
+  margin: 0px;
+  padding: 0;
+  width: var(--li-width);
+  height: 0vh;
+  /* background-color: rgb(231, 173, 122); */
+  /* background-color: #431717; */
+  /* d8d891; */
+  background-color: var(--nav-li-color);
+  color: rgb(247, 237, 218) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: come-in 600ms forwards;
+  /* change all come in times for speed */
+}
+
+.li a {
+  color: rgb(247, 237, 218) !important;
+  /* text-decoration: none !important; */
+}
+
+#l1 {
+  animation-delay: 0ms;
+}
+
+#l2 {
+  animation-delay: 200ms;
+}
+
+#l3 {
+  animation-delay: 400ms;
+}
+
+#l4 {
+  animation-delay: 600ms;
+}
+
+.nav .ul .li span {
+  font-size: 2em;
+  opacity: 0;
+}
+
+.nav .ul .li span.appear {
+  opacity: 1;
+}
