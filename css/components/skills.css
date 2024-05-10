@@ -1,6 +1,14 @@
 
 /* -------  SKILLS ------------------------------------------------------ */
 
+.d3 {
+  position: relative;
+  margin: 0;
+  /* border: 8px solid red; */
+  padding-top: 90px;
+}
+
+
 /* SK = skill list main id */
 #SK {
   border: 1px solid red;
@@ -139,7 +147,7 @@
   margin-top: 60px;
   margin-left: 60px;
   margin-right: 60px;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
 }
 
 /* INVERSE */
@@ -206,15 +214,15 @@
   margin-top: 60px;
   margin-left: 60px;
   margin-right: 60px;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
   /* font-size: 1.2em; */
   font-style: normal;
   /* font-weight: 400; */
 }
 
 .middle {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: 60px;
   margin-right: 60px;
   /* font-size: 1.2em; */
@@ -223,7 +231,7 @@
 }
 
 .last {
-  margin-top: 8px;
+  margin-top: 0px;
   margin-bottom: 60px;
   margin-left: 60px;
   margin-right: 60px;
