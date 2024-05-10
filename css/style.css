@@ -26,8 +26,9 @@ body {
   --tc: rgb(0 0 0);
   --bg33: rgb(215, 202, 179);
   --bg3: #d7cac3;
-  --nav-li-color: #37474F;
-  --card-container-color: #546e7a50;
+  --nav-li-color: #141a1d;
+  /* #37474F */
+  --card-container-color: #546e7a2d;
   --email-box-color: #546e7a2a;
   --submit-button-color: #37474F;
   --s-btn-text-color: #ffffff;
