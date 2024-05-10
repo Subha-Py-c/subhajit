@@ -463,9 +463,9 @@
             </div>
             <div id="email-box" class="email-box">
               <div class="box">
-                <input type="email" id="email" placeholder="Enter Your Email">
+                <!-- <input type="email" id="email" placeholder="Enter Your Email">
                 <input type="text" id="message" placeholder="Not functional now, please mail manually if needed.">
-                <button id="submit">Send</button>
+                <button id="submit">Send</button> -->
               </div>
             </div>
           </div>
@@ -491,20 +491,5 @@
       window.location.href = mailtoLink;
     });
     </script>
-    <script>
-      document.getElementById('submit').addEventListener('click', function() {
-          var email = document.getElementById('email').value;
-          var message = document.getElementById('message').value;
-          var subject = "Message from My Website"; // Subject for the email
-      
-          // Constructing the mailto link
-          var mailtoLink = 'mailto:goraisubhajit53@gmail.com' +
-                           '?subject=' + encodeURIComponent(subject) +
-                           '&body=' + encodeURIComponent(message + '\n\nEmail: ' + email);
-      
-          // Opening the default email client
-          window.location.href = mailtoLink;
-      });
-      </script>
 </body>
 </html>
