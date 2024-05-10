@@ -1,5 +1,30 @@
 
 
+.animate-li {
+  animation: come-in 600ms forwards;
+}
+
+.nav.visible {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.appear {
+  animation: appear 600ms forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .li.clear {
   display: flex;
 }
