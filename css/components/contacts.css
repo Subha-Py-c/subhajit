@@ -100,6 +100,7 @@
 .email-box {
   position: relative;
   margin-left: 300px;
+  top: 40px;
   /* background-color: #d44a94; */
   background-color: var(--email-box-color);
   width: 600px;
@@ -118,10 +119,40 @@
   border-radius: var(--rr);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
+  overflow: hidden;
+  z-index: 999999;
 }
 
+.box img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 899;
+  transition: all 0.3s;
+}
+
+#c-text{
+  position: absolute;
+  z-index: 9899;
+  background-color: yellow;
+  bottom: 40px;
+  opacity: 0;
+}
+
+.box:hover #c-text{
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.box:hover img{
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+
+/* 
 #email {
   width: 330px;
   height: 40px;
@@ -135,7 +166,6 @@
   margin-bottom: 10px;
   font-size: 13px;
   border: 1px solid;
-  /* background-color: var(--bg3); */
 }
 
 #message {
@@ -146,12 +176,10 @@
   border-radius: var(--rr);
   border: 1px black solid;
   margin: 0 0 15px 40px;
-  /* display: block; */
   text-align: left;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  /* background-color: var(--bg3); */
 }
 
 #submit {
@@ -173,7 +201,7 @@
   background-color: #ffffff;
   color: #232323;
   border: 2px solid #000000;
-}
+} */
 
 .hide-this-thing{
   font-size: 0;
