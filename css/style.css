@@ -9,20 +9,9 @@ body {
 
 
 :root {
-  /* body */
-  /* --tc: rgb(38, 22, 5); */
-  /* tc > text color */
-  /*   
-  --bg33: rgb(215, 202, 179);
-  --bg3: #d7cac3;
-  --nav-li-color: #e45681;
-  --card-container-color: #e456819a;
-  --email-box-color: #e456819f;
-  --submit-button-color: #401a1a;
-  --s-btn-text-color: #ffffff; 
-  */
 
   --tc: rgb(0 0 0);
+  /* tc: text color */
   --bg33: rgb(215, 202, 179);
   --bg3: #d7cac3;
   --nav-li-color: #141a1d;
@@ -34,11 +23,13 @@ body {
 
   /* change all come in times for speed */
 
+  --margin-left: 70px;
+
   /* font-main */
   --heading-text-size: 3.7em;
   --heading-weight: 550;
   --heading-line-space: -0.05em;
-  --paragraph-text-size: 1.2em;
+  --introduction-text-size: 1.3em;
 
   --difference: 10px;
 
