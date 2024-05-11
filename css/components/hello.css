@@ -1,7 +1,7 @@
 /* ------------------------{hello}-------------------------------------------- */
 
 #hello {
-  font-size: 11.8rem;
+  font-size: var(--hello-mega-font-size);
   font-weight: 900;
   margin: 30px;
   margin-left: calc(var(--margin-left) - 0.06em);
@@ -77,3 +77,43 @@
 }
 
 /* -------------------------------------------------------------------- */
+
+
+/* xs */
+@media (max-width: 475px) {
+  #div2{
+    margin-top: 40px;
+  }
+  #subhajit{
+    font-size: calc(var(--introduction-text-size) + 0.9em);
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  #div2{
+    margin-top: 40px;
+  } 
+  #subhajit{
+    font-size: calc(var(--introduction-text-size) + 0.9em);
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  #div2{
+    margin-top: 40px;
+  }
+  #subhajit{
+    font-size: calc(var(--introduction-text-size) + 0.9em);
+  }
+}
+
+/* lg */
+/* @media (max-width: 1024px) {} */
+
+/* xl */
+/* @media (max-width: 1280px) {} */
+
+/* 2xl */
+/* @media (max-width: 1536px) {} */

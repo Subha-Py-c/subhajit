@@ -1,16 +1,16 @@
-
-
-:root{
-  --top-val-b1: 215px;
-  /* inc: 175px */
+:root {
+  --top-val-b1: 212px;
+  --inc: 175px;
   --left-val: 160px;
+  --padding-left-val: 170px;
 }
-.academic__container{
+
+.academic__container {
   transform: none;
   /* border: 3px dotted; */
 }
 
-.acad__header{
+.acad__header {
   padding-top: 90px;
   margin: 30px;
   margin-left: var(--margin-left);
@@ -20,7 +20,7 @@
   /* border: 1px solid red; */
 }
 
-.acad__list{
+.acad__list {
   /* border: 2px solid #a92d2d; */
 
   display: flex;
@@ -30,13 +30,13 @@
   gap: 0em;
 
   margin-top: 20px;
-  padding-left: 170px;
+  padding-left: var(--padding-left-val);
   padding-right: 90px;
-  font-size: calc(var(--introduction-text-size) + 0.2em);
+  font-size: calc(var(--paragraph-text-size) + 0.2em);
   font-weight: 200;
 }
 
-.acad__institutions{
+.acad__institutions {
   border-left: 1px solid #000;
   height: 145px;
   /* padding: 15px; */
@@ -45,25 +45,107 @@
 }
 
 .year,
-.grade{
+.grade {
   display: inline;
 }
 
-.inst{
+.inst {
   font-size: larger;
   font-weight: 700;
 }
 
-.ball-pointer{
+.ball-pointer {
   width: 20px;
   height: 20px;
   background-color: #000;
   border-radius: 50%;
   position: absolute;
-  left: 160px;
+  left: var(--left-val);
 }
+
 /* +175px */
-#ball-pointer-1{top: var(--top-val-b1)}
-#ball-pointer-2{top: calc(var(--top-val-b1) + 175px)}
-#ball-pointer-3{top: calc(var(--top-val-b1) + 350px)}
-#ball-pointer-4{top: calc(var(--top-val-b1) + 525px)}
+#ball-pointer-1 {
+  top: var(--top-val-b1)
+}
+
+#ball-pointer-2 {
+  top: calc(var(--top-val-b1) + var(--inc))
+}
+
+#ball-pointer-3 {
+  top: calc(var(--top-val-b1) + var(--inc) * 2)
+}
+
+#ball-pointer-4 {
+  top: calc(var(--top-val-b1) + var(--inc) * 3)
+}
+
+
+/* xs */
+@media (max-width: 475px) {
+  :root {
+    --padding-left-val: 30px;
+    --left-val: 25px;
+    --inc: 85px;
+  }
+
+  .ball-pointer {
+    width: 10px;
+    height: 10px;
+  }
+
+  .acad__institutions {
+    height: 145px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  :root {
+    --padding-left-val: 30px;
+    --left-val: 25px;
+    --inc: 85px;
+  }
+
+  .ball-pointer {
+    width: 10px;
+    height: 10px;
+  }
+
+  .acad__institutions {
+    height: 145px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  :root {
+    --padding-left-val: 30px;
+    --left-val: 25px;
+    --inc: 85px;
+  }
+
+  .ball-pointer {
+    width: 10px;
+    height: 10px;
+  }
+
+  .acad__institutions {
+    height: 145px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
+}
+
+/* lg */
+/* @media (max-width: 1024px) {} */
+
+/* xl */
+/* @media (max-width: 1280px) {} */
+
+/* 2xl */
+/* @media (max-width: 1536px) {} */

@@ -15,3 +15,33 @@
   transition: transform 0.3s;
 }
 
+
+/* xs */
+@media (max-width: 475px) {
+  .cursor{
+    display: none;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .cursor{
+    display: none;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .cursor{
+    display: none;
+  }
+}
+
+/* lg */
+/* @media (max-width: 1024px) {} */
+
+/* xl */
+/* @media (max-width: 1280px) {} */
+
+/* 2xl */
+/* @media (max-width: 1536px) {} */

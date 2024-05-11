@@ -27,7 +27,7 @@
 .animate-nav { animation: slideIn 0.5s forwards; }
 
 /* ------------------------{svg}-------------------------------------------- */
-
+/* Nav-Menu */
 .svg {
   z-index: var(--svg-z-index);
   position: fixed;
@@ -35,7 +35,7 @@
   right: 20px;
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(237, 56, 56, 0);
   border-radius: 10px;
   cursor: pointer;
   display: flex;
@@ -141,3 +141,34 @@
 
 .nav .ul .li span { font-size: 2em; opacity: 0; }
 .nav .ul .li span.appear { opacity: 1; }
+
+
+/* xs */
+@media (max-width: 475px) {
+  nav{
+    display: none;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  nav{
+    display: none;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  nav{
+    display: none;
+  }
+}
+
+/* lg */
+/* @media (max-width: 1024px) {} */
+
+/* xl */
+/* @media (max-width: 1280px) {} */
+
+/* 2xl */
+/* @media (max-width: 1536px) {} */

@@ -1,12 +1,11 @@
-
 /*------- root ------------------------------------------------------ */
 
-:root{
+:root {
   --card-container-width: 650px;
   --card-container-height: 400px;
-
-  --card-container-width-for-mobile: 350px;
-  --card-container-height-for-mobile: 100px;
+  --margin-dist: 200px;
+  --card-font-size: 1.3em;
+  --s-list-font-size: 2em;
 }
 
 /* ------- SKILLS ------------------------------------------------------ */
@@ -17,6 +16,7 @@
   /* border: 8px solid red; */
   padding-top: 90px;
 }
+
 /* 
 #s2-skills{
   border: 1px solid;
@@ -55,7 +55,7 @@
   width: var(--card-container-width);
   height: var(--card-container-height);
   margin-left: calc(var(--margin-left) + 50px);
-  margin-right: 200px;
+  margin-right: var(--margin-dist);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +73,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1.3em;
+
+  font-size: var(--card-font-size);
 }
 
 /* the svg class */
@@ -90,6 +91,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .default {
   width: 90px;
   height: 90px;
@@ -124,7 +126,7 @@
   height: 60vh;
   margin-top: 20px;
   padding-left: 50px;
-  font-size: 2em;
+  font-size: var(--s-list-font-size);
   font-weight: 200;
   display: flex;
   flex-direction: column;
@@ -205,3 +207,54 @@
   margin-top: 0px;
   margin-bottom: 60px;
 }
+
+
+/* xs */
+@media (max-width: 475px) {
+
+  :root {
+    --card-container-width: 350px;
+    --card-container-height: 100px;
+    --margin-dist: 150px;
+    --card-font-size: 0.8em;
+    --s-list-font-size: 1.2em;
+  }
+
+  #skill-list {
+    width: 175px;
+    height: 450px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+
+  :root {
+    --card-container-width: 350px;
+    --card-container-height: 100px;
+    --margin-dist: 150px;
+    --card-font-size: 0.8em;
+    --s-list-font-size: 1.2em;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+
+  :root {
+    --card-container-width: 150px;
+    --card-container-height: 350px;
+    --margin-dist: 150px;
+    --card-font-size: 0.8em;
+    --s-list-font-size: 1.2em;
+  }
+}
+
+/* lg */
+/* @media (max-width: 1024px) {} */
+
+/* xl */
+/* @media (max-width: 1280px) {} */
+
+/* 2xl */
+/* @media (max-width: 1536px) {} */

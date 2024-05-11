@@ -32,3 +32,33 @@
 }
 
 /* -------------------------------------------------------------------- */
+
+/* xs */
+@media (max-width: 475px) {
+  #invert-button {
+    display: none;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  #invert-button {
+    display: none;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  #invert-button {
+    display: none;
+  }
+}
+
+/* lg */
+/* @media (max-width: 1024px) {} */
+
+/* xl */
+/* @media (max-width: 1280px) {} */
+
+/* 2xl */
+/* @media (max-width: 1536px) {} */

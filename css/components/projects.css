@@ -20,18 +20,15 @@
 /* ------------------------{p-list}-------------------------------------------- */
 
 .p-list {
-  height: 60vh;
-  margin-top: 20px;
-  padding-left: 90px;
-  font-size: 1.7em;
+  height: 26vh;
+  margin-top: 0px;
+  padding-left: 20px;
+  font-size: 0.8em;
   font-weight: 200;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-}
-
-#pppp {
   display: none;
 }
 
@@ -124,3 +121,29 @@ img {
 }
 
 /* -------------------------------------------------------------------- */
+
+
+/* xs */
+@media (max-width: 475px) {
+  #gallery{
+    display: none;
+  }
+  .p-list{
+    display: flex;
+  }
+}
+
+/* sm */
+/* @media (max-width: 640px) {} */
+
+/* md */
+/* @media (max-width: 768px) {} */
+
+/* lg */
+/* @media (max-width: 1024px) {} */
+
+/* xl */
+/* @media (max-width: 1280px) {} */
+
+/* 2xl */
+/* @media (max-width: 1536px) {} */

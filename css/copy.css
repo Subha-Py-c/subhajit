@@ -1597,4 +1597,252 @@ section {
     transform: none !important;
     animation: none !important;
   }
+
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+/* 
+@media screen and (max-width: 768px) {
+
+  :root {
+    --heading-text-size: 1.5em;
+    --heading-weight: 500;
+    --paragraph-text-size: 0.9em;
+    --paragraph-weight: 300;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #hello {
+    font-size: 4.3rem;
+    font-weight: 700;
+    margin: 10px;
+  }
+
+  .name {
+    margin: 15px;
+    font-weight: 300;
+    font-size: var(--heading-text-size);
+  }
+
+  .intro {
+    margin: 15px;
+    font-weight: 200;
+    font-size: 0.8em;
+  }
+
+  .skill-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  #skill-list {
+    margin-top: 0;
+    padding-top: 0;
+    width: 335px;
+    height: 400px;
+  }
+
+  .exps {
+    padding-top: 20px;
+    margin-left: 80px;
+    margin-top: 100px;
+    font-size: var(--heading-text-size);
+    font-weight: var(--heading-weight);
+  }
+
+
+  .inverse2 {
+    z-index: 80;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+    font-size: var(--paragraph-text-size);
+    font-weight: var(--paragraph-weight);
+  }
+
+  #invert-button {
+    position: fixed;
+    top: 20px;
+    left: 86vw;
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    opacity: 1;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    transition: var(--transition-duration);
+    background-image: url('https://subha-py-c.github.io/Noni/sun.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.3s;
+  }
+
+  .s-list {
+    height: 50vh;
+    margin-top: 20px;
+    padding-left: 50px;
+    font-size: 1.2em;
+    font-weight: 200;
+  }
+
+  .p-list {
+    height: 480px;
+    margin-top: 20px;
+    padding-left: 30px;
+    font-size: 1.2em;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hh1 {
+    display: none;
+  }
+
+  .exp {
+    padding-top: 30px;
+    margin: 15px;
+    font-size: var(--heading-text-size);
+    font-weight: var(--heading-weight);
+  }
+
+  .expC {
+    padding-top: 60px;
+    margin: 30px;
+    margin-left: 70px;
+    margin-top: 200px;
+    padding-top: 150px;
+    font-size: var(--heading-text-size);
+    font-weight: var(--heading-weight);
+  }
+
+  .card-container {
+    display: none;
+  }
+
+  .card {
+    display: none;
+  }
+
+  .first {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+  }
+
+  .first-x {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+  }
+
+  .middle {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .last {
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  section {
+    height: 60vh;
+  }
+
+  *:hover {
+    opacity: 1;
+    transform: none !important;
+    animation: none !important;
+  }
+
+  a {
+    text-decoration: none;
+    border-bottom: 1px dotted #000;
+  }
+
+  .hidden h1 {
+    font-size: 0.9em;
+    font-style: inherit;
+    font-weight: 250;
+  }
+
+  .cursor {
+    display: none;
+  }
+
+  .fs {
+    font-size: 0.9em;
+    height: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .email-box {
+    display: none;
+    margin-top: 40px;
+    position: relative;
+    width: 60%;
+    height: 30%;
+    margin-left: 30px;
+  }
+
+  .box {
+    position: relative;
+    width: calc(60% - 5px);
+    height: calc(30% - 5px);
+    border: 3px dotted black;
+    border-radius: 25px;
+  }
+
+  #email {
+    position: relative;
+    width: 60%;
+    height: 40px;
+    opacity: 0.5;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-size: 11px;
+  }
+
+  #message {
+    position: relative;
+    height: 150px;
+    width: 90%;
+    font-size: auto;
+    opacity: 0.5;
+    border-radius: 25px;
+    margin: 0 0 8px 20px;
+  }
+
+  #submit {
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+  }
+
+  *:hover {
+    opacity: 1;
+    transform: none !important;
+    animation: none !important;
+  }
+} */
 }
