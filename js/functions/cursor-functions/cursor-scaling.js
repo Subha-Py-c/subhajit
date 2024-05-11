@@ -8,6 +8,7 @@ const elements = {
   cardContainer: document.querySelector('.card-container'),
   hand: document.querySelectorAll('.ta-ta'),
   gallery: document.getElementById('gallery'),
+  acd: document.getElementById('academic__header'),
 };
 
 const cursor = document.querySelector('.cursor'); 
@@ -20,7 +21,7 @@ const toggleInvertFilter = (element) => {
   element.style.filter = element.style.filter === 'invert(100%)'? 'invert(0%)' : 'invert(100%)';
 };
 
-['gallery', 'hello', 'cardContainer', 'invertButton', 'skill', 'pro', 'con'].forEach((id) => {
+['gallery', 'hello', 'cardContainer', 'invertButton', 'skill', 'pro', 'con', 'acd'].forEach((id) => {
   const element = elements[id];
   if (element) {
     element.addEventListener('mouseover', () => scaleTransform(cursor, 3.7));

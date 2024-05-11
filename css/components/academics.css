@@ -1,0 +1,69 @@
+
+
+:root{
+  --top-val-b1: 215px;
+  /* inc: 175px */
+  --left-val: 160px;
+}
+.academic__container{
+  transform: none;
+  /* border: 3px dotted; */
+}
+
+.acad__header{
+  padding-top: 90px;
+  margin: 30px;
+  margin-left: var(--margin-left);
+  font-size: var(--heading-text-size);
+  font-weight: var(--heading-weight);
+
+  /* border: 1px solid red; */
+}
+
+.acad__list{
+  /* border: 2px solid #a92d2d; */
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: 0em;
+
+  margin-top: 20px;
+  padding-left: 170px;
+  padding-right: 90px;
+  font-size: calc(var(--introduction-text-size) + 0.2em);
+  font-weight: 200;
+}
+
+.acad__institutions{
+  border-left: 1px solid #000;
+  height: 145px;
+  /* padding: 15px; */
+  padding-left: 60px;
+  padding-bottom: 30px;
+}
+
+.year,
+.grade{
+  display: inline;
+}
+
+.inst{
+  font-size: larger;
+  font-weight: 700;
+}
+
+.ball-pointer{
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  left: 160px;
+}
+/* +175px */
+#ball-pointer-1{top: var(--top-val-b1)}
+#ball-pointer-2{top: calc(var(--top-val-b1) + 175px)}
+#ball-pointer-3{top: calc(var(--top-val-b1) + 350px)}
+#ball-pointer-4{top: calc(var(--top-val-b1) + 525px)}

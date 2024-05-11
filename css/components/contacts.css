@@ -50,7 +50,8 @@
 
 #e-logo,
 #g-logo,
-#y-logo {
+#y-logo,
+#l-logo {
   width: var(--icon-width);
   height: var(--icon-height);
   border: none;

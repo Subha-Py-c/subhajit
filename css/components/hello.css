@@ -50,6 +50,16 @@
   animation: underline 1s forwards;
 }
 
+#div2{
+  color: var(-tc);
+}
+
+#subhajit{
+  font-family: tangerine;
+  font-size: calc(var(--introduction-text-size) + 0.7em);
+  font-weight: 300;
+}
+
 /* ------------------------{intro}-------------------------------------------- */
 
 .intro {
