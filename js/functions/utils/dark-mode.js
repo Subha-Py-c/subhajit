@@ -1,4 +1,15 @@
 
+
+document.addEventListener('DOMContentLoaded', () => {
+  const invertButton = document.getElementById('invert-button');
+  invertButton.addEventListener('click', toggleDarkMode);
+});
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', ()=>{
   const isDarkMode = localStorage.getItem('darkMode') === 'true';
   if (isDarkMode) {
