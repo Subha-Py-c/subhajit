@@ -12,12 +12,14 @@ const observer = new IntersectionObserver((entries)=>{
 );
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el)=>observer.observe(el));
+
 const cursor = document.querySelector('.cursor');
 document.addEventListener('mousemove', (e)=>{
   cursor.style.left = e.pageX + 'px';
   cursor.style.top = e.pageY + 'px'
 }
 );
+
 const invert_button = document.getElementById('invert-button');
 const hello = document.getElementById('hello');
 const h = document.querySelector('.letter')
@@ -25,7 +27,7 @@ const skill = document.getElementById('skill')
 const pro = document.getElementById('pro')
 const con = document.getElementById('con')
 const cardCaontainer = document.querySelector('.card-container')
-const hand = document.getElementById('ta-ta');
+const hand = document.querySelectorAll('.ta-ta');
 const gallery = document.getElementById('gallery');
 
 
@@ -42,12 +44,14 @@ hello.addEventListener('mouseover', function() {
 hello.addEventListener('mouseout', function() {
   cursor.style.transform = 'scale(1)'
 });
+hand.forEach(function(element) {
+  element.addEventListener('mouseover', function() {
+      cursor.style.transform = 'scale(2)';
+  });
 
-hand.addEventListener('mouseover', function() {
-  cursor.style.transform = 'scale(2)'
-});
-hand.addEventListener('mouseout', function() {
-  cursor.style.transform = 'scale(1)'
+  element.addEventListener('mouseout', function() {
+      cursor.style.transform = 'scale(1)';
+  });
 });
 cardCaontainer.addEventListener('mouseover', function() {
   cursor.style.transform = 'scale(4.5)'
@@ -81,6 +85,7 @@ con.addEventListener('mouseover', function() {
 con.addEventListener('mouseout', function() {
   cursor.style.transform = 'scale(1)'
 });
+
 document.addEventListener('DOMContentLoaded', ()=>{
   const isDarkMode = localStorage.getItem('darkMode') === 'true';
   if (isDarkMode) {
@@ -97,23 +102,26 @@ function toggleDarkMode() {
   const root = document.documentElement;
   const sunIcon = document.getElementById("sun-icon");
   const moonIcon = document.getElementById("moon-icon");
+  const gallery = document.getElementById("gallery"); // assuming you have an element with id "gallery"
+  const hand = document.querySelectorAll('.ta-ta');
+  
   root.classList.toggle('invert');
-  // gallery.classList.toggle('un-invert');
-  if(root.classList.contains('invert')){
-    gallery.style.filter = 'invert(100%)';
-    hand.style.filter = 'invert(100%)';
-    // gallery.classList.toggle('invert');
-  }
-  else{
-    gallery.style.filter = 'invert(0%)';
-    hand.style.filter = 'invert(0%)';
-    // gallery.classList.toggle('un-invert');
-  }
   sunIcon.style.display = sunIcon.style.display === "none" ? "inline" : "none";
   moonIcon.style.display = moonIcon.style.display === "none" ? "inline" : "none";
+  
   const isDarkMode = root.classList.contains('invert');
-  localStorage.setItem('darkMode', isDarkMode)
+  localStorage.setItem('darkMode', isDarkMode);
+  
+  // Apply filter to gallery
+  gallery.style.filter = isDarkMode ? 'invert(100%)' : 'invert(0%)';
+  
+  // Apply filter to elements with class "ta-ta"
+  hand.forEach(function(element) {
+      element.style.filter = isDarkMode ? 'invert(100%)' : 'invert(0%)';
+  });
 }
+
+
 document.querySelectorAll('a').forEach(anchor=>{
   anchor.addEventListener('click', function(e) {
       if (this.getAttribute('href').startsWith('#') || !this.getAttribute('href').startsWith('http')) {
@@ -164,6 +172,7 @@ document.addEventListener('scroll', function() {
   }
   )
 });
+
 const Default = document.querySelector('.default');
 const python = document.querySelector('.python');
 const ai_tools = document.querySelector('.ai-tools');
@@ -263,6 +272,8 @@ script.addEventListener('mouseout', function() {
   Default.style.display = 'block';
   other.style.display = 'none'
 });
+
+
 const nav = document.getElementById('nav');
 const svg = document.getElementById('svg');
 const ul = document.getElementById('ul');
@@ -319,6 +330,9 @@ closeIcon.addEventListener('click', function() {
   closeIcon.style.display = 'none';
   navMenu.style.display = 'flex';
 });
+
+
+
 
 const eBox = document.getElementById('email-box');
 
