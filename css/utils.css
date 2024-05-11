@@ -1,10 +1,10 @@
-/* KEYFRAMES */
+/* ------------------------{KEYFRAMES}-------------------------------------------- */
+
 @keyframes slideIn {
   0% {
     transform: translateX(-50px);
     opacity: 0;
   }
-
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -15,7 +15,6 @@
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
@@ -26,7 +25,6 @@
     background-color: transparent;
     color: #000;
   }
-
   100% {
     background-color: #000;
     color: whitesmoke;
@@ -38,7 +36,6 @@
     width: 0;
     margin-left: 0;
   }
-
   100% {
     width: 100%;
     margin-left: 0;
@@ -48,36 +45,36 @@
 
 /* -------------------------------------------------------------------- */
 
-/*ANIMATION CLASSES >>>*/
+/* ------------------------{ANIMATION CLASSES}-------------------------------------------- */
+
+/* ANIMATED DIV */
 .animated-div {
   opacity: 0;
   animation: fadeIn 0.8s forwards;
 }
 
-/* Letter */
+/* LETTER */
 .letter {
   display: inline-block;
   margin-right: -0.08em;
 }
 
-/* CREATES AN UNDERLINE, ACTUALLY WRONG BUT NEED THE ANALYSIS, UNDERLINE LOOKED GOOD THOUGH */
+/* ANIMATED UNDERLINE */
 .animated-underline {
   display: inline-block;
   border-bottom: 2px solid rgb(0, 0, 0);
   animation: underline 1s ease-in forwards;
 }
 
-/* GRADUAL UNDERLINE ANIMATION */
+/* ANIMATED UNDERLINE PROPER */
 .animated-underline-proper {
   position: relative;
   text-decoration: none;
   color: inherit;
 }
 
-/* Define the underline */
 .animated-underline-proper::before {
   content: '';
-  /* Required for pseudo-element */
   position: absolute;
   left: 0;
   bottom: 0;
@@ -87,59 +84,43 @@
   transition: width 0.3s ease-in;
 }
 
-/* Define the hover effect */
 .animated-underline-proper:hover::before {
   width: 100%;
-  /* Width of the underline on hover */
 }
 
-/* HIGHLIGHT THE TEXT ONLY ANIMATION */
-/* Define the default state */
+/* ANIMATED HIGHLIGHT */
 .animated-highlight {
   color: black;
-  /* Default text color */
   transition: color 0.3s ease-in;
-  /* Transition effect */
 }
 
-/* Define the hover effect */
 .animated-highlight:hover {
   color: red;
 }
 
-
-/* PROPER HIGHLIGHT */
-/* Define the default state */
+/* ANIMATED TEXT HIGHLIGHT */
 .animated-text-highlight {
   color: black;
-  /* Default text color */
   position: relative;
-  /* Required for absolute positioning */
 }
 
-/* Define the highlight effect */
 .animated-text-highlight::before {
   content: '';
-  /* Required for pseudo-element */
   position: absolute;
   left: 0;
   bottom: 0;
   width: 0;
-  /* Initial width of the highlight */
   height: 100%;
   background-color: yellow;
   z-index: -1;
-  /* Ensure the highlight is behind the text */
   transition: width 0.4s ease-in-out;
 }
 
-/* Define the hover effect */
 .animated-text-highlight:hover::before {
   width: 100%;
-  /* Width of the highlight on hover */
 }
 
-
+/* UNDERLINE HOVER */
 .underline-hover {
   position: relative;
   text-decoration: none;
@@ -148,7 +129,6 @@
   transition: color 0.3s ease-out;
 }
 
-/* Style for the underline */
 .underline-hover::after {
   content: "";
   position: absolute;
@@ -161,12 +141,10 @@
   transition: width 0.3s ease;
 }
 
-/* Hover effect */
 .underline-hover:hover::after {
   width: 100%;
 }
 
-/* Hover effect for the text color */
 .underline-hover:hover {
   color: #ffffff;
   mix-blend-mode: difference;
@@ -174,9 +152,9 @@
 
 /* -------------------------------------------------------------------- */
 
-/* JS CLASSES AND KEYFRAMES */
+/* ------------------------{JS CLASSES AND KEYFRAMES}-------------------------------------------- */
 
-
+/* VISIBLE, CLEAR, INVISIBLE */
 .visible {
   display: block;
 }
@@ -189,7 +167,7 @@
   display: none;
 }
 
-
+/* FADE */
 .fade {
   animation: fade 0.2s forwards;
 }
@@ -198,22 +176,26 @@
   0% {
     opacity: 1;
   }
-
   100% {
     opacity: 0;
   }
 }
 
+/* APPEAR */
 .appear {
   opacity: 1;
 }
 
+/* BLUR DARK */
 .blur-dark {
   filter: blur(3px);
 }
 
 /* -------------------------------------------------------------------- */
-/* Hidden Class */
+
+/* ------------------------{HIDDEN CLASS}-------------------------------------------- */
+
+/* HIDDEN */
 .hidden h1 {
   font-size: 2.1em;
   font-style: inherit;

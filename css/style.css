@@ -84,7 +84,9 @@ body {
   --rr: 15px;
 }
 
-
+.header__texts{
+  font-family: 'Chillax-Bold', sans-serif;
+}
 
 /* LINKS */
 a {

@@ -1,8 +1,8 @@
+/* ------------------------{animate-li}-------------------------------------------- */
 
+.animate-li { animation: come-in 600ms forwards; }
 
-.animate-li {
-  animation: come-in 600ms forwards;
-}
+/* ------------------------{nav.visible}-------------------------------------------- */
 
 .nav.visible {
   display: flex;
@@ -11,58 +11,48 @@
   opacity: 1;
 }
 
-.appear {
-  animation: appear 600ms forwards;
-}
+/* ------------------------{appear keyframes}-------------------------------------------- */
 
 @keyframes appear {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
-.li.clear {
-  display: flex;
-}
+/* ------------------------{clear li}-------------------------------------------- */
 
-.animate-nav {
-  animation: slideIn 0.5s forwards;
-}
+.li.clear { display: flex; }
+
+/* ------------------------{animate-nav}-------------------------------------------- */
+
+.animate-nav { animation: slideIn 0.5s forwards; }
+
+/* ------------------------{svg}-------------------------------------------- */
 
 .svg {
   z-index: var(--svg-z-index);
   position: fixed;
   top: var(--top);
   right: 20px;
-
   width: 40px;
   height: 40px;
   background-color: rgba(255, 255, 255, 0);
   border-radius: 10px;
-
   cursor: pointer;
-
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-}
-#cl-icon{
-  border-left: 1px solid white;
-  color: white;
-}
+#cl-icon { border-left: 1px solid white; color: white; }
+
+/* ------------------------{close-icon}-------------------------------------------- */
+
 .close-icon {
   width: 39px;
   height: 39px;
   position: fixed;
   top: var(--top);
   right: 20px;
-  width: 40px;
-  height: 40px;
   z-index: var(--svg-z-index);
   display: flex;
   justify-content: center;
@@ -70,35 +60,28 @@
   display: none;
 }
 
-@keyframes slideIn {
-  0% {
-    height: 0%;
-  }
+/* ------------------------{slideIn keyframes}-------------------------------------------- */
 
-  100% {
-    height: var(--nav-height);
-  }
+@keyframes slideIn {
+  0% { height: 0%; }
+  100% { height: var(--nav-height); }
 }
+
+/* ------------------------{slideOut keyframes}-------------------------------------------- */
 
 @keyframes slideOut {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(-100%);
-  }
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
 }
+
+/* ------------------------{come-in keyframes}-------------------------------------------- */
 
 @keyframes come-in {
-  0% {
-    height: 0;
-  }
-
-  100% {
-    height: 100%;
-  }
+  0% { height: 0; }
+  100% { height: 100%; }
 }
+
+/* ------------------------{nav}-------------------------------------------- */
 
 .nav {
   z-index: 999999;
@@ -113,9 +96,10 @@
   transition: all 0.5s ease;
 }
 
+/* ------------------------{ul}-------------------------------------------- */
+
 .ul {
   z-index: 999999;
-
   margin: 0;
   padding: 0;
   position: relative;
@@ -125,53 +109,35 @@
   background-color: rgba(211, 211, 23, 0);
 }
 
+/* ------------------------{li}-------------------------------------------- */
+
 .li {
   z-index: 999999;
-
   position: relative;
-  /* list-style: none; */
   margin: 0px;
   padding: 0;
   width: var(--li-width);
   height: 0vh;
-  /* background-color: rgb(231, 173, 122); */
-  /* background-color: #431717; */
-  /* d8d891; */
   background-color: var(--nav-li-color);
   color: rgb(247, 237, 218) !important;
   display: flex;
   justify-content: center;
   align-items: center;
   animation: come-in 600ms forwards;
-  /* change all come in times for speed */
 }
 
-.li a {
-  color: rgb(247, 237, 218) !important;
-  /* text-decoration: none !important; */
-}
+/* ------------------------{li a}-------------------------------------------- */
 
-#l1 {
-  animation-delay: 0ms;
-}
+.li a { color: rgb(247, 237, 218) !important; }
 
-#l2 {
-  animation-delay: 200ms;
-}
+/* ------------------------{id specific animations}-------------------------------------------- */
 
-#l3 {
-  animation-delay: 400ms;
-}
+#l1 { animation-delay: 0ms; }
+#l2 { animation-delay: 200ms; }
+#l3 { animation-delay: 400ms; }
+#l4 { animation-delay: 600ms; }
 
-#l4 {
-  animation-delay: 600ms;
-}
+/* ------------------------{nav li span}-------------------------------------------- */
 
-.nav .ul .li span {
-  font-size: 2em;
-  opacity: 0;
-}
-
-.nav .ul .li span.appear {
-  opacity: 1;
-}
+.nav .ul .li span { font-size: 2em; opacity: 0; }
+.nav .ul .li span.appear { opacity: 1; }

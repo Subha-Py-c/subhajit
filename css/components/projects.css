@@ -1,8 +1,12 @@
+/* ------------------------{d3}-------------------------------------------- */
+
 .d3 {
   position: relative;
   margin: 0;
   padding-top: 90px;
 }
+
+/* ------------------------{exp}-------------------------------------------- */
 
 .exp {
   padding-top: 60px;
@@ -12,6 +16,8 @@
   font-size: var(--heading-text-size);
   font-weight: var(--heading-weight);
 }
+
+/* ------------------------{p-list}-------------------------------------------- */
 
 .p-list {
   height: 60vh;
@@ -37,6 +43,8 @@ img {
   display: block;
 }
 
+/* ------------------------{projects__gallery}-------------------------------------------- */
+
 .projects__gallery {
   height: 450px;
   max-width: calc(100% - 100px);
@@ -49,6 +57,8 @@ img {
 .projects__gallery:has(.gallery__pannels:hover) .gallery__pannels:not(:hover) img {
   filter: grayscale(100%);
 }
+
+/* ------------------------{gallery__pannels}-------------------------------------------- */
 
 .gallery__pannels {
   overflow: hidden;
@@ -65,6 +75,8 @@ img {
   flex: 3.0;
 }
 
+/* ------------------------{project_data}-------------------------------------------- */
+
 .project_data {
   position: absolute;
   color: black;
@@ -74,6 +86,8 @@ img {
   opacity: 0;
   transition: all 0.4s ease-in;
 }
+
+/* ------------------------{xxds}-------------------------------------------- */
 
 .xxds {
   display: flex;
@@ -93,10 +107,8 @@ img {
   height: 30px;
   border-radius: 50%;
 }
-/* 
-[id^="i_"]:hover .p[class^="p"] {
-  opacity: 1;
-} */
+
+/* ------------------------{gallery__pannels img}-------------------------------------------- */
 
 .gallery__pannels img {
   width: 100%;
@@ -106,3 +118,5 @@ img {
   transition: 0.3s;
   z-index: 3;
 }
+
+/* -------------------------------------------------------------------- */

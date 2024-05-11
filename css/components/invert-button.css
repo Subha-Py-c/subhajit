@@ -1,15 +1,15 @@
+/* ------------------------{invert}-------------------------------------------- */
 
 .invert {
   filter: invert(100%);
 }
 
+/* ------------------------{invert-button}-------------------------------------------- */
+
 #invert-button {
   position: fixed;
-  /* top: 42px; */
   top: var(--top);
   right: 85px;
-  /* right: 455px; */
-
   z-index: 85;
   width: 36px;
   height: 36px;
@@ -20,8 +20,6 @@
   border-radius: 50%;
   background-color: transparent;
   border: none;
-  /* mix-blend-mode: difference; */
-  /* background-color: #fff; */
   transition: var(--transition-duration);
   background-image: url('https://subha-py-c.github.io/Noni/sun.png');
   background-size: cover;
@@ -30,11 +28,7 @@
 }
 
 #invert-button:hover {
-  /* background-color: rgba(168, 168, 168, 0.8); */
   transform: scale(1.414);
-  transition: 0.3s;
 }
-/* 
-#moon-icon{
-  background: ;
-} */
+
+/* -------------------------------------------------------------------- */
