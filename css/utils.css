@@ -220,3 +220,10 @@
 }
 
 /* -------------------------------------------------------------------- */
+
+.section-er-vai {
+  border: 4px solid red;
+  border: none;
+}
+
+/* this is a class, so less preference than id, s1 s2 ... */

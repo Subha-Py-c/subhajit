@@ -6,6 +6,10 @@
   /* border: 8px solid red; */
   padding-top: 90px;
 }
+/* 
+#s2-skills{
+  border: 1px solid;
+} */
 
 /* SK = skill list main id */
 #SK {
@@ -20,7 +24,7 @@
 /* exps = skill heading span */
 .exps {
   padding-top: 30px;
-  margin-left: 100px;
+  margin-left: var(--margin-left);
   margin-top: 100px;
   font-size: var(--heading-text-size);
   font-weight: var(--heading-weight);

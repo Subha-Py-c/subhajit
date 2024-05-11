@@ -24,12 +24,17 @@
 
 /* ------------------------{div1}-------------------------------------------- */
 
+#s1 {
+  opacity: 1;
+  /* border: 1px solid; */
+}
+
 .div1 { margin-top: 175px; }
 
 /* ------------------------{name}-------------------------------------------- */
 
 .name {
-  margin: 0px 30px 0px 70px;
+  margin: 0px 30px 0px var(--margin-left);
   font-weight: 500;
   font-size: var(--introduction-text-size);
 }
@@ -48,7 +53,7 @@
 /* ------------------------{intro}-------------------------------------------- */
 
 .intro {
-  margin: 0px 30px 0px 70px;
+  margin: 0px 30px 0px var(--margin-left);
   font-weight: 400;
   font-size: var(--introduction-text-size);
 }

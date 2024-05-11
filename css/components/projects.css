@@ -11,7 +11,7 @@
 .exp {
   padding-top: 60px;
   margin: 30px;
-  margin-left: 70px;
+  margin-left: var(--margin-left);
   margin-top: 200px;
   font-size: var(--heading-text-size);
   font-weight: var(--heading-weight);
@@ -35,8 +35,9 @@
   display: none;
 }
 
-#sec3 {
-  margin-top: 200px;
+#s3-projects {
+  margin-top: 0px;
+  /* border: 1px solid; */
 }
 
 img {
@@ -48,7 +49,10 @@ img {
 .projects__gallery {
   height: 450px;
   max-width: calc(100% - 100px);
-  margin: 70px auto 0;
+  margin-top: 70px;
+  margin-bottom: 0px;
+  margin-left: calc(var(--margin-left) + 20px);
+  margin-right: calc(var(--margin-left) + 20px);
   display: flex;
   justify-content: center;
   gap: 1em;
