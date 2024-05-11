@@ -1,66 +1,43 @@
+const elements = {
+  invertButton: document.getElementById('invert-button'),
+  hello: document.getElementById('hello'),
+  h: document.querySelector('.letter'),
+  skill: document.getElementById('skill'),
+  pro: document.getElementById('project-heading'),
+  con: document.getElementById('contact-heading'),
+  cardContainer: document.querySelector('.card-container'),
+  hand: document.querySelectorAll('.ta-ta'),
+  gallery: document.getElementById('gallery'),
+};
 
-const invert_button = document.getElementById('invert-button');
-const hello = document.getElementById('hello');
-const h = document.querySelector('.letter')
-const skill = document.getElementById('skill')
-const pro = document.getElementById('pro')
-const con = document.getElementById('con')
-const cardCaontainer = document.querySelector('.card-container')
-const hand = document.querySelectorAll('.ta-ta');
-const gallery = document.getElementById('gallery');
+const cursor = document.querySelector('.cursor'); 
 
+const scaleTransform = (element, scale) => {
+  element.style.transform = `scale(${scale})`;
+};
 
-gallery.addEventListener('mouseover', function() {
-  cursor.style.transform = 'scale(4)'
-});
-gallery.addEventListener('mouseout', function() {
-  cursor.style.transform = 'scale(1)'
+const toggleInvertFilter = (element) => {
+  element.style.filter = element.style.filter === 'invert(100%)'? 'invert(0%)' : 'invert(100%)';
+};
+
+['gallery', 'hello', 'cardContainer', 'invertButton', 'skill', 'pro', 'con'].forEach((id) => {
+  const element = elements[id];
+  if (element) {
+    element.addEventListener('mouseover', () => scaleTransform(cursor, 3.7));
+    element.addEventListener('mouseout', () => scaleTransform(cursor, 1));
+  }
 });
 
-hello.addEventListener('mouseover', function() {
-  cursor.style.transform = 'scale(3)'
+elements.hand.forEach((element) => {
+  element.addEventListener('mouseover', () => scaleTransform(cursor, 2));
+  element.addEventListener('mouseout', () => scaleTransform(cursor, 1));
 });
-hello.addEventListener('mouseout', function() {
-  cursor.style.transform = 'scale(1)'
-});
-hand.forEach(function(element) {
-  element.addEventListener('mouseover', function() {
-      cursor.style.transform = 'scale(2)';
-  });
 
-  element.addEventListener('mouseout', function() {
-      cursor.style.transform = 'scale(1)';
-  });
+elements.invertButton.addEventListener('mouseover', () => {
+  scaleTransform(cursor, 2.4);
+  toggleInvertFilter(elements.invertButton);
 });
-cardCaontainer.addEventListener('mouseover', function() {
-  cursor.style.transform = 'scale(4.5)'
-});
-cardCaontainer.addEventListener('mouseout', function() {
-  cursor.style.transform = 'scale(1)'
-});
-invert_button.addEventListener('mouseover', function() {
-  cursor.style.transform = 'scale(2.4)';
-  invert_button.style.filter = 'invert(100%)'
-});
-invert_button.addEventListener('mouseout', function() {
-  cursor.style.transform = 'scale(1)';
-  invert_button.style.filter = 'invert(0%)'
-});
-skill.addEventListener('mouseover', function() {
-  cursor.style.transform = 'scale(3)'
-});
-skill.addEventListener('mouseout', function() {
-  cursor.style.transform = 'scale(1)'
-});
-pro.addEventListener('mouseover', function() {
-  cursor.style.transform = 'scale(3)'
-});
-pro.addEventListener('mouseout', function() {
-  cursor.style.transform = 'scale(1)'
-});
-con.addEventListener('mouseover', function() {
-  cursor.style.transform = 'scale(3)'
-});
-con.addEventListener('mouseout', function() {
-  cursor.style.transform = 'scale(1)'
+elements.invertButton.addEventListener('mouseout', () => {
+  scaleTransform(cursor, 1);
+  toggleInvertFilter(elements.invertButton);
 });

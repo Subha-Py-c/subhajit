@@ -6,6 +6,8 @@ import './functions/nav-js/nav-appear-and-toggle-svg.js';
 
 import './functions/skills-js/skill-card.js';
 
+import './functions/project-js/project.js';
+
 import './functions/utils/dark-mode.js';
 import './functions/utils/hidden-classes.js';
 import './functions/utils/emailing.js';

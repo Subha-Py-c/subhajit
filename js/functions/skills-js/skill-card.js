@@ -1,100 +1,68 @@
+const elements = {
+  default: document.querySelector('.default'),
+  python: document.querySelector('.python'),
+  aiTools: document.querySelector('.ai-tools'),
+  htmlCss: document.querySelector('.html-css'),
+  uiUx: document.querySelector('.ui-ux'),
+  js: document.querySelector('.js'),
+  cCpp: document.querySelector('.c-cpp'),
+  git: document.querySelector('.git'),
+  others: document.querySelector('.others'),
+  pythonId: document.getElementById('python'),
+  aiId: document.getElementById('ai'),
+  htmlCssId: document.getElementById('html-css'),
+  uiUxId: document.getElementById('ui-ux'),
+  jsId: document.getElementById('js'),
+  cId: document.getElementById('c'),
+  cppId: document.getElementById('cpp'),
+  gitId: document.getElementById('git'),
+  gimpId: document.getElementById('gimp'),
+  scriptId: document.getElementById('script'),
+};
 
-const Default = document.querySelector('.default');
-const python = document.querySelector('.python');
-const ai_tools = document.querySelector('.ai-tools');
-const html_css = document.querySelector('.html-css');
-const ui_ux = document.querySelector('.ui-ux');
-const js = document.querySelector('.js');
-const c_cpp = document.querySelector('.c-cpp');
-const git = document.querySelector('.git');
-const other = document.querySelector('.others');
-const p = document.getElementById('python');
-const a = document.getElementById('ai');
-const htm = document.getElementById('html-css');
-const u = document.getElementById('ui-ux');
-const j = document.getElementById('js');
-const c = document.getElementById('c');
-const cpp = document.getElementById('cpp');
-const g = document.getElementById('git');
-const gimp = document.getElementById('gimp');
-const script = document.getElementById('script');
-p.addEventListener('mouseover', function() {
-  Default.style.display = 'none';
-  python.style.display = 'block'
+const showElement = (elementToShow, elementToHide) => {
+  elementToShow.style.display = 'block';
+  elementToHide.style.display = 'none';
+};
+
+const hideDefault = (element) => {
+  elements.default.style.display = 'none';
+};
+
+['python', 'aiTools', 'htmlCss', 'uiUx', 'js', 'cCpp', 'git', 'others'].forEach((id) => {
+  const element = elements[id];
+  if (element) {
+    element.addEventListener('mouseover', () => showElement(elements[id], elements.default));
+    element.addEventListener('mouseout', () => showElement(elements.default, elements[id]));
+  }
 });
-a.addEventListener('mouseover', function() {
-  Default.style.display = 'none';
-  ai_tools.style.display = 'block'
-});
-htm.addEventListener('mouseover', function() {
-  Default.style.display = 'none';
-  html_css.style.display = 'block'
-});
-u.addEventListener('mouseover', function() {
-  Default.style.display = 'none';
-  ui_ux.style.display = 'block'
-});
-j.addEventListener('mouseover', function() {
-  Default.style.display = 'none';
-  js.style.display = 'block'
-});
-c.addEventListener('mouseover', function() {
-  Default.style.display = 'none';
-  c_cpp.style.display = 'block'
-});
-cpp.addEventListener('mouseover', function() {
-  Default.style.display = 'none';
-  c_cpp.style.display = 'block'
-});
-g.addEventListener('mouseover', function() {
-  Default.style.display = 'none';
-  git.style.display = 'block'
-});
-gimp.addEventListener('mouseover', function() {
-  Default.style.display = 'none';
-  other.style.display = 'block'
-});
-script.addEventListener('mouseover', function() {
-  Default.style.display = 'none';
-  other.style.display = 'block'
-});
-p.addEventListener('mouseout', function() {
-  Default.style.display = 'block';
-  python.style.display = 'none'
-});
-a.addEventListener('mouseout', function() {
-  Default.style.display = 'block';
-  ai_tools.style.display = 'none'
-});
-htm.addEventListener('mouseout', function() {
-  Default.style.display = 'block';
-  html_css.style.display = 'none'
-});
-u.addEventListener('mouseout', function() {
-  Default.style.display = 'block';
-  ui_ux.style.display = 'none'
-});
-j.addEventListener('mouseout', function() {
-  Default.style.display = 'block';
-  js.style.display = 'none'
-});
-c.addEventListener('mouseout', function() {
-  Default.style.display = 'block';
-  c_cpp.style.display = 'none'
-});
-cpp.addEventListener('mouseout', function() {
-  Default.style.display = 'block';
-  c_cpp.style.display = 'none'
-});
-g.addEventListener('mouseout', function() {
-  Default.style.display = 'block';
-  git.style.display = 'none'
-});
-gimp.addEventListener('mouseout', function() {
-  Default.style.display = 'block';
-  other.style.display = 'none'
-});
-script.addEventListener('mouseout', function() {
-  Default.style.display = 'block';
-  other.style.display = 'none'
-});
+
+elements.pythonId.addEventListener('mouseover', () => showElement(elements.python, elements.default));
+elements.pythonId.addEventListener('mouseout', () => showElement(elements.default, elements.python));
+
+elements.aiId.addEventListener('mouseover', () => showElement(elements.aiTools, elements.default));
+elements.aiId.addEventListener('mouseout', () => showElement(elements.default, elements.aiTools));
+
+elements.htmlCssId.addEventListener('mouseover', () => showElement(elements.htmlCss, elements.default));
+elements.htmlCssId.addEventListener('mouseout', () => showElement(elements.default, elements.htmlCss));
+
+elements.uiUxId.addEventListener('mouseover', () => showElement(elements.uiUx, elements.default));
+elements.uiUxId.addEventListener('mouseout', () => showElement(elements.default, elements.uiUx));
+
+elements.jsId.addEventListener('mouseover', () => showElement(elements.js, elements.default));
+elements.jsId.addEventListener('mouseout', () => showElement(elements.default, elements.js));
+
+elements.cId.addEventListener('mouseover', () => showElement(elements.cCpp, elements.default));
+elements.cId.addEventListener('mouseout', () => showElement(elements.default, elements.cCpp));
+
+elements.cppId.addEventListener('mouseover', () => showElement(elements.cCpp, elements.default));
+elements.cppId.addEventListener('mouseout', () => showElement(elements.default, elements.cCpp));
+
+elements.gitId.addEventListener('mouseover', () => showElement(elements.git, elements.default));
+elements.gitId.addEventListener('mouseout', () => showElement(elements.default, elements.git));
+
+elements.gimpId.addEventListener('mouseover', () => showElement(elements.others, elements.default));
+elements.gimpId.addEventListener('mouseout', () => showElement(elements.default, elements.others));
+
+elements.scriptId.addEventListener('mouseover', () => showElement(elements.others, elements.default));
+elements.scriptId.addEventListener('mouseout', () => showElement(elements.default, elements.others));

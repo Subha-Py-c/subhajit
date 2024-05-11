@@ -49,8 +49,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
+}
+#cl-icon{
+  border-left: 1px solid white;
+  color: white;
+}
 .close-icon {
   width: 39px;
   height: 39px;

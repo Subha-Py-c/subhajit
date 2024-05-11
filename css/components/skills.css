@@ -1,5 +1,4 @@
-
-/* -------  SKILLS ------------------------------------------------------ */
+/* ------- SKILLS ------------------------------------------------------ */
 
 .d3 {
   position: relative;
@@ -8,16 +7,13 @@
   padding-top: 90px;
 }
 
-
 /* SK = skill list main id */
 #SK {
-  border: 1px solid red;
   border: none;
 }
 
 /* ss = skill heading */
 #SS {
-  border: 1px solid;
   border: none;
 }
 
@@ -26,11 +22,10 @@
   padding-top: 30px;
   margin-left: 100px;
   margin-top: 100px;
-  font-size: 3.7em;
-  font-weight: 550;
+  font-size: var(--heading-text-size);
+  font-weight: var(--heading-weight);
   /* background-color: #ffa2007d; */
 }
-
 
 /* ------- SKILL WRAPPER ----------------------------------------------- */
 .skill-wrapper {
@@ -39,6 +34,7 @@
   align-items: center;
   /* justify-content: space-evenly; */
 }
+
 /* skill wrapper has 2 childs> card container and skill list/ s-list */
 
 /* ------- CARD CONTAINER ----------------------------------------------- */
@@ -83,44 +79,17 @@
   border-radius: 50%;
 }
 
-
-.python {
-  display: none;
-  /* display: block; */
-}
-
-.ai-tools {
-  display: none;
-}
-
-.html-css {
-  display: none;
-}
-
-.ui-ux {
-  display: none;
-}
-
-.js {
-  display: none;
-}
-
-.react {
-  display: none;
-}
-
-.c-cpp {
-  display: none;
-}
-
-.git {
-  display: none;
-}
-
+.python,
+.ai-tools,
+.html-css,
+.ui-ux,
+.js,
+.react,
+.c-cpp,
+.git,
 .others {
   display: none;
 }
-
 
 /* ------- SKILL LIST ---------------------------------------------------- */
 #skill-list {
@@ -130,6 +99,7 @@
   width: 335px;
   height: 650px;
 }
+
 /* skill-list = s-list */
 .s-list {
   height: 60vh;
@@ -181,7 +151,6 @@
   width: 35px;
 }
 
-
 .strech {
   background-color: rgba(0, 255, 255, 0);
   font-size: 0px;
@@ -209,31 +178,21 @@
   }
 }
 
-
-.first {
+.first,
+.middle,
+.last {
   margin-top: 60px;
   margin-left: 60px;
   margin-right: 60px;
-  margin-bottom: 0px;
-  /* font-size: 1.2em; */
   font-style: normal;
-  /* font-weight: 400; */
 }
 
 .middle {
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 60px;
-  margin-right: 60px;
-  /* font-size: 1.2em; */
-  font-style: normal;
-  /* font-weight: 400; */
 }
 
 .last {
   margin-top: 0px;
   margin-bottom: 60px;
-  margin-left: 60px;
-  margin-right: 60px;
-  font-style: normal;
 }

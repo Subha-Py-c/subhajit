@@ -1,12 +1,1 @@
-# Port-Folio
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quis sint totam! Aliquam inventore labore deserunt optio, alias impedit? Quo dicta itaque consequatur qui inventore! Repudiandae deserunt provident non dolor laboriosam, error quasi quo facere recusandae aperiam quos rerum unde modi possimus? Commodi omnis molestiae cum ab. Ipsum laudantium debitis harum consectetur qui nesciunt id possimus accusamus, reprehenderit tenetur numquam nam quod voluptatem ad? Nesciunt eaque id rem tenetur culpa quasi pariatur praesentium dolor iure ut, porro cupiditate enim distinctio magni unde? Tempore dolorem dicta ab aliquam dignissimos.
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quis sint totam! Aliquam inventore labore deserunt optio, alias impedit? Quo dicta itaque consequatur qui inventore! Repudiandae deserunt provident non dolor laboriosam, error quasi quo facere recusandae aperiam quos rerum unde modi possimus? Commodi omnis molestiae cum ab. Ipsum laudantium debitis harum consectetur qui nesciunt id possimus accusamus, reprehenderit tenetur numquam nam quod voluptatem ad? Nesciunt eaque id rem tenetur culpa quasi pariatur praesentium dolor iure ut, porro cupiditate enim distinctio magni unde? Tempore dolorem dicta ab aliquam dignissimos.
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quis sint totam! Aliquam inventore labore deserunt optio, alias impedit? Quo dicta itaque consequatur qui inventore! Repudiandae deserunt provident non dolor laboriosam, error quasi quo facere recusandae aperiam quos rerum unde modi possimus? Commodi omnis molestiae cum ab. Ipsum laudantium debitis harum consectetur qui nesciunt id possimus accusamus, reprehenderit tenetur numquam nam quod voluptatem ad? Nesciunt eaque id rem tenetur culpa quasi pariatur praesentium dolor iure ut, porro cupiditate enim distinctio magni unde? Tempore dolorem dicta ab aliquam dignissimos.
-
-<br>
-
-<hr>
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quis sint totam! Aliquam inventore labore deserunt optio, alias impedit? Quo dicta itaque consequatur qui inventore! Repudiandae deserunt provident non dolor laboriosam, error quasi quo facere recusandae aperiam quos rerum unde modi possimus? Commodi omnis molestiae cum ab. Ipsum laudantium debitis harum consectetur qui nesciunt id possimus accusamus, reprehenderit tenetur numquam nam quod voluptatem ad? Nesciunt eaque id rem tenetur culpa quasi pariatur praesentium dolor iure ut, porro cupiditate enim distinctio magni unde? Tempore dolorem dicta ab aliquam dignissimos.
+# Academics will be added

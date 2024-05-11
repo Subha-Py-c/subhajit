@@ -1,8 +1,4 @@
-
-
-/* ------------Contacts------------- */
-
-:root{
+:root {
   --icon-width: 50px;
   --icon-height: 50px;
   --text-color: #fff;
@@ -11,15 +7,11 @@
 
 .expC {
   padding-top: 60px;
-  margin: 30px;
-  margin-left: 70px;
-  margin-top: 200px;
+  margin: 30px 30px 0 70px;
   padding-top: 150px;
-  font-size: 3.7em;
-  font-weight: 550;
-  /* border: 1px solid; */
+  font-size: var(--heading-text-size);
+  font-weight: var(--heading-weight);
 }
-
 
 .fs-contacts {
   height: var(--icon-height);
@@ -31,67 +23,28 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: first baseline ;
-  /* border: 1px solid; */
+  align-items: baseline;
 }
 
-.fs-contacts a {
-  /* margin-top: 10px; */
-  /* margin-bottom: 10px; */
-  /* color: var(--text-color); */
-  text-decoration: none !important;
-}
-
-.github_logo{
-  font-size: 0;
-}
-.github_logo a{
+.fs-contacts a,
+.github_logo a,
+.yt_logo a {
   text-decoration: none !important;
   border-bottom: none !important;
 }
 
-.yt_logo{
+.github_logo,
+.yt_logo {
   font-size: 0;
 }
-.yt_logo a{
-  text-decoration: none !important;
-  border-bottom: none !important;
+
+#e-logo,
+#g-logo,
+#y-logo {
+  width: var(--icon-width);
+  height: var(--icon-height);
+  border: none;
 }
-
-
-/* e-logo in html direct */
-#e-logo{
-  width: var(--icon-width);
-  height: var(--icon-height);
-  border: none;
-  
- }
-#g-logo{
-  width: var(--icon-width);
-  height: var(--icon-height);
-  border: none;
-
-  
- }
-#y-logo{
-  width: var(--icon-width);
-  height: var(--icon-height);
-  border: none;
-
- }
-/* 
- #e-logo:hover{
-  border-radius: 50%;
-  border: 1px solid;
- }
- #g-logo:hover{
-  border-radius: 50%;
-  border: 1px solid;
- }
- #y-logo:hover{
-  border-radius: 50%;
-  border: 1px solid;
- } */
 
 .container {
   display: flex;
@@ -101,7 +54,6 @@
   position: relative;
   margin-left: 300px;
   top: 40px;
-  /* background-color: #d44a94; */
   background-color: var(--email-box-color);
   width: 600px;
   height: 400px;
@@ -125,7 +77,7 @@
   z-index: 999999;
 }
 
-.box img{
+.box img {
   display: block;
   width: 100%;
   height: 100%;
@@ -134,7 +86,7 @@
   transition: all 0.3s;
 }
 
-#c-text{
+#c-text {
   position: absolute;
   z-index: 9899;
   background-color: yellow;
@@ -142,14 +94,18 @@
   opacity: 0;
 }
 
-.box:hover #c-text{
+.box:hover #c-text {
   opacity: 1;
-  transition: all 0.3s;
 }
 
-.box:hover img{
+.box:hover img {
   transform: scale(1.2);
-  transition: all 0.3s;
+}
+
+.hide-this-thing {
+  font-size: 0;
+  opacity: 0;
+  display: none;
 }
 
 /* 
@@ -202,9 +158,3 @@
   color: #232323;
   border: 2px solid #000000;
 } */
-
-.hide-this-thing{
-  font-size: 0;
-  opacity: 0;
-  display: none;
-}
