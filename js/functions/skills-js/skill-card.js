@@ -66,3 +66,35 @@ elements.gimpId.addEventListener('mouseout', () => showElement(elements.default,
 
 elements.scriptId.addEventListener('mouseover', () => showElement(elements.others, elements.default));
 elements.scriptId.addEventListener('mouseout', () => showElement(elements.default, elements.others));
+
+/*
+const elements = [
+  { id: 'python', target: 'python' },
+  { id: 'ai', target: 'ai_tools' },
+  { id: 'html-css', target: 'html_css' },
+  { id: 'ui-ux', target: 'ui_ux' },
+  { id: 'js', target: 'js' },
+  { id: 'c', target: 'c_cpp' },
+  { id: 'cpp', target: 'c_cpp' },
+  { id: 'git', target: 'git' },
+  { id: 'gimp', target: 'others' },
+  { id: 'script', target: 'others' }
+];
+
+const Default = document.getElementById('default'); // Assuming 'default' is an ID
+
+elements.forEach(({ id, target }) => {
+  const element = document.getElementById(id);
+  const targetElement = document.querySelector(`.${target}`);
+  
+  element.addEventListener('mouseover', () => {
+    Default.style.display = 'none';
+    targetElement.style.display = 'block';
+  });
+  
+  element.addEventListener('mouseout', () => {
+    Default.style.display = 'block';
+    targetElement.style.display = 'none';
+  });
+});
+*/
