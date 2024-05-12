@@ -30,7 +30,7 @@ const toggleInvertFilter = (element) => {
 });
 
 elements.hand.forEach((element) => {
-  element.addEventListener('mouseover', () => scaleTransform(cursor, 2));
+  element.addEventListener('mouseover', () => scaleTransform(cursor, 1.2));
   element.addEventListener('mouseout', () => scaleTransform(cursor, 1));
 });
 

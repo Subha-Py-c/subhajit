@@ -11,6 +11,7 @@ import './functions/project-js/project.js';
 import './functions/utils/dark-mode.js';
 import './functions/utils/hidden-classes.js';
 import './functions/utils/emailing.js';
+import  './functions/utils/scroll-related/smooth-scrolling.js'
 
 function isMobileDevice() {
     return window.innerWidth <= 768;
