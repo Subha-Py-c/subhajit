@@ -135,7 +135,7 @@
 
 /* -------------------------------------------------------------------- */
 
-/* 
+
 @media (max-width: 475px) {
   .email-box {
     display: none;
@@ -146,10 +146,23 @@
     --icon-height: 35px;
     --text-color: #fff;
     --text-color-hover: #fff;
+    --padding-top-contacts: 80px;
+
   }
 
   #s4-contacts {
     height: 70vh;
+  }
+
+  .fs-contacts {
+    height: calc(var(--icon-height) * 3);
+    width: 10vw;
+    /* border: 1px solid; */
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    gap: 0.6em;
+    padding-left: 40px;
   }
 }
 
@@ -163,12 +176,25 @@
     --icon-height: 35px;
     --text-color: #fff;
     --text-color-hover: #fff;
+    --padding-top-contacts: 80px;
+
   }
 
   #s4-contacts {
     height: 70vh;
   }
-} */
+
+  .fs-contacts {
+    height: calc(var(--icon-height) * 3);
+    width: 10vw;
+    /* border: 1px solid; */
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    gap: 0.6em;
+    padding-left: 40px;
+  }
+}
 
 /* md */
 @media (max-width: 768px) {
@@ -181,7 +207,7 @@
     --icon-height: 35px;
     --text-color: #fff;
     --text-color-hover: #fff;
-    --padding-top-contacts: 50px;
+    --padding-top-contacts: 80px;
 
   }
 

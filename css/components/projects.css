@@ -18,18 +18,33 @@
 }
 
 /* ------------------------{p-list}-------------------------------------------- */
-
+/* for mobiles */
 .p-list {
-  height: 26vh;
-  margin-top: 0px;
-  padding-left: 20px;
+  height: 220vh;
+  width: 80vw;
+  margin-top: 20px;
+  padding-left: 40px;
   font-size: 0.8em;
   font-weight: 200;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   display: none;
+  gap: 0.6em;
+}
+.projects{
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.projects img{
+  object-fit: cover;
 }
 
 #s3-projects {
@@ -124,20 +139,37 @@ img {
 
 
 /* xs */
-@media (max-width: 475px) {
+/* @media (max-width: 475px) {} */
+
+/* sm */
+/* @media (max-width: 640px) {} */
+
+/* md */
+@media (max-width: 768px) {
   #gallery{
     display: none;
   }
   .p-list{
     display: flex;
   }
+  #s3-projects{
+    height: 240vh;
+  }
+  .project_data{
+    opacity: 1;
+    font-size: 1.4em;
+  }
+
+  .xxds{
+    width: 40px;
+    height: 40px;
+  }
+
+  #xds{
+    width: 25px;
+    height: 25px;
+  }
 }
-
-/* sm */
-/* @media (max-width: 640px) {} */
-
-/* md */
-/* @media (max-width: 768px) {} */
 
 /* lg */
 /* @media (max-width: 1024px) {} */
