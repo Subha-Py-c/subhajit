@@ -47,6 +47,29 @@
   align-items: center;
 }
 
+.skill__container {
+  /* border: 1px solid; */
+  margin-left: 20px;
+  margin-right: 20px ;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, auto); 
+  gap: 20px; 
+}
+
+.skill__box {
+  /* border: 1px solid #e11f1f;  */
+  padding: 10px;
+  
+}
+
+.skill__container .skill__box svg{
+  display: block;
+}
+
+.skill__container{
+  display: none;
+}
 /* skill wrapper has 2 childs> card container and skill list/ s-list */
 
 /* ------- CARD CONTAINER ----------------------------------------------- */
@@ -208,45 +231,71 @@
   margin-bottom: 60px;
 }
 
+/* ------------------------{MEDIA QUERY}-------------------------------------------- */
 
 /* xs */
 @media (max-width: 475px) {
-
-  :root {
-    --card-container-width: 350px;
-    --card-container-height: 100px;
-    --margin-dist: 150px;
-    --card-font-size: 0.8em;
-    --s-list-font-size: 1.2em;
+  #s2-skills{
+    height: 130vh;
   }
-
-  #skill-list {
-    width: 175px;
-    height: 450px;
-  }
-}
-
-/* sm */
-@media (max-width: 640px) {
-
-  :root {
-    --card-container-width: 350px;
-    --card-container-height: 100px;
-    --margin-dist: 150px;
-    --card-font-size: 0.8em;
-    --s-list-font-size: 1.2em;
-  }
-}
-
-/* md */
-@media (max-width: 768px) {
-
   :root {
     --card-container-width: 150px;
     --card-container-height: 350px;
     --margin-dist: 150px;
     --card-font-size: 0.8em;
     --s-list-font-size: 1.2em;
+  }
+
+  .skill-wrapper{
+    display: none;
+  }
+
+  .skill__container {
+    display: grid;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  #s2-skills{
+    height: 130vh;
+  }
+  :root {
+    --card-container-width: 150px;
+    --card-container-height: 350px;
+    --margin-dist: 150px;
+    --card-font-size: 0.8em;
+    --s-list-font-size: 1.2em;
+  }
+
+  .skill-wrapper{
+    display: none;
+  }
+
+  .skill__container {
+    display: grid;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  #s2-skills{
+    height: 130vh;
+  }
+  :root {
+    --card-container-width: 150px;
+    --card-container-height: 350px;
+    --margin-dist: 150px;
+    --card-font-size: 0.8em;
+    --s-list-font-size: 1.2em;
+  }
+
+  .skill-wrapper{
+    display: none;
+  }
+
+  .skill__container {
+    display: grid;
   }
 }
 

@@ -120,10 +120,6 @@ section {
   .sec5{
     font-size: 0.5em;
   }
-
-  #s2-skills{
-    display: none;
-  }
 }
 
 /* sm */
@@ -145,10 +141,6 @@ section {
   .sec5{
     font-size: 0.5em;
   }
-
-  #s2-skills{
-    display: none;
-  }
 }
 
 /* md */
@@ -169,10 +161,6 @@ section {
   }
   .sec5{
     font-size: 0.5em;
-  }
-
-  #s2-skills{
-    display: none;
   }
 }
 

@@ -5,6 +5,10 @@
   --padding-left-val: 170px;
 }
 
+#s-last{
+  height: 110vh;
+}
+
 .academic__container {
   transform: none;
   /* border: 3px dotted; */
