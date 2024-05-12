@@ -57,9 +57,6 @@ body {
   --svg-z-index: 9999999;
   --font-size: 1.2rem;
 
-  --nav-height: 10vh;
-  --li-width: 20%;
-
   --rr: 15px;
 }
 #viewers{margin-left: var(--margin-left);}
@@ -114,6 +111,11 @@ section {
     --heading-line-space: -0.03em;
     --introduction-text-size: 0.85em;
     --paragraph-text-size: 0.7em;
+    --top: 15px;
+    --right: 10px;
+  }
+  section{
+    opacity: 1;
   }
   .sec5{
     font-size: 0.7em;
@@ -134,6 +136,11 @@ section {
     --heading-line-space: -0.03em;
     --introduction-text-size: 0.85em;
     --paragraph-text-size: 0.7em;
+    --top: 15px;
+    --right: 10px;
+  }
+  section{
+    opacity: 1;
   }
   .sec5{
     font-size: 0.7em;
@@ -154,11 +161,16 @@ section {
     --heading-line-space: -0.03em;
     --introduction-text-size: 0.85em;
     --paragraph-text-size: 0.7em;
+    --top: 15px;
+    --right: 10px;
+  }
+  section{
+    opacity: 1;
   }
   .sec5{
     font-size: 0.7em;
   }
-  
+
   #s2-skills{
     display: none;
   }

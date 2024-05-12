@@ -12,5 +12,13 @@ import './functions/utils/dark-mode.js';
 import './functions/utils/hidden-classes.js';
 import './functions/utils/emailing.js';
 
-import './functions/utils/scroll-related/revel-on-scroll.js';
-import './functions/utils/scroll-related/smooth-scrolling.js';
+// Check if the user is on a mobile device (width <= 768px)
+function isMobileDevice() {
+    return window.innerWidth <= 768;
+}
+
+// Conditionally import the revel-on-scroll.js module
+if (!isMobileDevice()) {
+    import('./functions/utils/scroll-related/revel-on-scroll.js')
+        .catch(error => console.error("Failed to import revel-on-scroll.js:", error));
+}

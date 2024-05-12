@@ -22,7 +22,6 @@
 
 .acad__list {
   /* border: 2px solid #a92d2d; */
-
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -124,9 +123,10 @@
 /* md */
 @media (max-width: 768px) {
   :root {
+    --top-val-b1: 146vh;
     --padding-left-val: 30px;
-    --left-val: 25px;
-    --inc: 85px;
+    --left-val: 35px;
+    --inc: 155px;
   }
 
   .ball-pointer {

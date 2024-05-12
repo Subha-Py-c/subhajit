@@ -1,5 +1,5 @@
 const nav = document.getElementById('nav');
-const svg = document.getElementById('svg');
+const svg_nav_menu = document.getElementById('svg-nav-menu');
 const ul = document.getElementById('ul');
 const l1 = document.getElementById('l1');
 const l2 = document.getElementById('l2');
@@ -9,10 +9,8 @@ const sps = document.querySelectorAll('.sp');
 const closeIcon = document.querySelector('.close-icon');
 const navMenu = document.querySelector('.nav-menu');
 
-// closeIcon.style.backgroundColor = 'white';
-// closeIcon.style.borderLeft = '3' + 'px' + 'solid' + 'white';
 
-svg.addEventListener('click', function() {
+svg_nav_menu.addEventListener('click', function() {
   nav.classList.toggle('visible');
   ul.classList.toggle('visible');
   [l1, l2, l3, l4].forEach((li, index) => {

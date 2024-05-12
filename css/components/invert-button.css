@@ -36,21 +36,43 @@
 /* xs */
 @media (max-width: 475px) {
   #invert-button {
-    display: none;
+    right: calc(var(--right) + 6px);
+    top: calc(var(--top) + 45px);
+    width: 26px;
+    height: 26px;
   }
+
+  #invert-button:hover {
+    transform: scale(1.0);
+  }
+
 }
 
 /* sm */
 @media (max-width: 640px) {
   #invert-button {
-    display: none;
+    right: calc(var(--right) + 6px);
+    top: calc(var(--top) + 45px);
+    width: 26px;
+    height: 26px;
+  }
+
+  #invert-button:hover {
+    transform: scale(1.0);
   }
 }
 
 /* md */
 @media (max-width: 768px) {
   #invert-button {
-    display: none;
+    right: calc(var(--right) + 6px);
+    top: calc(var(--top) + 45px);
+    width: 26px;
+    height: 26px;
+  }
+
+  #invert-button:hover {
+    transform: scale(1.0);
   }
 }
 
