@@ -5,6 +5,7 @@ const l1 = document.getElementById('l1');
 const l2 = document.getElementById('l2');
 const l3 = document.getElementById('l3');
 const l4 = document.getElementById('l4');
+const l5 = document.getElementById('l5');
 const sps = document.querySelectorAll('.sp');
 const closeIcon = document.querySelector('.close-icon');
 const navMenu = document.querySelector('.nav-menu');
@@ -13,7 +14,7 @@ const navMenu = document.querySelector('.nav-menu');
 svg_nav_menu.addEventListener('click', function() {
   nav.classList.toggle('visible');
   ul.classList.toggle('visible');
-  [l1, l2, l3, l4].forEach((li, index) => {
+  [l1, l2, l3, l4, l5].forEach((li, index) => {
     li.classList.toggle('animate-li');
     li.style.animationDelay = `${index * 100}ms`;
   });

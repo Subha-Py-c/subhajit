@@ -17,11 +17,6 @@
   padding-top: 90px;
 }
 
-/* 
-#s2-skills{
-  border: 1px solid;
-} */
-
 /* SK = skill list main id */
 #SK {
   border: none;
@@ -229,6 +224,12 @@
 .last {
   margin-top: 0px;
   margin-bottom: 60px;
+}
+
+
+
+#s2-skills{
+  height: 125vh;
 }
 
 /* ------------------------{MEDIA QUERY}-------------------------------------------- */

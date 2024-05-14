@@ -1,16 +1,26 @@
 :root {
-  --top-val-b1: 212px;
+  /* --top-val-b1: calc(212px + 123vh - 123vh);
   --inc: 175px;
-  --left-val: 160px;
+  --left-val: calc(160px + 10px - 10px); */
+
   --padding-left-val: 170px;
+  --left-dist: 60px;
+  --radius: 10px;
+  --institute__data__height: 134.5px;
 }
 
 #s-last{
+  position: relative;
   height: 110vh;
 }
 
 .academic__container {
   transform: none;
+  /* border: 3px dotted; */
+}
+
+.ins__container {
+  position: relative;
   /* border: 3px dotted; */
 }
 
@@ -43,7 +53,7 @@
   border-left: 1px solid #000;
   height: 145px;
   /* padding: 15px; */
-  padding-left: 60px;
+  padding-left: var(--left-dist);
   padding-bottom: 30px;
 }
 
@@ -57,16 +67,23 @@
   font-weight: 700;
 }
 
+.institute__data{
+  position: relative;
+}
+
 .ball-pointer {
-  width: 20px;
-  height: 20px;
+  width: calc(var(--radius) * 2);
+    height: calc(var(--radius) * 2);
   background-color: #000;
   border-radius: 50%;
-  position: absolute;
-  left: var(--left-val);
+  position: relative;
+  top: calc(var(--institute__data__height) * (-1) + var(--radius) * 1.5);
+  left: calc(((-1) *  var(--left-dist)) - var(--radius));
+  /* left: var(--left-val); */
 }
 
 /* +175px */
+/* 
 #ball-pointer-1 {
   top: var(--top-val-b1)
 }
@@ -82,7 +99,13 @@
 #ball-pointer-4 {
   top: calc(var(--top-val-b1) + var(--inc) * 3)
 }
+ */
 
+#s-last{
+  height: 125vh;
+}
+
+ /* --------------------------{media queries}-------------------------------------------- */
 
 /* xs */
 @media (max-width: 475px) {
@@ -129,18 +152,16 @@
   :root {
     --top-val-b1: 146vh;
     --padding-left-val: 30px;
+    --left-dist: 30px;
     --left-val: 35px;
     --inc: 155px;
-  }
-
-  .ball-pointer {
-    width: 10px;
-    height: 10px;
+    --radius: 5px;
+    --institute__data__height: 90px;
   }
 
   .acad__institutions {
     height: 145px;
-    padding-left: 30px;
+    padding-left: var(--left-dist);
     padding-bottom: 10px;
   }
 }

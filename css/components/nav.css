@@ -3,12 +3,16 @@
 :root {
   --nav-height: 10vh;
   --li-width: 20%;
+  --li-height-initial: 0;
+  --li-height-final: 10vh;
   --li-text-size: 2em;
 }
 
 /* ------------------------{animate-li}-------------------------------------------- */
 
-.animate-li {  animation: come-in 600ms forwards;}
+.animate-li {
+  animation: come-in 600ms forwards;
+}
 
 /* ------------------------{nav.visible}-------------------------------------------- */
 
@@ -22,8 +26,13 @@
 /* ------------------------{appear keyframes}-------------------------------------------- */
 
 @keyframes appear {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 /* ------------------------{clear li}-------------------------------------------- */
@@ -78,22 +87,37 @@
 /* ------------------------{slideIn keyframes}-------------------------------------------- */
 
 @keyframes slideIn {
-  0% {  height: 0%;}
-  100% {  height: var(--nav-height);}
+  0% {
+    height: 0%;
+  }
+
+  100% {
+    height: var(--nav-height);
+  }
 }
 
 /* ------------------------{slideOut keyframes}-------------------------------------------- */
 
 @keyframes slideOut {
-  0% {  transform: translateY(0);}
-  100% {  transform: translateY(-100%);}
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
 }
 
 /* ------------------------{come-in keyframes}-------------------------------------------- */
 
 @keyframes come-in {
-  0% {  height: 0;  }
-  100% {  height: 100%;  }
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 100%;
+  }
 }
 
 /* ------------------------{nav}-------------------------------------------- */
@@ -148,10 +172,21 @@
 
 /* ------------------------{id specific animations}-------------------------------------------- */
 
-#l1 {  animation-delay: 0ms;}
-#l2 {  animation-delay: 200ms;}
-#l3 {  animation-delay: 400ms;}
-#l4 {  animation-delay: 600ms;}
+#l1 {
+  animation-delay: 0ms;
+}
+
+#l2 {
+  animation-delay: 200ms;
+}
+
+#l3 {
+  animation-delay: 400ms;
+}
+
+#l4 {
+  animation-delay: 600ms;
+}
 
 /* ------------------------{nav li span}-------------------------------------------- */
 
@@ -187,23 +222,43 @@
     --li-text-size: 1.2em;
   }
 
-  .ul{
+  .ul {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .li{
+
+  .li {
     justify-content: flex-start;
     padding-left: 60px;
   }
 
-  .close-icon{
+  .close-icon {
     top: 15px;
     right: 10px;
     width: 28px;
     height: 28px;
   }
-  .animate-li {  animation: come-in 400ms forwards;}
+
+  .animate-li {
+    animation: come-in 400ms forwards;
+  }
+
+  #l1 {
+    animation-delay: 0ms;
+  }
+
+  #l2 {
+    animation-delay: 0ms;
+  }
+
+  #l3 {
+    animation-delay: 0ms;
+  }
+
+  #l4 {
+    animation-delay: 0ms;
+  }
 
 }
 
@@ -224,23 +279,43 @@
     --li-text-size: 1.2em;
   }
 
-  .ul{
+  .ul {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .li{
+
+  .li {
     justify-content: flex-start;
     padding-left: 60px;
   }
 
-  .close-icon{
+  .close-icon {
     top: 15px;
     right: 10px;
     width: 28px;
     height: 28px;
   }
-  .animate-li {  animation: come-in 400ms forwards;}
+
+  .animate-li {
+    animation: come-in 400ms forwards;
+  }
+
+  #l1 {
+    animation-delay: 0ms;
+  }
+
+  #l2 {
+    animation-delay: 0ms;
+  }
+
+  #l3 {
+    animation-delay: 0ms;
+  }
+
+  #l4 {
+    animation-delay: 0ms;
+  }
 
 }
 
@@ -259,25 +334,47 @@
     --li-width: 100%;
     /* --li-height: 22vh; */
     --li-text-size: 1.2em;
+    --li-height: 121.16px;
   }
 
-  .ul{
+  .ul {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .li{
+
+  .li {
     justify-content: flex-start;
     padding-left: 60px;
+    height: var(--li-height);
   }
 
-  .close-icon{
+  .close-icon {
     top: 15px;
     right: 10px;
     width: 28px;
     height: 28px;
   }
-  .animate-li {  animation: come-in 400ms forwards;}
+
+  .animate-li {
+    animation: come-in 400ms forwards;
+  }
+
+  #l1 {
+    animation-delay: 0ms;
+  }
+
+  #l2 {
+    animation-delay: 0ms;
+  }
+
+  #l3 {
+    animation-delay: 0ms;
+  }
+
+  #l4 {
+    animation-delay: 0ms;
+  }
 
 }
 

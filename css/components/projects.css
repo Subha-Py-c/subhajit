@@ -79,7 +79,8 @@ img {
 .gallery__pannels {
   overflow: hidden;
   flex: 1;
-  transition: flex 0.5s ease-in-out;
+  transition: flex 0.35s ease-in-out !important;
+  /* why is it conflicting with AOS ??? */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,6 +90,7 @@ img {
 
 .gallery__pannels:hover {
   flex: 3.0;
+  transition: flex 0.35s ease-in-out !important;
 }
 
 /* ------------------------{project_data}-------------------------------------------- */
@@ -123,7 +125,25 @@ img {
   height: 30px;
   border-radius: 50%;
 }
-
+/* 
+@keyframes zsh{
+  0%{
+    opacity: 0;
+    left: 50px;
+  }
+  100%{
+    opacity: 1;
+    left: 0px;
+  }
+}
+#i_1{ opacity: 0; animation: zsh 200ms forwards; animation-delay: 0ms;}
+#i_2{ opacity: 0; animation: zsh 200ms forwards; animation-delay: 100ms;}
+#i_3{ opacity: 0; animation: zsh 200ms forwards; animation-delay: 200ms;}
+#i_4{ opacity: 0; animation: zsh 200ms forwards; animation-delay: 300ms;}
+#i_5{ opacity: 0; animation: zsh 200ms forwards; animation-delay: 400ms;}
+#i_6{ opacity: 0; animation: zsh 200ms forwards; animation-delay: 500ms;}
+#i_7{ opacity: 0; animation: zsh 200ms forwards; animation-delay: 600ms;}
+#i_8{ opacity: 0; animation: zsh 200ms forwards; animation-delay: 700ms;} */
 /* ------------------------{gallery__pannels img}-------------------------------------------- */
 
 .gallery__pannels img {

@@ -24,6 +24,13 @@
   <link rel="stylesheet" href="css/components/contacts.css">
   <link rel="stylesheet" href="css/components/academics.css">
 
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+
+  <!-- AOS JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
+
   <!-- Favicon -->
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
@@ -80,10 +87,10 @@
       <div class="nav" id="nav">
         <div class="ul" id="ul">
           <div class="li" id="l1"><span class="sp" id="sp1"><a href="#s1">Home</a></span></div>
-          <div class="li" id="l5"><span class="sp" id="sp5"><a href="#s-last">Academics</a></span></div>
-          <div class="li" id="l2"><span class="sp" id="sp2"><a href="#SK">Skills</a></span></div>
-          <div class="li" id="l3"><span class="sp" id="sp3"><a href="#div3">Projects</a></span></div>
-          <div class="li" id="l4"><span class="sp" id="sp4"><a href="#s4-contacts">Contact</a></span></div>
+          <div class="li" id="l2"><span class="sp" id="sp5"><a href="#s-last">Academics</a></span></div>
+          <div class="li" id="l3"><span class="sp" id="sp2"><a href="#SK">Skills</a></span></div>
+          <div class="li" id="l4"><span class="sp" id="sp3"><a href="#div3">Projects</a></span></div>
+          <div class="li" id="l5"><span class="sp" id="sp4"><a href="#s4-contacts">Contact</a></span></div>
         </div>
       </div>
       <div class="nav-menu svg" id="svg-nav-menu">
@@ -133,16 +140,16 @@
       </div>
       <section id="s1" class="sec1 INTRODUCTION-DATA section-er-vai">
         <div id="d1-2" class="d1-2 HELLO-&-INTRO">
-          <div id="div1" class="animated-div div1">
+          <div id="div1" class="animated-div-xx div1">
             <div id="hello">
-              <span id="i1" class="animated-div letter reg">H</span>
-              <span id="i2" class="animated-div letter reg">e</span>
-              <span id="i3" class="animated-div letter reg">l</span>
-              <span id="i4" class="animated-div letter reg">l</span>
-              <span id="i5" class="animated-div letter reg">o</span>
+              <span id="i1" data-aos="slide-left" data-aos-delay="0" class="animated-div-xx letter">H</span>
+              <span id="i2" data-aos="slide-up" data-aos-delay="150" class="animated-div-xx letter">e</span>
+              <span id="i3" data-aos="slide-up" data-aos-delay="300" class="animated-div-xx letter">l</span>
+              <span id="i4" data-aos="slide-down" data-aos-delay="450" class="animated-div-xx letter">l</span>
+              <span id="i5" data-aos="slide-right" data-aos-delay="600" class="animated-div-xx letter">o</span>
             </div>
           </div>
-          <div id="div2" class="animated-div  NAME-&-INTRO">
+          <div id="div2" data-aos="zoom-in" data-aos-delay="800" class="animated-div-xx  NAME-&-INTRO">
             <h2 class="name">Hey there! <span class="ta-ta">👋</span></h2>
             <h3 class="intro">
               Myself <span id="subhajit" class="tangeine-bold">Subhajit Gorai.</span> I'm a <strong>FRONT-END WEB
@@ -174,38 +181,48 @@
           </div>
           <div class="acad__list">
             <div class="acad__institutions">
-              <div class="ins1">
-                <strong class="inst">Pimary Studies</strong><br>
-                <strong>Institution: </strong>Narendranath School<br>
-                <strong class="year">Year: </strong>2010-2015<br>
-                <strong class="grade">Grade: </strong>AA
+              <div data-aos="slide-right" class="ins__container">
+                <div class="institute__data">
+                  <strong class="inst">Pimary Studies</strong><br>
+                  <strong>Institution: </strong>Narendranath School<br>
+                  <strong class="year">Year: </strong>2010-2015<br>
+                  <strong class="grade">Grade: </strong>A+
+                </div>
                 <div class="ball-pointer" id="ball-pointer-1"></div>
               </div>
             </div>
             <div class="acad__institutions">
-              <div class="ins2">
-                <strong class="inst">Secondary Education</strong><br>
-                <strong>Institution: </strong>Bishnupur High School<br>
-                <strong class="year">Year: </strong>2015-2021<br>
-                <strong class="grade">Grade: </strong>96.42%
+              <div data-aos="slide-right" class="ins__container">
+                <div class="institute__data">
+                  <strong class="inst">Secondary Education</strong><br>
+                  <strong>Institution: </strong>Bishnupur High School<br>
+                  <strong class="year">Year: </strong>2015-2021<br>
+                  <strong class="grade">Grade: </strong>AA
+                </div>
+                <!-- 96.42% -->
                 <div class="ball-pointer" id="ball-pointer-2"></div>
               </div>
             </div>
             <div class="acad__institutions">
-              <div class="ins3">
-                <strong class="inst">Higher Secondary Education</strong><br>
-                <strong>Institution: </strong>Bishnupur High School<br>
-                <strong class="year">Year: </strong>2021-2023<br>
-                <strong class="grade">Grade: </strong>88%
+              <div data-aos="slide-right" class="ins__container">
+                <div class="institute__data">
+                  <strong class="inst">Higher Secondary Education</strong><br>
+                  <strong>Institution: </strong>Bishnupur High School<br>
+                  <strong class="year">Year: </strong>2021-2023<br>
+                  <strong class="grade">Grade: </strong>A+
+                </div>
+                <!-- 88% -->
                 <div class="ball-pointer" id="ball-pointer-3"></div>
               </div>
             </div>
             <div class="acad__institutions">
-              <div class="ins4">
-                <strong class="inst">B.Tech in Information Technology</strong><br>
-                <strong>Institution: </strong>IIEST Shibpur<br>
-                <strong class="year">Year: </strong>2023-present<br>
-                <strong class="grade">Grade: </strong>8.46 CGPA[1st semester]
+              <div data-aos="slide-right" class="ins__container">
+                <div class="institute__data">
+                  <strong class="inst">B.Tech in Information Technology</strong><br>
+                  <strong>Institution: </strong>IIEST Shibpur<br>
+                  <strong class="year">Year: </strong>2023-present<br>
+                  <strong class="grade">Grade: </strong>8.46 CGPA[1st semester]
+                </div>
                 <div class="ball-pointer" id="ball-pointer-4"></div>
               </div>
             </div>
@@ -215,13 +232,13 @@
 
       <section id="s2-skills" class="sec2 SKILLS-LIST section-er-vai">
         <div id="SK" class="con d3">
-          <h4 class="w" id="SS">
+          <h4 data-aos="slide-left" class="w" id="SS">
             <span id="skill" class="exps animated-underline-proper header__texts">
               Coding Skills
             </span>
           </h4>
 
-          <div class="skill-wrapper SKILL-LISTs-AND-CARD">
+          <div data-aos="slide-left" class="skill-wrapper SKILL-LISTs-AND-CARD">
             <div class="card-container">
               <div class="card">
                 <div id="default" class="default">
@@ -336,7 +353,7 @@
             </div>
           </div>
 
-          <div class="skill__container">
+          <div data-aos="slide-left" class="skill__container">
             <div class="skill__box">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
                 <path
@@ -543,11 +560,10 @@
               React : 75%
             </div>
           </div>
-
         </div>
       </section>
 
-      <section id="s3-projects" class="sec3 PROJECTS-LIST section-er-vai">
+      <section id="s3-projects" data-aos="fade-up" data-aos-delay="150" class="sec3 PROJECTS-LIST section-er-vai">
         <div id="div3" class="animated-div d3">
           <h4 id="EN">
             <span id="project-heading" class="exp animated-underline-proper header__texts">
@@ -827,7 +843,7 @@
 
       </section>
 
-      <section id="s4-contacts" class="sec4 CONTACTS-DETAILS section-er-vai">
+      <section id="s4-contacts" data-aos="slide-left" class="sec4 CONTACTS-DETAILS section-er-vai">
         <div id="div4" class="contacts-2">
           <h4 class="expC">
             <span id="contact-heading" class="animated-underline-proper  header__texts">
@@ -839,7 +855,7 @@
             <div class="fs-contacts ALL-LOGOS">
               <!-- EMAIL ICON -->
               <div class="email_logo">
-                <svg id="e-logo" xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px"
+                <svg id="e-logo" class="lll" xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px"
                   fill="#000000">
                   <path
                     d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280 320-200v-80L480-520 160-720v80l320 200Z" />
@@ -848,7 +864,7 @@
               <!-- GITHUB ICON -->
               <div class="github_logo">
                 <a rel="noopener" href="https://github.com/Subha-Py-c" target="_blank">
-                  <svg id="g-logo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                  <svg id="g-logo" class="lll" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
                     viewBox="0 0 32 32">
                     <path fill-rule="evenodd"
                       d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z">
@@ -859,7 +875,7 @@
               <!-- YOUTUBE ICON -->
               <div class="yt_logo">
                 <a rel="noopener" href="http://www.youtube.com/@sciencetoday0167" target="_blank">
-                  <svg id="y-logo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                  <svg id="y-logo" class="lll" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
                     viewBox="0 0 50 50">
                     <path
                       d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z">
@@ -872,7 +888,7 @@
                 <a rel="noopener"
                   href="https://www.linkedin.com/in/subhajit-gorai-376874283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                   target="_blank" title="Go to https://www.linkedin.com/in/subhajit-gorai-376874283">
-                  <svg id="l-logo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                  <svg id="l-logo" class="lll" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
                     viewBox="0 0 50 50">
                     <path
                       d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z">
@@ -907,6 +923,23 @@
   </div>
   <!-- <script src="js/main.js"></script> -->
   <!-- <script src="js/min.js"></script> -->
+  <script>
+    AOS.init();
+  </script>
+  
+  <!-- <script>
+    AOS.init({
+      offset: 120,
+      delay: 0,
+      duration: 400,
+      easing: 'ease',
+      once: false,
+      mirror: false,
+      anchorPlacement: 'top-bottom',
+    });
+
+  </script> -->
+
   <script type="module" src="js/main.js"></script>
 </body>
 

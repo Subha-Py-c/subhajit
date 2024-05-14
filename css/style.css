@@ -5,7 +5,9 @@ body {
   font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 10px;
+  overflow-x: hidden;
 }
+
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */
 :root {
 
@@ -59,15 +61,20 @@ body {
 
   --rr: 15px;
 }
+
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */
-#viewers{margin-left: var(--margin-left);}
+#viewers {
+  margin-left: var(--margin-left);
+}
+
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */
 
-.header__texts{
+.header__texts {
   font-family: 'Chillax-Bold', sans-serif;
 }
+
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */
-a{
+a {
   color: rgb(152, 14, 88);
   text-decoration: none;
 }
@@ -88,24 +95,22 @@ section {
   height: 100vh;
   z-index: 1;
   background-color: var(--bg3);
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.6s, transform 0.6s;
 }
+
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */
+/* •—•—•—•—•—•—•—•—•—•—•—•—•—•—•—•—•—•—•—•—••—•—•—•—•—•—• */
 /* 
 #s5-thanks {
   border: 1px solid;
 } */
 
-.reveal {
-  opacity: 1;
-  transform: translateY(0);
-}
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */
 
 /* xs */
 @media (max-width: 475px) {
-  :root{
+  :root {
     --hello-mega-font-size: 3.4rem;
     --margin-left: 20px;
     --heading-text-size: 2.2em;
@@ -116,17 +121,19 @@ section {
     --top: 15px;
     --right: 10px;
   }
-  section{
+
+  section {
     opacity: 1;
   }
-  .sec5{
+
+  .sec5 {
     font-size: 0.5em;
   }
 }
 
 /* sm */
 @media (max-width: 640px) {
-  :root{
+  :root {
     --hello-mega-font-size: 3.4rem;
     --margin-left: 20px;
     --heading-text-size: 2.2em;
@@ -137,17 +144,19 @@ section {
     --top: 15px;
     --right: 10px;
   }
-  section{
+
+  section {
     opacity: 1;
   }
-  .sec5{
+
+  .sec5 {
     font-size: 0.5em;
   }
 }
 
 /* md */
 @media (max-width: 768px) {
-  :root{
+  :root {
     --hello-mega-font-size: 3.4rem;
     --margin-left: 20px;
     --heading-text-size: 2.2em;
@@ -158,10 +167,12 @@ section {
     --top: 15px;
     --right: 10px;
   }
-  section{
+
+  section {
     opacity: 1;
   }
-  .sec5{
+
+  .sec5 {
     font-size: 0.5em;
   }
 }
