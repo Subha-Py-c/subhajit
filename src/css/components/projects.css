@@ -1,0 +1,234 @@
+/* ------------------------{d3}-------------------------------------------- */
+
+.d3 {
+  position: relative;
+  margin: 0;
+  padding-top: 90px;
+}
+
+/* ------------------------{exp}-------------------------------------------- */
+
+.exp {
+  padding-top: 60px;
+  margin: 30px;
+  margin-left: var(--margin-left);
+  margin-top: 200px;
+  font-size: var(--heading-text-size);
+  font-weight: var(--heading-weight);
+}
+
+/* ------------------------{p-list}-------------------------------------------- */
+/* for mobiles */
+.p-list {
+  height: 220vh;
+  width: 80vw;
+  margin-top: 20px;
+  padding-left: 40px;
+  font-size: 0.8em;
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  gap: 0.6em;
+}
+.projects{
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.projects img{
+  object-fit: cover;
+}
+
+#s3-projects {
+  margin-top: 0px;
+  /* border: 1px solid; */
+}
+
+img {
+  display: block;
+}
+
+/* ------------------------{projects__gallery}-------------------------------------------- */
+
+.projects__gallery {
+  height: 450px;
+  max-width: calc(100% - 100px);
+  margin-top: 70px;
+  margin-bottom: 0px;
+  margin-left: calc(var(--margin-left) + 20px);
+  margin-right: calc(var(--margin-left) + 20px);
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.projects__gallery:has(.gallery__pannels:hover) .gallery__pannels:not(:hover) img {
+  filter: grayscale(100%);
+}
+
+/* ------------------------{gallery__pannels}-------------------------------------------- */
+
+.gallery__pannels {
+  overflow: hidden;
+  flex: 1;
+  transition: flex 0.35s ease-in-out !important;
+  /* why is it conflicting with AOS ??? */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 45;
+  background-color: var(--bg3);
+}
+
+
+.gallery__pannels img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+  z-index: 3;
+  background-color: var(--bg3);
+}
+
+
+.gallery__pannels:hover {
+  flex: 3.0;
+  box-shadow: 0 0 10px var(--shadow-color),
+    0 0 20px var(--shadow-color),
+    0 0 30px var(--shadow-color),
+    0 0 40px var(--shadow-color);
+  transition: all 0.35s ease-in-out !important;
+
+}
+:root{
+  /* --shadow-color: rgba(129, 35, 207, 0.625); */
+  /* --shadow-color: rgb(0, 42, 93); */
+  --shadow-color: rgb(255, 213, 162);
+}
+/* 
+.gallery__pannels:hover img{
+  transform: scale(1.0);
+  transition: 0.3s;
+  border-radius: 20px;
+} */
+/* 
+.gallery__pannels:hover {
+  flex: 3.0;
+  transition: flex 0.35s ease-in-out !important;
+} */
+
+/* ------------------------{project_data}-------------------------------------------- */
+
+.project_data {
+  position: absolute;
+  color: black;
+  font-size: 1.8rem;
+  font-weight: 600;
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.4s ease-in;
+}
+
+/* ------------------------{xxds}-------------------------------------------- */
+
+.xxds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #000;
+  color: white !important;
+  margin: auto;
+}
+
+#xds {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+/* 
+@keyframes zsh{
+  0%{
+    opacity: 0;
+    left: 50px;
+  }
+  100%{
+    opacity: 1;
+    left: 0px;
+  }
+}
+#i_1{ opacity: 0; animation: zsh 200ms forwards; animation-delay: 0ms;}
+#i_2{ opacity: 0; animation: zsh 200ms forwards; animation-delay: 100ms;}
+#i_3{ opacity: 0; animation: zsh 200ms forwards; animation-delay: 200ms;}
+#i_4{ opacity: 0; animation: zsh 200ms forwards; animation-delay: 300ms;}
+#i_5{ opacity: 0; animation: zsh 200ms forwards; animation-delay: 400ms;}
+#i_6{ opacity: 0; animation: zsh 200ms forwards; animation-delay: 500ms;}
+#i_7{ opacity: 0; animation: zsh 200ms forwards; animation-delay: 600ms;}
+#i_8{ opacity: 0; animation: zsh 200ms forwards; animation-delay: 700ms;} */
+/* ------------------------{gallery__pannels img}-------------------------------------------- */
+
+.gallery__pannels img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  transition: 0.3s;
+  z-index: 3;
+}
+
+/* -------------------------------------------------------------------- */
+
+
+/* xs */
+/* @media (max-width: 475px) {} */
+
+/* sm */
+/* @media (max-width: 640px) {} */
+
+/* md */
+@media (max-width: 768px) {
+  #gallery{
+    display: none;
+  }
+  .p-list{
+    display: flex;
+  }
+  #s3-projects{
+    height: 240vh;
+  }
+  .project_data{
+    opacity: 1;
+    font-size: 1.4em;
+  }
+
+  .xxds{
+    width: 40px;
+    height: 40px;
+  }
+
+  #xds{
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* lg */
+/* @media (max-width: 1024px) {} */
+
+/* xl */
+/* @media (max-width: 1280px) {} */
+
+/* 2xl */
+/* @media (max-width: 1536px) {} */
