@@ -77,4 +77,9 @@ import "../fonts/CabinetGrotesk_Complete/Fonts/WEB/css/cabinet-grotesk.css"
 
 // importing files
 
-// import '../files/demo-cv.pdf'
+import '../assets/demo-cv.pdf';
+
+// document.getElementById('cv-link').addEventListener('click', function(event) {
+//   event.preventDefault();
+//   window.location.href = '../assets/demo-cv.pdf';
+// });

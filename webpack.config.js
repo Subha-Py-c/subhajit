@@ -30,6 +30,10 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
       },
+      {
+        test: /\.pdf$/i,
+        type: 'asset/resource',
+      },
     ],
   },
   plugins: [

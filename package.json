@@ -1,8 +1,8 @@
 {
   "name": "port-folio-latest",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "My portfolio website",
+  "main": "src/js/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open --mode development",
@@ -10,9 +10,9 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["Subhajit", "Gorai", "portfolio", "website", "HTML", "CSS", "JavaScript"],
+  "author": "Subhajit Gorai",
+  "license": "MIT",
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^7.1.1",
