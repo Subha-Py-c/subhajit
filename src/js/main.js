@@ -74,3 +74,7 @@ import '../images/favicon.png';
 
 import '../fonts/Chillax_Complete/Fonts/WEB/css/Chillax.css';
 import "../fonts/CabinetGrotesk_Complete/Fonts/WEB/css/cabinet-grotesk.css"
+
+// importing files
+
+// import '../files/demo-cv.pdf'
