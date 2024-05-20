@@ -185,13 +185,23 @@
   animation: come-in 600ms forwards;
   border-bottom: 1px solid rgb(38, 37, 37);
 }
+/* 
+.li:has(a:hover) a:not(:hover) a{
+  color: rgb(56, 56, 56) !important;
+} */
 
+.li.dimmed a {
+  color: rgb(168, 168, 168) !important;
+}
+.dimmed{color: rgb(168, 168, 168)!important;}
 /* ------------------------{li a}-------------------------------------------- */
 
 .li a {
   color: rgb(247, 237, 218) !important;
 }
-
+.li a:hover{
+  text-decoration: none !important;
+}
 /* ------------------------{id specific animations}-------------------------------------------- */
 
 #l1 {

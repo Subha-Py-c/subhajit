@@ -8,6 +8,7 @@
   --padding-top-contacts: 150px;
 }
 
+#s5-thanks { height: 40vh; font-family: 'MilitaryScribe'; font-size: 1.3em; text-decoration: none !important;}
 /* 
 #s4-contacts {
   border: 1px solid;
@@ -18,7 +19,7 @@
 .expC {
   padding-top: var(--padding-top-contacts);
   /* Adjusted padding-top */
-  margin: 30px 30px 0 var(--margin-left);
+  margin: 0px 30px 0 var(--margin-left);
   font-size: var(--heading-text-size);
   font-weight: var(--heading-weight);
 }

@@ -137,6 +137,10 @@
   width: 335px;
   height: 650px;
   /* right: 100px; */
+  font-family: 'Mondia', sans-serif;
+}
+.skill__container{
+  font-family: 'Mondia', sans-serif;
 }
 
 /* skill-list = s-list */

@@ -1,21 +1,15 @@
 /* ------------------------{hello}-------------------------------------------- */
-/* 
-.animated-div {
-  opacity: 0;
-  animation: fadeIn 0.8s forwards;
+
+:root {
+  --letter-spacing: -0.02em;
 }
-.letter {
-  display: inline-block;
-  margin-right: -0.08em;
-} */
-:root{
-  --letter-spacing: -0.04em;
-}
+
 #hello {
   font-size: var(--hello-mega-font-size);
   font-family: 'CabinetGrotesk-Black';
+  font-family: Dahlia;
   font-weight: 900;
-  margin: 30px;
+  margin: 30px 30px 30px 30px;
   margin-left: calc(var(--margin-left) + var(--letter-spacing));
   letter-spacing: var(--letter-spacing);
   /* animation: slideIn 1.2s ease-out; */
@@ -23,107 +17,158 @@
   transition: transform 0.3s;
 }
 
-/* ------------------------{delayed animations}-------------------------------------------- */
-/* 
-#div1 { animation-delay: 0s; }
-#div2 { animation-delay: 1.2s; }
-#div3 { animation-delay: 1.68s; }
-#i1 { animation-delay: 0s; }
-#i2 { animation-delay: 0.2s; }
-#i3 { animation-delay: 0.4s; }
-#i4 { animation-delay: 0.6s; }
-#i5 { animation-delay: 0.8s; } 
-*/
-
 /* ------------------------{div1}-------------------------------------------- */
 
-#s1 {opacity: 1; /* border: 1px solid; */}
-.div1 { margin-top: 175px; }
-.reg {  z-index: 20;}
+#s1 {
+  opacity: 1;
+  height: 125vh;
+}
+
+/* .div1 { margin-top: 175px; } */
+.reg {
+  z-index: 20;
+}
 
 /* ------------------------{name}-------------------------------------------- */
 
 .name {
+  font-family: MondiaThin;
   margin: 0px 30px 0px var(--margin-left);
   font-weight: 500;
   font-size: var(--introduction-text-size);
 }
 
 .name span {
-  font-family: "Tangerine", cursive;
   font-weight: 300;
-  font-size: var(--introduction-text-size);
-  font-style: normal;
 }
 
 .name span:hover {
   animation: underline 1s forwards;
 }
 
-#div2{
-  color: var(-tc);
+#subhajit {
+  font-family: tangerine;
+  font-size: calc(var(--introduction-text-size) + 0.4em);
+  font-weight: 300;
 }
 
-#subhajit{
-  font-family: tangerine;
-  font-size: calc(var(--introduction-text-size) + 0.7em);
-  font-weight: 300;
+#div1 {
+  /* border: 1px solid; */
+  grid-area: 2/1/4/3;
+  /* background-color: red; */
+}
+
+#div2 {
+  color: var(-tc);
+  /* border: 1px solid; */
+  grid-area: 4/1/8/4;
+}
+#div2 strong{
+  text-decoration: underline;
+}
+#divv3 {
+  border: 1px solid;
+  border-radius: 50%;
+  /* border-radius: 10%; */
+  overflow: hidden;
+  grid-area: 2/3/6/4;
+  /* background-color: rgba(69, 75, 73, 0.29); */
+  background-color: var(--bg3);
+  margin-right: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 0.4;
+  transition: 0.3s;
+  position: absolute;
+  height: calc(237px * 1.75);
+  /* top: 200vh; */
+}
+
+#divv4 {
+  grid-area: 7/1/-1/-1;
+  /* border-top: 1px solid; */
+  /* background-color: var(--bg3); */
+  /* background-color: aqua; */
+}
+
+#divv3 img {
+  display: block;
+  object-fit: cover;
+  /* display: none; */
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  /* mix-blend-mode: soft-light; */
+}
+
+
+#divv3:hover{
+  max-height: calc(237px * 1.86);
+  transition: 0.3s;
+}
+#divv3:hover img{
+  transform: scale(1.15);
+  transition: 0.3s;
 }
 
 /* ------------------------{intro}-------------------------------------------- */
 
 .intro {
   margin: 0px 30px 0px var(--margin-left);
+  font-family: MondiaThin;
   font-weight: 400;
   font-size: var(--introduction-text-size);
+  
+  /* border: 1px solid; */
 }
 
 /* ------------------------{d1-2}-------------------------------------------- */
 
-.d1-2 {
+.d1-2-3 {
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  border-radius: 15px;
   position: relative;
   width: 100%;
   height: 100%;
+  /* border: 1px solid; */
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /* -------------------------------------------------------------------- */
 
-
-/* xs */
-@media (max-width: 475px) {
-  #div2{
-    margin-top: 40px;
-  }
-  #subhajit{
-    font-size: calc(var(--introduction-text-size) + 0.9em);
-  }
-}
-
-/* sm */
-@media (max-width: 640px) {
-  #div2{
-    margin-top: 40px;
-  } 
-  #subhajit{
-    font-size: calc(var(--introduction-text-size) + 0.9em);
-  }
-}
-
-/* md */
 @media (max-width: 768px) {
-  #div2{
+  #div2 {
     margin-top: 40px;
   }
-  #subhajit{
-    font-size: calc(var(--introduction-text-size) + 0.9em);
+
+  #subhajit {
+    font-size: calc(var(--introduction-text-size) + 0.4em);
+  }
+
+  #div2 {
+    color: var(-tc);
+    /* border: 1px solid; */
+    grid-area: 3/1/5/4;
+    z-index: 1;
+  }
+
+  #divv3 {
+    border: 1px solid;
+    border-radius: 45%;
+    overflow: hidden;
+    grid-area: 2/3/3/4;
+    margin-right: 1em;
+    flex: 0.4;
+    height: 160px;
+  }
+  #s1{
+    height: 100vh;
   }
 }
-
-/* lg */
-/* @media (max-width: 1024px) {} */
-
-/* xl */
-/* @media (max-width: 1280px) {} */
-
-/* 2xl */
-/* @media (max-width: 1536px) {} */

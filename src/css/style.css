@@ -28,10 +28,10 @@ body {
   --margin-left: 70px;
 
   /* font-main */
-  --heading-text-size: 3.7em;
+  --heading-text-size: 4em;
   --heading-weight: 550;
   --heading-line-space: -0.05em;
-  --introduction-text-size: 1.3em;
+  --introduction-text-size: 1.5em;
   --paragraph-text-size: 1.15em;
   --hello-mega-font-size: 11.8rem;
 
@@ -72,6 +72,7 @@ body {
 
 .header__texts {
   font-family: 'Chillax-Bold', sans-serif;
+  font-family: 'Dahlia', sans-serif;
 }
 
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */
@@ -85,7 +86,7 @@ a:hover {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  border-bottom: 1px dotted #efefef;
+  /* border-bottom: 1px dotted #efefef; */
 }
 
 a:active {
@@ -98,6 +99,9 @@ section {
   background-color: var(--bg3);
   opacity: 1;
   transition: opacity 0.6s, transform 0.6s;
+  background: url(../images/paper-texture.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */
@@ -135,13 +139,13 @@ section {
 /* sm */
 @media (max-width: 640px) {
   :root {
-    --hello-mega-font-size: 3.4rem;
+    --hello-mega-font-size: 4.0rem;
     --margin-left: 20px;
-    --heading-text-size: 2.2em;
+    --heading-text-size: 2.8em;
     --heading-weight: 550;
     --heading-line-space: -0.03em;
-    --introduction-text-size: 0.85em;
-    --paragraph-text-size: 0.7em;
+    --introduction-text-size: 1.15em;
+    --paragraph-text-size: 1em;
     --top: 15px;
     --right: 10px;
   }
@@ -158,13 +162,13 @@ section {
 /* md */
 @media (max-width: 768px) {
   :root {
-    --hello-mega-font-size: 3.4rem;
+    --hello-mega-font-size: 4.0rem;
     --margin-left: 20px;
-    --heading-text-size: 2.2em;
+    --heading-text-size: 2.8em;
     --heading-weight: 550;
     --heading-line-space: -0.03em;
-    --introduction-text-size: 0.85em;
-    --paragraph-text-size: 0.7em;
+    --introduction-text-size: 1.15em;
+    --paragraph-text-size: 1em;
     --top: 15px;
     --right: 10px;
   }
