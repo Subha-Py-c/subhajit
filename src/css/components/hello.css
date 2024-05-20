@@ -135,7 +135,6 @@
   position: relative;
   width: 100%;
   height: 100%;
-  /* border: 1px solid; */
   display: grid;
   grid-template-rows: repeat(8, 1fr);
   grid-template-columns: repeat(3, 1fr);
@@ -155,8 +154,9 @@
   #div2 {
     color: var(-tc);
     /* border: 1px solid; */
-    grid-area: 3/1/5/4;
+    grid-area: 3/1/-1/4;
     z-index: 1;
+    line-height: 1.5em;
   }
 
   #divv3 {
@@ -169,6 +169,6 @@
     height: 160px;
   }
   #s1{
-    height: 100vh;
+    height: 105vh;
   }
 }

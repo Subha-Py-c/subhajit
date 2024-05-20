@@ -83,7 +83,7 @@
 
 .ball-pointer {
   width: calc(var(--radius) * 2);
-    height: calc(var(--radius) * 2);
+  height: calc(var(--radius) * 2);
   background-color: #000;
   border-radius: 50%;
   position: relative;
@@ -97,6 +97,7 @@
 /* xs */
 @media (max-width: 475px) {
   :root {
+    --institute__data__height: 128px;
     --padding-left-val: 30px;
     --left-val: 25px;
     --inc: 85px;
@@ -107,11 +108,11 @@
     height: 10px;
   }
   #s-last{
-    height: 110vh;
+    height: 120vh;
   }
 
   .acad__institutions {
-    height: 145px;
+    height: 170px;
     padding-left: 30px;
     padding-bottom: 10px;
   }
@@ -120,12 +121,13 @@
 /* sm */
 @media (max-width: 640px) {
   :root {
+    --institute__data__height: 128px;
     --padding-left-val: 30px;
     --left-val: 25px;
     --inc: 85px;
   }
   #s-last{
-    height: 110vh;
+    height: 120vh;
   }
 
   .ball-pointer {
@@ -134,7 +136,7 @@
   }
 
   .acad__institutions {
-    height: 145px;
+    height: 170px;
     padding-left: 30px;
     padding-bottom: 10px;
   }
@@ -149,16 +151,16 @@
     --left-val: 35px;
     --inc: 155px;
     --radius: 5px;
-    --institute__data__height: 90px;
+    --institute__data__height: 110px;
   }
 
   .acad__institutions {
-    height: 145px;
+    height: 175px;
     padding-left: var(--left-dist);
     padding-bottom: 10px;
   }
   #s-last{
-    height: 100vh;
+    height: 120vh;
   }
   .hidden{
     font-size: 0.6em;
@@ -174,16 +176,16 @@
     --left-val: 35px;
     --inc: 155px;
     --radius: 5px;
-    --institute__data__height: 90px;
+    --institute__data__height: 110px;
   }
 
   .acad__institutions {
-    height: 145px;
+    height: 175px;
     padding-left: var(--left-dist);
     padding-bottom: 10px;
   }
   #s-last{
-    height: 110vh;
+    height: 120vh;
   }
   .hidden{
     font-size: 0.6em;
