@@ -3,7 +3,7 @@ import './functions/cursor-functions/hiding-cursor.js';
 import './functions/cursor-functions/cursor-scaling.js';
 
 import './functions/nav-js/nav-appear-and-toggle-svg.js';
-import './functions/nav-js/dim.js';
+// import './functions/nav-js/dim.js';
 
 import './functions/skills-js/skill-card.js';
 

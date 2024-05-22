@@ -70,7 +70,8 @@
 /* ------------------------{close-icon}-------------------------------------------- */
 
 #cl-icon {
-  border-left: 1px solid white;
+  /* border-left: 1px solid white; */
+  border-left: 1px solid rgb(0, 0, 0);
   color: white;
 }
 
@@ -120,7 +121,7 @@
   }
 
   100% {
-    height: 100%;
+    height: 10vh;
   }
 }
 
@@ -145,12 +146,26 @@
   top: 0;
   left: 0;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   display: none;
   transition: all 0.5s ease;
   /* border: 1px solid rgb(0, 0, 0); */
-}
+  animation: shadow 0.6s forwards ease-in;
+  animation-delay: 400ms;
 
+}
+@keyframes shadow {
+  0%{
+    box-shadow: none;
+  }
+  100%{
+    box-shadow:
+   0 0 30px rgba(0, 0, 0, 0.3),
+   0 0 60px rgba(0, 0, 0, 0.3),
+   0 0 120px rgba(0, 0, 0, 0.3),
+   0 0 150px rgba(0, 0, 0, 0.3);
+  }
+}
 /* ------------------------{ul}-------------------------------------------- */
 
 .ul {
@@ -163,7 +178,8 @@
   /* display: flex; */
   /* background-color: rgba(211, 211, 23, 0.324); */
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
+  gap: -1px;
 }
 
 /* ------------------------{li}-------------------------------------------- */
@@ -175,32 +191,45 @@
   padding: 0;
   width: var(--li-width);
   height: 0vh;
+
   background-color: var(--nav-li-color);
-  color: rgb(247, 237, 218) !important;
+  /* color: rgb(247, 237, 218) !important; */
+  color: rgb(122, 117, 107) !important;
+
   display: flex;
   justify-content: center;
   align-items: center;
   /* align-items: flex-start; */
   /* justify-content: flex-start; */
-  animation: come-in 600ms forwards;
-  border-bottom: 1px solid rgb(38, 37, 37);
-}
-/* 
-.li:has(a:hover) a:not(:hover) a{
-  color: rgb(56, 56, 56) !important;
-} */
 
-.li.dimmed a {
-  color: rgb(168, 168, 168) !important;
+  animation: come-in 600ms forwards;
+  border-bottom: 1px solid rgba(38, 37, 37, 0.3);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+
 }
-.dimmed{color: rgb(168, 168, 168)!important;}
+/* Its main */
+.li.dimmed a {  color: rgb(84, 84, 84) !important;}
+
+/* .dimmed{color: rgb(168, 168, 168)!important;} */
+.dimmed{color: rgb(215, 215, 215)!important;}
+
 /* ------------------------{li a}-------------------------------------------- */
 
 .li a {
-  color: rgb(247, 237, 218) !important;
+  /* color: rgb(247, 237, 218) !important; */
+  color: rgb(0, 0, 0) !important;
 }
 .li a:hover{
   text-decoration: none !important;
+}
+
+.sp{  display: block;}
+
+.li:hover .sp{
+  border-bottom: 3px solid black;
+  /* text-decoration: underline 3px black; */
+  transition: 0.3s ease-out;
 }
 /* ------------------------{id specific animations}-------------------------------------------- */
 
@@ -405,6 +434,11 @@
     animation-delay: 0ms;
   }
 
+.li:hover .sp{
+  border-bottom: 1px solid black;
+  /* text-decoration: underline 3px black; */
+  transition: 0.3s ease-out;
+}
 }
 
 /* lg */

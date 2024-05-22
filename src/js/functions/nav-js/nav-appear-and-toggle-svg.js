@@ -9,7 +9,7 @@ const l5 = document.getElementById('l5');
 const sps = document.querySelectorAll('.sp');
 const closeIcon = document.querySelector('.close-icon');
 const navMenu = document.querySelector('.nav-menu');
-
+const uw = document.getElementById('ultimate-wrapper');
 
 svg_nav_menu.addEventListener('click', function() {
   nav.classList.toggle('visible');
@@ -26,6 +26,8 @@ svg_nav_menu.addEventListener('click', function() {
     closeIcon.style.display = 'none';
     navMenu.style.display = 'flex';
   }
+  nav.style.height = '50vh';
+  uw.classList.add('blur-dark');
 });
 
 closeIcon.addEventListener('click', function() {
@@ -34,4 +36,14 @@ closeIcon.addEventListener('click', function() {
   sps.forEach(sp => sp.classList.remove('appear'));
   closeIcon.style.display = 'none';
   navMenu.style.display = 'flex';
+  nav.style.height = '10vh';
+  uw.classList.remove('blur-dark');
 });
+
+cursor = document.querySelector('.cursor');
+nav.addEventListener('mouseover', function(){
+  cursor.style.opacity = 0;
+})
+nav.addEventListener('mouseout', function(){
+  cursor.style.opacity = 1;
+})
