@@ -95,6 +95,7 @@
   background-image: url('../../images/p5.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: center;
   transition: all ease;
 }
 
