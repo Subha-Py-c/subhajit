@@ -15,20 +15,15 @@
 //     });
 //   });
 // });
-
 const liElements = document.querySelectorAll('.li');
-const sp = document.querySelectorAll('.sp')
+const sp = document.querySelectorAll('.sp');
 
-liElements.forEach(li => {
+liElements.forEach((li, index) => {
   li.addEventListener('mouseover', () => {
-    sp.forEach(span =>{
-      span.classList.add('animated-underline-proper');
-    })
+    sp[index].classList.add('active');
   });
 
   li.addEventListener('mouseout', () => {
-    sp.forEach(span=>{
-      span.classList.remove('animated-underline-proper');
-    })
+    sp[index].classList.remove('active');
   });
 });

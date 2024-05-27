@@ -44,6 +44,26 @@
 
 
 /* -------------------------------------------------------------------- */
+.underline {
+  position: relative;
+}
+
+.underline::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.8s ease-in-out;
+}
+
+.underline.active::before {
+  transform: scaleX(1);
+}
 
 /* ------------------------{ANIMATION CLASSES}-------------------------------------------- */
 
@@ -193,6 +213,8 @@
 /* BLUR DARK */
 .blur-dark {
   filter: blur(0px);
+  /* filter: contrast(0.4); */
+  transition: all 0.3s ease-in-out;
 }
 
 /* -------------------------------------------------------------------- */

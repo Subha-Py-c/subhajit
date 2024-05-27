@@ -16,6 +16,7 @@ svg_nav_menu.addEventListener('click', function() {
   ul.classList.toggle('visible');
   [l1, l2, l3, l4, l5].forEach((li, index) => {
     li.classList.toggle('animate-li');
+    // li.classList.toggle('active');
     li.style.animationDelay = `${index * 80}ms`;
   });
   sps.forEach(sp => sp.classList.toggle('appear'));

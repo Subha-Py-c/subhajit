@@ -23,7 +23,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|webp)$/i, // Include .webp in this rule
         type: 'asset/resource',
       },
       {

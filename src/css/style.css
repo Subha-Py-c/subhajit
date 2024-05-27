@@ -15,7 +15,10 @@ body {
   --tc: rgb(0 0 0);
   /* tc: text color */
   --bg33: rgb(215, 202, 179);
-  --bg3: #d7cac3;
+  /* --bg3: #d7cac3; */
+  --bg3: #d2b6a8;
+  /* --bg3: linear-gradient(135deg, #f6d365 0%, #fda085 100%); */
+
   /* --nav-li-color: #141a1d; */
   /* --nav-li-color: #141a1d60; */
   --nav-li-color: #bab6b38a;
@@ -163,24 +166,8 @@ section {
 
 /* md */
 @media (max-width: 768px) {
-  :root {
-    --hello-mega-font-size: 4.0rem;
-    --margin-left: 20px;
-    --heading-text-size: 2.8em;
-    --heading-weight: 550;
-    --heading-line-space: -0.03em;
-    --introduction-text-size: 1.15em;
-    --paragraph-text-size: 1em;
-    --top: 15px;
-    --right: 10px;
-  }
-
   section {
     opacity: 1;
-  }
-
-  .sec5 {
-    font-size: 0.5em;
   }
 }
 

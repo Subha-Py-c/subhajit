@@ -7,7 +7,24 @@
   --card-font-size: 1.3em;
   --s-list-font-size: 2em;
 }
+/* 
 
+@media (max-width: 768px) {
+ #divv3{
+  height: 320px;
+  width: 200px;
+ }
+
+}
+
+@media (max-width: 1024px) {
+  #divv3{
+    width: 220px ;
+    height: 360px;
+  }
+}
+
+*/
 /* ------- SKILLS ------------------------------------------------------ */
 
 .d3 {

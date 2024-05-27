@@ -3,7 +3,9 @@ import './functions/cursor-functions/hiding-cursor.js';
 import './functions/cursor-functions/cursor-scaling.js';
 
 import './functions/nav-js/nav-appear-and-toggle-svg.js';
-// import './functions/nav-js/dim.js';
+import './functions/nav-js/dim.js';
+
+import './functions/hello.js'
 
 import './functions/skills-js/skill-card.js';
 
@@ -13,6 +15,7 @@ import './functions/utils/dark-mode.js';
 import './functions/utils/hidden-classes.js';
 import './functions/utils/emailing.js';
 import  './functions/utils/scroll-related/smooth-scrolling.js'
+import './functions/utils/scroll-related/underline_on_scroll.js'
 
 
 // function isMobileDevice() {
@@ -66,6 +69,10 @@ import '../images/6.jpeg';
 import '../images/7.jpeg';
 import '../images/8.jpeg';
 import '../images/aa1.jpeg';
+import '../images/1.webp';
+import '../images/paper-texture.webp';
+import '../images/p4.png';
+import '../images/p5.png';
 
 // importing favicon
 
