@@ -9,6 +9,14 @@ body {
   scroll-behavior: smooth;
 }
 
+html{
+  overflow-x: hidden;
+}
+
+*::-webkit-scrollbar{
+  display: none;
+}
+
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */
 :root {
 
@@ -23,8 +31,12 @@ body {
   /* --nav-li-color: #141a1d60; */
   --nav-li-color: #bab6b38a;
   /* #37474F */
-  --card-container-color: #546e7a2d;
-  --email-box-color: #546e7a2a;
+  /* --card-container-color: #546e7a2d; */
+  --card-container-color: rgba(220, 192, 178, 1);
+
+
+  /* --email-box-color: #546e7a2a; */
+  --email-box-color: var(--card-container-color);
   --submit-button-color: #37474F;
   --s-btn-text-color: #ffffff;
 
@@ -65,7 +77,7 @@ body {
   --svg-z-index: 9999999;
   --font-size: 1.2rem;
 
-  --rr: 15px;
+  --rr: 30px;
 }
 
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */
@@ -100,13 +112,9 @@ a:active {
 
 section {
   height: 100vh;
-  z-index: 1;
   background-color: var(--bg3);
   opacity: 1;
   transition: opacity 0.6s, transform 0.6s;
-  background: url(../images/paper-texture.webp) no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */

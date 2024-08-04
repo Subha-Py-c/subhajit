@@ -2,18 +2,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const invertButton = document.getElementById('invert-button');
   invertButton.addEventListener('click', toggleDarkMode);
 
-  // Check and apply dark mode preference on page load
   const isDarkMode = localStorage.getItem('darkMode') === 'true';
   applyDarkMode(isDarkMode);
 });
 
-// Define color variables
 const lightModeColor = 'rgb(0, 0, 0)';
 const darkModeColor = 'rgb(242, 28, 121)';
 const rootDarkColor = 'rgba(37, 37, 37, 0.7)';
 const rootLightColor = 'rgb(0,0,0)'
 const d2 = document.getElementById('div2');
-
 
 function applyDarkMode(isDarkMode) {
   const root = document.documentElement;
@@ -66,7 +63,6 @@ function toggleDarkMode() {
   gallery.style.filter = isDarkMode ? 'invert(100%)' : 'invert(0%)';
   hand.forEach(element => element.style.filter = isDarkMode ? 'invert(100%)' : 'invert(0%)');
   
-  // Change font color of strong elements based on dark mode state
   [...document.getElementsByTagName('strong')].forEach(el => {
     el.style.color = isDarkMode ? darkModeColor : lightModeColor;
     // el.style.textDecoration = isDarkMode ? 'none' : 'underline';

@@ -271,3 +271,318 @@
 
 /* 2xl */
 /* @media (max-width: 1536px) {} */
+
+
+/* flex-positions */
+.flexed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+/* text-align */
+.text-center {
+  text-align: center;
+}
+
+.f-gap-1 {
+  gap: calc(0.5rem);
+}
+
+.f-gap-2 {
+  gap: calc(1rem);
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+.block {
+  display: block;
+}
+
+/* centering */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cen {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* grid */
+.grid {
+  display: grid;
+}
+
+.grid-col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* padding */
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.p-top-1 {
+  padding-top: 1rem;
+}
+
+.p-top-2 {
+  padding-top: 2rem;
+}
+
+.p-top-3 {
+  padding-top: 3rem;
+}
+
+.p-top-4 {
+  padding-top: 4rem;
+}
+
+/* margin */
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+/* border */
+/* .border{border: 1px solid var(--border-color);} */
+.border {
+  border: 1px solid;
+}
+
+/* border-radius */
+.rounded {
+  border-radius: 0.5rem;
+}
+
+/* text-decoration */
+.dotted {
+  text-decoration: dotted;
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* box-shadows */
+.light-shadow {
+  box-shadow: 0 0 10px var(--shadow-color-light);
+}
+
+.dark-shadow {
+  box-shadow: 0 0 10px var(--shadow-color-dark);
+}
+
+/* text shadows */
+.light-text-shadow {
+  text-shadow: 0 0 10px var(--shadow-color-light);
+}
+
+.dark-text-shadow {
+  text-shadow: 0 0 10px var(--shadow-color-dark);
+}
+
+/* a tags */
+a {
+  text-decoration: none;
+}
+
+/* backgrounds */
+.bg-set {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*  div positions  */
+.full {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.open {
+  display: block;
+}
+
+.visible {
+  display: block;
+}
+
+/* buttons */
+.btn {
+  width: calc(90px);
+  height: calc(40px);
+  border: calc(3px) solid var(--bg2);
+  outline: none;
+  color: rgb(0, 0, 0);
+  background-color: var(--bg1);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: calc(30px);
+  font-size: calc(1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  /* transform: translateY(-2px);
+box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),
+            0 6px 6px 0 rgba(0,0,0,0.2);
+transition: all 0.3s; */
+  background-color: var(--bg2);
+  color: white;
+  transition: all 0.3s;
+}
+
+/* input boxes */
+input {
+  width: calc(200px);
+  height: calc(40px);
+  border: calc(2px) solid black;
+  outline: none;
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: calc(30px);
+  font-size: calc(1rem);
+  display: flex;
+  padding-left: calc(20px);
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.411);
+}
+
+.f-input {
+  /* set all values to system defaults */
+  border: none;
+  width: 250px;
+  /* color: ; */
+  display: block;
+  position: relative;
+  top: 9px !important;
+}
+
+label {
+  font-family: MondiaThin, "Courier New", Courier, monospace;
+  font-size: calc(1.5rem);
+}
+
+/* fonts */
+
+.dahlia {
+  font-family: Dahlia, "Courier New", Courier, monospace;
+}
+
+.mondia {
+  font-family: Mondia, "Courier New", Courier, monospace;
+}
+
+.scribe {
+  font-family: MilitaryScribe, "Courier New", Courier, monospace;
+}
+
+.mondiaThin {
+  font-family: MondiaThin, "Courier New", Courier, monospace;
+}
+
+/* glass */
+.glass {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: rgba(255, 255, 255, 0.247);
+  border: 2px solid rgba(255, 255, 255, 0.864);
+}
+
+.dark-glass {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.117);
+  border: 2px solid rgba(0, 0, 0, 0.864);
+}

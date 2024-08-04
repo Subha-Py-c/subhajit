@@ -13,22 +13,20 @@
 
 /* ------------------------{Tangerine Fonts}-------------------------------------------- */
 
-.tangerine-regular {
+@font-face {
   font-family: "Tangerine", cursive;
+  src: url("../../fonts/Tangerine/Tangerine-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
-.tangerine-bold {
-  font-family: "Tangerine", cursive;
+@font-face {
+  font-family: "Tangerine-Bold", cursive;
+  src: url("../../fonts/Tangerine/tangerine.woff2") format("woff2");
+  font-display: swap;
   font-weight: 700;
   font-style: normal;
-}
-
-/* ------------------------{HR Style}-------------------------------------------- */
-
-hr {
-  height: 1px;
 }
 
 /* -------------------------------------------------------------------- */
@@ -38,7 +36,7 @@ hr {
   font-family: Dahlia;
   font-style: normal;
   font-weight: 400;
-  src: url(../../fonts/dahlia.woff2) format("woff2")
+  src: url("../../fonts/dahlia.woff2") format("woff2")
 }
 
 @font-face {
@@ -46,7 +44,7 @@ hr {
   font-family: Mondia;
   font-style: normal;
   font-weight: 400;
-  src: url(../../fonts/mondia.woff2) format("woff2")
+  src: url("../../fonts/mondia.woff2") format("woff2")
 }
 
 @font-face {
@@ -54,7 +52,7 @@ hr {
   font-family: MondiaThin;
   font-style: normal;
   font-weight: 400;
-  src: url(../../fonts/mondia-thin.woff2) format("woff2")
+  src: url("../../fonts/mondia-thin.woff2") format("woff2")
 }
 
 @font-face {
@@ -62,6 +60,13 @@ hr {
   font-family: MilitaryScribe;
   font-style: normal;
   font-weight: 400;
-  src: url(../../fonts/scribe.woff2) format("woff2")
+  src: url('../../fonts/scribe.woff2') format("woff2")
 }
 
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url('../../fonts/JetBrainsMono-Regular.woff2') format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}

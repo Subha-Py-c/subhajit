@@ -69,27 +69,12 @@
   display: flex;
 }
 
-/* ------------------------{email-box}-------------------------------------------- */
-
-.email-box {
-  position: relative;
-  margin-left: 200px;
-  top: 40px;
-  background-color: var(--email-box-color);
-  /* Assuming --email-box-color is defined */
-  width: 600px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: var(--rr);
-}
-
 /* ------------------------{CV}-------------------------------------------- */
 .download-cv{
   border: 5px solid;
   font-size: 25px;
-  font-family: 'CabinetGrotesk-Bold';
+  font-family: 'JetBrains Mono', sans-serif;
+  font-style: italic;
   position: relative;
   left: -230px;
   top: 240px;
@@ -115,20 +100,66 @@
 .download-cv a:hover{
   border-bottom: none;
 }
+
+/* ------------------------{email-box}-------------------------------------------- */
+
+.email-box {
+  position: relative;
+  margin-left: 200px;
+  top: 40px;
+  background-color: var(--email-box-color);
+  /* Assuming --email-box-color is defined */
+  width: 600px;
+  height: 400px;
+  display: flex;
+  border-radius: var(--rr);
+}
+
 /* ------------------------{box}-------------------------------------------- */
 
 .box {
   position: relative;
   width: 570px;
   height: 370px;
-  border: 2px dotted black;
+  border: 0px dotted black;
   border-radius: var(--rr);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 30px;
+  padding-top: 70px;
+
   overflow: hidden;
   z-index: 999999;
+
+  & input{
+    margin-left: 30px;
+    width: 350px;
+    background-color: rgba(250, 235, 215, 0.565) !important;
+    border-radius: 20px !important;
+    border: 1px solid black !important;
+  }
+
+  & textarea{
+    margin-left: 30px;
+    width: 450px;
+    height: 140px;
+    border-radius: 25px;
+    display: block;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: rgba(250, 235, 215, 0.565);
+  }
+
+  & button{
+    background-color: black;
+    color: #fff;
+    width: 150px;
+    margin-left: calc(50% - 75px);
+  }
+}
+
+.email-btn:hover{
+  background-color: rgb(220,192,178) !important;
+  color: black !important;
 }
 
 .box img {
@@ -141,7 +172,7 @@
 }
 
 /* ------------------------{c-text}-------------------------------------------- */
-
+/* 
 #c-text {
   position: absolute;
   z-index: 9899;
@@ -156,8 +187,8 @@
 
 .box:hover img {
   transform: scale(1.2);
-}
-
+} 
+*/
 /* ------------------------{hide-this-thing}-------------------------------------------- */
 
 .hide-this-thing {
