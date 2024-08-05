@@ -25,6 +25,10 @@
   border-radius: 15px;
 }
 
+main{
+  border-radius: 15px;
+}
+
 /* .div1 { margin-top: 175px; } */
 .reg {
   z-index: 20;
@@ -35,12 +39,12 @@
 .d1-2-3 {
   border: 1px solid;
   border-radius: 15px;
-  width: calc(100% - 5px);
+  width: calc(100% - 2px);
   height: 100%;
   display: grid;
   grid-template-rows: repeat(8, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  background: url(../../images/paper-texture.webp) no-repeat;
+  /* background: url(../../images/paper-texture.webp) no-repeat; */
   background-size: cover;
   /* background-color: rgb(184, 147, 128); */
   background-color: rgb(220, 192, 178);
@@ -49,7 +53,9 @@
   z-index: 74;
 }
 
-
+.ultimate-wrapper {
+  border-radius: 15px;
+}
 /* ------------------------{name}-------------------------------------------- */
 
 .name {
@@ -88,12 +94,13 @@
 
 #div1 {
   grid-area: 2/1/4/3;
+  border-radius: 15px 15px 0 0;
 }
 
 #div2 {
   position: relative;
   color: var(--tc);
-  color: rgb(2, 2, 2) !important;
+  color: rgb(22, 22, 22) !important;
   grid-area: 4/1/8/4;
 }
 
@@ -106,9 +113,10 @@
   /* border: 1px solid; */
   border-radius: 30px;
 
-  margin-right: 7rem;
+  margin-right: 7.5rem;
   margin-bottom: 0rem;
   margin-left: 2rem;
+  margin-top: 4rem;
 
   transition: all ease;
   transform-style: preserve-3d;
@@ -139,10 +147,39 @@ body.invert #divv3 {
 
 #divv4 {
   grid-area: 7/1/-1/-1;
+  border-radius: 0 0 15px 15px;
+}
+
+body{
+  border-radius: 15px;
 }
 
 /* -------------------------------------------------------------------- */
-@media (max-width: 640px) {
+
+@media (width > 1604px) {
+  #divv3{
+    grid-area: 2/3/4/4;
+    margin-right: 8rem;
+    /* margin-left: 1rem; */
+    /* margin-top: 1.5rem; */
+    border-radius: 60px;
+  }
+  .img_container{
+    border-radius: 90px;
+  }
+}
+
+@media (width > 767px) and (width < 1025px){
+  #divv3{
+    grid-area: 2/3/4/4;
+    margin-right: 3rem;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+  }
+}
+
+
+@media (max-width: 767px) {
   #div2 {
     margin-top: 40px;
   }
@@ -168,6 +205,7 @@ body.invert #divv3 {
     /* flex: 0.4; */
     height: 160px;
     width: 100px;
+    margin-top: 0rem;
   }
   #divv3:hover .img_container{
     border-radius: 20px;
@@ -180,10 +218,4 @@ body.invert #divv3 {
     height: 105vh;
   }
 }
-/* 
-@media (width:768px) {
- #divv3{
-  height: 320px;
-  width: 200px;
- }
-} */
+

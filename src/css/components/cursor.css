@@ -1,6 +1,4 @@
 
-
-
 /* cursor */
 .cursor {
   z-index: 77;
@@ -16,8 +14,14 @@
 }
 
 
-/* xs */
-@media (max-width: 475px) {
+/* md */
+@media (width > 767px) and (width < 1025px){
+  .cursor{
+    display: none;
+  }  
+}
+
+@media (max-width: 767px) {
   .cursor{
     display: none;
   }
@@ -30,8 +34,8 @@
   }
 }
 
-/* md */
-@media (max-width: 768px) {
+/* xs */
+@media (max-width: 475px) {
   .cursor{
     display: none;
   }

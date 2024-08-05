@@ -10,10 +10,14 @@
 
 /* ------- SKILLS ------------------------------------------------------ */
 
+
+#s2-skills{
+  height: 103vh;
+}
+
 .d3 {
   position: relative;
   margin: 0;
-  /* border: 8px solid red; */
   padding-top: 90px;
 }
 
@@ -28,11 +32,20 @@
   margin-top: 10px;
   display: flex;
   height: 12px;
-  background-color: rgba(255, 140, 0, 0.409);
+  background-color: rgb(210,182,168);
   width: 90%;
   border-radius: 6px;
   justify-content: flex-start !important;
 }
+
+mark{
+  background-color: rgb(210,182,168);
+  font-size: larger;
+  box-sizing: content-box;
+  padding: 10px;
+  border-radius: 15px;
+}
+/* #ff8c007d */
 
 .growth{
   display: flex;
@@ -40,7 +53,7 @@
   height: 12px;
   width: 0%;
   border-radius: 6px;
-  background-color: darkorange;
+  background-color: rgb(0,172,148);
   transition: all 0.5s ease-in-out;
 }
 
@@ -135,13 +148,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-
   font-size: var(--card-font-size);
 }
 
 /* the svg class */
-
 .material-symbols {
   width: 82px;
   height: 82px;
@@ -160,6 +170,7 @@
   height: 90px;
   display: block;
   border-radius: 50%;
+  margin-left: calc(50% - 45px);
 }
 
 .web-dev,
@@ -248,58 +259,57 @@
 
 
 
-#s2-skills{
-  height: 125vh;
+/* ------------------------{MEDIA QUERY}-------------------------------------------- */
+
+
+/* md */
+@media (width > 767px) and (width < 1025px) {
+  #s2-skills{
+    height: 100vh;
+  }
+  :root {
+    --card-container-width: 150px;
+    --card-container-height: 350px;
+    --margin-dist: 150px;
+    --card-font-size: 0.8em;
+    --s-list-font-size: 1.2em;
+  }
+
+  .skill-wrapper{
+    display: none;
+  }
+
+  .skill__container {
+    display: grid;
+  }
 }
 
-/* ------------------------{MEDIA QUERY}-------------------------------------------- */
+
+/* sm */
+@media (max-width: 767px) {
+  #s2-skills{
+    height: 130vh;
+  }
+  :root {
+    --card-container-width: 150px;
+    --card-container-height: 350px;
+    --margin-dist: 150px;
+    --card-font-size: 0.8em;
+    --s-list-font-size: 1.2em;
+  }
+
+  .skill-wrapper{
+    display: none;
+  }
+
+  .skill__container {
+    display: grid;
+  }
+}
+
 
 /* xs */
 @media (max-width: 475px) {
-  #s2-skills{
-    height: 130vh;
-  }
-  :root {
-    --card-container-width: 150px;
-    --card-container-height: 350px;
-    --margin-dist: 150px;
-    --card-font-size: 0.8em;
-    --s-list-font-size: 1.2em;
-  }
-
-  .skill-wrapper{
-    display: none;
-  }
-
-  .skill__container {
-    display: grid;
-  }
-}
-
-/* sm */
-@media (max-width: 640px) {
-  #s2-skills{
-    height: 130vh;
-  }
-  :root {
-    --card-container-width: 150px;
-    --card-container-height: 350px;
-    --margin-dist: 150px;
-    --card-font-size: 0.8em;
-    --s-list-font-size: 1.2em;
-  }
-
-  .skill-wrapper{
-    display: none;
-  }
-
-  .skill__container {
-    display: grid;
-  }
-}
-
-/* md */
-@media (max-width: 768px) {
   #s2-skills{
     height: 130vh;
   }

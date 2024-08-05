@@ -297,9 +297,10 @@ img {
 
 
 /* -------------------------------------------------------------------- */
-
-
-@media (width > 650px) and (width < 900px) {
+@media (width > 650px) and (width < 1025px) {
+  #s3-projects{
+    height: 74vh;
+  }
   .gcontent {
     & .title        { font-size: 1rem; }
     & .description  { font-size: 0.7rem; }
@@ -311,8 +312,12 @@ img {
 
     &:nth-child(3) { left: 50%; }
     &:nth-child(4) { left: calc(50% + 170px); }
-    &:nth-child(5) { left: calc(50% + 340px); }
+    &:nth-child(5) { left: calc(50% + 340px); opacity: 0;}
     &:nth-child(6) { left: calc(50% + 510px); opacity: 0; }
+  }
+
+  .projects__gallery{
+    margin: 70px calc(var(--margin-left) + 20px) 0px calc(var(--margin-left) - 30px);
   }
 }
 

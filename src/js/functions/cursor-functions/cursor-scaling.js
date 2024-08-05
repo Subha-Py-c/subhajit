@@ -3,12 +3,12 @@ const elements = {
   hello: document.getElementById('hello'),
   h: document.querySelector('.letter'),
   skill: document.getElementById('skill'),
-  pro: document.getElementById('project-heading'),
-  con: document.getElementById('contact-heading'),
   cardContainer: document.querySelector('.card-container'),
   hand: document.querySelectorAll('.ta-ta'),
   gallery: document.getElementById('gallery'),
-  acd: document.getElementById('academic__header'),
+  pro: document.getElementById('project-heading'),
+  con: document.getElementById('contact-heading'),
+  acd: document.getElementById('academic__header')
 };
 
 const cursor = document.querySelector('.cursor'); 
@@ -24,21 +24,21 @@ const toggleInvertFilter = (element) => {
 ['gallery', 'hello', 'cardContainer', 'invertButton', 'skill', 'pro', 'con', 'acd'].forEach((id) => {
   const element = elements[id];
   if (element) {
-    element.addEventListener('mouseover', () => scaleTransform(cursor, 2.5));
+    element.addEventListener('mouseover', () => scaleTransform(cursor, 3.5));
     element.addEventListener('mouseout', () => scaleTransform(cursor, 1));
   }
 });
 
 elements.hand.forEach((element) => {
-  element.addEventListener('mouseover', () => scaleTransform(cursor, 1.2));
+  element.addEventListener('mouseover', () => scaleTransform(cursor, 1.25));
   element.addEventListener('mouseout', () => scaleTransform(cursor, 1));
 });
 
 elements.invertButton.addEventListener('mouseover', () => {
-  scaleTransform(cursor, 2.4);
-  toggleInvertFilter(elements.invertButton);
+  scaleTransform(cursor, 1); //2.4
+  // toggleInvertFilter(elements.invertButton);
 });
 elements.invertButton.addEventListener('mouseout', () => {
   scaleTransform(cursor, 1);
-  toggleInvertFilter(elements.invertButton);
+  // toggleInvertFilter(elements.invertButton);
 });

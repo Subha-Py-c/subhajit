@@ -1,8 +1,4 @@
 :root {
-  /* --top-val-b1: calc(212px + 123vh - 123vh);
-  --inc: 175px;
-  --left-val: calc(160px + 10px - 10px); */
-
   --padding-left-val: 170px;
   --left-dist: 60px;
   --radius: 10px;
@@ -41,8 +37,6 @@
   /* border: 2px solid #a92d2d; */
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
   gap: 0em;
 
   margin-top: 20px;
@@ -62,7 +56,6 @@
 .acad__institutions {
   border-left: 1px solid #000;
   height: 145px;
-  /* padding: 15px; */
   padding-left: var(--left-dist);
   padding-bottom: 30px;
 }
@@ -95,26 +88,54 @@
  /* --------------------------{media queries}-------------------------------------------- */
 
 /* xs */
-@media (max-width: 475px) {
+
+/* lg */
+@media (width > 767px) and (width < 1025px) {
   :root {
-    --institute__data__height: 128px;
+    --top-val-b1: 146vh;
     --padding-left-val: 30px;
-    --left-val: 25px;
-    --inc: 85px;
+    --left-dist: 30px;
+    --left-val: 35px;
+    --inc: 155px;
+    --radius: 5px;
+    --institute__data__height: 110px;
   }
 
-  .ball-pointer {
-    width: 10px;
-    height: 10px;
+  .acad__institutions {
+    height: 175px;
+    padding-left: var(--left-dist);
+    padding-bottom: 10px;
+  }
+  #s-last{
+    height: 95vh;
+  }
+  .hidden{
+    font-size: 0.6em;
+  }
+}
+
+/* md */
+@media (max-width: 767px) {
+  :root {
+    --top-val-b1: 146vh;
+    --padding-left-val: 30px;
+    --left-dist: 30px;
+    --left-val: 35px;
+    --inc: 155px;
+    --radius: 5px;
+    --institute__data__height: 110px;
+  }
+
+  .acad__institutions {
+    height: 175px;
+    padding-left: var(--left-dist);
+    padding-bottom: 10px;
   }
   #s-last{
     height: 120vh;
   }
-
-  .acad__institutions {
-    height: 170px;
-    padding-left: 30px;
-    padding-bottom: 10px;
+  .hidden{
+    font-size: 0.6em;
   }
 }
 
@@ -142,53 +163,27 @@
   }
 }
 
-/* md */
-@media (max-width: 768px) {
+
+@media (max-width: 475px) {
   :root {
-    --top-val-b1: 146vh;
+    --institute__data__height: 128px;
     --padding-left-val: 30px;
-    --left-dist: 30px;
-    --left-val: 35px;
-    --inc: 155px;
-    --radius: 5px;
-    --institute__data__height: 110px;
+    --left-val: 25px;
+    --inc: 85px;
   }
 
-  .acad__institutions {
-    height: 175px;
-    padding-left: var(--left-dist);
-    padding-bottom: 10px;
+  .ball-pointer {
+    width: 10px;
+    height: 10px;
   }
   #s-last{
     height: 120vh;
   }
-  .hidden{
-    font-size: 0.6em;
-  }
-}
-
-/* lg */
-@media (max-width: 1024px) {
-  :root {
-    --top-val-b1: 146vh;
-    --padding-left-val: 30px;
-    --left-dist: 30px;
-    --left-val: 35px;
-    --inc: 155px;
-    --radius: 5px;
-    --institute__data__height: 110px;
-  }
 
   .acad__institutions {
-    height: 175px;
-    padding-left: var(--left-dist);
+    height: 170px;
+    padding-left: 30px;
     padding-bottom: 10px;
-  }
-  #s-last{
-    height: 120vh;
-  }
-  .hidden{
-    font-size: 0.6em;
   }
 }
 
