@@ -24,13 +24,13 @@ const toggleInvertFilter = (element) => {
 ['gallery', 'hello', 'cardContainer', 'invertButton', 'skill', 'pro', 'con', 'acd'].forEach((id) => {
   const element = elements[id];
   if (element) {
-    element.addEventListener('mouseover', () => scaleTransform(cursor, 3.5));
+    element.addEventListener('mouseover', () => scaleTransform(cursor, 7));
     element.addEventListener('mouseout', () => scaleTransform(cursor, 1));
   }
 });
 
 elements.hand.forEach((element) => {
-  element.addEventListener('mouseover', () => scaleTransform(cursor, 1.25));
+  element.addEventListener('mouseover', () => scaleTransform(cursor, 2.5));
   element.addEventListener('mouseout', () => scaleTransform(cursor, 1));
 });
 

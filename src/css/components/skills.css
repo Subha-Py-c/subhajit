@@ -102,7 +102,6 @@ mark{
 #skill-list {
   /* border: 1px solid; */
   width: 435px;
-  height: 650px;
   height: 60vh;
 
   padding-top: 0;
@@ -117,6 +116,8 @@ mark{
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+
+  position: relative;
 }
 
 .skill__container{
@@ -183,13 +184,6 @@ mark{
   display: none;
 }
 
-.first-x {
-  margin-top: 60px;
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-bottom: 0px;
-}
-
 /* INVERSE */
 .inverse2 {
   z-index: 80;
@@ -200,15 +194,57 @@ mark{
   height: 60px;
   position: relative;
   overflow: hidden;
-  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
   transition: 0.3s;
-  /* text-align: end; */
-  border-right: 1px solid;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
   animation: padd 400ms forwards;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  /* border-radius: 15px 0 0 15px; */
+  width: 350px;
+  border-right: 2px solid rgba(0, 0, 0, 1);
+  /* border: 1px solid rgb(0, 0, 0); */
+  background-color: rgba(220, 192, 178, 0.5);
 }
+
+html.invert .inverse2,
+body.invert .inverse2 {
+  border-right: 3px solid rgba(200, 200, 200, 1);
+  /* border: 1px solid rgb(0, 0, 0); */
+  background-color: rgba(200, 200, 200, 0.3);
+}
+
+.first-x {
+  margin-right: 60px;
+  margin-bottom: 0px;
+  border-radius: 15px 0px 0 0px;
+}
+
+.lst{
+  border-radius: 0px 0 0px 15px;
+}
+
+#skill-list::before{
+  content: '';
+  position: absolute;
+  top: 35px;
+  left: 419px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+#skill-list::after{
+  content: '';
+  position: absolute;
+  top: calc(60vh - 45px);
+  left: 419px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+/* width: 435px; height60vh */
 
 @keyframes padd {
   0% {
@@ -238,23 +274,11 @@ mark{
   transition-duration: 0.3s;
 }
 
-.first,
-.middle,
-.last {
-  margin-top: 60px;
+.middle{
+  margin-top: 0px;
+  margin-bottom: 0;
   margin-left: 60px;
   margin-right: 60px;
-  font-style: normal;
-}
-
-.middle {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.last {
-  margin-top: 0px;
-  margin-bottom: 60px;
 }
 
 

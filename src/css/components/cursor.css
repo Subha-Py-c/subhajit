@@ -3,14 +3,14 @@
 .cursor {
   z-index: 77;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: #fffcef;
   pointer-events: none;
   mix-blend-mode: difference;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 0.3s;
+  transition: transform 0.1s;
 }
 
 

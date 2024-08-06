@@ -16,7 +16,7 @@ import './functions/project-js/project.js';
 import './functions/utils/dark-mode.js';
 import './functions/utils/hidden-classes.js';
 import './functions/utils/emailing.js';
-import  './functions/utils/scroll-related/smooth-scrolling.js'
+import './functions/utils/scroll-related/smooth-scrolling.js'
 import './functions/utils/scroll-related/underline_on_scroll.js'
 
 
@@ -36,38 +36,26 @@ import '../css/components/academics.css';
 import '../css/utils.css';
 
 
-
-// importing images "still work if i do not do this"
-import '../images/1.jpeg';
-// import '../images/2.jpeg';
-import '../images/3.jpeg';
-// import '../images/4.jpeg';
-import '../images/5.jpeg';
-import '../images/6.jpeg';
-// import '../images/7.jpeg';
-// import '../images/8.jpeg';
-// import '../images/aa1.jpeg';
-import '../images/1.webp';
-import '../images/paper-texture.webp';
-import '../images/p4.png';
-import '../images/p5.png';
-// import '../images/p1.png';
-
-
-
 // importing favicon
 import '../images/favicon.png';
 
+
+// importing images "still work if i do not do this"
+import '../images/p4.png';
+import '../images/dark_paper.svg';
+import '../images/crax.svg';
+import '../images/canion.svg';
+import '../images/dark_balls.svg';
+import '../images/6.jpeg';
+
+
+// importing files
+import '../assets/demo-cv.pdf';
 
 
 // importing fonts
 // import '../fonts/Chillax_Complete/Fonts/WEB/css/Chillax.css';
 // import "../fonts/CabinetGrotesk_Complete/Fonts/WEB/css/cabinet-grotesk.css"
-
-
-
-// importing files
-import '../assets/demo-cv.pdf';
 
 
 

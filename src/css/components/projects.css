@@ -136,6 +136,7 @@ img {
   /* box-shadow: 0 10px 20px rgba(0,0,0,0.3) inset; */
   box-shadow: 0 10px 20px rgba(255,255,255,0.3) inset;
   transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
+  transition: all 0.75s !important;
 
   &:nth-child(1), &:nth-child(2) {
     left: 5px;
@@ -280,7 +281,7 @@ img {
 /* relaxing melody 3.jpeg */
 #p_1{background-image: url('../../images/dark_paper.svg');}
 
-/* encrypt ease */
+/* encrypt ease 2.jpeg*/
 /* #p_2{background-image: url('../../images/2.jpeg');} */
 
 /* ad free news   1.jpeg */
