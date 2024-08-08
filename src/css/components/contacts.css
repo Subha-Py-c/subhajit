@@ -104,7 +104,7 @@
 
 .email-box {
   position: relative;
-  margin-left: 200px;
+  margin-left: 100px;
   top: 40px;
   background-color: var(--email-box-color);
   /* Assuming --email-box-color is defined */
