@@ -40,7 +40,7 @@ import '../css/utils.css';
 import '../images/favicon.png';
 
 // importing robots.txt
-// import '../robots.txt';
+import '../robots.txt';
 
 
 // importing images "still work if i do not do this"
