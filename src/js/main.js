@@ -39,6 +39,9 @@ import '../css/utils.css';
 // importing favicon
 import '../images/favicon.png';
 
+// importing robots.txt
+// import '../robots.txt';
+
 
 // importing images "still work if i do not do this"
 import '../images/p4.png';
