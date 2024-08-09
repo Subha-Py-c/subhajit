@@ -1,5 +1,4 @@
-Subhajit's Portfolio Website
-<br>
+<h1>Subhajit's Portfolio Website</h1>
 Welcome to my personal portfolio website, where I showcase my skills, projects, and experiences as an Information Technology Student.
 
 Table of Contents
