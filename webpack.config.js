@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/js/main.js',
@@ -8,7 +9,7 @@ module.exports = {
     filename: 'bundle.[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
   },
-  mode: 'development', // Change to 'production' for deployment
+  mode: 'production', // Change to 'production' for deployment / development
   module: {
     rules: [
       {
@@ -34,12 +35,24 @@ module.exports = {
         test: /\.pdf$/i,
         type: 'asset/resource',
       },
+      {
+        test: /\.txt$/i,  // Exclude .txt files from being parsed as JS modules
+        type: 'asset/resource',
+        generator: {
+          filename: '[name][ext]', // Keep the original name and extension
+        },
+      },
     ],
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html',
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'src/robots.txt', to: 'robots.txt' },
+      ],
     }),
   ],
 };

@@ -49,6 +49,20 @@
         ]
       }
     </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            "name": "IIEST Shibpur",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Shibpur",
+              "addressRegion": "West Bengal",
+              "postalCode": "711103",
+              "addressCountry": "IN"
+            }
+          }
+    </script>
 
     <meta name="robots" content="index, follow">
     <meta name="author" content="Subhajit Gorai">
@@ -201,7 +215,8 @@
     <main role="main">
         <div class="icon-svg">
         </div>
-        
+
+        <!-- S1 -->
         <section id="s1" class="sec1">
             <div id="d1-2-3" class="d1-2-3">
                 <div id="div1" class="animated-div-xx div1 tilt" data-tilt>
@@ -213,13 +228,13 @@
                         <span id="i5" class="letter">o</span>
                     </div>
                 </div>
-                <div id="div2" data-aos="zoom-in" data-aos-delay="800" class="animated-div-xx  NAME-&-INTRO">
+                <div itemscope itemtype="http://schema.org/Person" id="div2" data-aos="zoom-in" data-aos-delay="800" class="animated-div-xx  NAME-&-INTRO">
                     <!-- <h2 class="name">Hey there! <span class="ta-ta">👋</span></h2> -->
-                    <h3 class="intro">
-                        Myself <span id="subhajit">Subhajit Gorai.</span>
+                    <h3 itemprop="description" class="intro">
+                        Myself <span itemprop="name" id="subhajit">Subhajit Gorai.</span>
                         <br>Currently I am pursuing B.Tech at Indian Institute of Engineering Science and Technology 
                         <br>(IIEST), Shibpur, in department of Information Technology. I am passionate about 
-                        <br><strong>WEB DEVELOPMENT</strong> and <strong>MACHINE LEARNING.</strong>
+                        <br><strong itemprop="jobTitle">WEB DEVELOPMENT</strong> and <strong itemprop="jobTitle">MACHINE LEARNING.</strong>
                         <br><br>
                         Coding has become more than just a skill for me—it's a passion. My journey began with a 
                         fascination for python, and since then, I've been on an exhilarating ride through the realms of programming.
@@ -229,28 +244,29 @@
                     </h3>
                 </div>
 
-                <div class="divv3 ta-ta tilt bg-set flexed" id="divv3" data-tilt>
-                    <div class="img_container full flexed"></div>
-                    <!-- <img src="./images/p5.png" alt="" srcset=""> -->
+                <div itemscope itemtype="http://schema.org/Person" class="divv3 ta-ta tilt bg-set flexed" id="divv3" data-tilt>
+                    <div itemprop="image" class="img_container full flexed"></div>
                 </div>
+
                 <div id="divv4"></div>
             </div>
         </section>
-        
+
+        <!-- ACADEMICS -->
         <!-- to do : blur -->
         <section id="s-last" class="sec-L">
-            <div class="academic__container">
+            <div itemscope itemtype="http://schema.org/EducationalOccupationalCredential" class="academic__container">
                 <div class="acad__header header__texts">
-                    <span id="academic__header" class="underline headerSpan">
+                    <span itemprop="" id="academic__header" class="underline headerSpan">
                         Academics
                     </span>
                 </div>
                 <div class="acad__list">
                     <div class="acad__institutions">
                         <div data-aos="slide-right" data-aos-duration="600" class="ins__container">
-                            <div class="institute__data">
-                                <strong class="inst">Pimary Studies</strong><br>
-                                <strong>Institution: </strong>Narendranath School<br>
+                            <div itemscope itemtype="http://schema.org/EducationalOccupationalCredential" class="institute__data">
+                                <strong class="inst" itemprop="educationalLevel">Pimary Studies</strong><br>
+                                <strong>Institution: </strong><span itemprop="name">Narendranath School</span><br>
                                 <strong class="year">Year: </strong>2010-2015<br>
                                 <strong class="grade">Grade: </strong>A+
                             </div>
@@ -259,9 +275,9 @@
                     </div>
                     <div class="acad__institutions">
                         <div data-aos="slide-right" data-aos-duration="600" class="ins__container">
-                            <div class="institute__data">
-                                <strong class="inst">Secondary Education</strong><br>
-                                <strong>Institution: </strong>Bishnupur High School<br>
+                            <div itemscope itemtype="http://schema.org/EducationalOccupationalCredential" class="institute__data">
+                                <strong class="inst" itemprop="educationalLevel">Secondary Education</strong><br>
+                                <strong>Institution: </strong><span itemprop="name">Bishnupur High School</span><br>
                                 <strong class="year">Year: </strong>2015-2021<br>
                                 <strong class="grade">Grade: </strong>AA
                             </div>
@@ -271,9 +287,9 @@
                     </div>
                     <div class="acad__institutions">
                         <div data-aos="slide-right" data-aos-duration="600" class="ins__container">
-                            <div class="institute__data">
-                                <strong class="inst">Higher Secondary Education</strong><br>
-                                <strong>Institution: </strong>Bishnupur High School<br>
+                            <div itemscope itemtype="http://schema.org/EducationalOccupationalCredential" class="institute__data">
+                                <strong class="inst" itemprop="educationalLevel">Higher Secondary Education</strong><br>
+                                <strong>Institution: </strong><span itemprop="name">Bishnupur High School</span><br>
                                 <strong class="year">Year: </strong>2021-2023<br>
                                 <strong class="grade">Grade: </strong>A+
                             </div>
@@ -283,11 +299,11 @@
                     </div>
                     <div class="acad__institutions">
                         <div data-aos="slide-right" data-aos-duration="600" class="ins__container">
-                            <div class="institute__data">
-                                <strong class="inst">B.Tech in Information Technology</strong><br>
-                                <strong>Institution: </strong>IIEST Shibpur<br>
+                            <div itemscope itemtype="http://schema.org/EducationalOccupationalCredential" class="institute__data">
+                                <strong class="inst" itemprop="credentialCategory">B.Tech in Information Technology</strong><br>
+                                <strong>Institution: </strong><span itemprop="name">IIEST Shibpur</span><br>
                                 <strong class="year">Year: </strong>2023-present<br>
-                                <strong class="grade">Grade: </strong>8.46 CGPA
+                                <strong class="grade">Grade: </strong>8.46/10 CGPA
                             </div>
                             <div class="ball-pointer" id="ball-pointer-4"></div>
                         </div>
@@ -296,6 +312,8 @@
             </div>
         </section>
 
+
+        <!-- SKILLS -->
         <section id="s2-skills" class="sec2">
             <div id="SK" class="con d3">
                 <h4 data-aos="fade-up" class="w" id="SS">
@@ -651,6 +669,8 @@
             </div>
         </section>
 
+
+        <!-- PROJECTS -->
         <section id="s3-projects" class="sec3">
             <div id="div3" class="animated-div d3">
                 <h4 data-aos="fade-up" data-aos-delay="150"  id="EN">
@@ -905,6 +925,8 @@
             </div>
         </section>
 
+
+        <!-- CONTACTS -->
         <section id="s4-contacts" class="sec4">
             <div id="div4" data-aos="fade-up" data-aos-delay="200" class="contacts-2">
                 <h4 class="expC">
@@ -913,11 +935,11 @@
                         Contacts
                     </span>
                 </h4>
-                <div class="contacts-container">
+                <div itemscope itemtype="http://schema.org/Person" class="contacts-container">
                     <div class="fs-contacts ALL-LOGOS">
 
                         <!-- EMAIL ICON -->
-                        <div class="email_logo">
+                        <div itemprop="email" class="email_logo">
                             <svg id="e-logo" class="lll" xmlns="http://www.w3.org/2000/svg" height="50px"
                                 viewBox="0 -960 960 960" width="50px" fill="#000000">
                                 <path
@@ -927,7 +949,7 @@
 
                         <!-- GITHUB ICON -->
                         <div class="github_logo">
-                            <a rel="noopener" href="https://github.com/Subha-Py-c" target="_blank">
+                            <a rel="noopener" itemprop="sameAs" href="https://github.com/Subha-Py-c" target="_blank">
                                 <svg id="g-logo" class="lll" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                                     width="100" height="100" viewBox="0 0 32 32">
                                     <path fill-rule="evenodd"
@@ -939,7 +961,7 @@
 
                         <!-- YOUTUBE ICON -->
                         <div class="yt_logo">
-                            <a rel="noopener" href="http://www.youtube.com/@sciencetoday0167" target="_blank">
+                            <a rel="noopener" itemprop="sameAs" href="http://www.youtube.com/@sciencetoday0167" target="_blank">
                                 <svg id="y-logo" class="lll" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                                     width="100" height="100" viewBox="0 0 50 50">
                                     <path
@@ -951,7 +973,7 @@
 
                         <!-- LINKEDIN ICON -->
                         <div class="linkedin_logo">
-                            <a rel="noopener"
+                            <a rel="noopener" itemprop="sameAs"
                                 href="https://www.linkedin.com/in/subhajit-gorai-376874283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                                 target="_blank" title="Go to https://www.linkedin.com/in/subhajit-gorai-376874283">
                                 <svg id="l-logo" class="lll" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
@@ -988,6 +1010,9 @@
             </div>
         </section>
 
+
+
+        <!-- THANKS -->
         <section id="s5-thanks" class="sec5">
             <div class="hidden">
                 <h1>Thanks For Visiting <span class="ta-taX">🖤</span></h1>
