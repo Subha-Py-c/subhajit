@@ -8,7 +8,6 @@
 #s-last{
   position: relative;
   height: 125vh;
-  /* border: 1px solid; */
 }
 
 .academic__container {
@@ -33,7 +32,7 @@
   display: flex;
   flex-direction: column;
   gap: 0em;
-
+  
   margin-top: 20px;
   padding-left: var(--padding-left-val);
   padding-right: 90px;
@@ -46,7 +45,7 @@
   font-weight: 800;
 }
 .inst{
-  text-decoration: dotted underline;
+  text-decoration: none;
 }
 .acad__institutions {
   border-left: 1px solid #000;
