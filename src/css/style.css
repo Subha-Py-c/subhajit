@@ -113,7 +113,6 @@ a:active {
 section {
   height: 100vh;
   background-color: var(--bg3);
-  opacity: 1;
   transition: opacity 0.6s, transform 0.6s;
 }
 
@@ -125,30 +124,12 @@ section {
 } */
 
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */
-
-/* xs */
-@media (max-width: 475px) {
-  :root {
-    --hello-mega-font-size: 3.4rem;
-    --margin-left: 20px;
-    --heading-text-size: 2.2em;
-    --heading-weight: 550;
-    --heading-line-space: -0.03em;
-    --introduction-text-size: 0.85em;
-    --paragraph-text-size: 0.7em;
-    --top: 15px;
-    --right: 10px;
-  }
-
-  section {
-    opacity: 1;
-  }
-
-  .sec5 {
-    font-size: 0.5em;
+@media (width > 1536px) {
+  :root{
+    --top: 60px;
+    --right: 50px;
   }
 }
-
 /* sm */
 @media (max-width: 640px) {
   :root {
@@ -163,19 +144,27 @@ section {
     --right: 10px;
   }
 
-  section {
-    opacity: 1;
-  }
-
   .sec5 {
     font-size: 0.5em;
   }
 }
 
-/* md */
-@media (max-width: 768px) {
-  section {
-    opacity: 1;
+/* xs */
+@media (max-width: 475px) {
+  :root {
+    --hello-mega-font-size: 3.4rem;
+    --margin-left: 20px;
+    --heading-text-size: 2.2em;
+    --heading-weight: 550;
+    --heading-line-space: -0.03em;
+    --introduction-text-size: 0.85em;
+    --paragraph-text-size: 0.7em;
+    --top: 15px;
+    --right: 10px;
+  }
+  
+  .sec5 {
+    font-size: 0.5em;
   }
 }
 

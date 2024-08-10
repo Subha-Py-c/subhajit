@@ -152,6 +152,19 @@
   }
 }
 
+@keyframes fontAppear {
+  0% {
+    font-size: 0;
+    top: -30px;
+    filter: blur(10px);
+  }
+  100% {
+    font-size: 1;
+    top: 0px;
+    filter: blur(0px);
+  }
+}
+
 /* ------------------------{nav}-------------------------------------------- */
 
 .nav {
@@ -266,6 +279,20 @@
 }
 
 /* `------------------------{media queries}-------------------------------------------- */
+
+@media (width > 1536px) {
+  header{
+    z-index: 9999999;
+    position: fixed;
+    top: calc(var(--top) - 10px);
+    right: 28px;
+    width: 150px;
+    height: 60px;
+    background-color: rgba(113, 113, 113, 0.413);
+    /* border: 1px solid rgb(64, 64, 64); */
+    border-radius: 45px;
+  }
+}
 
 /* md */
 @media (max-width: 768px) {

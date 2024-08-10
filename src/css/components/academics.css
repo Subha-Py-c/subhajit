@@ -87,10 +87,14 @@
 
  /* --------------------------{media queries}-------------------------------------------- */
 
-/* xs */
+@media (width > 1536px) {
+  #s-last{
+    height: 110vh;
+  }
+}
 
 /* lg */
-@media (width > 767px) and (width < 1025px) {
+@media (width > 768px) and (width < 1025px) {
   :root {
     --top-val-b1: 146vh;
     --padding-left-val: 30px;
@@ -115,7 +119,7 @@
 }
 
 /* md */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   :root {
     --top-val-b1: 146vh;
     --padding-left-val: 30px;
@@ -132,7 +136,7 @@
     padding-bottom: 10px;
   }
   #s-last{
-    height: 120vh;
+    height: 115vh;
   }
   .hidden{
     font-size: 0.6em;

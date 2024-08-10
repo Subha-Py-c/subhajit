@@ -39,14 +39,16 @@
   display: none;
   gap: 0.6em;
 }
+
 .projects{
   width: 80vw;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   overflow: hidden;
   border-radius: 20px;
+  position: relative;
 }
 
 .projects img{
@@ -56,7 +58,6 @@
 img {
   display: block;
 }
-
 
 .project_data {
   position: absolute;
@@ -68,6 +69,7 @@ img {
   transition: all 0.4s ease-in;
   /* font-family: 'Dahlia'; */
 }
+
 .xxds {
   display: flex;
   justify-content: center;
@@ -111,6 +113,7 @@ img {
   /* border: 1px solid; */
   box-sizing: border-box;
 }
+
 .slider{
   box-sizing: border-box;
   /* border: 1px solid; */
@@ -298,7 +301,28 @@ img {
 
 
 /* -------------------------------------------------------------------- */
-@media (width > 650px) and (width < 1025px) {
+
+
+@media (width > 1536px) {
+  .projects__gallery{
+    width: 90vw;
+  }
+
+  .gitem{
+    &:nth-child(3) { left: 44%; }
+    &:nth-child(4) { left: calc(44% + 210px); }
+    &:nth-child(5) { left: calc(44% + 420px); }
+    &:nth-child(6) { left: calc(44% + 630px); opacity: 1; }
+  }
+
+  #s3-projects{
+    height: 80vh;
+  }
+}
+
+
+
+@media (width > 768px) and (width < 1225px) {
   #s3-projects{
     height: 74vh;
   }
@@ -318,11 +342,47 @@ img {
   }
 
   .projects__gallery{
+    width: 90vw;
     margin: 70px calc(var(--margin-left) + 20px) 0px calc(var(--margin-left) - 30px);
   }
 }
 
-@media (max-width: 650px) {
+/* ipad mini */
+@media (min-width: 601px) and (max-width: 768px) {
+  #gallery{
+    display: none;
+  }
+  .p-list{
+    display: flex;
+  }
+  .projects{
+    height: 25vh;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    left: 30px;
+  }
+  #s3-projects{
+    height: 194vh;
+  }
+  .project_data{
+    opacity: 1;
+    font-size: 1.4rem;
+  }
+
+  .xxds{
+    width: 40px;
+    height: 40px;
+  }
+
+  #xds{
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* mobile */
+@media (max-width: 600px) {
   #gallery{
     display: none;
   }
@@ -339,7 +399,6 @@ img {
     opacity: 1;
     font-size: 1.4em;
   }
-
   .xxds{
     width: 40px;
     height: 40px;

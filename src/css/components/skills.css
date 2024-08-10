@@ -229,25 +229,29 @@ body.invert .inverse2 {
   border-radius: 0px 0 0px 15px;
 }
 
-#skill-list::before{
+.first-x::before{
   content: '';
   position: absolute;
-  top: 35px;
-  left: 419px;
-  width: 10px;
+  top: 0;
+  left: calc(100% - 25px);
+  width: 30px;
   height: 10px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  border-radius: 0px 0 0 10px;
   background-color: black;
+  z-index: 99999;
 }
-#skill-list::after{
+.lst::before{
   content: '';
   position: absolute;
-  top: calc(60vh - 45px);
-  left: 419px;
-  width: 10px;
+  top: calc(100% - 10px);
+  left: calc(100% - 25px);
+  width: 30px;
   height: 10px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   background-color: black;
+  z-index: 99999;
+  border-radius: 10px 0 0px 0px;
 }
 /* width: 435px; height60vh */
 
@@ -290,14 +294,18 @@ body.invert .inverse2 {
 
 /* ------------------------{MEDIA QUERY}-------------------------------------------- */
 
-@media (width > 1560px) {
+@media (width > 1536px) {
   #skill-list{
-    padding-left: 250px;
+    padding-left: 550px;
+  }
+
+  #s2-skills{
+    height: 98vh;
   }
 }
 
 /* md */
-@media (width > 767px) and (width < 1025px) {
+@media (width > 768px) and (width < 1025px) {
   #s2-skills{
     height: 100vh;
   }
@@ -320,7 +328,7 @@ body.invert .inverse2 {
 
 
 /* sm */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #s2-skills{
     height: 130vh;
   }

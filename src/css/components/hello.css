@@ -37,7 +37,7 @@ main{
 /* ------------------------{d1-2-3}-------------------------------------------- */
 
 .d1-2-3 {
-  border: 1px solid;
+  border: 1px solid rgb(158, 138, 128);
   border-radius: 15px;
   width: calc(100% - 2px);
   height: 100%;
@@ -156,17 +156,23 @@ body{
 
 /* -------------------------------------------------------------------- */
 
-@media (width > 1604px) {
+@media (width > 1536px) {
+  #div2{
+    padding-right: 20rem;
+  }
   #divv3{
     grid-area: 2/3/4/4;
-    margin-right: 8rem;
-    /* margin-left: 1rem; */
-    /* margin-top: 1.5rem; */
+    margin-right: 15rem;
+    margin-left: 5rem;
+    margin-top: 0rem;
     border-radius: 60px;
   }
   .img_container{
     border-radius: 90px;
   }
+  /* #s1{
+    height: 10vh;
+  } */
 }
 
 @media (width > 767px) and (width < 1025px){

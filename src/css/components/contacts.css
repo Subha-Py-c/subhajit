@@ -244,7 +244,7 @@
   }
 }
 
-/* md */
+/* md ipads */
 @media (max-width: 1025px) {
   :root {
     --icon-width: 35px;
@@ -319,8 +319,8 @@
 }
 
 
-/* for sm */
-@media (max-width: 640px) {
+/* for ipad mini */
+@media (max-width: 768px) {
   :root {
     --icon-width: 35px;
     --icon-height: 35px;
@@ -357,9 +357,9 @@
 
   .email-box{
     top: 47vh;
-    left: 0;
-    width: 100%;
-    height: 450px;
+    left: 50px;
+    width: calc(100% - 100px);
+    height: 400px;
     border-radius: 25px;
   }
   .box{
@@ -421,8 +421,8 @@
 
   .email-box{
     top: 47vh;
-    left: 0;
-    width: 100%;
+    left: 30px;
+    width: calc(100% - 60px);
     height: 450px;
     border-radius: 25px;
   }
@@ -435,6 +435,7 @@
     }
     & input{
       font-size: 0.9rem;
+      width: 200px;
     }
 
     & button{

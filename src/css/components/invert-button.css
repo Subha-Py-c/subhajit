@@ -71,7 +71,7 @@ body.invert #s1{
   position: fixed;
   top: var(--top);
   top: calc(var(--top) + 3px);
-  right: 85px;
+  right: calc(var(--right) + 65px);
   z-index: 85;
   width: 36px;
   height: 36px;
@@ -90,7 +90,7 @@ body.invert #s1{
 }
 
 #invert-button:hover {
-  transform: scale(1.414);
+  transform: scale(1.0);
 }
 
 /* -------------------------------------------------------------------- */
