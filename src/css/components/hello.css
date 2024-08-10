@@ -46,7 +46,6 @@ main{
   grid-template-columns: repeat(3, 1fr);
   /* background: url(../../images/paper-texture.webp) no-repeat; */
   background-size: cover;
-  /* background-color: rgb(184, 147, 128); */
   background-color: rgb(220, 192, 178);
   background-position: center;
   position: relative;
@@ -191,7 +190,7 @@ body{
   }
 
   #subhajit {
-    font-size: calc(var(--introduction-text-size) + 0.4em);
+    font-size: calc(var(--introduction-text-size) + 0.5rem);
   }
 
   #div2 {
@@ -200,6 +199,11 @@ body{
     grid-area: 3/1/-1/4;
     z-index: 1;
     line-height: 1.5em;
+  }
+
+  .intro{
+    font-size: 0.9rem;
+    font-family: poppins, sans-serif;
   }
 
   #divv3 {

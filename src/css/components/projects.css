@@ -190,6 +190,7 @@ img {
     line-height: 1.7;
     margin: 1rem 0 1.75rem;
     font-size: 1rem;
+    font-family: popins, sans-serif;
 
     opacity: 0;
     display: none;
