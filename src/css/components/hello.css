@@ -203,12 +203,11 @@ body{
   }
 
   #divv3 {
-    border: 1px solid;
+    border: 1px solid rgb(53, 53, 53);
     border-radius: 25px;
     overflow: hidden;
     grid-area: 2/3/3/4;
     margin-right: 2.2rem;
-    /* flex: 0.4; */
     height: 160px;
     width: 100px;
     margin-top: 0rem;

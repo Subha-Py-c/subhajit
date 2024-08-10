@@ -13,12 +13,10 @@
 
 .academic__container {
   transform: none;
-  /* border: 3px dotted; */
 }
 
 .ins__container {
   position: relative;
-  /* border: 3px dotted; */
 }
 
 .acad__header {
@@ -29,12 +27,9 @@
   margin-left: var(--margin-left);
   font-size: var(--heading-text-size);
   font-weight: var(--heading-weight);
-
-  /* border: 1px solid red; */
 }
 
 .acad__list {
-  /* border: 2px solid #a92d2d; */
   display: flex;
   flex-direction: column;
   gap: 0em;
@@ -82,7 +77,6 @@
   position: relative;
   top: calc(var(--institute__data__height) * (-1) + var(--radius) * 1.5);
   left: calc(((-1) *  var(--left-dist)) - var(--radius));
-  /* left: var(--left-val); */
 }
 
  /* --------------------------{media queries}-------------------------------------------- */
@@ -158,6 +152,7 @@
   .ball-pointer {
     width: 10px;
     height: 10px;
+    top: calc(var(--institute__data__height) * (-1) + var(--radius) * 1.5 + 36px);
   }
 
   .acad__institutions {
