@@ -927,83 +927,100 @@
 
 
         <!-- CONTACTS -->
-        <section id="s4-contacts" class="sec4">
-            <div id="div4" data-aos="fade-up" data-aos-delay="200" class="contacts-2">
-                <h4 class="expC">
-                    <span id="contact-heading" class="underline headerSpan  header__texts">
-                        <!-- con is needed for js -->
+        <section 
+            id="s4-contacts" class="sec4">
+            <div id="div4" class="contacts-2">
+                <h4 data-aos="fade-up" data-aos-delay="200" class="expC">
+                    <span id="contact-heading" 
+                        class="underline headerSpan  header__texts">
                         Contacts
                     </span>
                 </h4>
-                <div itemscope itemtype="http://schema.org/Person" class="contacts-container">
-                    <div class="fs-contacts ALL-LOGOS">
-
-                        <!-- EMAIL ICON -->
-                        <div itemprop="email" class="email_logo">
-                            <svg id="e-logo" class="lll" xmlns="http://www.w3.org/2000/svg" height="50px"
-                                viewBox="0 -960 960 960" width="50px" fill="#000000">
-                                <path
-                                    d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280 320-200v-80L480-520 160-720v80l320 200Z" />
-                            </svg>
-                        </div>
-
-                        <!-- GITHUB ICON -->
-                        <div class="github_logo">
-                            <a rel="noopener" itemprop="sameAs" href="https://github.com/Subha-Py-c" target="_blank">
-                                <svg id="g-logo" class="lll" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                    width="100" height="100" viewBox="0 0 32 32">
-                                    <path fill-rule="evenodd"
-                                        d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z">
-                                    </path>
-                                </svg>logo
-                            </a>
-                        </div>
-
-                        <!-- YOUTUBE ICON -->
-                        <div class="yt_logo">
-                            <a rel="noopener" itemprop="sameAs" href="http://www.youtube.com/@sciencetoday0167" target="_blank">
-                                <svg id="y-logo" class="lll" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                    width="100" height="100" viewBox="0 0 50 50">
+                <div itemscope itemtype="http://schema.org/Person" 
+                    class="contacts-container">
+                    <div class="part1 relative flex-col justify-between">
+                        <div class="fs-contacts flex-col">
+                            <!-- EMAIL ICON -->
+                            <div itemprop="email" class="email_logo flexed f-gap-1">
+                                <svg id="e-logo" class="lll" xmlns="http://www.w3.org/2000/svg" height="50px"
+                                    viewBox="0 -960 960 960" width="50px" fill="#000000">
                                     <path
-                                        d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z">
-                                    </path>
-                                </svg>logo
-                            </a>
-                        </div>
-
-                        <!-- LINKEDIN ICON -->
-                        <div class="linkedin_logo">
-                            <a rel="noopener" itemprop="sameAs"
-                                href="https://www.linkedin.com/in/subhajit-gorai-376874283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                                target="_blank" title="Go to https://www.linkedin.com/in/subhajit-gorai-376874283">
-                                <svg id="l-logo" class="lll" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                    width="100" height="100" viewBox="0 0 50 50">
-                                    <path
-                                        d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z">
-                                    </path>
+                                        d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280 320-200v-80L480-520 160-720v80l320 200Z" />
                                 </svg>
+                                goraisubhajit53@gmail.com
+                            </div>
+
+                            <!-- GITHUB ICON -->
+                            <div class="github_logo flexed f-gap-1">
+                                <a rel="noopener" itemprop="sameAs" href="https://github.com/Subha-Py-c" target="_blank">
+                                    <?xml version="1.0" ?>
+                                    <svg id="g-logo" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"/></svg>
+                                    GitHub
+                                </a>
+                            </div>
+
+                            <!-- YOUTUBE ICON -->
+                            <div class="yt_logo flexed f-gap-1">
+                                <a rel="noopener" itemprop="sameAs" href="http://www.youtube.com/@sciencetoday0167" target="_blank">
+                                    <svg id="y-logo" class="lll" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="100" height="100" viewBox="0 0 50 50">
+                                        <path
+                                            d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z">
+                                        </path>
+                                    </svg>
+                                    YouTube
+                                </a>
+                            </div>
+
+                            <!-- LINKEDIN ICON -->
+                            <div class="linkedin_logo flexed animate-nav">
+                                <a rel="noopener" itemprop="sameAs"
+                                    href="https://www.linkedin.com/in/subhajit-gorai-376874283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                    target="_blank" title="Go to https://www.linkedin.com/in/subhajit-gorai-376874283">
+                                    <svg id="l-logo" class="lll" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="100" height="100" viewBox="0 0 50 50">
+                                        <path
+                                            d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z">
+                                        </path>
+                                    </svg>
+                                    LinkedIn
+                                </a>
+                            </div>
+
+                            <!-- TWITTER ICON -->
+                            <div class="t_logo flexed f-gap-1">
+                                <a rel="noopener" itemprop="sameAs" href="https://x.com/Subhaji09951021" target="_blank">
+                                    <?xml version="1.0" ?><svg id="t-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" width="24px" height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve"><g><polygon points="12.153992,10.729553 8.088684,5.041199 5.92041,5.041199 10.956299,12.087097 11.59021,12.97345    15.900635,19.009583 18.068909,19.009583 12.785217,11.615906  "/><path d="M21.15979,1H2.84021C1.823853,1,1,1.823853,1,2.84021v18.31958C1,22.176147,1.823853,23,2.84021,23h18.31958   C22.176147,23,23,22.176147,23,21.15979V2.84021C23,1.823853,22.176147,1,21.15979,1z M15.235352,20l-4.362549-6.213013   L5.411438,20H4l6.246887-7.104675L4,4h4.764648l4.130127,5.881958L18.06958,4h1.411377l-5.95697,6.775635L20,20H15.235352z"/></g></svg>
+                                    Twitter
+                                </a>
+                            </div>
+                        </div>
+
+                        <div id="cv" class="download-cv relative cen">
+                            <a rel="noopener"
+                                href="https://github.com/Subha-Py-c/Port-Folio/raw/fcf6ae9e153455258f02cdfe0ef8fac1c7e5ab94/src/assets/demo-cv.pdf">
+                                Download CV
                             </a>
                         </div>
-                    </div>
 
-                    <div id="cv" class="download-cv">
-                        <a rel="noopener"
-                            href="https://github.com/Subha-Py-c/Port-Folio/raw/fcf6ae9e153455258f02cdfe0ef8fac1c7e5ab94/src/assets/demo-cv.pdf">
-                            Download CV
-                        </a>
-                    </div>
-
-                    <div id="email-box" class="email-box ta-ta flexed">
-                        <div class="box flex-col">
-                            <label for="email">Enter Your Email: </label>
-                            <input type="email" id="email" placeholder="{{not functional now, please send manually}}Enter Your Email">
-
-                            <br>
-                            <label for="msg">Enter Your Message: </label>
-                            <textarea name="message" id="msg" rows="10"></textarea>
-
-                            <br>
-                            <button class="btn email-btn" type="submit" id="submit" value="Send">Send</button>
+                        <div id="email-box" class="email-box ta-ta flexed">
+                            <div class="box flex-col">
+                                <div class="name-and-email-input flex-col f-gap-2">
+                                    <div class="nm">
+                                        <label for="emailer_name">Your name: </label>
+                                        <input type="text" name="name" id="emailer_name" required>
+                                    </div>
+                                    <div class="eml p-top-1">
+                                        <label for="email">Your Email: </label>
+                                        <input type="email" id="email" required>
+                                    </div>
+                                </div>
+                                <br>
+                                <label for="msg">Write Your Message: </label>
+                                <textarea name="message" id="msg" rows="1" required placeholder="{{not functional now, please send manually / click email icon on left}}"></textarea>
+                                <br>
+                                <button class="btn email-btn" type="submit" id="submit" value="Send">Send</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1015,7 +1032,7 @@
         <!-- THANKS -->
         <section id="s5-thanks" class="sec5">
             <div class="hidden">
-                <h1>Thanks For Visiting <span class="ta-taX">🖤</span></h1>
+                <h1>Thanks For Visiting</h1>
             </div>
             <div id="viewers">
                 <script type="text/javascript" src="https://www.free-counters.org/count/fejc"></script><br>
