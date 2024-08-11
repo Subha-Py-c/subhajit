@@ -151,7 +151,7 @@
   .ball-pointer {
     width: 10px;
     height: 10px;
-    top: calc(var(--institute__data__height) * (-1) + var(--radius) * 1.5 + 36px);
+    top: calc(var(--institute__data__height) * (-1) + var(--radius) * 1.5 + 40px);
   }
 
   .acad__institutions {

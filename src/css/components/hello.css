@@ -21,7 +21,6 @@
 #s1 {
   opacity: 1;
   height: 125vh;
-  /* background-color: rgb(255, 247, 227); */
   border-radius: 15px;
 }
 
@@ -29,7 +28,6 @@ main{
   border-radius: 15px;
 }
 
-/* .div1 { margin-top: 175px; } */
 .reg {
   z-index: 20;
 }
@@ -50,6 +48,7 @@ main{
   background-position: center;
   position: relative;
   z-index: 74;
+  border-radius: 15px;
 }
 
 .ultimate-wrapper {
@@ -101,6 +100,7 @@ main{
   color: var(--tc);
   color: rgb(22, 22, 22) !important;
   grid-area: 4/1/8/4;
+  border-radius: 0 0 15px 15px;
 }
 
 #div2 strong{
