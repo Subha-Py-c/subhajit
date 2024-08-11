@@ -84,11 +84,17 @@ main{
 
 .intro {
   margin: 0px 30px 0px var(--margin-left);
-  font-family: MondiaThin;
+  font-family: MondiaThin, sans-serif;
   font-weight: 400;
+  z-index: -9;
   font-size: var(--introduction-text-size);
+  & .i-txt{
+    /* border: 1px solid #111; */
+    display: inline-block;
+    /* transform: translateY(50%); */
+    /* font-size: 0; */
+  }
 }
-
 
 #div1 {
   grid-area: 2/1/4/3;
