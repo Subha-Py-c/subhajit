@@ -151,9 +151,13 @@ main{
 
 html.invert #divv3,
 body.invert #divv3 {
-  background-color: rgb(67, 67, 67);
+  background-color: rgb(0, 0, 0);
 }
 
+html.invert #divv3 .img_container,
+body.invert #divv3 .img_container {
+  background-color: rgb(40, 40, 40);
+}
 .img_container {
   border-radius: 40px;
   background-color: rgb(98, 98, 98);

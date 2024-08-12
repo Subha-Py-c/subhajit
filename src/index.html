@@ -87,6 +87,14 @@
 
     <!-- loader css here for first loading-->
     <style>
+        @font-face {
+            font-display: swap;
+            font-family: MilitaryScribe;
+            font-style: normal;
+            font-weight: 400;
+            src: url('fonts/scribe.woff2') format("woff2")
+        }
+  
         #loader{
             position: fixed;
             top: 0;
@@ -882,7 +890,8 @@
 
                         <div id="email-box" class="email-box ta-ta flexed">
                             <div class="box flex-col">
-                                <form action="https://subha-py-c.github.io/src/form-submit.html" method="post">
+                                <form id="form" action="https://api.web3forms.com/submit" method="post">
+                                    <input type="hidden" name="redirect" value="https://subha-py-c.github.io/Noni/">
                                     <input type="hidden" name="access_key" value="67104936-b712-4f86-abec-8dddf48deff3">
                                     <div class="name-and-email-input flex-col f-gap-2">
                                         <div class="nm">
@@ -899,6 +908,11 @@
                                     <textarea name="message" id="msg" rows="1" required placeholder="Your Message"></textarea>
                                     <br>
                                     <button class="btn email-btn" type="submit" id="submit" value="Send">Send</button>
+                                    <!-- <div class="h-captcha"
+                                        data-captcha="true"
+                                        data-theme="dark"
+                                        data-size="compact">
+                                    </div> -->
                                 </form>
                             </div>
                         </div>
@@ -969,8 +983,24 @@
         // 1300 load -> 1700 start
     </script>
 
+    
     <!-- main.js -->
     <script type="module" src="js/main.js"></script>
+    
+    <!-- web3forms captcha -->
+    <!-- <script>
+        const form = document.getElementById('form');
+        form.addEventListener('submit', function(e) {
+            const hCaptcha = form.querySelector('textarea[name="h-captcha-response"]').value;
+
+            if (!hCaptcha) {
+                e.preventDefault();
+                alert('Please complete the captcha');
+                return;
+            }
+        });
+    </script> -->
+    <!-- <script src="https://web3forms.com/client/script.js" async defer></script> -->
 </body>
 
 </html>
