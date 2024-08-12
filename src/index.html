@@ -84,6 +84,33 @@
     <!-- aos js -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <meta name="google-site-verification" content="rDufgDKug3zeCYxc7xxMAm2Z4VGd9xhw-LYMANOPLsQ" />
+
+    <!-- loader css here for first loading-->
+    <style>
+        #loader{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #000;
+            color: aliceblue;
+            font-size: 6rem;
+            text-align: center;
+            font-family: MilitaryScribe, cursive, sans-serif;
+            z-index: 999999999;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            overflow: hidden;
+            overflow-y: hidden !important;
+            overflow-x: hidden;
+            pointer-events: none;
+            scroll-behavior: initial;
+        }
+    </style>
 </head>
 
 <body>
@@ -96,9 +123,11 @@
         <span>S.Gorai</span>
     </div>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+        // DOMContentLoaded only lolads the html, but window... loads everything
+        window.addEventListener('load', () => {
             const loader = document.getElementById('loader');
             loader.style.display = 'flex';
+    
             setTimeout(() => {
                 loader.innerText = 'S.Gorai.';
             }, 300);
@@ -853,7 +882,7 @@
 
                         <div id="email-box" class="email-box ta-ta flexed">
                             <div class="box flex-col">
-                                <form action="https://api.web3forms.com/submit" method="post">
+                                <form action="https://subha-py-c.github.io/src/form-submit.html" method="post">
                                     <input type="hidden" name="access_key" value="67104936-b712-4f86-abec-8dddf48deff3">
                                     <div class="name-and-email-input flex-col f-gap-2">
                                         <div class="nm">

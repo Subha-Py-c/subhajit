@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
     let minFontSize = 4;  //px
     let minLineHeight = 2; //px
     
-    let newFontSize = scrolled * 0.5; 
-    let newLineHeight = scrolled * 0.25;
+    let newFontSize = scrolled * 0.2;
+    let newLineHeight = scrolled * 0.1;
     
     newFontSize = Math.max(newFontSize, minFontSize);
     newLineHeight = Math.max(newLineHeight, minLineHeight);
