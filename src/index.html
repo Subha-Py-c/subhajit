@@ -86,6 +86,7 @@
     <meta name="google-site-verification" content="rDufgDKug3zeCYxc7xxMAm2Z4VGd9xhw-LYMANOPLsQ" />
 
     <!-- loader css here for first loading-->
+    <link rel="preload" href="fonts/scribe.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <style>
         @font-face {
             font-display: swap;
@@ -105,7 +106,7 @@
             color: aliceblue;
             font-size: 6rem;
             text-align: center;
-            font-family: MilitaryScribe, cursive, sans-serif;
+            font-family: MilitaryScribe, sans-serif;
             z-index: 999999999;
         
             display: flex;
@@ -113,10 +114,7 @@
             align-items: center;
         
             overflow: hidden;
-            overflow-y: hidden !important;
-            overflow-x: hidden;
             pointer-events: none;
-            scroll-behavior: initial;
         }
     </style>
 </head>
