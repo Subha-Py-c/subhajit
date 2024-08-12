@@ -283,5 +283,8 @@ body{
   #s1{
     height: 105vh;
   }
+  #loader{
+    font-size: 3rem;
+  }
 }
 
