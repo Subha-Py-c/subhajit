@@ -7,12 +7,33 @@ document.addEventListener('DOMContentLoaded', ()=>{
     var scrolled = window.scrollY;
     var rate = scrolled * (0.22);
 
-    target.style.transform = 'translate3d(' + rate + 'px, 0px, 0px)'; // x
+    // translate
+    // target.style.transform = 'translate3d(' + rate + 'px, 0px, 0px)'; // x
     // target.style.transform = 'translate3d(0px, ' + rate + 'px, 0px)'; // y
 
-    target.style.opacity = 1 - scrolled * (0.0026);
+    // opacity
+    // target.style.opacity = 1 - scrolled * (0.0026);
     // why is it working ? the image should instantly appear if i scroll in opposite direction cuz its 1 - n*S ;
     // so 1 - 0.1 like that and if scroll opposite , its 1 + 0.1 ETC;  cuz i am cosidering 1 not the current opacity.
+    
+    // blur
+    // if(document.documentElement.classList.contains('invert')){
+    //   target.style.filter = 'invert(1) blur(' + scrolled * (0.015) + 'px)';
+    // }else{
+    //   target.style.filter = 'invert(0) blur(' + scrolled * (0.015) + 'px)';
+    // }
+
+    let minFontSize = 4;  //px
+    let minLineHeight = 2; //px
+    
+    let newFontSize = scrolled * 0.5; 
+    let newLineHeight = scrolled * 0.25;
+    
+    newFontSize = Math.max(newFontSize, minFontSize);
+    newLineHeight = Math.max(newLineHeight, minLineHeight);
+
+    target.querySelector('.img_container').style.fontSize = `${newFontSize}px`;
+    target.querySelector('.img_container').style.lineHeight = `${newLineHeight}px`;
   });
 
 });

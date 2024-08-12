@@ -50,14 +50,10 @@ main{
   z-index: 74;
   border-radius: 15px;
 }
-
-.ultimate-wrapper {
-  border-radius: 15px;
-}
 /* ------------------------{name}-------------------------------------------- */
 
 .name {
-  font-family: MondiaThin;
+  font-family: MondiaThin, sans-serif;
   margin: 0px 30px 0px var(--margin-left);
   font-weight: 500;
   font-size: var(--introduction-text-size);
@@ -86,15 +82,55 @@ main{
   margin: 0px 30px 0px var(--margin-left);
   font-family: MondiaThin, sans-serif;
   font-weight: 400;
-  z-index: -9;
   font-size: var(--introduction-text-size);
-  & .i-txt{
-    /* border: 1px solid #111; */
-    display: inline-block;
-    /* transform: translateY(50%); */
-    /* font-size: 0; */
-  }
 }
+
+.line,
+.word{
+  overflow: hidden;
+}
+
+.char{
+  transform: translateY(100%);
+  opacity: 0;
+  filter: blur(3px);
+  transition: transform 0.1s;
+  line-height: calc(var(--introduction-text-size) - 0.8rem);
+}
+
+.s0{
+  display: inline-flex !important;
+  overflow: hidden;
+}
+.s1{
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+#loader{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  color: aliceblue;
+  font-size: 6rem;
+  text-align: center;
+  font-family: MilitaryScribe, cursive, sans-serif;
+  z-index: 999999999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  overflow-y: hidden !important;
+  overflow-x: hidden;
+  pointer-events: none;
+  scroll-behavior: initial;
+}
+
 
 #div1 {
   grid-area: 2/1/4/3;
@@ -126,9 +162,12 @@ main{
   transition: all ease;
   transform-style: preserve-3d;
   background-color: var(--bg3);
+  background-color: #111;
   
   box-sizing: border-box;
   padding: 3px;
+
+  overflow: hidden;
 }
 
 html.invert #divv3,
@@ -140,10 +179,22 @@ body.invert #divv3 {
   border-radius: 40px;
   background-color: rgb(98, 98, 98);
   background-image: url('../../images/p4.png');
+  /* background-image: url('../../images/1.webp'); */
   background-repeat: no-repeat;
   background-size: 95%;
   background-position: 100% 100%;
   transition: all 0.3s ease;
+
+  overflow: hidden;
+  font-size: poppins, sans-serif;
+  line-height: 2px;
+  font-size: 4px;
+  /* background-attachment: fixed; */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  /* -webkit-text-fill-color: white; */
+  /* text-align: center; */
 }
 
 #divv3:hover .img_container{
