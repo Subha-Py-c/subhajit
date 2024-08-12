@@ -160,7 +160,7 @@ body.invert #divv3 .img_container {
 }
 .img_container {
   border-radius: 40px;
-  background-color: rgb(98, 98, 98);
+  background-color: rgb(50, 50, 50);
   background-image: url('../../images/p4.png');
   /* background-image: url('../../images/1.webp'); */
   background-repeat: no-repeat;
