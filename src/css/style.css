@@ -1,21 +1,3 @@
-/* BODY */
-body {
-  background-color: var(--bg3);
-  color: var(--tc);
-  font-family: 'Poppins', sans-serif;
-  padding: 0;
-  margin: 10px;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
-
-html{
-  overflow-x: hidden;
-}
-
-*::-webkit-scrollbar{
-  display: none;
-}
 
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */
 :root {
@@ -79,6 +61,26 @@ html{
 
   --rr: 30px;
 }
+
+
+html{
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg3);
+  color: var(--tc);
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 10px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar{
+  display: none;
+}
+
 
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */
 #viewers {
