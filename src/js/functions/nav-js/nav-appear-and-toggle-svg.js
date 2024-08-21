@@ -7,21 +7,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
   navMenu.addEventListener("click", function () {
     lis.forEach((li, index) => {
-      li.classList.add("active");
+      setTimeout(() => {
+        li.classList.add("active");
+      }, 0+index*50)
+      li.offsetHeight;
     });
 
     navMenu.style.display = "none";
     closeIcon.style.display = "flex";
+
+    nav.style.height = "50vh";
   });
 
 
   closeIcon.addEventListener("click", function () {
     lis.forEach((li, index) => {
-      li.classList.remove("active");
+      setTimeout(() => {
+        li.classList.remove("active");
+      }, 0+index*50)
+      li.offsetHeight;
     });
     
     navMenu.style.display = "flex";
     closeIcon.style.display = "none";
+
+    nav.style.height = "0vh";
   });
 
 

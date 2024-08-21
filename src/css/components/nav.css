@@ -14,7 +14,7 @@
     transition: all 0.3s ease;
     display: flex;
     height: 0;
-    height: fit-content;
+    transition: all 0.35s;
 }
 /* ------------------------{ul}-------------------------------------------- */
 
@@ -22,7 +22,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     margin: 0;
     padding: 0;
@@ -42,14 +42,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     height: 0vh;
     transition: all 0.32s;
+    will-change: height;
 }
 
 .li.active{
     height: 10vh;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     transition: all 0.32s;
+    width: var(--li-width);
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(122, 117, 107) !important;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .li .sp{
     font-size: 0;
