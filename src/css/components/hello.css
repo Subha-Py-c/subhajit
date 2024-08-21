@@ -24,7 +24,7 @@
   border-radius: 15px;
 }
 
-main{
+main {
   border-radius: 15px;
 }
 
@@ -50,6 +50,14 @@ main{
   z-index: 74;
   border-radius: 15px;
 }
+
+
+html.invert .d1-2-3 {
+  background-color: rgb(255, 255, 255);
+  color: rgb(10, 10, 10);
+  border-color: #cdcdcd;
+}
+
 /* ------------------------{name}-------------------------------------------- */
 
 .name {
@@ -89,11 +97,11 @@ main{
 }
 
 .line,
-.word{
+.word {
   overflow: hidden;
 }
 
-.char{
+.char {
   transform: translateY(100%);
   opacity: 0;
   filter: blur(3px);
@@ -101,11 +109,12 @@ main{
   line-height: calc(var(--introduction-text-size) - 0.8rem);
 }
 
-.s0{
+.s0 {
   display: inline-flex !important;
   overflow: hidden;
 }
-.s1{
+
+.s1 {
   transform: translateY(100%);
   opacity: 0;
 }
@@ -124,7 +133,7 @@ main{
   border-radius: 0 0 15px 15px;
 }
 
-#div2 strong{
+#div2 strong {
   text-decoration: underline;
 }
 
@@ -142,7 +151,7 @@ main{
   transform-style: preserve-3d;
 
   background-color: #111;
-  
+
   box-sizing: border-box;
   padding: 3px;
 
@@ -180,7 +189,7 @@ body.invert #divv3 .img_container {
   background-color: rgb(40, 40, 40);
 }
 
-#divv3:hover .img_container{
+#divv3:hover .img_container {
   border-radius: 160px;
 }
 
@@ -189,33 +198,36 @@ body.invert #divv3 .img_container {
   border-radius: 0 0 15px 15px;
 }
 
-body{
+body {
   border-radius: 15px;
 }
 
 /* -------------------------------------------------------------------- */
 
 @media (width > 1536px) {
-  #div2{
+  #div2 {
     padding-right: 20rem;
   }
-  #divv3{
+
+  #divv3 {
     grid-area: 2/3/4/4;
     margin-right: 15rem;
     margin-left: 5rem;
     margin-top: 0rem;
     border-radius: 60px;
   }
-  .img_container{
+
+  .img_container {
     border-radius: 90px;
   }
+
   /* #s1{
     height: 10vh;
   } */
 }
 
-@media (width > 767px) and (width < 1025px){
-  #divv3{
+@media (width > 767px) and (width < 1025px) {
+  #divv3 {
     grid-area: 2/3/4/4;
     margin-right: 3rem;
     margin-left: 1rem;
@@ -241,7 +253,7 @@ body{
     line-height: 1.5em;
   }
 
-  .intro{
+  .intro {
     font-size: 0.9rem;
     font-family: poppins, sans-serif;
   }
@@ -256,18 +268,21 @@ body{
     width: 100px;
     margin-top: 0rem;
   }
-  #divv3:hover .img_container{
+
+  #divv3:hover .img_container {
     border-radius: 20px;
   }
-  .img_container{
+
+  .img_container {
     border-radius: 20px;
 
   }
-  #s1{
+
+  #s1 {
     height: 105vh;
   }
-  #loader{
+
+  #loader {
     font-size: 3rem;
   }
 }
-

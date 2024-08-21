@@ -6,43 +6,26 @@
 }
 
 
-html.invert .d1-2-3,
-body.invert .d1-2-3{
-  background-color: rgb(255, 255, 255);
-  color: rgb(10, 10, 10);
-}
-
 html.invert,
 body.invert,
 html.invert #s-last,
-body.invert #s-last,
-
 html.invert #s2-skills,
-body.invert #s2-skills,
-
 html.invert #s3-projects,
-body.invert #s3-projects,
-
 html.invert #s4-contacts,
-html.invert #s4-contacts,
-
-html.invert #s5-thanks,
-body.invert #s5-thanks{
+html.invert #s5-thanks {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   position: relative;
   z-index: 71 !important;
 }
 
-
-#s1{
-  position: relative !important;
-  z-index: 73;
+html.invert main {
+  background-color: white;
 }
 
-html.invert #s1,
-body.invert #s1{
-  background-color: transparent;
+#s1 {
+  position: relative !important;
+  z-index: 73;
 }
 
 

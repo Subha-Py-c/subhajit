@@ -1,6 +1,10 @@
 node_modules
 dist
 .DS_Store
+.vscode
+.venv
 data.txt
 lighthouse
 wowo/
+src/sg.png
+src/make-svg.png
