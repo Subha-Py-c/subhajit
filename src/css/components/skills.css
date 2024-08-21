@@ -11,7 +11,7 @@
 /* ------- SKILLS ------------------------------------------------------ */
 
 
-#s2-skills{
+#s2-skills {
   height: 103vh;
 }
 
@@ -28,32 +28,33 @@
   border: none;
 }
 
-.progress-bar{
+.progress-bar {
   margin-top: 10px;
   display: flex;
   height: 12px;
-  background-color: rgb(210,182,168);
+  background-color: rgb(210, 182, 168);
   width: 90%;
   border-radius: 6px;
   justify-content: flex-start !important;
 }
 
-mark{
-  background-color: rgb(210,182,168);
+mark {
+  background-color: rgb(210, 182, 168);
   font-size: larger;
   box-sizing: content-box;
   padding: 10px;
   border-radius: 15px;
 }
+
 /* #ff8c007d */
 
-.growth{
+.growth {
   display: flex;
   position: relative;
   height: 12px;
   width: 0%;
   border-radius: 6px;
-  background-color: rgb(0,172,148);
+  background-color: rgb(0, 172, 148);
   transition: all 0.5s ease-in-out;
 }
 
@@ -75,11 +76,12 @@ mark{
 .skill__container {
   /* border: 1px solid; */
   margin-left: 20px;
-  margin-right: 20px ;
+  margin-right: 20px;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, auto);
-  gap: 20px; 
+  gap: 20px;
 }
 
 .skill__box {
@@ -90,16 +92,17 @@ mark{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  
+
 }
 
-.skill__container .skill__box svg{
+.skill__container .skill__box svg {
   display: block;
 }
 
-.skill__container{
+.skill__container {
   display: none;
 }
+
 /* skill wrapper has 2 childs> card container and skill list/ s-list */
 
 
@@ -125,7 +128,7 @@ mark{
   position: relative;
 }
 
-.skill__container{
+.skill__container {
   font-family: 'Mondia', sans-serif;
 }
 
@@ -225,11 +228,11 @@ body.invert .inverse2 {
   border-radius: 15px 0px 0 0px;
 }
 
-.lst{
+.lst {
   border-radius: 0px 0 0px 15px;
 }
 
-.first-x::before{
+.first-x::before {
   content: '';
   position: absolute;
   top: 0;
@@ -241,7 +244,8 @@ body.invert .inverse2 {
   background-color: black;
   z-index: 99999;
 }
-.lst::before{
+
+.lst::before {
   content: '';
   position: absolute;
   top: calc(100% - 10px);
@@ -253,6 +257,7 @@ body.invert .inverse2 {
   z-index: 99999;
   border-radius: 10px 0 0px 0px;
 }
+
 /* width: 435px; height60vh */
 
 @keyframes padd {
@@ -283,7 +288,7 @@ body.invert .inverse2 {
   transition-duration: 0.3s;
 }
 
-.middle{
+.middle {
   margin-top: 0px;
   margin-bottom: 0;
   margin-left: 60px;
@@ -295,20 +300,21 @@ body.invert .inverse2 {
 /* ------------------------{MEDIA QUERY}-------------------------------------------- */
 
 @media (width > 1536px) {
-  #skill-list{
+  #skill-list {
     padding-left: 550px;
   }
 
-  #s2-skills{
+  #s2-skills {
     height: 98vh;
   }
 }
 
 /* md */
 @media (width > 768px) and (width < 1025px) {
-  #s2-skills{
+  #s2-skills {
     height: 100vh;
   }
+
   :root {
     --card-container-width: 150px;
     --card-container-height: 350px;
@@ -317,7 +323,7 @@ body.invert .inverse2 {
     --s-list-font-size: 1.2em;
   }
 
-  .skill-wrapper{
+  .skill-wrapper {
     display: none;
   }
 
@@ -329,9 +335,10 @@ body.invert .inverse2 {
 
 /* sm */
 @media (max-width: 768px) {
-  #s2-skills{
-    height: 130vh;
+  #s2-skills {
+    height: 135vh;
   }
+
   :root {
     --card-container-width: 150px;
     --card-container-height: 350px;
@@ -340,7 +347,7 @@ body.invert .inverse2 {
     --s-list-font-size: 1.2em;
   }
 
-  .skill-wrapper{
+  .skill-wrapper {
     display: none;
   }
 
@@ -352,9 +359,10 @@ body.invert .inverse2 {
 
 /* xs */
 @media (max-width: 475px) {
-  #s2-skills{
-    height: 130vh;
+  #s2-skills {
+    height: 135vh;
   }
+
   :root {
     --card-container-width: 150px;
     --card-container-height: 350px;
@@ -363,7 +371,7 @@ body.invert .inverse2 {
     --s-list-font-size: 1.2em;
   }
 
-  .skill-wrapper{
+  .skill-wrapper {
     display: none;
   }
 

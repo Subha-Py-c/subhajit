@@ -118,6 +118,10 @@
         
             overflow: hidden;
             pointer-events: none;
+
+            @media (width < 768px) {
+                font-size: 3rem;
+            }
         }
 
         html.invert #loader{
@@ -234,24 +238,34 @@
                 </div>
                 <!-- #div2 -->
                 <div itemscope itemtype="http://schema.org/Person" id="div2" class="animated-div-xx">
-                    <!-- <h2 class="name">Hey there! <span class="ta-ta">👋</span></h2> -->
                     <h3 id="intro" itemprop="description" class="intro">
                         Myself <span itemprop="name" id="subhajit">Subhajit Gorai.</span>
-                        <br>
-                        <span class="s0 relative"><span class="s1 relative">
-                        Currently I am pursuing B.Tech at Indian Institute of Engineering Science and Technology
-                        <br>
-                        (IIEST), Shibpur, in department of Information Technology. I am passionate about
-                        <br>
-                        <strong itemprop="jobTitle">WEB DEVELOPMENT</strong> and <strong itemprop="jobTitle">MACHINE LEARNING.</strong></span></span>
-                        <br>
-                        <br>
-                        <span class="s0 relative"><span class="s1 relative">
-                        Coding has become more than just a skill for me—it's a passion. My journey began with a fascination for python, and since then, I've been on an exhilarating ride through the realms of programming.</span></span>
-                        <br>
-                        <br>
-                        <span class="s0 relative"><span class="s1 relative">
-                        Join me as I navigate through the intricate web of coding, fueled by curiosity and a relentless drive to learn more. Together, let's embark on this exciting journey of exploration and mastery in the world of technology.</span></span>
+                        
+                        <br><br>
+
+                        <span class="s0 relative">
+                            <span class="s1 relative">
+                                Currently I am pursuing B.Tech at Indian Institute of Engineering Science and Technology
+                                (IIEST), Shibpur, in department of Information Technology. I am passionate about
+                                <strong itemprop="jobTitle">WEB DEVELOPMENT</strong> and <strong itemprop="jobTitle">MACHINE LEARNING.</strong>
+                            </span>
+                        </span>
+
+                        <br><br>
+
+                        <span class="s0 relative">
+                            <span class="s1 relative">
+                                Coding has become more than just a skill for me—it's a passion. My journey began with a fascination for python, and since then, I've been on an exhilarating ride through the realms of programming.
+                            </span>
+                        </span>
+                        
+                        <br><br>
+
+                        <span class="s0 relative">
+                            <span class="s1 relative">
+                                Join me as I navigate through the intricate web of coding, fueled by curiosity and a relentless drive to learn more. Together, let's embark on this exciting journey of exploration and mastery in the world of technology.<span class="ta-ta">🚀</span>
+                            </span>
+                        </span>
                     </h3>
                 </div>
                 <!-- #divv3 -->
@@ -891,11 +905,6 @@
                                     <textarea name="message" id="msg" rows="1" required placeholder="Your Message"></textarea>
                                     <br>
                                     <button class="btn email-btn" type="submit" id="submit" value="Send">Send</button>
-                                    <!-- <div class="h-captcha"
-                                        data-captcha="true"
-                                        data-theme="dark"
-                                        data-size="compact">
-                                    </div> -->
                                 </form>
                             </div>
                         </div>
@@ -930,7 +939,7 @@
             y:0,
             stagger: 0.4,
             delay: 1.7,
-            duration: 0.8,
+            duration: 1.7,
             ease: "power3.out",
             opacity: 1
         })

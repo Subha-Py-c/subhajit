@@ -16,6 +16,7 @@
     height: 0;
     transition: all 0.35s;
 }
+
 /* ------------------------{ul}-------------------------------------------- */
 
 .ul {
@@ -35,10 +36,7 @@
     margin: 0;
     padding: 0;
     width: var(--li-width);
-    background-color: rgba(255, 255, 255, 0.2);
-    color: rgb(122, 117, 107) !important;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,26 +46,45 @@
     will-change: height;
 }
 
-.li.active{
+.li.active {
     height: 10vh;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     transition: all 0.32s;
+
     width: var(--li-width);
-    background-color: rgba(255, 255, 255, 0.2);
     color: rgb(122, 117, 107) !important;
+    background-color: rgba(227, 217, 205, 0.82);
+    /* bisque = rgb(255, 228, 196) */
+    border-bottom: 1px solid rgba(95, 95, 95, 0.371);
+
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.li .sp{
+
+html.invert .li.active {
+    background-color: rgba(255, 255, 255, 0.82);
+    border-bottom: 1px solid rgba(55, 55, 55, 0.3);
+}
+
+.li .sp {
     font-size: 0;
 }
-.li.active .sp{
+
+.li.active .sp {
     font-size: var(--li-text-size);
 }
-@keyframes increase-height {0%{height: 0;}100%{height: 10vh;}}
+
+@keyframes increase-height {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 10vh;
+    }
+}
 
 .li a {
     color: rgb(0, 0, 0) !important;
@@ -76,6 +93,7 @@
 .li a:hover {
     text-decoration: none !important;
 }
+
 /* ------------------------{Nav-Menu}-------------------------------------------- */
 .nav-menu {
     z-index: var(--svg-z-index);
@@ -121,6 +139,7 @@
 
 @media (width > 1536px) {
     header {
+        z-index: 999999990;
         position: fixed;
         top: calc(var(--top) - 10px);
         right: 28px;
@@ -149,11 +168,6 @@
     .ul {
         justify-content: flex-start;
         align-items: flex-start;
-    }
-
-    .li {
-        justify-content: flex-start;
-        padding-left: 60px;
     }
 
     .close-icon {
