@@ -1,37 +1,29 @@
 :root {
-    --nav-height: 10vh;
-    --li-width: 100%;
+    --nav-height: 50vh;
+    --li-width: 100vw;
     --li-height-initial: 0;
     --li-text-size: 2em;
 }
 
 .nav {
     z-index: 999999;
-    height: var(--nav-height);
     width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
-    transition: all 0.5s ease;
-    animation-delay: 500ms;
-    display: none;
-}
-
-.nav.visible {
+    transition: all 0.3s ease;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 1;
+    height: 0;
+    height: fit-content;
 }
-
-
 /* ------------------------{ul}-------------------------------------------- */
 
 .ul {
-    display: flex;
     position: relative;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
 }
@@ -40,28 +32,32 @@
 
 .li {
     position: relative;
-    margin: 0px;
+    margin: 0;
     padding: 0;
     width: var(--li-width);
-    height: 0vh;
-
     background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     color: rgb(122, 117, 107) !important;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-
-    animation: come-in 600ms forwards;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 0vh;
+    transition: all 0.32s;
 }
 
-.li {
-    width: 100vw;
+.li.active{
+    height: 10vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.32s;
 }
+.li .sp{
+    font-size: 0;
+}
+.li.active .sp{
+    font-size: var(--li-text-size);
+}
+@keyframes increase-height {0%{height: 0;}100%{height: 10vh;}}
 
 .li a {
     color: rgb(0, 0, 0) !important;
@@ -70,15 +66,6 @@
 .li a:hover {
     text-decoration: none !important;
 }
-
-.sp {
-    display: block;
-}
-
-.animate-li {
-    animation: come-in 400ms forwards;
-}
-
 /* ------------------------{Nav-Menu}-------------------------------------------- */
 .nav-menu {
     z-index: var(--svg-z-index);
@@ -115,25 +102,6 @@
     display: none;
 }
 
-/* ------------------------{nav li span}-------------------------------------------- */
-.nav .ul .li span {
-    font-size: var(--li-text-size);
-    opacity: 0;
-}
-
-.nav .ul .li span.appear {
-    opacity: 1;
-}
-
-@keyframes come-in {
-    0% {
-        height: 0;
-    }
-
-    100% {
-        height: 10vh;
-    }
-}
 
 #nav-icon-2 {
     display: none;
@@ -154,18 +122,18 @@
 }
 
 @media (max-width: 768px) {
+    :root {
+        --nav-height: 50vh;
+        --li-width: 100vw;
+        --li-text-size: 1.2em;
+    }
+
     #nav-icon-2 {
         display: block;
     }
 
     #nav-icon {
         display: none;
-    }
-
-    :root {
-        --nav-height: 10vh;
-        --li-width: 100%;
-        --li-text-size: 1.2em;
     }
 
     .ul {
