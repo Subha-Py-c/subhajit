@@ -360,7 +360,7 @@ body.invert .inverse2 {
 /* xs */
 @media (max-width: 475px) {
   #s2-skills {
-    height: 135vh;
+    height: 140vh;
   }
 
   :root {
