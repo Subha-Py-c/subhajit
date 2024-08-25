@@ -1,5 +1,9 @@
 /* ------------------------{main parents}-------------------------------------------- */
 
+:root{
+  --projects-card-clr: var(--card-container-color);
+}
+
 #s3-projects {
   margin-top: 0px;
 }
@@ -110,15 +114,12 @@ img {
 
   /* background-color: rgb(210, 182, 168); */
   border-radius: 30px;
-  /* border: 1px solid; */
   box-sizing: border-box;
 }
 
 .slider{
   box-sizing: border-box;
-  /* border: 1px solid; */
   border-radius: 30px;
-  /* background-color: rgb(210, 182, 168); */
   position: relative;
   top: -16px;
   display: flex;
@@ -136,7 +137,6 @@ img {
   background-position: center;
   background-size: cover;
   border-radius: 20px;
-  /* box-shadow: 0 10px 20px rgba(0,0,0,0.3) inset; */
   box-shadow: 0 10px 20px rgba(255,255,255,0.3) inset;
   transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
   transition: all 0.75s !important;
@@ -150,7 +150,6 @@ img {
     border-radius: 30px;
     box-shadow: none;
     opacity: 1;
-    /* border: 1px solid; */
   }
 
   &:nth-child(3) { left: 44%; }
@@ -159,7 +158,7 @@ img {
   &:nth-child(6) { left: calc(44% + 630px); opacity: 0; }
 
   &:nth-child(2n){
-    background-color: rgb(220, 192, 178);
+    background-color: var(--projects-card-clr);
   }
 
   &:nth-child(2n+1){

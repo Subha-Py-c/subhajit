@@ -15,15 +15,12 @@
 #s4-contacts {
   box-sizing: border-box;
   padding-top: 8vh;
-  /* border: 1px solid green; */
 }
 
 /* ------------------------{expC}-------------------------------------------- */
 
 .expC {
   box-sizing: border-box;
-  /* padding-top: var(--padding-top-contacts); */
-  /* margin: 0px 30px 0 var(--margin-left); */
   margin: 0;
   padding: var(--padding-top-contacts) 30px 0 var(--margin-left);
   font-size: var(--heading-text-size);
@@ -164,7 +161,7 @@
     /* margin-left: 30px; */
     height: 30px;
     width: 250px;
-    background-color: rgba(255, 243, 226, 0.467) !important;
+    background-color: var(--input-bg) !important;
     border-radius: 10px !important;
     border: 1px solid black !important;
     font-size: 1rem;
@@ -180,7 +177,7 @@
     padding: 20px;
     box-sizing: border-box;
     font-size: 1rem;
-    background-color: rgba(250, 235, 215, 0.565);
+    background-color: var(--text-area-bg);
   }
 
   & button{
@@ -193,7 +190,7 @@
 }
 
 .email-btn:hover{
-  background-color: rgb(220,192,178) !important;
+  background-color: var(--btn-hover-bg) !important;
   color: black !important;
 }
 
@@ -205,26 +202,6 @@
   z-index: 899;
   transition: all 0.3s;
 }
-
-/* ------------------------{c-text}-------------------------------------------- */
-/* 
-#c-text {
-  position: absolute;
-  z-index: 9899;
-  background-color: yellow;
-  bottom: 40px;
-  opacity: 0;
-}
-
-.box:hover #c-text {
-  opacity: 1;
-}
-
-.box:hover img {
-  transform: scale(1.2);
-} 
-*/
-/* ------------------------{hide-this-thing}-------------------------------------------- */
 
 .hide-this-thing {
   font-size: 0;

@@ -11,7 +11,6 @@
   margin: 30px 30px 30px 30px;
   margin-left: calc(var(--margin-left) + var(--letter-spacing));
   letter-spacing: var(--letter-spacing);
-  /* animation: slideIn 1.2s ease-out; */
   display: inline;
   transition: transform 0.3s;
 }
@@ -35,7 +34,8 @@ main {
 /* ------------------------{d1-2-3}-------------------------------------------- */
 
 .d1-2-3 {
-  border: 1px solid rgb(158, 138, 128);
+  /* border: 1px solid rgb(158, 138, 128); */
+  border: 1px solid var(--hero-section-border-clr);
   border-radius: 15px;
   width: calc(100% - 2px);
   height: 100%;
@@ -44,7 +44,8 @@ main {
   grid-template-columns: repeat(3, 1fr);
   /* background: url(../../images/paper-texture.webp) no-repeat; */
   background-size: cover;
-  background-color: rgb(220, 192, 178);
+  /* background-color: rgb(220, 192, 178); */
+  background-color: var(--hero-section-clr);
   background-position: center;
   position: relative;
   z-index: 74;
@@ -58,25 +59,6 @@ html.invert .d1-2-3 {
   border-color: #cdcdcd;
 }
 
-/* ------------------------{name}-------------------------------------------- */
-
-.name {
-  font-family: MondiaThin, sans-serif;
-  margin: 0px 30px 0px var(--margin-left);
-  font-weight: 500;
-  font-size: var(--introduction-text-size);
-}
-
-.name span {
-  font-weight: 300;
-  transition: 0.8s;
-}
-
-.name span:hover {
-  /* animation: underline 0.8s forwards; */
-  transform: translateX(30px) !important;
-  transition: transorm 0.8s;
-}
 
 
 #subhajit {
@@ -92,7 +74,7 @@ html.invert .d1-2-3 {
   font-weight: 400;
   font-size: var(--introduction-text-size);
 
-  /* font-family: poppins, sans-serif; */
+  /* font-family: Mondia, sans-serif; */
   /* font-size: 1.25rem ; */
 }
 
@@ -127,7 +109,6 @@ html.invert .d1-2-3 {
 
 #div2 {
   position: relative;
-  color: var(--tc);
   color: rgb(22, 22, 22) !important;
   grid-area: 4/1/8/4;
   border-radius: 0 0 15px 15px;

@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const navMenu = document.querySelector(".nav-menu");
   const lis = document.querySelectorAll(".li");
   const closeIcon = document.querySelector(".close-icon");
+  const main = document.querySelector("main");
 
 
   navMenu.addEventListener("click", function () {
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     closeIcon.style.display = "flex";
 
     nav.style.height = "50vh";
+    main.classList.add("nav-open");
   });
 
 
@@ -32,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     closeIcon.style.display = "none";
 
     nav.style.height = "0vh";
+    main.classList.remove("nav-open");
   });
 
 
