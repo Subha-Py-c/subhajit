@@ -251,6 +251,8 @@ body {
     border-radius: 20px;
     transform: scale(1.2);
     background-color: #000000;
+    font-size: 0;
+    background-clip: border-box;
   }
 
   #s1 {

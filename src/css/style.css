@@ -87,8 +87,10 @@
 
 
     /* positioning */
-    --top: 25px;
-    --right: 20px;
+    /* t:25, r:20 */
+    --top: 40px;
+    --right: 80px;
+    /* redefined in projects.css */
 
     /* delays */
     --transition-delay: 0.2s;

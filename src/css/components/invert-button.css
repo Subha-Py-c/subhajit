@@ -33,10 +33,7 @@ html.invert main {
 /* ------------------------{invert-button}-------------------------------------------- */
 
 #invert-button {
-  position: fixed;
-  top: var(--top);
-  top: calc(var(--top) + 3px);
-  right: calc(var(--right) + 65px);
+  position: relative;
   z-index: 85;
   width: 36px;
   height: 36px;
@@ -47,10 +44,10 @@ html.invert main {
   border-radius: 50%;
   background-color: transparent;
   border: none;
-  transition: var(--transition-duration);
   background-image: url(../../icons/dm3.svg);
   background-size: cover;
   background-repeat: no-repeat;
+  transform: translate3d(0, 0, 0);
   transition: transform 0.3s;
 }
 
@@ -58,51 +55,10 @@ html.invert main {
   transform: scale(1.0);
 }
 
-/* -------------------------------------------------------------------- */
 
-/* md */
 @media (max-width: 768px) {
   #invert-button {
-    right: calc(var(--right) + 6px);
-    top: calc(var(--top) + 45px);
     width: 26px;
     height: 26px;
   }
-
-  #invert-button:hover {
-    transform: scale(1.0);
-    filter: invert(0%);
-  }
-}
-
-/* sm */
-@media (max-width: 640px) {
-  #invert-button {
-    right: calc(var(--right) + 6px);
-    top: calc(var(--top) + 45px);
-    width: 26px;
-    height: 26px;
-  }
-
-  #invert-button:hover {
-    transform: scale(1.0);
-    filter: invert(0%);
-  }
-}
-
-
-/* xs */
-@media (max-width: 475px) {
-  #invert-button {
-    right: calc(var(--right) + 6px);
-    top: calc(var(--top) + 45px);
-    width: 26px;
-    height: 26px;
-  }
-
-  #invert-button:hover {
-    transform: scale(1.0);
-    filter: invert(0%);
-  }
-
 }

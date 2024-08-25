@@ -5,38 +5,35 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeIcon = document.querySelector(".close-icon");
   const main = document.querySelector("main");
 
-
   navMenu.addEventListener("click", function () {
     lis.forEach((li, index) => {
       setTimeout(() => {
         li.classList.add("active");
-      }, 0+index*50)
+      }, 0 + index * 50);
       li.offsetHeight;
     });
 
     navMenu.style.display = "none";
     closeIcon.style.display = "flex";
 
-    nav.style.height = "50vh";
+    nav.style.height = "75vh";
     main.classList.add("nav-open");
   });
-
 
   closeIcon.addEventListener("click", function () {
     lis.forEach((li, index) => {
       setTimeout(() => {
         li.classList.remove("active");
-      }, 0+index*50)
+      }, 0 + index * 50);
       li.offsetHeight;
     });
-    
+
     navMenu.style.display = "flex";
     closeIcon.style.display = "none";
 
     nav.style.height = "0vh";
     main.classList.remove("nav-open");
   });
-
 
   var w = 5000;
   if (window.innerWidth < w) {

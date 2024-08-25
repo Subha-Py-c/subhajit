@@ -152,10 +152,7 @@
     <!-- ------------------------------------------------------------------------------------
      CDN js 
     ------------------------------------------------------------------------------------ -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js" async defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" async defer></script>
-    <!-- split type js -->
-    <!-- <script src="https://unpkg.com/split-type"></script> -->
+    <!-- split type js && typed.js -->
 </head>
 
 <body>
@@ -184,70 +181,69 @@
         });        
     </script>
 
-    <header>
-        <nav>
-            <div class="nav flexed" id="nav">
-                <div class="ul full" id="ul">
-                    <div class="li">
-                        <span class="sp underline">
-                            <a href="#s1">Home</a>
-                        </span>
-                    </div>
-                    <div class="li">
-                        <span class="sp underline">
-                            <a href="#s-last">Academics</a>
-                        </span>
-                    </div>
-                    <div class="li">
-                        <span class="sp underline">
-                            <a href="#SK">Skills</a>
-                        </span>
-                    </div>
-                    <div class="li">
-                        <span class="sp underline">
-                            <a href="#div3">Projects</a>
-                        </span>
-                    </div>
-                    <div class="li">
-                        <span class="sp underline">
-                            <a href="#s4-contacts">Contact</a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- nav ham icon -->
-            <div class="nav-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
-                    class="nav-icon" id="nav-icon">
-                    <path
-                        d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z">
-                    </path>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50"
-                    class="nav-icon" id="nav-icon-2">
-                    <path
-                        d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z">
-                    </path>
-                </svg>
-            </div>
-
-            <!-- nav close icon -->
-            <div id="cl-icon" class="close-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" height="100" viewBox="0 -960 960 960" width="100" fill="#000">
-                    <path
-                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                </svg>
-            </div>
-        </nav>
-
+    <header class="flexed justify-between">
         <button id="invert-button" class="filters">
             <!-- why does it need a font? -->sun-icon
             <i id="sun-icon" class="fas fa-sun"></i>
             <i id="moon-icon" class="fas fa-moon"></i>
             <!-- donot remove, or else js error -->
         </button>
+
+        <!-- nav ham icon -->
+        <div class="nav-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
+                class="nav-icon" id="nav-icon">
+                <path
+                    d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z">
+                </path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50"
+                class="nav-icon" id="nav-icon-2">
+                <path
+                    d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z">
+                </path>
+            </svg>
+        </div>
+
+        <!-- nav close icon -->
+        <div id="cl-icon" class="close-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" height="100" viewBox="0 -960 960 960" width="100" fill="#000">
+                <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+        </div>
     </header>
+
+    <!-- nav -->
+    <div class="nav flexed" id="nav">
+        <div class="ul full" id="ul">
+            <div class="li">
+                <span class="sp underline">
+                    <a href="#s1">Home</a>
+                </span>
+            </div>
+            <div class="li">
+                <span class="sp underline">
+                    <a href="#s-last">Academics</a>
+                </span>
+            </div>
+            <div class="li">
+                <span class="sp underline">
+                    <a href="#SK">Skills</a>
+                </span>
+            </div>
+            <div class="li">
+                <span class="sp underline">
+                    <a href="#div3">Projects</a>
+                </span>
+            </div>
+            <div class="li">
+                <span class="sp underline">
+                    <a href="#s4-contacts">Contact</a>
+                </span>
+            </div>
+        </div>
+    </div>
 
     <main role="main">
         <!-- S1 -->
@@ -715,7 +711,6 @@
             <!-- gallery for desktops -->
             <div data-aos="fade-up" data-aos-delay="150" id="gallery" class="projects__gallery">
                 <ul class='slider full flexed'>
-
                     <!-- relaxing melody -->
                     <li id="p_1" class='gitem bg-set'>
                         <div class='gcontent'>
@@ -955,11 +950,15 @@
     </main>
 
     <!-- AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init();
+        })
     </script>
 
     <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script>
         gsap.to('.s1', {
             y:0,
@@ -967,7 +966,7 @@
             delay: 1.7,
             duration: 1.7,
             ease: "power3.out",
-            opacity: 1
+            opacity: 1,
         })
         // 1300 load -> 1700 start
     </script>
