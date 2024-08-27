@@ -12,17 +12,13 @@ main {
 }
 
 main.nav-open {
-    filter: blur(3px)brightness(0.7);
+    filter: blur(3px) brightness(0.7);
     transition: all 0.3s;
 }
 
 html.invert main.nav-open {
-    filter: blur(3px)brightness(1);
+    filter: blur(3px) brightness(1);
 }
-
-
-
-
 
 .nav {
     z-index: 999999;
@@ -61,6 +57,7 @@ html.invert main.nav-open {
 
     height: 0vh;
     transition: all 0.32s;
+
     will-change: height;
 }
 
@@ -138,7 +135,6 @@ html.invert .li.active {
     justify-content: center;
     align-items: center;
 }
-
 
 #nav-icon-2 {
     display: none;

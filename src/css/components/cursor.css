@@ -12,8 +12,6 @@
   transition: transform 0.1s;
 }
 
-
-
 @media (max-width: 1024px) {
   .cursor {
     display: none;

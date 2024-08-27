@@ -92,13 +92,6 @@ img {
   border-radius: 50%;
 }
 
-
-
-
-
-
-
-
 /* ------------------------{projects__gallery}-------------------------------------------- */
 
 .projects__gallery {
@@ -106,7 +99,8 @@ img {
   height: 500px;
   width: 85vw;
 
-  margin: 70px calc(var(--margin-left) + 20px) 0px calc(var(--margin-left) + 20px);
+  margin: 70px calc(var(--margin-left) + 20px) 0px
+    calc(var(--margin-left) + 20px);
 
   display: flex;
   justify-content: center;
@@ -139,7 +133,8 @@ img {
   transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
   transition: all 0.75s !important;
 
-  &:nth-child(1), &:nth-child(2) {
+  &:nth-child(1),
+  &:nth-child(2) {
     left: 5px;
     top: 5px;
     width: calc(100% - 15px);
@@ -171,7 +166,7 @@ img {
     background-color: var(--projects-card-clr);
   }
 
-  &:nth-child(2n+1) {
+  &:nth-child(2n + 1) {
     background-color: rgb(180, 152, 138);
   }
 }
@@ -186,9 +181,8 @@ img {
   color: white;
   text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
 
-
   & .title {
-    font-family: 'arial-black';
+    font-family: "arial-black";
     text-transform: uppercase;
     font-size: 0.85rem;
   }
@@ -211,7 +205,7 @@ img {
     align-items: center;
     gap: 1.5rem;
     font-size: 1rem;
-    font-family: 'JetBrains Mono', monospace, sans-serif;
+    font-family: "JetBrains Mono", monospace, sans-serif;
     background-color: rgba(0, 0, 0, 0.91);
     color: white;
     border: 2px solid white;
@@ -288,7 +282,7 @@ img {
 
 /* relaxing melody 3.jpeg */
 #p_1 {
-  background-image: url('../../images/dark_paper.svg');
+  background-image: url("../../images/dark_paper.svg");
 }
 
 /* encrypt ease 2.jpeg*/
@@ -296,27 +290,25 @@ img {
 
 /* ad free news   1.jpeg */
 #p_3 {
-  background-image: url('../../images/crax.svg');
+  background-image: url("../../images/crax.svg");
 }
 
 /* notice scraper 4.jpeg */
 #p_4 {
-  background-image: url('../../images/canion.svg');
+  background-image: url("../../images/canion.svg");
 }
 
 /* class timing  5.jpeg */
 #p_5 {
-  background-image: url('../../images/dark_balls.svg');
+  background-image: url("../../images/dark_balls.svg");
 }
 
 /* blogs  6.jpeg */
 #p_6 {
-  background-image: url('../../images/6.jpeg');
+  background-image: url("../../images/6.jpeg");
 }
 
-
 /* -------------------------------------------------------------------- */
-
 
 @media (width > 1536px) {
   .projects__gallery {
@@ -346,8 +338,6 @@ img {
     height: 80vh;
   }
 }
-
-
 
 @media (width > 768px) and (width < 1225px) {
   #s3-projects {
@@ -393,7 +383,8 @@ img {
 
   .projects__gallery {
     width: 90vw;
-    margin: 70px calc(var(--margin-left) + 20px) 0px calc(var(--margin-left) - 30px);
+    margin: 70px calc(var(--margin-left) + 20px) 0px
+      calc(var(--margin-left) - 30px);
   }
 }
 

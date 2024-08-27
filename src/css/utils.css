@@ -46,14 +46,13 @@
   }
 }
 
-
 /* -------------------------------------------------------------------- */
 .underline {
   position: relative;
 }
 
 .underline::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -98,7 +97,7 @@
 }
 
 .animated-underline-proper::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -129,7 +128,7 @@
 }
 
 .animated-text-highlight::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -217,7 +216,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-
 /* ------------------------{HIDDEN CLASS}-------------------------------------------- */
 
 /* HIDDEN */
@@ -265,7 +263,6 @@
 
 /* 2xl */
 /* @media (max-width: 1536px) {} */
-
 
 /* flex-positions */
 .flexed {

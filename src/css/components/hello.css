@@ -52,14 +52,11 @@ main {
   border-radius: 15px;
 }
 
-
 html.invert .d1-2-3 {
   background-color: rgb(255, 255, 255);
   color: rgb(10, 10, 10);
   border-color: #cdcdcd;
 }
-
-
 
 #subhajit {
   font-family: "MilitaryScribe", cursive, sans-serif;
@@ -69,6 +66,7 @@ html.invert .d1-2-3 {
 }
 
 .intro {
+  /* border: 1px solid; */
   margin: 0px 30px 0px var(--margin-left);
   font-family: MondiaThin, sans-serif;
   font-weight: 400;
@@ -76,6 +74,11 @@ html.invert .d1-2-3 {
 
   /* font-family: Mondia, sans-serif; */
   /* font-size: 1.25rem ; */
+
+  @media (width > 1024px) {
+    box-sizing: border-box;
+    padding-right: 5rem;
+  }
 }
 
 .line,
@@ -91,16 +94,17 @@ html.invert .d1-2-3 {
   line-height: calc(var(--introduction-text-size) - 0.8rem);
 }
 
-.s0 {
-  display: inline-flex !important;
+.s0,
+.s2 {
+  display: inline-flex;
   overflow: hidden;
 }
 
-.s1 {
+.s1,
+.s3 {
   transform: translateY(100%);
   opacity: 0;
 }
-
 
 #div1 {
   grid-area: 2/1/4/3;
@@ -118,6 +122,14 @@ html.invert .d1-2-3 {
   text-decoration: underline;
 }
 
+#div2 code {
+  font-weight: 800;
+}
+
+#div2 cite {
+  font-style: italic;
+}
+
 #divv3 {
   grid-area: 2/3/5/4;
   border-radius: 30px;
@@ -130,9 +142,13 @@ html.invert .d1-2-3 {
   background-color: #111;
 
   box-sizing: border-box;
-  padding: 3px;
+  padding: 0px;
 
   overflow: hidden;
+
+  @media (width > 1024px) {
+    border-radius: 160px;
+  }
 }
 
 html.invert #divv3,
@@ -143,7 +159,7 @@ body.invert #divv3 {
 .img_container {
   border-radius: 40px;
   background-color: rgb(50, 50, 50);
-  background-image: url('../../images/p4.png');
+  background-image: url("../../images/p4.png");
   background-repeat: no-repeat;
   background-size: 95%;
   background-position: 100% 100%;
@@ -156,15 +172,14 @@ body.invert #divv3 {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+
+  @media (width > 1024px) {
+    border-radius: 160px;
+  }
 }
 
-html.invert #divv3 .img_container,
-body.invert #divv3 .img_container {
+html.invert #divv3 .img_container {
   background-color: rgb(40, 40, 40);
-}
-
-#divv3:hover .img_container {
-  border-radius: 160px;
 }
 
 #divv4 {
@@ -178,7 +193,7 @@ body {
 
 /* -------------------------------------------------------------------- */
 
-@media (width > 1536px) {
+@media (width > 1436px) {
   #div2 {
     padding-right: 20rem;
   }
@@ -194,10 +209,6 @@ body {
   .img_container {
     border-radius: 90px;
   }
-
-  /* #s1{
-    height: 10vh;
-  } */
 }
 
 @media (width > 767px) and (width < 1025px) {

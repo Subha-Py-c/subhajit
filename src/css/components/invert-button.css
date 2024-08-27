@@ -5,7 +5,6 @@
   position: relative;
 }
 
-
 html.invert,
 body.invert,
 html.invert #s-last,
@@ -27,8 +26,6 @@ html.invert main {
   position: relative !important;
   z-index: 73;
 }
-
-
 
 /* ------------------------{invert-button}-------------------------------------------- */
 
@@ -52,9 +49,8 @@ html.invert main {
 }
 
 #invert-button:hover {
-  transform: scale(1.0);
+  transform: scale(1);
 }
-
 
 @media (max-width: 768px) {
   #invert-button {

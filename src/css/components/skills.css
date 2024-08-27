@@ -10,7 +10,6 @@
 
 /* ------- SKILLS ------------------------------------------------------ */
 
-
 #s2-skills {
   height: 103vh;
 }
@@ -92,7 +91,6 @@ mark {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
 }
 
 .skill__container .skill__box svg {
@@ -105,7 +103,6 @@ mark {
 
 /* skill wrapper has 2 childs> card container and skill list/ s-list */
 
-
 /* ------- SKILL LIST ---------------------------------------------------- */
 #skill-list {
   /* border: 1px solid; */
@@ -116,7 +113,7 @@ mark {
   padding-left: 50px;
   margin-top: 20px;
 
-  font-family: 'Mondia', sans-serif;
+  font-family: "Mondia", sans-serif;
   font-weight: 200;
   font-size: var(--s-list-font-size);
 
@@ -129,9 +126,8 @@ mark {
 }
 
 .skill__container {
-  font-family: 'Mondia', sans-serif;
+  font-family: "Mondia", sans-serif;
 }
-
 
 /* ------- CARD CONTAINER ----------------------------------------------- */
 .card-container {
@@ -160,39 +156,6 @@ mark {
   font-size: var(--card-font-size);
 }
 
-/* the svg class */
-.material-symbols {
-  width: 82px;
-  height: 82px;
-  border-radius: 50%;
-  border: 1px solid rgb(0, 0, 0);
-  font-size: 2.7em;
-  font-weight: 50;
-  background-color: rgba(197, 126, 33, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.default {
-  width: 90px;
-  height: 90px;
-  display: block;
-  border-radius: 50%;
-  margin-left: calc(50% - 45px);
-}
-
-.web-dev,
-.ui-ux,
-.dsa,
-.python,
-.scraping,
-.git,
-.others {
-  display: none;
-}
-
-/* INVERSE */
 .inverse2 {
   z-index: 80;
   margin-top: 0;
@@ -229,33 +192,12 @@ body.invert .inverse2 {
   border-radius: 0px 0 0px 15px;
 }
 
-.first-x::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: calc(100% - 25px);
-  width: 30px;
-  height: 10px;
-  /* border-radius: 50%; */
-  border-radius: 0px 0 0 10px;
-  background-color: black;
-  z-index: 99999;
+.middle {
+  margin-top: 0px;
+  margin-bottom: 0;
+  margin-left: 60px;
+  margin-right: 60px;
 }
-
-.lst::before {
-  content: '';
-  position: absolute;
-  top: calc(100% - 10px);
-  left: calc(100% - 25px);
-  width: 30px;
-  height: 10px;
-  /* border-radius: 50%; */
-  background-color: black;
-  z-index: 99999;
-  border-radius: 10px 0 0px 0px;
-}
-
-/* width: 435px; height60vh */
 
 @keyframes padd {
   0% {
@@ -267,15 +209,20 @@ body.invert .inverse2 {
   }
 }
 
-.inverse2:hover {
-  opacity: 1;
-  transition: 0.3s;
+.card-elem {
+  display: none;
 }
 
-.inverse2:hover .strech {
-  transition-duration: 0.3s;
-  font-size: 30px;
-  width: 35px;
+.card-elem:nth-child(1) {
+  display: block;
+}
+
+.list-elem.clicked {
+  background-color: var(--card-container-color-dark);
+}
+
+html.invert .list-elem.clicked {
+  background-color: rgb(204, 204, 204);
 }
 
 .strech {
@@ -285,14 +232,11 @@ body.invert .inverse2 {
   transition-duration: 0.3s;
 }
 
-.middle {
-  margin-top: 0px;
-  margin-bottom: 0;
-  margin-left: 60px;
-  margin-right: 60px;
+.strech.active {
+  transition-duration: 0.3s;
+  font-size: 30px;
+  width: 35px;
 }
-
-
 
 /* ------------------------{MEDIA QUERY}-------------------------------------------- */
 
@@ -329,7 +273,6 @@ body.invert .inverse2 {
   }
 }
 
-
 /* sm */
 @media (max-width: 768px) {
   #s2-skills {
@@ -352,7 +295,6 @@ body.invert .inverse2 {
     display: grid;
   }
 }
-
 
 /* xs */
 @media (max-width: 475px) {
