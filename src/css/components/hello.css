@@ -95,13 +95,21 @@ html.invert .d1-2-3 {
 }
 
 .s0,
-.s2 {
+.s2,
+.s4,
+.s6,
+.s8,
+.s10 {
   display: inline-flex;
   overflow: hidden;
 }
 
 .s1,
-.s3 {
+.s3,
+.s5,
+.s7,
+.s9,
+.s11 {
   transform: translateY(100%);
   opacity: 0;
 }
@@ -193,7 +201,7 @@ body {
 
 /* -------------------------------------------------------------------- */
 
-@media (width > 1436px) {
+@media (width > 1535px) {
   #div2 {
     padding-right: 20rem;
   }
