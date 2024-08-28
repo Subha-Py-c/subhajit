@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // Use throttling or debouncing to improve performance
-    document.addEventListener("scroll", throttle(onScroll, 100));
+    document.addEventListener("scroll", throttle(onScroll, 30000));
   }
 });
 

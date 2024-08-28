@@ -4,6 +4,10 @@
   --letter-spacing: -0.02em;
 }
 
+.typed-cursor {
+  opacity: 0 !important;
+}
+
 #hello {
   font-size: var(--hello-mega-font-size);
   font-family: Dahlia, sans-serif;
@@ -159,9 +163,8 @@ html.invert .d1-2-3 {
   }
 }
 
-html.invert #divv3,
-body.invert #divv3 {
-  background-color: rgb(0, 0, 0);
+html.invert #divv3 {
+  background-color: rgb(37, 37, 37);
 }
 
 .img_container {
@@ -176,10 +179,14 @@ body.invert #divv3 {
   overflow: hidden;
   font-size: poppins, sans-serif;
   line-height: 2px;
-  font-size: 4px;
-  background-clip: text;
-  -webkit-background-clip: text;
+  /* font-size: 4px; */
+  font-size: 0;
+  /* background-clip: text; */
+  background-clip: border-box;
+  /* -webkit-background-clip: text; */
   color: transparent;
+  /* transform: perspective(preserve-3d); */
+  transform-style: preserve-3d;
 
   @media (width > 1024px) {
     border-radius: 160px;

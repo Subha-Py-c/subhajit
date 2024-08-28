@@ -105,6 +105,7 @@ body {
   margin: 10px;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  /* cursor: none; */
 }
 
 *::-webkit-scrollbar {

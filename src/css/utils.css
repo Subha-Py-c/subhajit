@@ -60,12 +60,14 @@
   width: 100%;
   background-color: #000;
   transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.8s ease-in-out;
+  transform-origin: right;
+  transition: transform 0.8s ease-out;
 }
 
 .underline.active::before {
   transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.8s ease-out;
 }
 
 /* ------------------------{ANIMATION CLASSES}-------------------------------------------- */

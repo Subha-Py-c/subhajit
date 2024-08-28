@@ -2,6 +2,7 @@
 // import '../index.html';
 
 // importing js
+// import "./vanila-tilt.js";
 import "./functions/cursor-functions/cursor.js";
 import "./functions/cursor-functions/hiding-cursor.js";
 import "./functions/cursor-functions/cursor-scaling.js";
