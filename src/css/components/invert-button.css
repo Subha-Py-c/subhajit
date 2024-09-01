@@ -7,6 +7,8 @@
 
 html.invert,
 body.invert,
+html.invert body,
+html.invert main,
 html.invert #s-last,
 html.invert #s2-skills,
 html.invert #s3-projects,

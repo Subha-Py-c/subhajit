@@ -130,65 +130,104 @@
   position: absolute;
   top: 0;
   left: 47vw;
-  /* margin-right: 100px; */
-  /* top: 40px; */
-  background-color: var(--email-box-color);
   width: 600px;
   height: 400px;
   display: flex;
-  border-radius: var(--rr);
-  /* border: 1px solid orangered; */
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: transparent;
+
+  & .question {
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-family: poppins, sans-serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    transform: translateY(calc(150px - 50%));
+
+    & .line {
+      width: 100%;
+      height: 1px;
+      background-color: rgb(0, 0, 0);
+    }
+
+    @media (max-width: 1025px) {
+      font-size: 1rem;
+    }
+  }
 }
 
-/* ------------------------{box}-------------------------------------------- */
-
 .box {
-  /* border: 1px solid greenyellow; */
+  box-sizing: border-box;
+  background-color: var(--email-box-color);
+  display: flex;
   position: relative;
-  width: calc(600px - 30px);
-  height: calc(400px - 30px);
-  border-radius: var(--rr);
-  padding: 30px;
-  padding-top: 70px;
+  width: 100%;
+  height: calc(100% - 70px);
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1.2rem;
 
   overflow: hidden;
   z-index: 999999;
+  display: none;
 
   & label {
     font-family: poppins, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   & input {
-    /* margin-left: 30px; */
     height: 30px;
     width: 250px;
     background-color: var(--input-bg) !important;
-    border-radius: 10px !important;
+    border-radius: 5px !important;
     border: 1px solid black !important;
     font-size: 1rem;
     display: inline !important;
+
+    &:nth-child(2) {
+      width: 400px;
+
+      @media (max-width: 1025px) {
+        width: 250px;
+      }
+    }
   }
 
   & textarea {
-    /* margin-left: 30px; */
     width: 100%;
-    height: 150px;
-    border-radius: 15px;
+    height: 100px;
+    border-radius: 5px;
     display: block;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     font-size: 1rem;
     background-color: var(--text-area-bg);
+    margin-bottom: 15px;
   }
 
   & button {
     background-color: black;
     color: #fff;
     width: 150px;
-    margin-left: calc(50% - 75px);
     border-width: 2px;
   }
+}
+
+.typed-cursor {
+  opacity: 0 !important;
+  display: none;
+}
+
+.name-and-email-input {
+  gap: 0.25rem;
+  margin-bottom: 15px;
+}
+.nm,
+.eml {
+  border: none;
 }
 
 .email-btn:hover {
@@ -205,6 +244,30 @@
   transition: all 0.3s;
 }
 
+.btnCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.back-btn {
+  width: 26px;
+  height: 26px;
+  background-color: black;
+  border-radius: 50%;
+
+  & svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (width > 600px) {
+    width: 36px;
+    height: 36px;
+  }
+}
+
 .hide-this-thing {
   font-size: 0;
   opacity: 0;
@@ -213,11 +276,7 @@
 
 /* -------------------------------------------------------------------- */
 
-/* @media (max-width: 1536px) {} */
-/* @media (max-width: 1280px) {} */
-/* @media (max-width: 1024px) {} */
-
-@media (width > 1560px) {
+@media (width > 1535px) {
   .email-box {
     left: 59vw;
   }
@@ -250,9 +309,6 @@
   }
 
   .fs-contacts {
-    /* height: calc(var(--icon-height) * 3); */
-    /* width: 10vw; */
-    /* flex-direction: column; */
     gap: 0.6rem;
     padding-left: 120px;
     font-size: 1rem;
@@ -264,8 +320,6 @@
   .download-cv {
     border: 3px solid;
     font-size: 14px;
-    /* left: 100px; */
-    /* top: 100px; */
     height: 30px;
     width: 130px;
     border-radius: 20px;
@@ -280,7 +334,7 @@
   }
   .box {
     width: 98%;
-    height: 98%;
+    height: 92%;
     border-radius: 25px;
     & label {
       font-size: 1rem;
@@ -291,7 +345,6 @@
 
     & button {
       width: 100px;
-      margin-left: calc(50% - 50px);
       height: 30px;
     }
   }
@@ -313,9 +366,6 @@
   }
 
   .fs-contacts {
-    /* height: calc(var(--icon-height) * 3); */
-    /* width: 10vw; */
-    /* flex-direction: column; */
     gap: 0.6rem;
     padding-left: 40px;
     font-size: 1rem;
@@ -334,7 +384,7 @@
   }
 
   .email-box {
-    top: 47vh;
+    top: 40vh;
     left: 50px;
     width: calc(100% - 100px);
     height: 400px;
@@ -342,7 +392,7 @@
   }
   .box {
     width: 98%;
-    height: 98%;
+    height: 90%;
     border-radius: 25px;
     & label {
       font-size: 1rem;
@@ -353,7 +403,6 @@
 
     & button {
       width: 100px;
-      margin-left: calc(50% - 50px);
       height: 30px;
     }
   }
@@ -404,19 +453,17 @@
   }
   .box {
     width: 98%;
-    height: 98%;
+    height: 88%;
     border-radius: 25px;
     & label {
       font-size: 1rem;
     }
     & input {
       font-size: 0.9rem;
-      width: 200px;
     }
 
     & button {
       width: 100px;
-      margin-left: calc(50% - 50px);
       height: 30px;
     }
   }

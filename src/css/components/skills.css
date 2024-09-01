@@ -54,7 +54,6 @@ mark {
   width: 0%;
   border-radius: 6px;
   background-color: rgb(0, 172, 148);
-  transition: all 0.5s ease-in-out;
 }
 
 /* exps = skill heading span */
@@ -91,6 +90,16 @@ mark {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+html.invert .skill__box {
+  background-color: rgb(231, 231, 231);
+}
+
+@media (width < 1025px) {
+  html.invert .progress-bar {
+    background-color: white;
+  }
 }
 
 .skill__container .skill__box svg {

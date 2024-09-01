@@ -415,15 +415,11 @@
           class="academic__container"
         >
           <div
-            data-aos="fade-up"
-            data-aos-duration="600"
+            data-aosX="fade-up"
+            data-aosX-duration="600"
             class="acad__header header__texts"
           >
-            <span
-              itemprop=""
-              id="academic__header"
-              class="underline headerSpan"
-            >
+            <span id="academic__header" class="underline headerSpan">
               Academics
             </span>
           </div>
@@ -431,8 +427,8 @@
           <div class="acad__list">
             <div class="acad__institutions">
               <div
-                data-aos="fade-up"
-                data-aos-duration="600"
+                data-aosX="fade-up"
+                data-aosX-duration="600"
                 class="ins__container"
               >
                 <div
@@ -474,8 +470,8 @@
             </div>
             <div class="acad__institutions">
               <div
-                data-aos="fade-up"
-                data-aos-duration="600"
+                data-aosX="fade-up"
+                data-aosX-duration="600"
                 class="ins__container"
               >
                 <div
@@ -518,8 +514,8 @@
             </div>
             <div class="acad__institutions">
               <div
-                data-aos="fade-up"
-                data-aos-duration="600"
+                data-aosX="fade-up"
+                data-aosX-duration="600"
                 class="ins__container"
               >
                 <div
@@ -562,8 +558,8 @@
             </div>
             <div class="acad__institutions">
               <div
-                data-aos="fade-up"
-                data-aos-duration="600"
+                data-aosX="fade-up"
+                data-aosX-duration="600"
                 class="ins__container"
               >
                 <div
@@ -1765,8 +1761,13 @@
               </div>
 
               <!-- message box -->
-              <div id="email-box" class="email-box ta-ta flexed">
-                <div class="box flex-col">
+              <div id="email-box" class="email-box">
+                <span class="question"
+                  >Have something in mind? Do not hesitate to share!
+                  <br /><br />
+                  <div class="line"></div>
+                </span>
+                <div class="box ta-ta flex-col">
                   <form
                     id="form"
                     action="https://api.web3forms.com/submit"
@@ -1782,7 +1783,7 @@
                       name="access_key"
                       value="67104936-b712-4f86-abec-8dddf48deff3"
                     />
-                    <div class="name-and-email-input flex-col f-gap-2">
+                    <div class="name-and-email-input flex-col">
                       <div class="nm">
                         <label for="emailer_name">Your name:</label>
                         <input
@@ -1793,19 +1794,20 @@
                           required
                         />
                       </div>
-                      <div class="eml p-top-1">
-                        <label for="email">Your Email:</label>
+                      <div class="eml">
+                        <label for="email"
+                          >Email address for me to contact you:</label
+                        >
                         <input
                           type="email"
                           id="email"
                           name="email"
-                          placeholder="Email"
+                          placeholder="Email Id [eg. jhon123@example.com]"
                           required
                         />
                       </div>
                     </div>
-                    <br />
-                    <label for="msg">Write Your Message:</label>
+                    <label for="msg">Message:</label>
                     <textarea
                       name="message"
                       id="msg"
@@ -1813,15 +1815,46 @@
                       required
                       placeholder="Your Message"
                     ></textarea>
-                    <br />
-                    <button
-                      class="btn email-btn"
-                      type="submit"
-                      id="submit"
-                      value="Send"
-                    >
-                      Send
-                    </button>
+                    <div class="btnCon">
+                      <button
+                        class="btn email-btn"
+                        type="submit"
+                        id="submit"
+                        value="Send"
+                      >
+                        Send
+                      </button>
+                      <div class="back-btn flexed">
+                        <svg
+                          width="64px"
+                          height="64px"
+                          viewBox="0 0 1024 1024"
+                          class="icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="#ffffff"
+                          stroke="#ffffff"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke="#ffffff"
+                            stroke-width="16.384"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              fill="#ffffff"
+                              d="M224 480h640a32 32 0 110 64H224a32 32 0 010-64z"
+                            ></path>
+                            <path
+                              fill="#ffffff"
+                              d="M237.248 512l265.408 265.344a32 32 0 01-45.312 45.312l-288-288a32 32 0 010-45.312l288-288a32 32 0 1145.312 45.312L237.248 512z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
                   </form>
                 </div>
               </div>

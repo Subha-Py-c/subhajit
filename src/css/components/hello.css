@@ -4,10 +4,6 @@
   --letter-spacing: -0.02em;
 }
 
-.typed-cursor {
-  opacity: 0 !important;
-}
-
 #hello {
   font-size: var(--hello-mega-font-size);
   font-family: Dahlia, sans-serif;
@@ -152,6 +148,7 @@ html.invert .d1-2-3 {
   transform-style: preserve-3d;
 
   background-color: #111;
+  background-color: rgba(220, 192, 178, 1);
 
   box-sizing: border-box;
   padding: 0px;
@@ -174,22 +171,38 @@ html.invert #divv3 {
   background-repeat: no-repeat;
   background-size: 95%;
   background-position: 100% 100%;
-  transition: all 0.3s ease;
+  transition: all 0.6s;
+  transition-timing-function: ease-out;
 
   overflow: hidden;
   font-size: poppins, sans-serif;
   line-height: 2px;
   /* font-size: 4px; */
   font-size: 0;
-  /* background-clip: text; */
   background-clip: border-box;
-  /* -webkit-background-clip: text; */
   color: transparent;
-  /* transform: perspective(preserve-3d); */
   transform-style: preserve-3d;
 
   @media (width > 1024px) {
     border-radius: 160px;
+
+    html.invert &:hover {
+      /* transform: scale(1.121); */
+      box-shadow: inset 0 0 0 20px rgba(0, 0, 0, 0.85),
+        inset 0 0 0 40px rgba(0, 0, 0, 0.6), inset 0 0 0 60px rgba(0, 0, 0, 0.4),
+        inset 0 0 0 80px rgba(0, 0, 0, 0.2);
+      transition: all 0.6s;
+      transition-timing-function: ease-out;
+    }
+    &:hover {
+      /* transform: scale(1.121); */
+      box-shadow: inset 0 0 0 20px rgba(220, 192, 178, 0.85),
+        inset 0 0 0 40px rgba(220, 192, 178, 0.6),
+        inset 0 0 0 60px rgba(220, 192, 178, 0.4),
+        inset 0 0 0 80px rgba(220, 192, 178, 0.2);
+      transition: all 0.6s;
+      transition-timing-function: ease-out;
+    }
   }
 }
 
