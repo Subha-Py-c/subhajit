@@ -80,11 +80,11 @@
 
 /* --------------------------{media queries}-------------------------------------------- */
 
-@media (width > 1536px) {
+/* @media (width > 1536px) {
   #s-last {
     height: 110vh;
   }
-}
+} */
 
 /* lg */
 @media (width > 768px) and (width < 1025px) {

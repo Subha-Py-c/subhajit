@@ -83,7 +83,6 @@ mark {
 }
 
 .skill__box {
-  /* border: 1px solid #e11f1f; */
   border-radius: 15px;
   background-color: var(--card-container-color);
   padding: 10px;
@@ -140,7 +139,6 @@ html.invert .skill__box {
 
 /* ------- CARD CONTAINER ----------------------------------------------- */
 .card-container {
-  /* border: 1px solid; */
   width: var(--card-container-width);
   height: var(--card-container-height);
   margin-left: calc(var(--margin-left) + 50px);
@@ -153,7 +151,6 @@ html.invert .skill__box {
 }
 
 .card {
-  /* border: 1px solid; */
   width: calc(var(--card-container-width) - 20px);
   height: calc(var(--card-container-height) - 20px);
   border-radius: 30px;
@@ -251,7 +248,7 @@ html.invert .list-elem.clicked {
 
 @media (width > 1536px) {
   #skill-list {
-    padding-left: 550px;
+    padding-left: 275px;
   }
 
   #s2-skills {

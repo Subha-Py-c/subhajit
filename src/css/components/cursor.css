@@ -1,15 +1,17 @@
-/* cursor */
 .cursor {
   z-index: 77;
   position: absolute;
-  width: 10px;
-  height: 10px;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background: #fffcef;
   pointer-events: none;
   mix-blend-mode: difference;
-  transform: translate(-50%, -50%);
+  transform: scale(0.15);
   transition: transform 0.2s ease-out;
+  backface-visibility: hidden;
 }
 
 @media (max-width: 1024px) {

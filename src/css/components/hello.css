@@ -19,8 +19,9 @@
 
 #s1 {
   opacity: 1;
+  /* border-radius: 15px; */
   height: 125vh;
-  border-radius: 15px;
+  max-height: 125vh;
 }
 
 main {
@@ -34,7 +35,6 @@ main {
 /* ------------------------{d1-2-3}-------------------------------------------- */
 
 .d1-2-3 {
-  /* border: 1px solid rgb(158, 138, 128); */
   border: 1px solid var(--hero-section-border-clr);
   border-radius: 15px;
   width: calc(100% - 2px);
@@ -42,9 +42,7 @@ main {
   display: grid;
   grid-template-rows: repeat(8, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  /* background: url(../../images/paper-texture.webp) no-repeat; */
   background-size: cover;
-  /* background-color: rgb(220, 192, 178); */
   background-color: var(--hero-section-clr);
   background-position: center;
   position: relative;
@@ -143,6 +141,7 @@ html.invert .d1-2-3 {
   border-radius: 30px;
 
   margin: 0rem 7.5rem 4.75rem 2rem;
+  /* margin: 2rem 10.5rem 8.75rem 1rem; */
 
   transition: all ease;
   transform-style: preserve-3d;
@@ -220,22 +219,21 @@ body {
 }
 
 /* -------------------------------------------------------------------- */
+html.invert #s1 {
+  background-color: white !important;
+}
+
+main {
+  transition: none !important;
+}
 
 @media (width > 1535px) {
-  #div2 {
-    padding-right: 20rem;
+  .d1-2-3 {
+    background-color: var(--bg3);
+    border: none;
   }
-
   #divv3 {
-    grid-area: 2/3/4/4;
-    margin-right: 15rem;
-    margin-left: 5rem;
-    margin-top: 0rem;
-    border-radius: 60px;
-  }
-
-  .img_container {
-    border-radius: 90px;
+    margin: 2rem 10.5rem 8.75rem 1rem;
   }
 }
 
@@ -276,7 +274,6 @@ body {
     overflow: hidden;
     grid-area: 2/3/3/4;
     margin-right: 2.2rem;
-    /* height: 120px; */
     width: 100px;
     margin-top: 1.5rem;
     margin-bottom: -1.5rem;

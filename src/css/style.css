@@ -105,7 +105,7 @@ body {
   margin: 10px;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  /* cursor: none; */
+  /* cursor: pointer; */
 }
 
 *::-webkit-scrollbar {
@@ -150,7 +150,11 @@ a:active {
 section {
   height: 100vh;
   background-color: var(--bg3);
-  transition: opacity 0.6s, transform 0.6s;
+  width: 100%;
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid; */
 }
 
 html.lenis,
@@ -175,12 +179,12 @@ html.lenis body {
 }
 
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */
-@media (width > 1536px) {
+/* @media (width > 1536px) {
   :root {
     --top: 60px;
     --right: 50px;
   }
-}
+} */
 
 /* sm */
 @media (max-width: 640px) {
