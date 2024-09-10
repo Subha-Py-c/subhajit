@@ -1,21 +1,29 @@
 .cursor {
   z-index: 77;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 150vh;
   left: 0;
-  width: 80px;
-  height: 80px;
+  --size: 120px;
+  width: var(--size);
+  height: var(--size);
   border-radius: 50%;
+
   background: #fffcef;
-  pointer-events: none;
+  transition: all 0.85s cubic-bezier(0, 0.02, 0, 1);
+  transform-origin: center center;
+
   mix-blend-mode: difference;
-  transform: scale(0.15);
-  transition: transform 0.2s ease-out;
-  backface-visibility: hidden;
+  pointer-events: none;
+  display: none;
 }
 
-@media (max-width: 1024px) {
+@media (pointer: fine) {
   .cursor {
-    display: none;
+    display: block;
   }
+}
+
+.cursor2 {
+  --size: 2px;
+  transition-duration: 0.7s;
 }

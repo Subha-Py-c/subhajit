@@ -1,6 +1,6 @@
 const cursor = document.querySelector(".cursor");
 
-const eBox = document.getElementById("email-box");
+const eBox = document.querySelector(".box");
 // const slider = document.querySelector(".slider");
 
 let items = [eBox];

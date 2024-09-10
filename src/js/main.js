@@ -5,7 +5,6 @@
 // import "./vanila-tilt.js";
 import "./functions/cursor-functions/cursor.js";
 import "./functions/cursor-functions/hiding-cursor.js";
-import "./functions/cursor-functions/cursor-scaling.js";
 import "./functions/contacts.js";
 import "./functions/nav-js/nav-appear-and-toggle-svg.js";
 import "./functions/nav-js/dim.js";

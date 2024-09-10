@@ -12,12 +12,13 @@ main {
 }
 
 main.nav-open {
-  filter: blur(3px) brightness(0.7);
+  filter: blur(3px);
   transition: all 0.3s;
 }
 
 html.invert main.nav-open {
-  filter: blur(3px) brightness(1);
+  filter: blur(3px);
+  transition: all 0.3s;
 }
 
 .nav {
