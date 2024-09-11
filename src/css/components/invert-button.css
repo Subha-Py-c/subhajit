@@ -1,32 +1,31 @@
-/* ------------------------{invert}-------------------------------------------- */
 
 .invert {
   filter: invert(1);
-  position: relative;
+  /* ekhane var() use kora jabe na, kaj korche na, var(--invert-value) */
 }
 
 html.invert,
-body.invert,
 html.invert body,
 html.invert main,
+html.invert #s1,
 html.invert #s-last,
 html.invert #s2-skills,
 html.invert #s3-projects,
 html.invert #s4-contacts,
-html.invert #s5-thanks {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  position: relative;
-  z-index: 71 !important;
+html.invert #s5-thanks,
+html.invert #divv3,
+html.invert .d1-2-3 {
+  background-color: var(--dark-mode-bg);
+  color: var(--dark-mode-font);
 }
 
-html.invert main {
-  background-color: white;
+html.invert #divv3 .img_container {
+  background-color: var(--dark-mode-d1-2-3-bg);
 }
 
-#s1 {
-  position: relative !important;
-  z-index: 73;
+html.invert .d1-2-3 {
+  color: var(--dark-mode-d1-2-3-font);
+  border-color: var(--dark-mode-d1-2-3-border);
 }
 
 /* ------------------------{invert-button}-------------------------------------------- */
@@ -36,22 +35,12 @@ html.invert main {
   z-index: 85;
   width: 36px;
   height: 36px;
-  margin: 0;
-  padding: 0;
   font-size: 0;
-  opacity: 1;
-  border-radius: 50%;
   background-color: transparent;
   border: none;
   background-image: url(../../icons/dm3.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  transform: translate3d(0, 0, 0);
-  transition: transform 0.3s;
-}
-
-#invert-button:hover {
-  transform: scale(1);
 }
 
 @media (max-width: 768px) {

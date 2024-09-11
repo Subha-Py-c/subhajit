@@ -70,7 +70,6 @@ img {
   z-index: 10;
   opacity: 0;
   transition: all 0.4s ease-in;
-  /* font-family: 'Dahlia'; */
 }
 
 .xxds {
@@ -199,7 +198,6 @@ img {
   transform: translateY(-50%);
   font: 400 1rem MondiaThin, helvetica, sans-serif;
   color: white;
-  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
 
   & .title {
     font-family: "arial-black";
@@ -301,32 +299,29 @@ img {
   }
 }
 
-/* relaxing melody 3.jpeg */
+/* notice scraper */
 #p_1 {
-  background-image: url("../../images/dark_paper.svg");
+  background-image: url("../../images/projects-imgs/p12.jpeg");
 }
-
-/* encrypt ease 2.jpeg*/
-/* #p_2{background-image: url('../../images/2.jpeg');} */
-
-/* ad free news   1.jpeg */
+/* relaxing melody */
+#p_2 {
+  background-image: url("../../images/projects-imgs/p3.jpeg");
+}
+/* encrypt ease */
 #p_3 {
-  background-image: url("../../images/crax.svg");
+  background-image: url("../../images/projects-imgs/p13.jpeg");
 }
-
-/* notice scraper 4.jpeg */
+/* ad free news */
 #p_4 {
-  background-image: url("../../images/canion.svg");
+  background-image: url("../../images/projects-imgs/p4.jpeg");
 }
-
-/* class timing  5.jpeg */
+/* class timing */
 #p_5 {
-  background-image: url("../../images/dark_balls.svg");
+  background-image: url("../../images/projects-imgs/p5.jpeg");
 }
-
-/* blogs  6.jpeg */
+/* science blogs */
 #p_6 {
-  background-image: url("../../images/6.jpeg");
+  background-image: url("../../images/projects-imgs/p10.svg");
 }
 
 /* -------------------------------------------------------------------- */

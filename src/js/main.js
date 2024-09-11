@@ -32,28 +32,16 @@ import "../css/components/contacts.css";
 import "../css/components/academics.css";
 import "../css/utils.css";
 
-// importing favicon
-import "../images/favicon.png";
-
 // importing robots.txt
 import "../robots.txt";
 
 // importing images "still work if i do not do this"
-import "../images/p4.png";
-import "../images/dark_paper.svg";
-import "../images/crax.svg";
-import "../images/canion.svg";
-import "../images/dark_balls.svg";
-import "../images/6.jpeg";
+import "../images/projects-imgs/p3.jpeg";
+import "../images/projects-imgs/p4.jpeg";
+import "../images/projects-imgs/p5.jpeg";
+import "../images/projects-imgs/p10.svg";
+import "../images/projects-imgs/p12.jpeg";
+import "../images/projects-imgs/p13.jpeg";
 
 // importing files
 import "../assets/demo-cv.pdf";
-
-// importing fonts
-// import '../fonts/Chillax_Complete/Fonts/WEB/css/Chillax.css';
-// import "../fonts/CabinetGrotesk_Complete/Fonts/WEB/css/cabinet-grotesk.css"
-
-// document.getElementById('cv-link').addEventListener('click', function(event) {
-//   event.preventDefault();
-//   window.location.href = '../assets/demo-cv.pdf';
-// });
