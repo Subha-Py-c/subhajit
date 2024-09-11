@@ -13,21 +13,26 @@ html.invert #s2-skills,
 html.invert #s3-projects,
 html.invert #s4-contacts,
 html.invert #s5-thanks,
-html.invert #divv3,
 html.invert .d1-2-3 {
   background-color: var(--dark-mode-bg);
   color: var(--dark-mode-font);
+}
+html.invert .d1-2-3 {
+  color: var(--dark-mode-d1-2-3-font);
+  border-color: var(--dark-mode-d1-2-3-border);
+}
+
+html.invert #divv3{
+    background-color: var(--dark-mode-bg);
 }
 
 html.invert #divv3 .img_container {
   background-color: var(--dark-mode-d1-2-3-bg);
 }
 
-html.invert .d1-2-3 {
-  color: var(--dark-mode-d1-2-3-font);
-  border-color: var(--dark-mode-d1-2-3-border);
+html.invert .skill__box {
+  background-color: rgb(221, 221, 221);
 }
-
 /* ------------------------{invert-button}-------------------------------------------- */
 
 #invert-button {

@@ -91,9 +91,6 @@ mark {
   justify-content: flex-end;
 }
 
-html.invert .skill__box {
-  background-color: rgb(231, 231, 231);
-}
 
 @media (width < 1025px) {
   html.invert .progress-bar {

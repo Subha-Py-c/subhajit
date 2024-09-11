@@ -7,3 +7,21 @@ function activate(e) {
 }
 
 document.addEventListener("click", activate, false);
+
+const project_datas = document.querySelectorAll('.project_data');
+const projects_all = document.querySelectorAll('.projects');
+
+function removeClicked(){
+  project_datas.forEach((project_data) => {
+    if(project_data.classList.contains('clicked')){
+      project_data.classList.remove('clicked');
+    }
+  })
+}
+
+projects_all.forEach((projects, index)=>{
+  projects.addEventListener('click', ()=>{
+    removeClicked();
+    project_datas[index].classList.add('clicked');
+  })
+})
