@@ -54,6 +54,7 @@ mark {
   width: 0%;
   border-radius: 6px;
   background-color: rgb(0, 172, 148);
+  transition: all 0.4s ease-out;
 }
 
 /* exps = skill heading span */
@@ -90,7 +91,6 @@ mark {
   flex-direction: column;
   justify-content: flex-end;
 }
-
 
 @media (width < 1025px) {
   html.invert .progress-bar {
@@ -179,12 +179,6 @@ mark {
   background-color: var(--skill-list-color);
 }
 
-html.invert .inverse2,
-body.invert .inverse2 {
-  border-right: 3px solid rgba(200, 200, 200, 1);
-  background-color: rgba(200, 200, 200, 0.3);
-}
-
 .first-x {
   margin-right: 60px;
   margin-bottom: 0px;
@@ -221,15 +215,12 @@ body.invert .inverse2 {
 }
 
 .list-elem.clicked {
-  background-color: var(--card-container-color-dark);
-}
-
-html.invert .list-elem.clicked {
-  background-color: rgb(204, 204, 204);
+  background-color: var(--skill-list-clicked-clr);
+  color: aliceblue;
 }
 
 .strech {
-  background-color: rgba(0, 255, 255, 0);
+  background-color: transparent;
   font-size: 0px;
   width: 0px;
   transition-duration: 0.3s;

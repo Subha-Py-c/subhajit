@@ -17,13 +17,8 @@
   display: none;
 }
 
-@media (pointer: fine) {
+@media ((width > 1024px) and (pointer: fine)) {
   .cursor {
     display: block;
   }
-}
-
-.cursor2 {
-  --size: 2px;
-  transition-duration: 0.7s;
 }

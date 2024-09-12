@@ -10,52 +10,53 @@ html {
   width: 0;
 }
 
+/* 
+
+    later modifications: 
+        using multiple cards to show every skill
+        instead of a single card.
+
+        long nav for desktop
+
+        a 110vh project section
+
+*/
 
 :root {
   /* OVERALL BACKGROUND SECTION
   -----------------------------------------------------------------------*/
-  --bg3: rgb(210, 182, 168);
+  --bg3: rgb(240, 212, 198);
   --tc: rgb(0 0 0);
-
-  /* --bg3: rgb(255, 255, 255); */
-  /* --tc: rgb(0 0 0); */
 
   /* Dark mode color:x use -> 255-x
   -----------------------------------------------------------------------*/
-  --dark-mode-bg: rgb(238,238,238);
-  --dark-mode-font: rgb(0,0,0);
+  --dark-mode-bg: rgb(238, 238, 238);
+  --dark-mode-font: rgb(0, 0, 0);
   --dark-mode-d1-2-3-bg: rgb(40, 40, 40);
   --dark-mode-d1-2-3-font: rgb(10, 10, 10);
   --dark-mode-d1-2-3-border: #cdcdcd;
 
   /* HERO SECTION
   -----------------------------------------------------------------------*/
-  --hero-section-clr: rgb(220, 192, 178);
-  --hero-section-border-clr: rgb(158, 138, 128);
-
-  /* --hero-section-clr: rgb(228, 228, 228); */
-  /* --hero-section-border-clr: rgba(93, 93, 93, 0.6); */
+  --hero-section-clr: rgb(250, 222, 208);
+  --hero-section-border-clr: rgba(210, 182, 168, 1);
+  --divv3-clr: var(--hero-section-clr);
 
   /* NAV SECTION
   -----------------------------------------------------------------------*/
   --nav-li-clr: rgb(122, 117, 107);
-  --nav-li-bgclr: rgba(227, 217, 205, 0.82);
+  --nav-li-bgclr: rgb(220, 192, 178);
   --nav-li-border-clr: rgba(95, 95, 95, 0.371);
-
-  /* --nav-li-clr: rgb(123, 123, 123); */
-  /* --nav-li-bgclr: rgba(225, 225, 225, 0.82); */
-  /* --nav-li-border-clr: rgba(95, 95, 95, 0.371); */
 
   /* SKILLS SECTION
   -----------------------------------------------------------------------*/
-  --card-container-color: rgba(220, 192, 178, 1);
-  --card-container-color-dark: rgba(230, 202, 188, 1);
-  --skill-list-color: rgba(220, 192, 178, 0.5);
-  --mark-clr: rgb(210, 182, 168);
+  --card-container-color: rgb(250, 222, 208);
+  --skill-list-color: rgba(250, 222, 208, 0.5);
+  --skill-list-clicked-clr: rgb(0, 0, 0);
+  --mark-clr: rgb(230, 202, 188);
 
-  /* --card-container-color: rgb(238, 238, 238, 1); */
-  /* --skill-list-color: rgba(238, 238, 238, 0.5); */
-  /* --mark-clr: rgb(228, 228, 228); */
+  /* .skill__box{  background-color: var(--card-container-color);} */
+  /* progress bar background clr : --bg3 */
 
   /* PROJECTS SECTION
   -----------------------------------------------------------------------*/
@@ -64,18 +65,12 @@ html {
   /* CONTACT SECTION
   -----------------------------------------------------------------------*/
   --email-box-color: var(--card-container-color);
-
-  --text-area-bg: rgba(250, 235, 215, 0.565);
-  --input-bg: rgba(255, 243, 226, 0.467);
-  --btn-hover-bg: rgb(220, 192, 178);
-
-  /* --text-area-bg: rgba(255, 255, 255, 0.565); */
-  /* --input-bg: rgba(255, 255, 255, 0.467); */
-  /* --btn-hover-bg: var(--hero-section-clr); */
+  --btn-hover-bg: var(--email-box-color);
+  --text-area-bg: var(--bg3);
+  --input-bg: var(--bg3);
 
   --submit-button-color: #37474f;
   --s-btn-text-color: #ffffff;
-
 
   /* others */
   /* bisque = rgb(255, 228, 196) */
@@ -114,7 +109,6 @@ html {
   --cursor-z-index: 9999999999;
   --svg-z-index: 9999999;
 }
-
 
 body {
   background-color: var(--bg3);

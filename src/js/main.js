@@ -10,7 +10,6 @@ import "./functions/nav-js/nav-appear-and-toggle-svg.js";
 import "./functions/nav-js/dim.js";
 import "./functions/hello.js";
 import "./functions/skills-js/skill-card.js";
-import "./functions/skills-js/percentage.js";
 import "./functions/project-js/project.js";
 import "./functions/utils/dark-mode.js";
 import "./functions/utils/hidden-classes.js";

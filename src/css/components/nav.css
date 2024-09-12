@@ -12,12 +12,12 @@ main {
 }
 
 main.nav-open {
-  filter: blur(3px);
+  filter: blur(5px);
   transition: all 0.3s;
 }
 
 html.invert main.nav-open {
-  filter: blur(3px);
+  filter: blur(5px);
   transition: all 0.3s;
 }
 
@@ -56,17 +56,14 @@ html.invert main.nav-open {
   justify-content: center;
   align-items: center;
 
-  /* height: var(--li-active-height); */
   height: 0;
   transition: all 0.32s;
 
   will-change: height;
-  /* transform: scaleY(0); */
 }
 
 .li.active {
   height: var(--li-active-height);
-  /* transform: scaleY(1); */
   transition: all 0.32s;
 
   width: var(--li-width);
@@ -82,7 +79,7 @@ html.invert main.nav-open {
 }
 
 html.invert .li.active {
-  background-color: rgba(255, 255, 255, 0.82);
+  background-color: rgba(255, 255, 255, 1);
   border-bottom: 1px solid rgba(55, 55, 55, 0.3);
 }
 
