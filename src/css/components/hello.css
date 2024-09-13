@@ -195,8 +195,8 @@
 
 @media (width > 1535px) {
   .d1-2-3 {
-    background-color: var(--bg3);
-    border: none;
+    background-color: var(--hero-section-clr);
+    /* border: none; */
   }
   #divv3 {
     margin: 2rem 10.5rem 8.75rem 1rem;

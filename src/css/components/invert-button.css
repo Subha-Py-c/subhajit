@@ -16,6 +16,7 @@ html.invert .d1-2-3 {
   background-color: var(--dark-mode-bg);
   color: var(--dark-mode-font);
 }
+
 html.invert .d1-2-3 {
   color: var(--dark-mode-d1-2-3-font);
   border-color: var(--dark-mode-d1-2-3-border);
@@ -56,6 +57,15 @@ html.invert .list-elem.clicked {
   background-color: black;
   color: white;
 }
+/* 
+html.invert {
+  --card-container-color: rgb(68, 68, 68);
+  --mark-clr: rgb(94, 94, 94);
+}
+
+html.invert .progress-bar {
+  background-color: rgb(17, 17, 17);
+} */
 
 /* ------------------------{invert-button}-------------------------------------------- */
 

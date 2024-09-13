@@ -1,9 +1,3 @@
-/* ------------------------{main parents}-------------------------------------------- */
-
-:root {
-  --projects-card-clr: var(--card-container-color);
-}
-
 #s3-projects {
   margin-top: 0px;
 }
@@ -14,8 +8,6 @@
   padding-top: 90px;
 }
 
-/* ------------------------{exp}-------------------------------------------- */
-
 .exp {
   padding-top: 60px;
   margin: 30px;
@@ -25,8 +17,7 @@
   font-weight: var(--heading-weight);
 }
 
-/* ------------------------{p-list}-------------------------------------------- */
-/* for mobiles */
+/* ------------------------{for mobiles}-------------------------------------------- */
 .p-list {
   height: 160vh;
   width: 100%;
@@ -62,8 +53,8 @@
   transform: scale(0.3);
 }
 
-.p-list .en-ease{
-    transform: scale(0.4);
+.p-list .en-ease {
+  transform: scale(0.4);
 }
 
 .project_data {
@@ -79,45 +70,45 @@
   padding-top: 15%;
 }
 
-.project_data span{
-    display: none;
+.project_data span {
+  display: none;
 }
 
 .project_data.clicked {
-    font-size: 0rem;
-    padding: 10px;
-    padding-top: 15px;
-    background-color: black;
+  font-size: 0rem;
+  padding: 10px;
+  padding-top: 15px;
+  background-color: black;
 }
 
-html.invert .project_data.clicked{
-    background-color: white;
-    color: black;
+html.invert .project_data.clicked {
+  background-color: white;
+  color: black;
 }
 
-.project_data.clicked span{
-    display: block;
-    font-size: 0.8rem;
-    font-weight: 300;
-    line-height: 1rem;
+.project_data.clicked span {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1rem;
 }
 
-.project_data.clicked .xxds{
-    display: flex;
-    width: 35px;
-    height: 35px;
-    margin-bottom: 15px;
+.project_data.clicked .xxds {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 15px;
 }
-.project_data.clicked #xds{
-    display: flex;
-    width: 15px;
-    height: 15px;
+.project_data.clicked #xds {
+  display: flex;
+  width: 15px;
+  height: 15px;
 }
-html.invert .project_data.clicked .xxds{
-    background-color: black;
+html.invert .project_data.clicked .xxds {
+  background-color: black;
 }
-html.invert .project_data.clicked #xds{
-    color: white;
+html.invert .project_data.clicked #xds {
+  color: white;
 }
 
 .xxds {
@@ -139,105 +130,136 @@ html.invert .project_data.clicked #xds{
   border-radius: 50%;
 }
 
-/* ------------------------{projects__gallery}-------------------------------------------- */
+/* ------------------------{for desktops}-------------------------------------------- */
+@media (width > 1025px) {
+  #s3-projects {
+    height: 125vh;
+    width: 100vw;
+    /* background-color: black; */
+    /* border: 1px solid; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .d3 {
+    position: relative;
+    margin: 0;
+    padding-top: 0px;
+    width: 100%;
+  }
+
+  .exp {
+    padding-top: 60px;
+    margin: 30px;
+    margin-left: var(--margin-left);
+    margin-top: 200px;
+    font-size: var(--heading-text-size);
+    font-weight: var(--heading-weight);
+  }
+}
 
 .projects__gallery {
-  position: relative;
-  height: 500px;
-  width: 85vw;
+  /* border: 1px solid black; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
 
-  margin: 70px calc(var(--margin-left) + 20px) 0px
-    calc(var(--margin-left) + 20px);
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0;
+
+  position: relative;
+  height: min(90%, 100vh);
+  width: 90%;
+  /* width: 95vw; */
+
+  /* margin: 70px calc(var(--margin-left) + 20px) 0px calc(var(--margin-left) + 20px); */
 
   display: flex;
   justify-content: center;
-
-  border-radius: 30px;
-  box-sizing: border-box;
 }
 
 .slider {
+  margin-top: 0;
   box-sizing: border-box;
-  border-radius: 30px;
   position: relative;
-  top: -16px;
   display: flex;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
 }
 
 .gitem {
-  /* border: 1px solid black; */
-  width: 190px;
-  height: 300px;
+  width: 300px;
+  height: 40%;
   list-style-type: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 1;
   background-position: center;
   background-size: cover;
-  border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3) inset;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.4);
   transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
   transition: all 0.75s !important;
+  border-radius: 10px;
 
   &:nth-child(1),
   &:nth-child(2) {
-    left: 5px;
-    top: 5px;
-    width: calc(100% - 15px);
-    height: calc(100% - 15px);
+    left: 0px;
+    top: 0px;
+    width: calc(100%);
+    height: calc(100%);
     transform: none;
-    border-radius: 30px;
     box-shadow: none;
     opacity: 1;
-  }
-
-  @media (width >= 1536px) {
-    &:nth-child(1),
-    &:nth-child(2) {
-      left: 5px;
-      top: 5px;
-      width: calc(80% - 5px);
-      height: calc(80% - 5px);
-      transform: none;
-      border-radius: 30px;
-      box-shadow: none;
-      opacity: 1;
-    }
+    border-radius: 10px;
+    background-image: none !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0) !important;
   }
 
   &:nth-child(3) {
-    left: 44%;
+    left: 40%;
+    height: 50%;
+    z-index: 51;
   }
 
   &:nth-child(4) {
-    left: calc(44% + 210px);
+    left: calc(40% + 210px);
+    /* top: 2%; */
+    z-index: 50;
   }
 
   &:nth-child(5) {
-    left: calc(44% + 420px);
+    left: calc(40% + 420px);
+    height: 30%;
+    z-index: 49;
   }
 
   &:nth-child(6) {
-    left: calc(44% + 630px);
+    left: calc(40% + 600px);
+    top: 800px;
     opacity: 0;
   }
 
-  &:nth-child(2n) {
-    background-color: var(--projects-card-clr);
-  }
-
+  &:nth-child(2n),
   &:nth-child(2n + 1) {
-    background-color: rgb(180, 152, 138);
+    background-color: var(--card-container-color);
+  }
+
+  html.invert &:nth-child(2n),
+  &:nth-child(2n + 1) {
+    background-color: rgb(68, 68, 68);
   }
 }
-
-@media (width >= 1536px) {
-  .gitem {
-    top: 40%;
-  }
+.gitem:nth-of-type(1),
+.gitem:nth-of-type(2) {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0) !important;
 }
-
 .gcontent {
   width: min(30vw, 400px);
   position: absolute;
@@ -245,7 +267,7 @@ html.invert .project_data.clicked #xds{
   left: 3rem;
   transform: translateY(-50%);
   font: 400 1rem MondiaThin, helvetica, sans-serif;
-  color: white;
+  color: rgb(255, 255, 255);
 
   & .title {
     font-family: "arial-black";
@@ -254,18 +276,19 @@ html.invert .project_data.clicked #xds{
   }
 
   & .description {
-    line-height: 1.7;
+    line-height: 1.3rem;
     margin: 1rem 0 1.75rem;
     font-size: 1rem;
-    font-family: popins, sans-serif;
+    font-family: poppins, sans-serif;
 
     opacity: 0;
     display: none;
   }
 
   & a {
-    width: 100px;
-    height: 30px;
+    width: 150px;
+    height: 20px;
+    border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,9 +298,9 @@ html.invert .project_data.clicked #xds{
     background-color: rgba(0, 0, 0, 0.91);
     color: white;
     border: 2px solid white;
-    border-radius: 20px;
     padding: 0.75rem;
     cursor: pointer;
+    /* margin-left: calc(400px - 100px); */
 
     opacity: 0;
     display: none;
@@ -291,14 +314,23 @@ html.invert .project_data.clicked #xds{
       color: black;
       border: 2px solid black;
     }
+
+    &:hover svg {
+      filter: none;
+    }
   }
 }
 
-/* only the style of the nth child(2n) will be applied. */
-
-/* .gcontent */
 .gitem:nth-of-type(2) .title {
   font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+}
+.gitem:nth-of-type(1) .title {
+  font-size: 0rem;
+}
+
+.gitem:nth-of-type(2) .description {
+  color: rgb(0, 0, 0);
 }
 
 .gitem:nth-of-type(2) .description,
@@ -321,7 +353,7 @@ html.invert .project_data.clicked #xds{
 
 .nnn {
   position: absolute;
-  bottom: 1rem;
+  bottom: 1.5rem;
   left: auto;
   z-index: 5;
   user-select: none;
@@ -373,7 +405,7 @@ html.invert .project_data.clicked #xds{
 }
 
 /* -------------------------------------------------------------------- */
-
+/* 
 @media (width > 1536px) {
   .projects__gallery {
     width: 90vw;
@@ -387,7 +419,7 @@ html.invert .project_data.clicked #xds{
     bottom: 6.5rem;
     left: 37rem;
   }
-}
+} */
 
 @media (width > 768px) and (width < 1225px) {
   #s3-projects {
