@@ -8,7 +8,8 @@
     "start": "webpack serve --open --mode development",
     "build": "webpack --mode production",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "done": "npm run build && git add . && git commit -m 'done' && git push origin main && npm run deploy"
   },
   "keywords": [
     "Subhajit",
