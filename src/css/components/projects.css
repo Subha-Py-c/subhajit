@@ -199,7 +199,7 @@ html.invert .project_data.clicked #xds {
   height: 40%;
   list-style-type: none;
   position: absolute;
-  top: 50%;
+  top: 42.5%;
   transform: translateY(-50%);
   background-position: center;
   background-size: cover;
@@ -213,7 +213,7 @@ html.invert .project_data.clicked #xds {
     left: 0px;
     top: 0px;
     width: calc(100%);
-    height: calc(100%);
+    height: calc(85%);
     transform: none;
     box-shadow: none;
     opacity: 1;
@@ -230,7 +230,6 @@ html.invert .project_data.clicked #xds {
 
   &:nth-child(4) {
     left: calc(40% + 210px);
-    /* top: 2%; */
     z-index: 50;
   }
 
@@ -242,7 +241,7 @@ html.invert .project_data.clicked #xds {
 
   &:nth-child(6) {
     left: calc(40% + 600px);
-    top: 800px;
+    top: 50%;
     opacity: 0;
   }
 
@@ -353,7 +352,7 @@ html.invert .project_data.clicked #xds {
 
 .nnn {
   position: absolute;
-  bottom: 1.5rem;
+  top: 75%;
   left: auto;
   z-index: 5;
   user-select: none;
@@ -405,7 +404,7 @@ html.invert .project_data.clicked #xds {
 }
 
 /* -------------------------------------------------------------------- */
-/* 
+/*
 @media (width > 1536px) {
   .projects__gallery {
     width: 90vw;

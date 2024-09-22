@@ -57,7 +57,34 @@ html.invert .list-elem.clicked {
   background-color: black;
   color: white;
 }
-/* 
+
+html.invert .card-container{
+    filter: invert(1);
+    --card-container-color: rgb(68, 68, 68);
+    --mark-clr: rgb(108, 108, 108);
+    --bg3: rgb(17,17,17);
+
+    & .card{
+        background-color: #373737;
+    }
+}
+
+html.invert .box{
+    filter: invert(1);
+    color: white;
+    --card-container-color: rgb(68, 68, 68);
+    --bg3: rgb(17,17,17);
+    --email-box-color: var(--card-container-color);
+    --btn-hover-bg: var(--email-box-color);
+    --text-area-bg: var(--bg3);
+    --input-bg: var(--bg3);
+
+    & input::placeholder{
+        color: rgb(100,100,100);
+    }
+}
+
+/*
 html.invert {
   --card-container-color: rgb(68, 68, 68);
   --mark-clr: rgb(94, 94, 94);
