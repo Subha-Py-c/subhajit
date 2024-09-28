@@ -1,12 +1,9 @@
-document.getElementById('E-logo').addEventListener('click', function() {
-  var email = 'goraisubhajit53@gmail.com';
-  var mailtoLink = 'mailto:' + email;
+document.getElementById("E-logo").addEventListener("click", function () {
+  var email = "demoemailforportfolio1@gmail.com";
+  var mailtoLink = "mailto:" + email;
   window.location.href = mailtoLink;
 });
 
-
-
- 
 // <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 // <script>
 //   (function() {
@@ -17,7 +14,7 @@ document.getElementById('E-logo').addEventListener('click', function() {
 //     document.getElementById('submit').addEventListener('click', function() {
 //         var email = document.getElementById('email').value;
 //         var message = document.getElementById('msg').value;
-      
+
 //         if (email && message) {
 //           emailjs.send("service_gkgrv0q", "template_9luynmw", {
 //             to_email: 'goraisubhajit53@gmail.com',
@@ -35,10 +32,8 @@ document.getElementById('E-logo').addEventListener('click', function() {
 //           alert('Please fill in both the email and message fields.');
 //         }
 //       });
-      
-// </script> 
 
-
+// </script>
 
 // <form method="POST" id="form">
 
