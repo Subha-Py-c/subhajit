@@ -53,7 +53,7 @@ module.exports = {
     }),
     new WebpackManifestPlugin({
       fileName: "manifest.json", // Generates the manifest file
-      publicPath: "./src/css/", // Path where static files are served from
+      publicPath: "/", // Path where static files are served from
     }),
   ],
 };
