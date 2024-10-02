@@ -52,8 +52,8 @@ module.exports = {
       patterns: [{ from: "src/robots.txt", to: "robots.txt" }],
     }),
     new WebpackManifestPlugin({
-      fileName: "manifest.json", // Generates the manifest file
-      publicPath: "", // Path where static files are served from
+      fileName: "manifest.json",
+      publicPath: "",
     }),
   ],
 };
