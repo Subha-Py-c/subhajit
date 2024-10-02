@@ -45,6 +45,10 @@ mark {
   border-radius: 15px;
 }
 
+html.invert mark {
+  color: white;
+}
+
 /* #ff8c007d */
 
 .growth {
@@ -145,6 +149,9 @@ mark {
   justify-content: center;
   align-items: center;
   border-radius: 30px;
+}
+html.invert .card-container {
+  color: white;
 }
 
 .card {

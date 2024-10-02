@@ -176,19 +176,37 @@ html.invert .project_data.clicked #xds {
   position: relative;
   height: min(90%, 100vh);
   width: 90%;
-  /* width: 95vw; */
-
-  /* margin: 70px calc(var(--margin-left) + 20px) 0px calc(var(--margin-left) + 20px); */
 
   display: flex;
   justify-content: center;
 }
+
+/* .projects__gallery::before,
+.projects__gallery::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgba(220, 192, 178, 0.75);
+  z-index: 999;
+}
+.projects__gallery::before {
+  top: -7px;
+  left: -7px;
+}
+.projects__gallery::after {
+  bottom: -7px;
+  right: -7px;
+} */
 
 .slider {
   margin-top: 0;
   box-sizing: border-box;
   position: relative;
   display: flex;
+  align-items: center;
+  /* align-items: end !important; */
   border-radius: 10px;
   width: 100%;
   height: 100%;
@@ -196,16 +214,16 @@ html.invert .project_data.clicked #xds {
 
 .gitem {
   width: 300px;
-  height: 40%;
+  height: 45%;
   list-style-type: none;
   position: absolute;
-  top: 42.5%;
-  transform: translateY(-50%);
+  /* top: 42.5%; */
+  /* bottom: 35%; */
   background-position: center;
   background-size: cover;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.4);
-  transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
-  transition: all 0.75s !important;
+  box-shadow: 4px 1px 0px rgba(0, 0, 0, 0.26);
+  transform: translateY(-20%);
+  transition: all 0s !important;
   border-radius: 10px;
 
   &:nth-child(1),
@@ -219,30 +237,29 @@ html.invert .project_data.clicked #xds {
     opacity: 1;
     border-radius: 10px;
     background-image: none !important;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0) !important;
   }
 
   &:nth-child(3) {
-    left: 40%;
+    left: 60%;
     height: 50%;
     z-index: 51;
   }
 
   &:nth-child(4) {
-    left: calc(40% + 210px);
+    left: calc(60% + 70px);
     z-index: 50;
   }
 
   &:nth-child(5) {
-    left: calc(40% + 420px);
-    height: 30%;
+    left: calc(60% + 120px);
+    height: 40%;
     z-index: 49;
   }
 
   &:nth-child(6) {
-    left: calc(40% + 600px);
-    top: 50%;
-    opacity: 0;
+    left: calc(60% + 160px);
+    height: 35%;
+    z-index: 48;
   }
 
   &:nth-child(2n),
@@ -280,7 +297,7 @@ html.invert .project_data.clicked #xds {
     font-size: 1rem;
     font-family: poppins, sans-serif;
 
-    opacity: 0;
+    /* opacity: 0; */
     display: none;
   }
 
@@ -294,14 +311,13 @@ html.invert .project_data.clicked #xds {
     gap: 1.5rem;
     font-size: 1rem;
     font-family: "JetBrains Mono", monospace, sans-serif;
-    background-color: rgba(0, 0, 0, 0.91);
+    background-color: rgb(0, 0, 0);
     color: white;
-    border: 2px solid white;
+    border: 1px solid rgb(156, 156, 156);
     padding: 0.75rem;
     cursor: pointer;
-    /* margin-left: calc(400px - 100px); */
 
-    opacity: 0;
+    /* opacity: 0; */
     display: none;
 
     & svg {
@@ -311,19 +327,38 @@ html.invert .project_data.clicked #xds {
     &:hover {
       background-color: white;
       color: black;
-      border: 2px solid black;
+      border: 1px solid black;
     }
 
     &:hover svg {
-      filter: none;
+      filter: flex;
     }
   }
+}
+
+.gitem:nth-of-type(1) .gcontent,
+.gitem:nth-of-type(2) .gcontent {
+  padding: 0px 0px 20px 20px;
+  /* border: 1px solid rgb(220, 192, 178); */
+  background-color: rgba(220, 192, 178, 0.303);
+  border-radius: 5px;
+}
+
+html.invert .gitem:nth-of-type(1) .gcontent,
+html.invert .gitem:nth-of-type(2) .gcontent {
+  background-color: rgb(107, 107, 107);
+  border: 1px solid rgb(68, 68, 68);
 }
 
 .gitem:nth-of-type(2) .title {
   font-size: 1.5rem;
   color: rgb(0, 0, 0);
 }
+
+html.invert .gitem:nth-of-type(2) .title {
+  color: rgb(255, 255, 255);
+}
+
 .gitem:nth-of-type(1) .title {
   font-size: 0rem;
 }
@@ -332,10 +367,14 @@ html.invert .project_data.clicked #xds {
   color: rgb(0, 0, 0);
 }
 
+html.invert .gitem:nth-of-type(2) .description {
+  color: rgb(255, 255, 255);
+}
+
 .gitem:nth-of-type(2) .description,
 .gitem:nth-of-type(2) a {
   display: flex;
-  animation: show 0.75s ease-in-out 0.3s forwards;
+  /* animation: show 0.1s ease-in-out 0.3s forwards; */
 }
 
 @keyframes show {
@@ -353,6 +392,7 @@ html.invert .project_data.clicked #xds {
 .nnn {
   position: absolute;
   top: 75%;
+  /* top: 20%; */
   left: auto;
   z-index: 5;
   user-select: none;
@@ -364,7 +404,7 @@ html.invert .project_data.clicked #xds {
   & .btn {
     background-color: rgba(255, 255, 255, 0.5);
     color: rgba(0, 0, 0, 0.7);
-    border: 2px solid rgba(0, 0, 0, 0.6);
+    border: 1px solid rgb(152, 152, 152);
     margin: 0 0.25rem;
     padding: 0.25rem;
     border-radius: 35px;

@@ -1,14 +1,4 @@
 const cursor = document.querySelector(".cursor");
-const elements = {
-  gallery: document.getElementById("gallery"),
-  hello: document.getElementById("hello"),
-  cardContainer: document.querySelector(".card-container"),
-  skill: document.getElementById("skill"),
-  projectHeading: document.getElementById("project-heading"),
-  contactHeading: document.getElementById("contact-heading"),
-  cv: document.getElementById("cv"),
-  acadHeader: document.getElementById("academic__header"),
-};
 
 /* ----------
   parameters
@@ -32,7 +22,16 @@ document.addEventListener("mousemove", (e) => {
   }px) scale(${scale})`;
 });
 
-// Loop through the elements and add the event listeners
+const elements = {
+  gallery: document.getElementById("gallery"),
+  hello: document.getElementById("hello"),
+  cardContainer: document.querySelector(".card-container"),
+  skill: document.getElementById("skill"),
+  projectHeading: document.getElementById("project-heading"),
+  contactHeading: document.getElementById("contact-heading"),
+  cv: document.getElementById("cv"),
+  acadHeader: document.getElementById("academic__header"),
+};
 [
   "gallery",
   "hello",

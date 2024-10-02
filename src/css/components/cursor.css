@@ -9,7 +9,7 @@
   border-radius: 50%;
 
   background: #fffcef;
-  transition: all 0.85s cubic-bezier(0, 0.02, 0, 1);
+  transition: all 0.5s cubic-bezier(0, 0.02, 0, 1);
   transform-origin: center center;
 
   mix-blend-mode: difference;
