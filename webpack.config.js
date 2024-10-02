@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const { WebpackManifestPlugin } = require("webpack-manifest-plugin");
 
 module.exports = {
   entry: "./src/js/main.js",
@@ -49,6 +50,10 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [{ from: "src/robots.txt", to: "robots.txt" }],
+    }),
+    new WebpackManifestPlugin({
+      fileName: "manifest.json", // Generates the manifest file
+      publicPath: "./src/css/", // Path where static files are served from
     }),
   ],
 };
