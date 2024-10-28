@@ -157,6 +157,11 @@ header {
   /* background-color: rgba(113, 113, 113, 0.413); */
 }
 
+a.blog{
+    color: inherit;
+    display: block;
+}
+
 @media (width > 768px) {
   header {
     /* 36+24+40 = 100px invert-btn+gap+nav-menu */
@@ -166,12 +171,16 @@ header {
     top: calc(var(--top) - 10px);
     right: calc(var(--right) - var(--extra-len));
 
-    width: 140px;
+    width: 200px;
     height: 60px;
 
     border-radius: 45px;
     padding-left: 20px;
     padding-right: 20px;
+
+    & a{
+        font-size: 1.25rem;
+    }
   }
 }
 
@@ -184,12 +193,16 @@ header {
     top: calc(var(--top) - 10px);
     right: calc(var(--right) - var(--extra-len));
 
-    width: 100px;
+    width: 120px;
     height: 46px;
 
     border-radius: 45px;
     padding-left: 10px;
     padding-right: 10px;
+
+    & a{
+        font-size: 1.05rem;
+    }
   }
 
   #invert-button,
