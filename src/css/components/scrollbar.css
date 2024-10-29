@@ -23,7 +23,7 @@
 }
 
 /* Invert scrollbar track */
-.invert ::-webkit-scrollbar-track {
+html.invert::-webkit-scrollbar-track {
   background: #001b3b;
 }
 
