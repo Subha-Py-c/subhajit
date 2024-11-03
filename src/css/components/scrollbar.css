@@ -1,30 +1,20 @@
-/* ------------------------{scroll-bar}-------------------------------------------- */
-
-/* Change the width and height of the scrollbar */
-::-webkit-scrollbar {
-  width: 0px; /* Width of the scrollbar */
-  height: 0px; /* Height of the scrollbar */
-}
-
-/* Change the track (the area behind the scrollbar) */
-::-webkit-scrollbar-track {
-  background: var(--bg3);
-}
-
-/* Change the appearance of the scrollbar handle */
-::-webkit-scrollbar-thumb {
-  background: #88888800; /* Color of the scrollbar handle */
-  border-radius: 6px; /* Rounded corners */
-}
-
-/* Change the appearance when hovering over the scrollbar */
+::-webkit-scrollbar,
+::-webkit-scrollbar,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Color of the scrollbar handle on hover */
+  display: none !important;
+  width: 0 !important;
+}
+/* Hide scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+  display: none;
 }
 
-/* Invert scrollbar track */
-html.invert::-webkit-scrollbar-track {
-  background: #001b3b;
+/* Hide scrollbar for other browsers */
+html,
+body {
+  overflow: -moz-hidden; /* Firefox */
+  overflow: hidden; /* Other browsers */
+  /* width , height = 100% so i can still scroll in y */
 }
-
-/* -------------------------------------------------------------------- */

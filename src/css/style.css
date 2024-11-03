@@ -2,30 +2,10 @@ html {
   overflow-x: hidden;
 }
 
-*::-webkit-scrollbar {
-  display: none;
-}
-
-::-webkit-scrollbar {
-  width: 0;
-}
-
-/* 
-
-    later modifications: 
-        using multiple cards to show every skill
-        instead of a single card.
-
-        long nav for desktop
-
-        a 110vh project section
-
-*/
-
 :root {
   /* OVERALL BACKGROUND SECTION
   -----------------------------------------------------------------------*/
-  --bg3: rgb(240, 212, 198);
+  --bg3: rgb(236, 210, 203);
   --tc: rgb(0 0 0);
 
   /* Dark mode color:x use -> 255-x
@@ -50,8 +30,8 @@ html {
 
   /* SKILLS SECTION
   -----------------------------------------------------------------------*/
-  --card-container-color: rgb(250, 222, 208);
-  --skill-list-color: rgba(250, 222, 208, 0.5);
+  --card-container-color: rgb(246, 220, 213);
+  --skill-list-color: rgba(246, 220, 213, 0.5);
   --skill-list-clicked-clr: rgb(0, 0, 0);
   --mark-clr: rgb(230, 202, 188);
 
@@ -117,8 +97,9 @@ body {
   padding: 0;
   margin: 10px;
   overflow-x: hidden;
+  overflow-y: scroll;
   scroll-behavior: smooth;
-  /* cursor: pointer; */
+  /* cursor: none; */
 }
 
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */
@@ -161,6 +142,10 @@ section {
   margin-right: auto;
   position: relative;
   z-index: 71;
+}
+
+span.underline {
+  display: inline;
 }
 
 html.lenis,

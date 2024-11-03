@@ -99,8 +99,8 @@ html.invert .progress-bar {
 #invert-button {
   position: relative;
   z-index: 85;
-  width: 36px;
-  height: 36px;
+  width: 26px;
+  height: 26px;
   font-size: 0;
   background-color: transparent;
   border: none;

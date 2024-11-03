@@ -5,11 +5,28 @@
 /* ------------------------{Custom Fonts}-------------------------------------------- */
 
 @font-face {
+  font-family: content;
+  src: url(../../assets/fonts/content.woff) format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  unicode-range: u + 0020-00fe;
+}
+
+@font-face {
+  font-family: title;
+  src: url(../../assets/fonts/title.woff) format("woff");
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: normal;
+}
+/* 
+@font-face {
   font-family: "LoveRegular";
   src: url("https://assets.awwwards.com/assets/fonts/love/Love-Regular.woff");
   font-style: normal;
   font-weight: 200;
-}
+} */
 
 /* ------------------------{Tangerine Fonts}-------------------------------------------- */
 /* 

@@ -2,6 +2,15 @@
   margin-top: 0px;
 }
 
+span.s3,
+span.s5 {
+  display: inline;
+
+  & span {
+    display: inline;
+  }
+}
+
 .d3 {
   position: relative;
   margin: 0;
@@ -181,25 +190,6 @@ html.invert .project_data.clicked #xds {
   justify-content: center;
 }
 
-/* .projects__gallery::before,
-.projects__gallery::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: rgba(220, 192, 178, 0.75);
-  z-index: 999;
-}
-.projects__gallery::before {
-  top: -7px;
-  left: -7px;
-}
-.projects__gallery::after {
-  bottom: -7px;
-  right: -7px;
-} */
-
 .slider {
   margin-top: 0;
   box-sizing: border-box;
@@ -282,16 +272,19 @@ html.invert .project_data.clicked #xds {
   top: 50%;
   left: 3rem;
   transform: translateY(-50%);
-  font: 400 1rem MondiaThin, helvetica, sans-serif;
+  font:
+    400 1rem MondiaThin,
+    helvetica,
+    sans-serif;
   color: rgb(255, 255, 255);
 
-  & .title {
+  & h2.title {
     font-family: "arial-black";
     text-transform: uppercase;
     font-size: 0.85rem;
   }
 
-  & .description {
+  & p.description {
     line-height: 1.3rem;
     margin: 1rem 0 1.75rem;
     font-size: 1rem;

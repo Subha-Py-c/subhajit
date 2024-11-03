@@ -576,3 +576,546 @@ label {
   background-color: rgba(0, 0, 0, 0.117);
   border: 2px solid rgba(0, 0, 0, 0.864);
 }
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: 700;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-xs-12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .is-mb-sm {
+    margin-bottom: 0;
+  }
+}
+
+.is-mb-base {
+  margin-bottom: #212121;
+}
+
+.is-mb-xxs {
+  margin-bottom: 24px;
+}
+
+.is-mb-xs {
+  margin-bottom: 32px;
+}
+
+.is-mb-s {
+  margin-bottom: 2vw;
+}
+
+.is-mb-ms {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .is-mb-ms {
+    margin-bottom: 40px;
+  }
+}
+
+.is-mb-m {
+  margin-bottom: 4vw;
+}
+
+.is-mb-l {
+  margin-bottom: 120px;
+}
+
+@media (max-width: 768px) {
+  .is-mb-l {
+    margin-bottom: 80px;
+  }
+}
+
+.is-mb-xl {
+  margin-bottom: 160px;
+}
+
+@media (max-width: 768px) {
+  .is-mb-xl {
+    margin-bottom: 120px;
+  }
+}
+
+.is-mb-xxl {
+  margin-bottom: 200px;
+}
+
+@media (max-width: 768px) {
+  .is-mb-xxl {
+    margin-bottom: 120px;
+  }
+}
+
+.is-mb-big {
+  margin-bottom: 240px;
+}
+
+@media (max-width: 768px) {
+  .is-mb-big {
+    margin-bottom: 160px;
+  }
+}
+
+.is-mt-base {
+  margin-top: #212121;
+}
+
+.is-mt-xxs {
+  margin-top: 24px;
+}
+
+.is-mt-xs {
+  margin-top: 32px;
+}
+
+.is-mt-s {
+  margin-top: 2vw;
+}
+
+.is-mt-ms {
+  margin-top: 60px;
+}
+
+@media (max-width: 992px) {
+  .is-mt-ms {
+    margin-top: 16px;
+  }
+}
+
+.is-mt-m {
+  margin-top: 4vw;
+}
+
+.is-mt-l {
+  margin-top: 8vw;
+}
+
+.is-mt-xl {
+  margin-top: 12vw;
+}
+
+.is-mt-xxl {
+  margin-top: 16vw;
+}
+
+.is-mt-big {
+  margin-top: 240px;
+}
+
+@media (max-width: 768px) {
+  .is-mt-big {
+    margin-top: 160px;
+  }
+}
+
+.is-pb-base {
+  padding-bottom: #212121;
+}
+
+.is-pb-xxs {
+  padding-bottom: 24px;
+}
+
+.is-pb-xs {
+  padding-bottom: 32px;
+}
+
+.is-pb-s {
+  padding-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .is-pb-s {
+    padding-bottom: 32px;
+  }
+}
+
+.is-pb-ms {
+  padding-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .is-pb-ms {
+    padding-bottom: 40px;
+  }
+}
+
+.is-pb-m {
+  padding-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  .is-pb-m {
+    padding-bottom: 60px;
+  }
+}
+
+.is-pb-l {
+  padding-bottom: 120px;
+}
+
+@media (max-width: 768px) {
+  .is-pb-l {
+    padding-bottom: 80px;
+  }
+}
+
+.is-pb-xl {
+  padding-bottom: 160px;
+}
+
+@media (max-width: 768px) {
+  .is-pb-xl {
+    padding-bottom: 120px;
+  }
+}
+
+.is-pb-xxl {
+  padding-bottom: 200px;
+}
+
+@media (max-width: 768px) {
+  .is-pb-xxl {
+    padding-bottom: 160px;
+  }
+}
+
+.is-pb-big {
+  padding-bottom: 240px;
+}
+
+@media (max-width: 768px) {
+  .is-pb-big {
+    padding-bottom: 200px;
+  }
+}
+
+.is-pt-base {
+  padding-top: #212121;
+}
+
+.is-pt-xxs {
+  padding-top: 24px;
+}
+
+.is-pt-xs {
+  padding-top: 32px;
+}
+
+.is-pt-s {
+  padding-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .is-pt-s {
+    padding-top: 32px;
+  }
+}
+
+.is-pt-ms {
+  padding-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .is-pt-ms {
+    padding-top: 40px;
+  }
+}
+
+.is-pt-m {
+  padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+  .is-pt-m {
+    padding-top: 60px;
+  }
+}
+
+.is-pt-l {
+  padding-top: 120px;
+}
+
+@media (max-width: 768px) {
+  .is-pt-l {
+    padding-top: 80px;
+  }
+}
+
+.is-pt-xl {
+  padding-top: 160px;
+}
+
+@media (max-width: 768px) {
+  .is-pt-xl {
+    padding-top: 120px;
+  }
+}
+
+.is-pt-xxl {
+  padding-top: 200px;
+}
+
+@media (max-width: 768px) {
+  .is-pt-xxl {
+    padding-top: 160px;
+  }
+}
+
+.is-pt-big {
+  padding-top: 240px;
+}
+
+@media (max-width: 768px) {
+  .is-pt-big {
+    padding-top: 200px;
+  }
+}
+
+.is-virtual-scroll {
+  overflow: hidden;
+}
+
+.is-native-scroll.y-scroll {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.is-native-scroll.x-scroll {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.column {
+  display: block;
+  float: left;
+  min-height: 1px;
+}
+
+.grid {
+  clear: both;
+  position: relative;
+  margin: 0 auto;
+}
+
+.grid.grid-full {
+  width: 100%;
+  padding-left: 3.2vw;
+  padding-right: 3.2vw;
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  background: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+pre {
+  overflow: auto;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+a,
+input,
+input:focus,
+select,
+textarea,
+textarea:focus {
+  outline: none;
+}

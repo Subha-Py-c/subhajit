@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -182,6 +182,11 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0"
     />
+
+    <!-- ------------------------------------------------------------------------------------
+     CDN js
+    ------------------------------------------------------------------------------------ -->
+    <!-- split type js && typed.js -->
   </head>
 
   <body>
@@ -196,12 +201,9 @@
         const texts = ["S.Gorai.", "S.Gorai. .", "S.Gorai. . ."];
 
         texts.forEach((text, index) => {
-          setTimeout(
-            () => {
-              loader.innerText = text;
-            },
-            450 * (index + 1),
-          );
+          setTimeout(() => {
+            loader.innerText = text;
+          }, 450 * (index + 1));
         });
 
         setTimeout(() => {
@@ -210,27 +212,11 @@
       });
     </script>
 
-    <a
-      class="blog"
-      target="_blank"
-      rel="noopener"
-      href="https://myopencanvas.pages.dev"
-    >
-      Blog
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-6"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-        />
-      </svg>
+    <a class="blog" target="_blank" rel="noopener" href="https://myopencanvas.pages.dev">
+        Blog
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+        </svg>
     </a>
 
     <header class="flexed justify-between">
@@ -324,53 +310,102 @@
     <main role="main">
       <!-- S1 -->
       <section id="s1" class="sec1">
-        <div class="untX section about-section">
-          <div class="grid grid-full">
-            <h2 class="hero-h2">
-              <span class="">I</span>
-              <span class="">Am</span>
-              <span id="b-c"
-                >Subha
-                <div class="disable imgShow">/Dev</div></span
-              >
-            </h2>
-            <div class="about-content is-mt-l col-9 col-md-12">
-              <p
-                data-aosX="fade-right"
-                data-aos-delayX="1700"
-                data-aos-durationX="350"
-                class="hero-p col-12 is-mb-ms introduction"
-              >
-                MERN Stack &amp; python Developer / Web Designer. Information
-                Technology student at
-                <a
-                  class="college_url"
-                  href="https://iiests.ac.in"
-                  target="_blank"
-                  >IIEST Shibpur.</a
-                >
-                Interested in Deep Learning and Blockchain technologies.
-              <div id="profileImg" class="flexed">
-                <img
-                  src="images/1.webp"
-                  width="220"
-                  height="240"
-                  class="ta-ta full"
-                />
-              </div>
-              </p>
-              <p
-                data-aosX="fade-left"
-                data-aos-delayX="1700"
-                data-aos-durationX="350"
-                class="hero-p col-6 col-xs-12 is-mb-s is-xs"
-              >
-                Nothing more to say, thanks for visiting my website. Don't
-                forget to explore my projects. I'm eager to collaborate with
-                interested people.
-              </p>
+        <div id="d1-2-3" class="d1-2-3">
+          <!-- #div1 -->
+          <div id="div1" class="div1">
+            <div id="hello" class="scroll">
+              <span id="i1" class="letter">H</span>
+              <span id="i2" class="letter">e</span>
+              <span id="i3" class="letter">l</span>
+              <span id="i4" class="letter">l</span>
+              <span id="i5" class="letter">o</span>
             </div>
           </div>
+          <!-- #div2 -->
+          <div
+            itemscope
+            itemtype="http://schema.org/Person"
+            id="div2"
+            class="animated-div-xx"
+          >
+            <h3 id="intro" itemprop="description" class="intro">
+              Myself
+              <span itemprop="name" id="subhajit">Subhajit Gorai.</span>
+
+              <br />
+              <br />
+
+              <span class="s0 relative">
+                <span class="s1 relative">
+                  Currently I am pursuing B.Tech at
+                  <cite>
+                    Indian Institute of Engineering Science and Technology
+                    (IIEST), Shibpur
+                  </cite>
+                  , in department of
+                  <cite>Information Technology</cite>
+                  .
+                </span>
+              </span>
+              <span class="s0 relative">
+                <span class="s1 relative">
+                  I am passionate about
+                  <code>
+                    <strong itemprop="jobTitle">WEB DEVELOPMENT</strong>
+                    and
+                    <strong itemprop="jobTitle">MACHINE LEARNING.</strong>
+                  </code>
+                </span>
+              </span>
+
+              <br />
+              <br />
+
+              <span class="s0 relative">
+                <span class="s1 relative">
+                  Coding has become more than just a skill for me—it's a
+                  passion.
+                </span>
+              </span>
+              <span class="s0 relative">
+                <span class="s1 relative">
+                  My journey began with a fascination for
+                  <code>python</code>
+                  , and since then, I've been on an exhilarating ride through
+                  the realms of programming.
+                </span>
+              </span>
+
+              <br />
+              <br />
+
+              <span class="s0 relative">
+                <span class="s1 relative">
+                  I look forward to applying my skills and knowledge to
+                  innovative projects and solving complex challenges in the tech
+                  field.
+                </span>
+              </span>
+            </h3>
+          </div>
+          <!-- #divv3 -->
+          <div
+            itemscope
+            itemtype="http://schema.org/Person"
+            class="divv3 tilt bg-set flexed"
+            id="divv3"
+          >
+            <div
+              itemprop="image"
+              data-tilt
+              data-tilt-max="20"
+              class="img_container ta-ta full flexed"
+            >
+              lorem2000
+            </div>
+          </div>
+          <!-- #divv4 -->
+          <div id="divv4"></div>
         </div>
       </section>
 
@@ -401,40 +436,38 @@
                 <div
                   itemscope
                   itemtype="http://schema.org/EducationalOccupationalCredential"
-                  class="institute__data">
-                    <span class="s2 relative">
-                      <span class="s3 relative">
-                        <strong class="inst" itemprop="educationalLevel">
-                          Pimary Studies
-                        </strong>
-                      </span>
+                  class="institute__data"
+                >
+                  <span class="s2 relative">
+                    <span class="s3 relative">
+                      <strong class="inst" itemprop="educationalLevel">
+                        Pimary Studies
+                      </strong>
                     </span>
-                    <br />
-                    <span class="s2 relative">
-                      <span class="s3 relative">
-                        <em>Institution:</em>
-                        <span itemprop="name">Narendranath School</span>
-                      </span>
+                  </span>
+                  <br />
+                  <span class="s2 relative">
+                    <span class="s3 relative">
+                      <em>Institution:</em>
+                      <span itemprop="name">Narendranath School</span>
                     </span>
-                    <br />
-                    <span class="s2 relative">
-                      <span class="s3 relative">
-                        <em class="year">Year:</em>
-                        2010-2015
-                      </span>
+                  </span>
+                  <br />
+                  <span class="s2 relative">
+                    <span class="s3 relative">
+                      <em class="year">Year:</em>
+                      2010-2015
                     </span>
-                    <br />
-                    <span class="s2 relative">
-                      <span class="s3 relative">
-                        <em class="grade">Grade:</em>
-                        A+
-                      </span>
+                  </span>
+                  <br />
+                  <span class="s2 relative">
+                    <span class="s3 relative">
+                      <em class="grade">Grade:</em>
+                      A+
                     </span>
+                  </span>
                 </div>
                 <div class="ball-pointer" id="ball-pointer-1"></div>
-              </div>
-              <div class="academics__card__container ta-ta">
-                <div class="acad__card card2 firstcard2"><img class="lazy-load" src="images/black-lotus-3.webp"></div>
               </div>
             </div>
             <div class="acad__institutions">
@@ -480,9 +513,6 @@
                 <!-- 96.42% -->
                 <div class="ball-pointer" id="ball-pointer-2"></div>
               </div>
-              <div class="academics__card__container ta-ta">
-                <div class="acad__card card1 firstcard1"><img class="lazy-load" src="images/bhs3.gif" /></div>
-              </div>
             </div>
             <div class="acad__institutions">
               <div
@@ -524,17 +554,21 @@
                     </span>
                   </span>
                 </div>
-                <!-- 89.2% -->
+                <!-- 88% -->
                 <div class="ball-pointer" id="ball-pointer-3"></div>
-              </div>
-              <div class="academics__card__container ta-ta">
-                <div class="acad__card card2 secondcard2"><img class="lazy-load" src="images/bhs2.jpg" /></div>
-                <div class="acad__card card3 firstcard3"><img class="lazy-load" src="images/bhs1.gif" /></div>
               </div>
             </div>
             <div class="acad__institutions">
-              <div data-aosX="fade-up" data-aosX-duration="600" class="ins__container">
-                <div itemscope itemtype="http://schema.org/EducationalOccupationalCredential" class="institute__data">
+              <div
+                data-aosX="fade-up"
+                data-aosX-duration="600"
+                class="ins__container"
+              >
+                <div
+                  itemscope
+                  itemtype="http://schema.org/EducationalOccupationalCredential"
+                  class="institute__data"
+                >
                   <span class="s2 relative">
                     <span class="s3 relative">
                       <strong class="inst" itemprop="credentialCategory">
@@ -565,11 +599,6 @@
                   </span>
                 </div>
                 <div class="ball-pointer" id="ball-pointer-4"></div>
-              </div>
-              <div class="academics__card__container ta-ta">
-                <div class="acad__card card3 secondcard3"><img class="lazy-load" src="images/iiest4.jpg" /></div>
-                <div class="acad__card card1 secondcard1"><img class="lazy-load" src="images/iiest2.jpg" /></div>
-                <div class="acad__card card2 thirdcard2"><img class="lazy-load" src="images/iiest3.jpeg" /></div>
               </div>
             </div>
           </div>
@@ -1896,15 +1925,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-    <!-- <script src="https://unpkg.com/split-type"></script> -->
     <script>
-      // const lenis = new Lenis();
-
-      // Initialize smooth scroll
-      const lenis = new Lenis({
-        duration: 1.2,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      });
+      const lenis = new Lenis();
 
       function raf(time) {
         lenis.raf(time);
@@ -1915,38 +1937,25 @@
       // gsap
       gsap.registerPlugin(ScrollTrigger);
 
-      // const text = new SplitType("p.introduction", {
-      //   types: "words, lines",
-      // });
-
-      // Create animation timeline
-      /*
-      const tl = gsap.timeline({
+      var tl = gsap.timeline({
         scrollTrigger: {
-          trigger: ".introduction",
+          trigger: ".intro",
           start: "top center",
           end: "bottom center",
           scrub: false,
-          markers: true,
-          toggleActions: "play none none reverse",
+          markers: false,
+          //toggleActions: "play pause pause pause",
         },
       });
 
-      // Add animation to timeline
-      tl.to(".word", {
+      tl.to(".s1", {
         y: 0,
-        stagger: 0.05,
-        duration: 0.5,
-        ease: "power4.out",
+        delay: 1.7,
+        stagger: 0.07,
+        duration: 1.2,
+        ease: "power3.out",
         opacity: 1,
-        onComplete: () => {
-          // Revert split type after animation completes
-          setTimeout(() => {
-            SplitType.revert(".introduction");
-          }, 300); // Wait 500ms after animation completes
-        },
       });
-      */
       // 1300 load -> 1700 start
 
       var tl2 = gsap.timeline({
@@ -1991,8 +2000,8 @@
     </script>
 
     <!-- typed.js -->
-    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
-    <!-- <script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
       var typed4 = new Typed("#emailer_name", {
         strings: ["Your Name", "Tu Nombre", "आपका नाम", "আপনার নাম"],
         typeSpeed: 150,
@@ -2013,7 +2022,7 @@
         bindInputFocusEvents: true,
         loop: true,
       });
-    </script> -->
+    </script>
 
     <!-- tilt.js -->
     <!-- <script>

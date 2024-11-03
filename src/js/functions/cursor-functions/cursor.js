@@ -24,7 +24,7 @@ document.addEventListener("mousemove", (e) => {
 
 const elements = {
   gallery: document.getElementById("gallery"),
-  hello: document.getElementById("hello"),
+  hello: document.getElementById("b-c"),
   cardContainer: document.querySelector(".card-container"),
   skill: document.getElementById("skill"),
   projectHeading: document.getElementById("project-heading"),

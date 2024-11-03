@@ -38,15 +38,20 @@
 }
 
 mark {
-  background-color: var(--mark-clr);
+  background-color: #ff0;
   font-size: larger;
-  box-sizing: content-box;
-  padding: 10px;
+  /* box-sizing: content-box; */
+  /* padding: 10px; */
   border-radius: 15px;
+  margin-bottom: 1.5rem;
+  font-size: 36px;
+  font-family: title, serif;
+  font-weight: lighter;
 }
 
 html.invert mark {
   color: white;
+  background: var(--mark-clr);
 }
 
 /* #ff8c007d */
@@ -176,7 +181,9 @@ html.invert .card-container {
   position: relative;
   overflow: hidden;
   transition: 0.3s;
-  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transition:
+    transform 0.5s ease-out,
+    opacity 0.5s ease-out;
   animation: padd 400ms forwards;
   display: flex;
   align-items: center;
