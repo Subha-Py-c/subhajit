@@ -75,12 +75,7 @@ html.invert mark {
   font-weight: var(--heading-weight);
 }
 
-/* ------- SKILL WRAPPER ----------------------------------------------- */
-.skill-wrapper {
-  display: flex;
-  align-items: center;
-}
-
+/* ------- for phone ----------------------------------------------- */
 .skill__container {
   /* border: 1px solid; */
   margin-left: 20px;
@@ -90,6 +85,12 @@ html.invert mark {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, auto);
   gap: 20px;
+  font-family: "Mondia", sans-serif;
+  display: none;
+}
+
+.skill__container .skill__box svg {
+  display: block;
 }
 
 .skill__box {
@@ -107,17 +108,17 @@ html.invert mark {
   }
 }
 
-.skill__container .skill__box svg {
-  display: block;
-}
-
-.skill__container {
-  display: none;
-}
-
 /* skill wrapper has 2 childs> card container and skill list/ s-list */
 
-/* ------- SKILL LIST ---------------------------------------------------- */
+/* ---------------------------------------------------------
+          for desktops
+--------------------------------------------------------- */
+
+.skill-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 #skill-list {
   /* border: 1px solid; */
   width: 435px;
@@ -139,11 +140,6 @@ html.invert mark {
   position: relative;
 }
 
-.skill__container {
-  font-family: "Mondia", sans-serif;
-}
-
-/* ------- CARD CONTAINER ----------------------------------------------- */
 .card-container {
   width: var(--card-container-width);
   height: var(--card-container-height);
@@ -171,6 +167,10 @@ html.invert .card-container {
   font-size: var(--card-font-size);
 }
 
+/* -------------------------------------------------
+          Extra Classes !!! i have forgotten their uses 
+---------------------------------------------------- */
+
 .inverse2 {
   z-index: 80;
   margin-top: 0;
@@ -181,9 +181,7 @@ html.invert .card-container {
   position: relative;
   overflow: hidden;
   transition: 0.3s;
-  transition:
-    transform 0.5s ease-out,
-    opacity 0.5s ease-out;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
   animation: padd 400ms forwards;
   display: flex;
   align-items: center;
