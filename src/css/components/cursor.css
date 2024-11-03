@@ -14,7 +14,7 @@
 
   mix-blend-mode: difference;
   pointer-events: none;
-  display: none !important;
+  /* display: none !important; */
 }
 
 @media ((width > 1024px) and (pointer: fine)) {

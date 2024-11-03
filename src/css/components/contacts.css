@@ -28,20 +28,21 @@
   font-size: var(--heading-text-size);
   font-weight: var(--heading-weight);
 }
+/* ------------------------{container}-------------------------------------------- */
+
+.contacts-container {
+  box-sizing: border-box;
+  display: flex;
+  margin-top: 6vh;
+  height: 400px;
+  padding-left: 70px;
+  border: 1px dotted red;
+}
 
 /* ------------------------{fs-contacts}-------------------------------------------- */
-.part1 {
-  /* height: 100%; */
-  height: 400px;
-  /* border: 1px solid; */
-  display: flex;
-  box-sizing: border-box;
-  padding-left: 70px;
-}
 .fs-contacts {
-  height: 300px;
-  width: 26vw;
-  /* margin-top: 20px; */
+  height: auto;
+  width: auto;
   box-sizing: border-box;
   padding: 10px;
   padding-left: var(--margin-left);
@@ -51,47 +52,27 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  /* border: 1px solid blue; */
-}
+  border: 1px solid blue;
 
-.fs-contacts a,
-.github_logo a,
-.yt_logo a,
-.t_logo a {
-  text-decoration: none !important;
-  border-bottom: none !important;
-  color: black !important;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-}
+  & ul li {
+    margin-bottom: 1.5rem;
+  }
 
-#e-logo,
-#g-logo,
-#y-logo,
-#l-logo,
-#t-logo {
-  width: var(--icon-width);
-  height: var(--icon-height);
-  border: none;
-}
+  & ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+  }
 
-#t-logo {
-  width: 30px;
-  height: 30px;
-}
+  & ul li a:hover {
+    color: inherit;
+  }
 
-/* .github-logo:hover{border-bottom: 5px solid rgb(100%);} */
-
-/* ------------------------{container}-------------------------------------------- */
-
-.contacts-container {
-  display: flex;
-  box-sizing: border-box;
-  margin-top: 3rem;
-  /* border: 1px solid red; */
+  & ul li svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
 }
 
 /* ------------------------{CV}-------------------------------------------- */
@@ -99,16 +80,14 @@
   border: 2px solid;
   font-size: 25px;
   font-family: poppins, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   position: relative;
   height: 45px;
   width: 200px;
+  border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 30px;
-  /* margin-top: 40px; */
-  background-color: rgba(0, 0, 0, 0);
 }
 .download-cv:hover {
   background-color: black;
@@ -127,6 +106,7 @@
 /* ------------------------{email-box}-------------------------------------------- */
 
 .email-box {
+  border: 1px solid;
   position: absolute;
   top: 0;
   left: 47vw;
@@ -226,6 +206,7 @@
   gap: 0.25rem;
   margin-bottom: 15px;
 }
+
 .nm,
 .eml {
   border: none;
@@ -276,12 +257,6 @@
 }
 
 /* -------------------------------------------------------------------- */
-
-/* @media (width > 1535px) {
-  .email-box {
-    left: 59vw;
-  }
-} */
 
 /* md ipads */
 @media (max-width: 1025px) {

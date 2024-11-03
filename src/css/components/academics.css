@@ -166,11 +166,11 @@
   transform: rotateZ(5deg) scaleY(1);
 }
 .acad__institutions:nth-child(4):hover .secondcard1 {
-  transition-delay: 0.15s;
+  transition-delay: 0.1s;
   transform: rotateZ(-5deg) scaleY(1);
 }
 .acad__institutions:nth-child(4):hover .thirdcard2 {
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
   transform: translateY(-20px) scaleY(1);
 }
 

@@ -353,6 +353,15 @@ body.is-project .project-counter .counter-container {
   }
 }
 
+span.s3,
+span.s5 {
+  display: inline;
+
+  & span {
+    display: inline;
+  }
+}
+
 .about-section {
   margin-top: 0vw;
 }

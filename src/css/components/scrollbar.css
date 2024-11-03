@@ -1,20 +1,19 @@
-::-webkit-scrollbar,
+/* Hide scrollbar for WebKit browsers */
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-track,
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb:hover {
-  display: none !important;
-  width: 0 !important;
-}
-/* Hide scrollbar for WebKit browsers */
-::-webkit-scrollbar {
-  display: none;
+  /* display: none !important; */
+  width: 10px !important;
 }
 
 /* Hide scrollbar for other browsers */
 html,
 body {
-  overflow: -moz-hidden; /* Firefox */
-  overflow: hidden; /* Other browsers */
+  overflow: -moz-hidden;
+  /* Firefox */
+  overflow: hidden;
+  /* Other browsers */
+
   /* width , height = 100% so i can still scroll in y */
 }
