@@ -20,8 +20,6 @@
   padding-top: 90px;
 }
 
-/* SK = skill list main id */
-/* ss = skill heading */
 #SK,
 #SS {
   border: none;
@@ -115,18 +113,19 @@ html.invert mark {
 --------------------------------------------------------- */
 
 .skill-wrapper {
+  /* border: 1px solid rgb(224, 187, 22); */
+
+  margin-top: 6vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 #skill-list {
-  /* border: 1px solid; */
-  width: 435px;
-  height: 60vh;
-
-  padding-top: 0;
-  padding-left: 50px;
-  margin-top: 20px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-right: 7vw;
 
   font-family: "Mondia", sans-serif;
   font-weight: 200;
@@ -138,18 +137,27 @@ html.invert mark {
   align-items: flex-end;
 
   position: relative;
+  transform: translateX(60vh) rotateZ(-5deg);
+  opacity: 0;
 }
 
 .card-container {
-  width: var(--card-container-width);
-  height: var(--card-container-height);
-  margin-left: calc(var(--margin-left) + 50px);
-  margin-right: var(--margin-dist);
+  /* border: 1px solid red; */
+
+  /* width: var(--card-container-width); */
+  /* height: var(--card-container-height); */
+  width: 100%;
+  height: 100%;
+
+  padding: 0;
+  margin: 0;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 30px;
+
+  transform: translateX(-60vh) rotateZ(5deg);
+  opacity: 0;
 }
 html.invert .card-container {
   color: white;
@@ -245,18 +253,6 @@ html.invert .card-container {
 }
 
 /* ------------------------{MEDIA QUERY}-------------------------------------------- */
-
-@media (width > 1536px) {
-  #skill-list {
-    padding-left: 275px;
-  }
-
-  #s2-skills {
-    height: 98vh;
-  }
-}
-
-/* md */
 @media (width > 768px) and (width < 1025px) {
   #s2-skills {
     height: 100vh;

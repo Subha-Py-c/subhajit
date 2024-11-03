@@ -349,6 +349,7 @@ body.is-project .project-counter .counter-container {
   &:hover {
     text-decoration-style: solid;
     color: inherit;
+    cursor: url("../../assets/images/a2.png"), auto;
   }
 }
 
