@@ -22,21 +22,107 @@
 }
 /* ------------------------ */
 .projects-wrapper {
+  box-sizing: border-box;
   /* border: 1px solid red; */
-  padding: 20px;
-  gap: 5vh;
   margin-top: 6vh;
-}
+  padding: 0 10vw 0 10vw;
+  display: grid;
+  /* place-items: center; */
+  gap: 0vh;
+  grid-template-rows: 0rem 13.33rem 13.33rem 3rem 13.33rem 13.33rem 3rem 13.33rem 13.33rem;
+  grid-template-columns: repeat(6, 13.33rem);
+  transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
 
-.project {
-  width: 80vw;
-  height: 40vh;
-  border-radius: 5vh;
-  background-color: var(--card-container-color);
+  & .project {
+    box-sizing: border-box;
+    border-radius: 5vh;
+    background-color: var(--card-container-color);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 0 gray;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  & .project1 {
+    grid-row: span 3;
+    grid-column: span 3;
+    width: calc(100% + 10.33rem);
+  }
+  & .project2 {
+    grid-area: 1/5/4/-1;
+  }
+  & .project3 {
+    grid-area: 5/1/7/3;
+  }
+  & .project4 {
+    grid-row: 5/7;
+    grid-column: 4/-1;
+    width: calc(100% + 10.33rem);
+    transform: translateX(-10.33rem);
+  }
+  & .project5 {
+    grid-row: 8/10;
+    grid-column: 1/4;
+    width: calc(100% + 10.33rem);
+  }
+  & .project6 {
+    grid-row: 8/10;
+    grid-column: 5/-1;
+  }
 }
 
 html.invert .project {
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(50, 50, 50);
+  box-shadow: 5px 5px 0 #323232;
 }
 
-/* will make it like llama website */
+.project__data,
+.project__image {
+  box-sizing: border-box;
+  border-radius: 3vh;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.project:nth-child(1),
+.project:nth-child(4),
+.project:nth-child(5) {
+  & .project__data {
+    background-color: azure;
+    /* width: 40%; */
+  }
+  & .project__image {
+    background-color: lightpink;
+    /* width: 50%; */
+  }
+}
+
+.project:nth-child(2),
+.project:nth-child(3),
+.project:nth-child(6) {
+  gap: 0px;
+
+  & .project__data {
+    background-color: azure;
+    width: 0%;
+  }
+  & .project__image {
+    background-color: lightpink;
+    /* width: 50%; */
+  }
+}

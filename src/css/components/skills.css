@@ -143,9 +143,6 @@ html.invert mark {
 
 .card-container {
   /* border: 1px solid red; */
-
-  /* width: var(--card-container-width); */
-  /* height: var(--card-container-height); */
   width: 100%;
   height: 100%;
 
@@ -173,6 +170,8 @@ html.invert .card-container {
   flex-direction: column;
   justify-content: center;
   font-size: var(--card-font-size);
+  border: 1px solid gray;
+  box-shadow: 5px 5px 0 gray;
 }
 
 /* -------------------------------------------------
@@ -195,8 +194,9 @@ html.invert .card-container {
   align-items: center;
   justify-content: flex-end;
   width: 350px;
-  border-right: 2px solid rgba(0, 0, 0, 1);
+  border-right: 2px solid gray;
   background-color: var(--skill-list-color);
+  border-left: 1px solid gray;
 }
 
 .first-x {

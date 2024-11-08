@@ -217,7 +217,6 @@ body {
   font-family: Content, sans-serif;
   color: #212121;
   font-weight: 400;
-  transition: all 0.8s ease;
 }
 
 @media (max-width: 992px) {
@@ -277,15 +276,6 @@ body.is-virtual-scroll {
 
 body.progress {
   cursor: progress;
-}
-
-body.is-project .cursor-container .cursor-project {
-  /* transform: translateY(0); */
-  transition: all 1.2s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-body.is-project .project-counter .counter-container {
-  transform: translateZ(0);
 }
 
 .col-fix {
@@ -402,16 +392,16 @@ html.is-device .about-section {
 .introduction {
   font-kerning: none;
 
-  & .lines {
+  & .line {
     overflow: hidden;
   }
 
-  & .char,
+  /* & .char, */
   & .word {
     display: block;
     position: relative;
-    transform: translateY(100px);
-    opacity: 0;
+    transform: translateY(100%);
+    opacity: 1;
     /* filter: blur(3px); */
     transition: transform 0.5s;
   }

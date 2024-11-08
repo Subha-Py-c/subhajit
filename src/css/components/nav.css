@@ -6,16 +6,6 @@
   --li-text-size: 2em;
 }
 
-/* js class */
-main {
-  transition: all 0.3s;
-}
-
-main.nav-open {
-  filter: blur(5px);
-  transition: all 0.3s;
-}
-
 html.invert main.nav-open {
   filter: blur(5px);
   transition: all 0.3s;

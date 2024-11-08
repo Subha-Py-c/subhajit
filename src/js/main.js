@@ -1,8 +1,5 @@
-// importing html
-// import '../index.html';
-
 // importing js
-// import "./vanila-tilt.js";
+import "./gsap.js";
 import "./functions/cursor-functions/cursor.js";
 import "./functions/cursor-functions/hiding-cursor.js";
 import "./functions/contacts.js";
@@ -13,7 +10,6 @@ import "./functions/skills-js/skill-card.js";
 import "./functions/project-js/project.js";
 import "./functions/utils/dark-mode.js";
 import "./functions/utils/hidden-classes.js";
-// import "./functions/utils/emailing.js";
 import "./functions/utils/scroll-related/smooth-scrolling.js";
 import "./functions/utils/scroll-related/underline_on_scroll.js";
 
@@ -34,13 +30,18 @@ import "../css/utils.css";
 // importing robots.txt
 import "../robots.txt";
 
-// importing images "still work if i do not do this"
 import "../images/projects-imgs/p3.jpeg";
 import "../images/projects-imgs/p4.jpeg";
 import "../images/projects-imgs/p5.jpeg";
 import "../images/projects-imgs/p10.svg";
 import "../images/projects-imgs/p12.jpeg";
 import "../images/projects-imgs/p13.jpeg";
+import "../images/iiest2.jpg";
+import "../images/iiest3.jpeg";
+import "../images/iiest4.jpg";
+import "../images/bhs1.gif";
+import "../images/bhs2.jpg";
+import "../images/bhs3.gif";
 
 // importing files
 import "../assets/demo-cv.pdf";
