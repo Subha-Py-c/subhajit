@@ -53,23 +53,25 @@ let coeff = 100;
 let coeff2 = 0.8;
 
 // overall shakyness
-document.addEventListener("mousemove", (ev) => {
-  smallCards.forEach((card, index) => {
-    if (index === 0) {
-      card.style.transform = `translate3d(${ev.pageX / coeff}px, ${ev.pageY / coeff}px, 0)`;
-    } else if (index === 1) {
-      card.style.transform = `translate3d(${ev.pageX / coeff}px, ${ev.pageY / coeff}px, 0)`;
-    } else if (index === 2) {
-      card.style.transform = `translate3d(${ev.pageX / coeff}px, ${ev.pageY / coeff}px, 0)`;
-    } else if (index === 3 && window.innerWidth > 1025) {
-      card.style.transform = `translate3d(calc(${ev.pageX / coeff}px - 10.33rem), ${ev.pageY / coeff}px, 0)`;
-    } else if (index === 4) {
-      card.style.transform = `translate3d(${ev.pageX / coeff}px, ${ev.pageY / coeff}px, 0)`;
-    } else {
-      card.style.transform = `translate3d(${ev.pageX / coeff}px, ${ev.pageY / coeff}px, 0)`;
-    }
+if (window.innerWidth > 1025) {
+  document.addEventListener("mousemove", (ev) => {
+    smallCards.forEach((card, index) => {
+      if (index === 0) {
+        card.style.transform = `translate3d(${ev.pageX / coeff}px, ${ev.pageY / coeff}px, 0)`;
+      } else if (index === 1) {
+        card.style.transform = `translate3d(${ev.pageX / coeff}px, ${ev.pageY / coeff}px, 0)`;
+      } else if (index === 2) {
+        card.style.transform = `translate3d(${ev.pageX / coeff}px, ${ev.pageY / coeff}px, 0)`;
+      } else if (index === 3) {
+        card.style.transform = `translate3d(calc(${ev.pageX / coeff}px - 10.33rem), ${ev.pageY / coeff}px, 0)`;
+      } else if (index === 4) {
+        card.style.transform = `translate3d(${ev.pageX / coeff}px, ${ev.pageY / coeff}px, 0)`;
+      } else {
+        card.style.transform = `translate3d(${ev.pageX / coeff}px, ${ev.pageY / coeff}px, 0)`;
+      }
+    });
   });
-});
+}
 
 // children scroll
 coeff2 = 0.05; // Lower the coefficient to reduce the movement
