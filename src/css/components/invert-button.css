@@ -1,6 +1,5 @@
 .invert {
   filter: invert(1);
-  /* ekhane var() use kora jabe na, kaj korche na, var(--invert-value) */
 }
 
 html.invert,

@@ -285,49 +285,63 @@
     --padding-top-contacts: 80px;
   }
 
+  #s5-thanks > div.hidden.show > h1 {
+    font-size: xx-large;
+  }
+
+  .contacts-container {
+    height: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   #s4-contacts {
     height: 100vh;
     padding-top: 4vh;
+    margin-bottom: 0vh;
+    margin-top: 20vh;
   }
 
-  .contacts-container {
-    margin-top: 0.5rem;
-    height: 350px;
+  #contact-heading {
+    font-size: xx-large;
   }
 
-  .part1 {
-    padding-left: 0px;
-    height: 100%;
+  .adjuster-div {
+    gap: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .question {
     width: 100%;
   }
+  #email-box > span {
+    font-size: medium;
+  }
+  #s4-contacts > div > div.adjuster-div > div.fs-contacts > ul > li > a {
+    font-size: small;
 
-  .fs-contacts {
-    gap: 0.6rem;
-    padding-left: 120px;
-    font-size: 1rem;
-    position: relative;
-    width: 100%;
-    height: 250px;
+    & svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .email-box {
+    width: auto;
   }
 
   .download-cv {
-    border: 3px solid;
+    border: 2px solid;
     font-size: 14px;
     height: 30px;
-    width: 130px;
+    width: 200px;
     border-radius: 20px;
   }
 
-  .email-box {
-    top: 43vh;
-    left: 10%;
-    width: 80%;
-    height: 400px;
-    border-radius: 25px;
-  }
   .box {
-    width: 98%;
-    height: 92%;
     border-radius: 25px;
     & label {
       font-size: 1rem;
@@ -343,121 +357,11 @@
   }
 }
 
-/* for ipad mini */
 @media (max-width: 768px) {
-  :root {
-    --icon-width: 35px;
-    --icon-height: 35px;
-    --text-color: #fff;
-    --text-color-hover: #fff;
-    --padding-top-contacts: 80px;
-  }
-
   #s4-contacts {
     height: 130vh;
-    padding-top: 4vh;
-  }
-
-  .fs-contacts {
-    gap: 0.6rem;
-    padding-left: 40px;
-    font-size: 1rem;
-    position: relative;
-    width: 100%;
-    height: 250px;
-  }
-  .part1 {
-    padding-left: 0px;
-    height: 100%;
-    width: 100%;
-  }
-  .contacts-container {
-    margin-top: 0.5rem;
-    height: 310px;
-  }
-
-  .email-box {
-    top: 40vh;
-    left: 50px;
-    width: calc(100% - 100px);
-    height: 400px;
-    border-radius: 25px;
-  }
-  .box {
-    width: 98%;
-    height: 90%;
-    border-radius: 25px;
-    & label {
-      font-size: 1rem;
-    }
-    & input {
-      font-size: 0.9rem;
-    }
-
-    & button {
-      width: 100px;
-      height: 30px;
-    }
   }
 }
 
-/* for mobiles */
 @media (max-width: 475px) {
-  :root {
-    --icon-width: 35px;
-    --icon-height: 35px;
-    --text-color: #fff;
-    --text-color-hover: #fff;
-    --padding-top-contacts: 80px;
-  }
-
-  #s4-contacts {
-    height: 130vh;
-    padding-top: 4vh;
-  }
-
-  .fs-contacts {
-    /* height: calc(var(--icon-height) * 3); */
-    /* width: 10vw; */
-    /* flex-direction: column; */
-    gap: 0.6rem;
-    padding-left: 40px;
-    font-size: 1rem;
-    position: relative;
-    width: 100%;
-    height: 250px;
-  }
-  .part1 {
-    padding-left: 0px;
-    height: 100%;
-    width: 100%;
-  }
-  .contacts-container {
-    margin-top: 0.5rem;
-    height: 310px;
-  }
-
-  .email-box {
-    top: 47vh;
-    left: 30px;
-    width: calc(100% - 60px);
-    height: 450px;
-    border-radius: 25px;
-  }
-  .box {
-    width: 98%;
-    height: 88%;
-    border-radius: 25px;
-    & label {
-      font-size: 1rem;
-    }
-    & input {
-      font-size: 0.9rem;
-    }
-
-    & button {
-      width: 100px;
-      height: 30px;
-    }
-  }
 }

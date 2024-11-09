@@ -30,12 +30,13 @@ import "../css/utils.css";
 // importing robots.txt
 import "../robots.txt";
 
-import "../images/projects-imgs/p3.jpeg";
-import "../images/projects-imgs/p4.jpeg";
-import "../images/projects-imgs/p5.jpeg";
-import "../images/projects-imgs/p10.svg";
-import "../images/projects-imgs/p12.jpeg";
-import "../images/projects-imgs/p13.jpeg";
+import "../images/projects-imgs/lumifeed.jpeg";
+import "../images/projects-imgs/encryptease.jpeg";
+import "../images/projects-imgs/portfolio.jpeg";
+import "../images/projects-imgs/opencanvas.jpeg";
+import "../images/projects-imgs/krishisearch.jpeg";
+import "../images/projects-imgs/relaxingmelody.jpeg";
+
 import "../images/iiest2.jpg";
 import "../images/iiest3.jpeg";
 import "../images/iiest4.jpg";

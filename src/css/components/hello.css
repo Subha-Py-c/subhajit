@@ -60,6 +60,12 @@ h2.hero-h2 {
   white-space: nowrap;
 }
 
+@media screen and (max-width: 768px) {
+  h2.hero-h2 {
+    font-size: 19vw;
+  }
+}
+
 h2.hero-h2,
 p.hero-p {
   font-family: title, serif;
@@ -82,6 +88,11 @@ p.hero-p {
     font-size: 32px;
   }
 }
+@media (max-width: 768px) {
+  p.hero-p {
+    font-size: 26px;
+  }
+}
 
 p.hero-p a,
 p.hero-p span {
@@ -91,19 +102,25 @@ p.hero-p span {
 }
 
 p.is-xs {
-  font: 18px/1.3 Content, sans-serif;
+  font:
+    18px/1.3 Content,
+    sans-serif;
   text-transform: uppercase;
 }
 
 @media (max-width: 1440px) {
   p.is-xs {
-    font: 14px/1.3 Content, sans-serif;
+    font:
+      14px/1.3 Content,
+      sans-serif;
   }
 }
 
 @media (max-width: 992px) {
   p.is-xs {
-    font: 12px/1.3 Content, sans-serif;
+    font:
+      12px/1.3 Content,
+      sans-serif;
   }
 }
 
@@ -164,24 +181,32 @@ html {
 }
 
 html {
-  font: 18px/1.3 Content, sans-serif;
+  font:
+    18px/1.3 Content,
+    sans-serif;
 }
 
 @media (max-width: 1440px) {
   html {
-    font: 14px/1.3 Content, sans-serif;
+    font:
+      14px/1.3 Content,
+      sans-serif;
   }
 }
 
 @media (max-width: 992px) {
   html {
-    font: 12px/1.3 Content, sans-serif;
+    font:
+      12px/1.3 Content,
+      sans-serif;
   }
 }
 
 @media (max-width: 768px) {
   html {
-    font: 10px/1.3 Content, sans-serif;
+    font:
+      10px/1.3 Content,
+      sans-serif;
   }
 }
 
@@ -307,11 +332,6 @@ body.progress {
   box-sizing: border-box;
   padding-top: 18vh;
 }
-@media screen and (min-width: 1025px) {
-  #s1 {
-    padding-top: 24vh;
-  }
-}
 
 #profileImg {
   position: absolute;
@@ -322,11 +342,31 @@ body.progress {
   transform-origin: center;
   transition: all 0.3s ease;
   background: #3eb77a;
-  border-radius: 10px;
+  width: 256px;
+  height: 256px;
+  border-radius: 15px;
+  overflow: hidden;
 
   & img {
-    width: 220px;
-    height: 240px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  #s1 {
+    padding-top: 24vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #s1 > div > div > div > p.hero-p.col-12.is-mb-ms.introduction {
+    margin-top: 10vh;
+  }
+  #profileImg {
+    width: 110px;
+    height: 120px;
   }
 }
 

@@ -79,7 +79,7 @@
   left: calc(((-1) * var(--left-dist)) - var(--radius));
 }
 
-/* 
+/*
 <div class="academics__card__container">
   <div class="acad__card card1"></div>
   <div class="acad__card card2"></div>
@@ -230,9 +230,20 @@
   .hidden {
     font-size: 0.6em;
   }
+  #s-last > div > div.acad__list > div {
+    font-size: medium;
+  }
+  #academic__header {
+    font-size: xx-large;
+  }
+  .academics__card__container {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    display: none;
+  }
 }
 
-/* sm */
 @media (max-width: 640px) {
   :root {
     --institute__data__height: 128px;
@@ -258,32 +269,3 @@
     padding-bottom: 10px;
   }
 }
-
-@media (max-width: 475px) {
-  :root {
-    --institute__data__height: 128px;
-    --padding-left-val: 30px;
-    --left-val: 25px;
-    --inc: 85px;
-  }
-
-  .ball-pointer {
-    width: 10px;
-    height: 10px;
-  }
-  #s-last {
-    height: 120vh;
-  }
-
-  .acad__institutions {
-    height: 170px;
-    padding-left: 30px;
-    padding-bottom: 10px;
-  }
-}
-
-/* xl */
-/* @media (max-width: 1280px) {} */
-
-/* 2xl */
-/* @media (max-width: 1536px) {} */

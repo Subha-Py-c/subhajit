@@ -247,11 +247,11 @@ a.blog:hover svg {
   }
 
   a.blog {
-    font-size: 1.05rem;
+    font-size: 1.5rem;
 
     & svg {
-      width: 1.05rem;
-      height: 1.05rem;
+      width: 1.5rem;
+      height: 1.5rem;
     }
   }
 
@@ -262,7 +262,9 @@ a.blog:hover svg {
     height: 26px;
   }
 
-  /* .close-icon{} */
+  #ul > div.li.active > span > a {
+    font-size: medium;
+  }
 
   :root {
     --li-text-size: 1.2em;

@@ -98,6 +98,8 @@ html.invert mark {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
+  font-size: small;
 }
 
 @media (width < 1025px) {
@@ -170,8 +172,22 @@ html.invert .card-container {
   flex-direction: column;
   justify-content: center;
   font-size: var(--card-font-size);
-  border: 1px solid gray;
-  box-shadow: 5px 5px 0 gray;
+  border: 1px solid rgb(226, 200, 193);
+  box-shadow: 3px 3px 0 rgb(226, 200, 193);
+  transition: box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+html.invert .card {
+  border: 1px solid rgb(35, 35, 35);
+  box-shadow: 3px 3px 0 rgb(35, 35, 35);
+
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 /* -------------------------------------------------
@@ -194,9 +210,14 @@ html.invert .card-container {
   align-items: center;
   justify-content: flex-end;
   width: 350px;
-  border-right: 2px solid gray;
   background-color: var(--skill-list-color);
-  border-left: 1px solid gray;
+  border-right: 2px solid rgb(226, 200, 193);
+  border-left: 1px solid rgb(226, 200, 193);
+}
+
+html.invert .inverse2 {
+  border-right: 2px solid rgb(180, 180, 180);
+  border-left: 1px solid rgb(207, 207, 207);
 }
 
 .first-x {
@@ -278,29 +299,6 @@ html.invert .card-container {
 /* sm */
 @media (max-width: 768px) {
   #s2-skills {
-    height: 135vh;
-  }
-
-  :root {
-    --card-container-width: 150px;
-    --card-container-height: 350px;
-    --margin-dist: 150px;
-    --card-font-size: 0.8em;
-    --s-list-font-size: 1.2em;
-  }
-
-  .skill-wrapper {
-    display: none;
-  }
-
-  .skill__container {
-    display: grid;
-  }
-}
-
-/* xs */
-@media (max-width: 475px) {
-  #s2-skills {
     height: 140vh;
   }
 
@@ -318,5 +316,17 @@ html.invert .card-container {
 
   .skill__container {
     display: grid;
+  }
+
+  #skill {
+    font-size: xx-large;
+  }
+  #SS {
+    margin-bottom: 3vh;
+  }
+
+  #SK > div.skill__container > div > img {
+    width: 100px;
+    height: 100px;
   }
 }

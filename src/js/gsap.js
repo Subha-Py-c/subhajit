@@ -36,7 +36,7 @@ var tl2 = gsap.timeline({
 
 tl2.to(".s3", {
   y: 0,
-  delay: 0.2,
+  delay: 0.0,
   stagger: 0.06,
   duration: 1,
   ease: "power3.out",
