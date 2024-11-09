@@ -30,19 +30,6 @@ projects_all.forEach((projects, index) => {
       cards animation
 --------------------------------*/
 const projectWrapper = document.querySelector(".projects-wrapper");
-// const smallCards = [
-//   document.querySelector("div.project.project2"),
-//   document.querySelector("div.project.project3"),
-//   document.querySelector("div.project.project6"),
-// ];
-// smallCards.forEach((card) => {
-//   card.addEventListener("mouseover", () => {
-//     card.classList.add("card-hovered");
-//   });
-//   card.addEventListener("mouseout", () => {
-//     card.classList.remove("card-hovered");
-//   });
-// });
 
 const smallCards = document.querySelectorAll("div.project");
 // let projectDatas = document.querySelectorAll(".project__data");
@@ -53,7 +40,7 @@ let coeff = 100;
 let coeff2 = 0.8;
 
 // overall shakyness
-if (window.innerWidth > 1025) {
+if (window.innerWidth > 1025 && !/Mobi|Android/i.test(navigator.userAgent)) {
   document.addEventListener("mousemove", (ev) => {
     smallCards.forEach((card, index) => {
       if (index === 0) {
@@ -81,7 +68,7 @@ function parallaxScrollHandler() {
   projectChildren.forEach((child) => {
     const initialTop = initialPositions.get(child);
     const offsetY = (window.scrollY - initialTop) * coeff2; // Relative scroll
-    child.style.transform = `translate3d(0, ${offsetY * 0.8}px, 0)`;
+    child.style.transform = `translate3d(0, ${offsetY * 1.618}px, 0)`;
   });
 }
 function startParallax() {

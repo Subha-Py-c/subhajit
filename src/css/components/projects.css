@@ -101,8 +101,10 @@ html.invert .project {
   background-position: center;
   overflow: hidden;
   transition:
-    width 0.6s cubic-bezier(0.445, 0.05, 0.55, 0.95),
-    padding 0.6s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    width 0.7s cubic-bezier(0.86, 0, 0.07, 1),
+    padding 0.7s cubic-bezier(0.86, 0, 0.07, 1),
+    opacity 0.7s cubic-bezier(0.86, 0, 0.07, 1);
+  /* 0.445, 0.05, 0.55, 0.95 */
 
   & img {
     width: 100%;
@@ -199,11 +201,9 @@ html.invert .project__image {
     padding: 0;
     border: none;
     opacity: 0;
-    transform-origin: left;
   }
   & .project__image {
     width: 100%;
-    transform-origin: right;
   }
 
   &:hover {
@@ -212,12 +212,10 @@ html.invert .project__image {
       padding: 15px;
       border: 1px solid rgb(206, 180, 173);
       opacity: 1;
-      transform-origin: right;
     }
     & .project__image {
       width: 0;
       border: none;
-      transform-origin: left;
     }
   }
 }
@@ -235,12 +233,15 @@ html.invert .project__image {
 }
 
 @media screen and (max-width: 1025px) {
+  #s3-projects {
+    padding-top: 30vh;
+  }
   #project-heading {
     font-size: xx-large;
   }
   .projects-wrapper {
     margin-top: 2vh;
-    grid-template-rows: repeat(6, 40vh);
+    grid-template-rows: repeat(6, 50vh);
     grid-template-columns: repeat(1, 1fr);
     padding: 0 10vw 0 10vw;
     border-radius: 15px;
@@ -277,7 +278,7 @@ html.invert .project__image {
   }
   .project__data {
     & h2 {
-      font-size: medium;
+      font-size: x-large;
     }
     & summary {
       font-size: small;
@@ -286,7 +287,7 @@ html.invert .project__image {
     }
 
     & details {
-      font-size: smaller;
+      font-size: small;
     }
   }
   .project:nth-child(1),

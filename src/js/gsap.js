@@ -1,7 +1,7 @@
 // gsap
 gsap.registerPlugin(ScrollTrigger);
 
-// Create animation timeline
+/*
 const tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".NONE",
@@ -12,8 +12,6 @@ const tl = gsap.timeline({
     toggleActions: "none none none none",
   },
 });
-
-// Add animation to timeline
 tl.to(".NONE", {
   y: 0,
   stagger: 0.08,
@@ -22,6 +20,7 @@ tl.to(".NONE", {
   opacity: 1,
 });
 // 1300 load -> 1700 start
+*/
 
 // ------------------ academics --------------------
 var tl2 = gsap.timeline({

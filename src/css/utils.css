@@ -980,20 +980,6 @@ th {
   }
 }
 
-.is-virtual-scroll {
-  overflow: hidden;
-}
-
-.is-native-scroll.y-scroll {
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-.is-native-scroll.x-scroll {
-  overflow-y: hidden;
-  overflow-x: scroll;
-}
-
 .column {
   display: block;
   float: left;

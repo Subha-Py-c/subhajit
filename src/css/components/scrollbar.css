@@ -8,12 +8,13 @@
 }
 
 /* Hide scrollbar for other browsers */
-html,
-body {
-  overflow: -moz-hidden;
-  /* Firefox */
-  overflow: hidden;
-  /* Other browsers */
-
-  /* width , height = 100% so i can still scroll in y */
+@media screen and (min-width: 1025px) {
+  html,
+  body {
+    overflow: -moz-hidden;
+    /* Firefox */
+    overflow: hidden;
+    /* Other browsers */
+    /* width , height = 100% so i can still scroll in y */
+  }
 }
