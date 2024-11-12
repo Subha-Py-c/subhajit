@@ -134,6 +134,13 @@
         setTimeout(() => {
           loader.style.display = "none";
         }, 1350);
+
+        setTimeout(() => {
+          const paragraphs = document.querySelectorAll(".about-section .about-content p");
+          paragraphs.forEach((paragraph) => {
+            paragraph.classList.add("appear-gradually");
+          });
+        }, 1800);
       });
     </script>
 

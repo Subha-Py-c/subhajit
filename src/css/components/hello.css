@@ -102,25 +102,19 @@ p.hero-p span {
 }
 
 p.is-xs {
-  font:
-    18px/1.3 Content,
-    sans-serif;
+  font: 18px/1.3 Content, sans-serif;
   text-transform: uppercase;
 }
 
 @media (max-width: 1440px) {
   p.is-xs {
-    font:
-      14px/1.3 Content,
-      sans-serif;
+    font: 14px/1.3 Content, sans-serif;
   }
 }
 
 @media (max-width: 992px) {
   p.is-xs {
-    font:
-      12px/1.3 Content,
-      sans-serif;
+    font: 12px/1.3 Content, sans-serif;
   }
 }
 
@@ -181,32 +175,24 @@ html {
 }
 
 html {
-  font:
-    18px/1.3 Content,
-    sans-serif;
+  font: 18px/1.3 Content, sans-serif;
 }
 
 @media (max-width: 1440px) {
   html {
-    font:
-      14px/1.3 Content,
-      sans-serif;
+    font: 14px/1.3 Content, sans-serif;
   }
 }
 
 @media (max-width: 992px) {
   html {
-    font:
-      12px/1.3 Content,
-      sans-serif;
+    font: 12px/1.3 Content, sans-serif;
   }
 }
 
 @media (max-width: 768px) {
   html {
-    font:
-      10px/1.3 Content,
-      sans-serif;
+    font: 10px/1.3 Content, sans-serif;
   }
 }
 
@@ -423,6 +409,13 @@ span.s5 {
 
 .about-section .about-content p {
   line-height: 1em;
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.about-section .about-content p.appear-gradually {
+  opacity: 1;
+  transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 html.is-device .about-section {
