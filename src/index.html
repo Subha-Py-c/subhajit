@@ -71,21 +71,34 @@
         height: 100vh;
         background-color: #000;
         color: aliceblue;
-        font-size: 6rem;
+        font-size: 7.4rem;
         font-family: MilitaryScribe;
         z-index: 999999999;
 
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        place-items: center;
 
         overflow: hidden;
         pointer-events: none;
+        font-kerning: none;
 
         @media (width < 768px) {
           font-size: 3rem;
         }
+      }
+
+      #loader.hideLoader {
+        display: none;
+        /* z-index: -111111111;
+        font-size: 0;
+        transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+        animation: hideLoader 1s cubic-bezier(0.19, 1, 0.22, 1); */
+      }
+
+      @keyframes hideLoader{
+        0%{font-size: 7.4rem;}
+        80%{opacity: 1; font-size: 0;}
+        100%{opacity: 0;}
       }
 
       html.invert #loader {
@@ -114,13 +127,15 @@
       Please enable JavaScript to visit this website.
     </noscript>
 
-    <!-- loader 1.0s -->
-    <div id="loader" class="loading"></div>
+    <div id="loader" class="loading">
+        <!-- Welcome -->
+    </div>
     <script>
       // DOMContentLoaded only waits until html loading, but window.addEventListener waits for all resources to load
       window.addEventListener("load", () => {
         const loader = document.getElementById("loader");
         const texts = ["S.Gorai.", "S.Gorai. .", "S.Gorai. . ."];
+        // const texts = ["Welcome.", "Welcome. .", "Welcome. . ."];
 
         texts.forEach((text, index) => {
           setTimeout(
@@ -132,15 +147,23 @@
         });
 
         setTimeout(() => {
-          loader.style.display = "none";
-        }, 1350);
+          // loader.style.display = "none";
+          loader.classList.add("hideLoader");
+        }, 1700);
+        // 1350 --> 1700
 
         setTimeout(() => {
           const paragraphs = document.querySelectorAll(".about-section .about-content p");
           paragraphs.forEach((paragraph) => {
             paragraph.classList.add("appear-gradually");
           });
-        }, 1800);
+        }, 2000);
+        setTimeout(() => {
+          const paragraphs = document.querySelectorAll("#s1 > div > div > p");
+          paragraphs.forEach((paragraph) => {
+            paragraph.classList.add("appear-gradually");
+          });
+        }, 2000);
       });
     </script>
 
@@ -230,12 +253,9 @@
                   </a>
                   Interested in Deep Learning and Blockchain technologies.
                 <div id="profileImg" class="flexed">
-                  <img
-                    src="images/me.webp"
-                    class="ta-ta"
-                  />
+                  <img src="images/me2.png" class="ta-ta"/>
+                </div>
               </p>
-              </div>
               <p class="hero-p col-6 col-xs-12 is-mb-s is-xs">
                 Nothing more to say, thanks for visiting my website. Don't
                 forget to explore my projects. I'm eager to collaborate with
@@ -1007,9 +1027,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <!-- <script defer src="https://unpkg.com/split-type"></script> -->
     <script>
       // Initialize smooth scroll
-
       // const lenis = new Lenis();
       const lenis = new Lenis({
         duration: 1.2,
