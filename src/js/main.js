@@ -12,6 +12,7 @@ import "./functions/utils/dark-mode.js";
 import "./functions/utils/hidden-classes.js";
 import "./functions/utils/scroll-related/smooth-scrolling.js";
 import "./functions/utils/scroll-related/underline_on_scroll.js";
+// import "./vanila-tilt.js";
 
 // importing css
 import "../css/style.css";
@@ -45,4 +46,4 @@ import "../images/bhs2.jpg";
 import "../images/bhs3.gif";
 
 // importing files
-import "../assets/demo-cv.pdf";
+// import "../assets/demo-cv.pdf";

@@ -605,7 +605,7 @@
                 </div>
               </div>
             </div>
-            <div id="skill-list" class="s-list">
+            <div id="skill-list" class="s-list" data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="500">
               <!-- web dev -->
               <div class="first-x inverse2 list-elem">
                 Web Development
@@ -967,7 +967,7 @@
             <!-- contact form -->
             <div id="email-box" class="email-box">
               <!-- the line part -->
-              <span class="question">Have something in mind? Do not hesitate to share!
+              <span class="question">Have something to share? CLICK HERE!
                 <br /><br />
                 <div class="line"></div>
               </span>
@@ -1042,8 +1042,18 @@
       }
       requestAnimationFrame(raf);
     </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script> -->
+
 
     <!-- main.js -->
     <script type="module" src="js/main.js"></script>
+    <!-- <script type="text/javascript">
+    	VanillaTilt.init(document.querySelector("#skill-list"), {
+    		max: 5,
+    		speed: 400,
+            transition:true,
+            easing:"cubic-bezier(.03,.98,.52,.99)",
+    	});
+    </script> -->
   </body>
 </html>

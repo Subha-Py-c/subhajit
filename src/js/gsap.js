@@ -62,6 +62,7 @@ var tl4 = gsap.timeline({
         end: "bottom-=200 center",
         scrub: true,
         markers: false,
+        // stagger: 0.2,
     },
 });
 
@@ -74,6 +75,7 @@ tl4.to(".card-container", {
 
 tl4.to(
     "#skill-list",
+    // ".inverse2",
     {
         x: 0,
         rotateZ: 0,
