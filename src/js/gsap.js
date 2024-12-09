@@ -59,10 +59,12 @@ var tl4 = gsap.timeline({
     scrollTrigger: {
         trigger: "#SK",
         start: "top-=200 center",
-        end: "bottom-=200 center",
+        end: "bottom-=400 center",
         scrub: true,
         markers: false,
-        // stagger: 0.2,
+        onLeave: () => {
+            applySkillListEffect();
+        },
     },
 });
 
@@ -75,7 +77,6 @@ tl4.to(".card-container", {
 
 tl4.to(
     "#skill-list",
-    // ".inverse2",
     {
         x: 0,
         rotateZ: 0,
@@ -84,4 +85,17 @@ tl4.to(
     },
     "<",
 );
-// --------------------------------------
+
+function applySkillListEffect() {
+    const skillList = document.getElementById("skill-list");
+    let coeff = 100;
+
+    if (
+        window.innerWidth > 1025 &&
+        !/Mobi|Android/i.test(navigator.userAgent)
+    ) {
+        document.addEventListener("mousemove", (ev) => {
+            skillList.style.transform = `translate3d(${ev.pageX / coeff}px, ${ev.pageY / coeff}px, 0)`;
+        });
+    }
+}

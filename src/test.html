@@ -116,6 +116,20 @@
     <!-- Preconnect to external resources -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components/hello.css">
+    <link rel="stylesheet" href="css/components/cursor.css">
+    <link rel="stylesheet" href="css/components/scrollbar.css">
+    <link rel="stylesheet" href="css/components/imported-fonts.css">
+    <link rel="stylesheet" href="css/components/invert-button.css">
+    <link rel="stylesheet" href="css/components/nav.css">
+    <link rel="stylesheet" href="css/components/skills.css">
+    <link rel="stylesheet" href="css/components/projects.css">
+    <link rel="stylesheet" href="css/components/contacts.css">
+    <link rel="stylesheet" href="css/components/academics.css">
+    <link rel="stylesheet" href="css/components/experience.css">
+    <link rel="stylesheet" href="css/utils.css">
   </head>
 
   <body>
@@ -145,21 +159,23 @@
         setTimeout(() => {
           loader.style.display = "none";
           // loader.classList.add("hideLoader");
-        }, 1700);
-        // 1350 --> 1700
+        }, 0);
+        // 1700
 
         setTimeout(() => {
           const paragraphs = document.querySelectorAll(".about-section .about-content p");
           paragraphs.forEach((paragraph) => {
             paragraph.classList.add("appear-gradually");
           });
-        }, 2000);
+        }, 0);
+        // 2000
         setTimeout(() => {
           const paragraphs = document.querySelectorAll("#s1 > div > div > p");
           paragraphs.forEach((paragraph) => {
             paragraph.classList.add("appear-gradually");
           });
-        }, 2000);
+        }, 0);
+        // 2000
       });
     </script>
 
@@ -268,7 +284,7 @@
       </section>
 
       <!-- experience -->
-      <section class="experience-section bg-inherit dark:bg-white relative w-[100vw] h-fit pt-[0vh] md:pt-[7.5vh] lg:pt-[15vh] pb-[10vh] md:pb-[15vh] lg:pb-[25vh]">
+      <section class="experience-section bg-inherit relative w-[100vw] h-fit pt-[0vh] md:pt-[7.5vh] lg:pt-[15vh] pb-[10vh] md:pb-[15vh] lg:pb-[25vh]">
             <h4 id="EX">
                 <span class="exps underline-sp headerSpan header__texts" style="display: inline !important;">
                     Experience
@@ -295,6 +311,35 @@
               </div>
           </div>
       </section>
+
+      <!--
+      find . -type f \
+          \( -name "*.py" -o -name "*.html" -o -name "*.css" -o -name "*.js" -o -name "*.jsx" -o -name "*.ts" -o -name "*.tsx" -o -name "*.md" \) \
+          -not \( \
+          -path "*/.git*" -o \
+          -path "*/**/vanila-tilt.js" -o \
+          -path "*/**/experience.css" -o \
+          -path "*/**/modern-normalise.css" -o \
+          -path "*/node_modules/*" -o \
+          -path "*/dist/*" -o \
+          -path "*/build/*" -o \
+          -path "*/lighthouse/*" -o \
+          -path "*/venv/*" -o \
+          -path "*/env/*" -o \
+          -path "*/__pycache__/*" -o \
+          -path "*/.vscode/*" -o \
+          -path "*/.idea/*" -o \
+          -path "*/fonts/*" -o \
+          -path "*/icons/*" -o \
+          -path "*/images/*" -o \
+          -path "*/static/*" -o \
+          -path "*/locale/*" -o \
+          -path "*/.next/*" -o \
+          -path "*/.nuxt/*" -o \
+          -path "*/.svelte-kit/*" \
+          \) \
+          -print0 | xargs -0 wc -l | awk '{total += $1} END {print "Total lines:", total}'
+    -->
 
       <!-- ACADEMICS -->
       <section id="s-last" class="sec-L">
@@ -1076,14 +1121,18 @@
 
 
     <!-- main.js -->
-    <script type="module" src="js/main.js"></script>
-    <!-- <script type="text/javascript">
-    	VanillaTilt.init(document.querySelector("#skill-list"), {
-    		max: 5,
-    		speed: 400,
-            transition:true,
-            easing:"cubic-bezier(.03,.98,.52,.99)",
-    	});
-    </script> -->
+    <script src="js/gsap.js"></script>
+    <script src="js/functions/cursor-functions/cursor.js"></script>
+    <script src="js/functions/cursor-functions/hiding-cursor.js"></script>
+    <script src="js/functions/contacts.js"></script>
+    <script src="js/functions/nav-js/nav-appear-and-toggle-svg.js"></script>
+    <script src="js/functions/nav-js/dim.js"></script>
+    <script src="js/functions/hello.js"></script>
+    <script src="js/functions/skills-js/skill-card.js"></script>
+    <script src="js/functions/project-js/project.js"></script>
+    <script src="js/functions/utils/dark-mode.js"></script>
+    <script src="js/functions/utils/hidden-classes.js"></script>
+    <script src="js/functions/utils/scroll-related/smooth-scrolling.js"></script>
+    <script src="js/functions/utils/scroll-related/underline_on_scroll.js"></script>
   </body>
 </html>

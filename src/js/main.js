@@ -26,6 +26,7 @@ import "../css/components/skills.css";
 import "../css/components/projects.css";
 import "../css/components/contacts.css";
 import "../css/components/academics.css";
+import "../css/components/experience.css";
 import "../css/utils.css";
 
 // importing robots.txt

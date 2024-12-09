@@ -1,7 +1,7 @@
 :root {
     --li-height-initial: 0;
-    --li-active-height: 15vh;
-    --nav-height: calc(5 * var(--li-active-height));
+    --li-active-height: calc(15vh * 5 / 6);
+    --nav-height: calc(25 * var(--li-active-height) / 6);
     --li-width: 100vw;
     --li-text-size: 2em;
 }
@@ -28,7 +28,6 @@ html.invert main.nav-open {
     position: relative;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     margin: 0;
     padding: 0;
@@ -110,7 +109,11 @@ html.invert .li.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-left: 1px solid rgb(0, 0, 0); */
+}
+
+main.nav-open {
+    filter: blur(5px);
+    transition: all 0.3s;
 }
 
 /* ------------------------{close-icon}-------------------------------------------- */
@@ -120,7 +123,6 @@ html.invert .li.active {
     position: relative;
     width: 28px;
     height: 28px;
-    /* border: 1px solid rgb(0, 0, 0); */
     color: white;
     display: none;
     justify-content: center;
@@ -140,8 +142,6 @@ html.invert .li.active {
 header {
     position: fixed;
     z-index: 999999990;
-    /* mix-blend-mode: difference; */
-    /* filter: invert(1); */
     box-sizing: border-box;
     border: 1px solid rgba(205, 177, 163, 1);
     background-color: rgba(240, 212, 198, 0.5);
