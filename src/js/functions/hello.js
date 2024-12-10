@@ -1,13 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let imgShowDiv = document.querySelector(".imgShow");
-  let imgToShow = document.getElementById("profileImg");
+    let imgShowDiv = document.querySelector(".imgShow");
+    let imgToShow = document.getElementById("profileImg");
 
-  imgShowDiv.addEventListener("mouseover", () => {
-    imgToShow.style.transform = "scaleY(1) rotateZ(7deg)";
-  });
-  imgShowDiv.addEventListener("mouseout", () => {
-    imgToShow.style.transform = "scaleY(0) rotateZ(7deg)";
-  });
+    imgShowDiv.addEventListener("mouseover", () => {
+        imgToShow.style.transform = "scaleY(1) rotateZ(7deg)";
+        imgToShow.style.opacity = "1";
+    });
+    imgShowDiv.addEventListener("mouseout", () => {
+        imgToShow.style.transform = "scaleY(0) rotateZ(7deg)";
+        imgToShow.style.opacity = "0";
+    });
 });
 
 // document.addEventListener("DOMContentLoaded", () => {

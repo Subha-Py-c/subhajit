@@ -105,6 +105,7 @@
         transform-origin: center;
         transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         box-shadow: -3px 3px 0 rgba(0, 0, 0, 0.2);
+        opacity: 0;
 
         & img {
             width: 100%;
@@ -144,34 +145,41 @@
 /* pri 1 */
 .acad__institutions:nth-child(1):hover .firstcard2 {
     transform: translateY(-20px) scaleY(1);
+    opacity: 1;
 }
 
 /* bhs 1 */
 .acad__institutions:nth-child(2):hover .firstcard1 {
     transform: rotateZ(-5deg) scaleY(1);
+    opacity: 1;
 }
 
 /* bhs2 */
 .acad__institutions:nth-child(3):hover .secondcard2 {
     transform: translateY(-20px) scaleY(1);
+    opacity: 1;
 }
 
 .acad__institutions:nth-child(3):hover .firstcard3 {
     transition-delay: 0.15s;
     transform: rotateZ(5deg) scaleY(1);
+    opacity: 1;
 }
 
 /* cclg 1 */
 .acad__institutions:nth-child(4):hover .secondcard3 {
     transform: rotateZ(5deg) scaleY(1);
+    opacity: 1;
 }
 .acad__institutions:nth-child(4):hover .secondcard1 {
     transition-delay: 0.1s;
     transform: rotateZ(-5deg) scaleY(1);
+    opacity: 1;
 }
 .acad__institutions:nth-child(4):hover .thirdcard2 {
     transition-delay: 0.2s;
     transform: translateY(-20px) scaleY(1);
+    opacity: 1;
 }
 
 /* --------------------------{media queries}-------------------------------------------- */

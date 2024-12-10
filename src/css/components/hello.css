@@ -355,6 +355,7 @@ body.progress {
     border-radius: 15px;
     overflow: hidden;
     transform: scaleY(0) rotateZ(7deg);
+    opacity: 0;
     transform-origin: center;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 

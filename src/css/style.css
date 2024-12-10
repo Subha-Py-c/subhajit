@@ -120,13 +120,13 @@ a {
     scroll-behavior: smooth;
 }
 
-a:hover {
-    background: linear-gradient(to right, red, rgb(255, 162, 0));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    /* border-bottom: 1px dotted #efefef; */
-}
+/* a:hover { */
+/* background: linear-gradient(to right, red, rgb(255, 162, 0)); */
+/* -webkit-background-clip: text; */
+/* background-clip: text; */
+/* color: transparent; */
+/* border-bottom: 1px dotted #efefef; */
+/* } */
 
 a:active {
     color: rgb(255, 162, 0);
@@ -141,8 +141,6 @@ section {
     margin-right: auto;
     position: relative;
     z-index: 71;
-    /* border: 1px solid black; */
-    /* border-right: 1px solid black; */
 }
 
 span.underline {

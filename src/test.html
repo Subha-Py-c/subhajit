@@ -215,37 +215,52 @@
     <div class="nav flexed" id="nav">
       <div class="ul full" id="ul">
         <div class="li">
-          <span class="sp underline-sp">
-            <a href="#s1">Home</a>
+            <span class="sp">
+                <a href="#s1" class="link link--thebe">Home</a>
+            </span>
+        </div>
+        <div class="li">
+          <span class="sp">
+            <a href="#EX" class="link link--thebe">Experience</a>
           </span>
         </div>
         <div class="li">
-          <span class="sp underline-sp">
-            <a href="#EX">Experience</a>
+          <span class="sp">
+            <a href="#s-last" class="link link--thebe">Academics</a>
           </span>
         </div>
         <div class="li">
-          <span class="sp underline-sp">
-            <a href="#s-last">Academics</a>
+          <span class="sp">
+            <a href="#SK" class="link link--thebe">Skills</a>
           </span>
         </div>
         <div class="li">
-          <span class="sp underline-sp">
-            <a href="#SK">Skills</a>
+          <span class="sp">
+            <a href="#div3" class="link link--thebe">Projects</a>
           </span>
         </div>
         <div class="li">
-          <span class="sp underline-sp">
-            <a href="#div3">Projects</a>
-          </span>
-        </div>
-        <div class="li">
-          <span class="sp underline-sp">
-            <a href="#s4-contacts">Contact</a>
+          <span class="sp">
+            <a href="#s4-contacts" class="link link--thebe">Contact</a>
           </span>
         </div>
       </div>
+      <script>
+      const liElms = document.querySelectorAll('#nav .li');
+
+      liElms.forEach((li) => {
+          const insideAnchor = li.querySelector('a.link');
+          li.addEventListener('mouseover', () => {
+              insideAnchor.classList.add('hover-effect');
+          });
+          li.addEventListener('mouseout', () => {
+              insideAnchor.classList.remove('hover-effect');
+          });
+      });
+      </script>
     </div>
+
+    <!-- todo: loading page transition-->
 
     <main role="main">
       <!-- Intro -->
@@ -262,16 +277,9 @@
                 <p class="hero-p col-12 is-mb-ms introduction">
                     MERN &amp; Flask Stack Developer / Web Designer.
                     Information Technology student at
-                    <a
-                        class="college_url"
-                        href="https://www.iiests.ac.in"
-                        target="_blank">
-                        IIEST Shibpur.
-                    </a>
+                    <a class="college_url" href="https://www.iiests.ac.in" target="_blank">IIEST Shibpur.</a>
                     Interested in Deep Learning and Blockchain technologies.
-                    <div id="profileImg" class="flexed">
-                        <img src="images/me2.png" class="ta-ta"/>
-                    </div>
+                    <span id="profileImg" class="flexed"><img src="images/me2.png" class="ta-ta"/></span>
                 </p>
                 <p class="hero-p col-6 col-xs-12 is-mb-s is-xs">
                     Nothing more to say, thanks for visiting my website. Don't
@@ -286,11 +294,11 @@
       <!-- experience -->
       <section class="experience-section bg-inherit relative w-[100vw] h-fit pt-[0vh] md:pt-[7.5vh] lg:pt-[15vh] pb-[10vh] md:pb-[15vh] lg:pb-[25vh]">
             <h4 id="EX">
-                <span class="exps underline-sp headerSpan header__texts" style="display: inline !important;">
+                <span class="exps underline-sp headerSpan header__texts experience--heading" style="display: inline !important;">
                     Experience
                 </span>
             </h4>
-          <div class="work-container relative w-full h-fit pl-[20px] md:pl-[100px] pr-[20px] md:pr-[120px] pt-[15px] md:pt-[30px] text-xl md:text-2xl">
+          <div class="work-container pointer-events-auto relative w-full h-fit pl-[20px] md:pl-[100px] pr-[20px] md:pr-[120px] pt-[15px] md:pt-[30px] text-xl md:text-2xl">
               <div class="work1 w-full flex items-center min-h-[60px] border-b border-b-slate-800 border-dashed">
                   <div class="work-logo w-14 flex justify-center items-center">
                       <img class="size-auto object-contain scale-75 ta-ta" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjEuMTMgNTguNjEiPgoJPGRlZnM+CgkJPHN0eWxlPgoJCQkuY2xzLTEgewoJCQlmaWxsOiAjZmJiYzA0OwoJCQl9CgoJCQkuY2xzLTIgewoJCQlmaWxsOiAjNDI4NWY0OwoJCQl9CgoJCQkuY2xzLTMgewoJCQlmaWxsOiAjMzRhODUzOwoJCQl9CgoJCQkuY2xzLTQgewoJCQlmaWxsOiAjZWE0MzM1OwoJCQl9CgkJPC9zdHlsZT4KCTwvZGVmcz4KCTxnIGlkPSJMYXllcl8xLTIiIGRhdGEtbmFtZT0iTGF5ZXIgMSI+CgkJPGc+CgkJCTxwYXRoIGNsYXNzPSJjbHMtNCIKCQkJCWQ9Ik0yOC44NCwyOS40MmwxOS42Ny0xMS4zNmM0LjYzLTIuNjcsNi4yMS04LjU5LDMuNTQtMTMuMjJDNDkuMzgsLjIxLDQzLjQ2LTEuMzgsMzguODMsMS4zTDQuODQsMjAuOTJsMjQsOC41WiIgLz4KCQkJPHBhdGggY2xhc3M9ImNscy0yIgoJCQkJZD0iTTQzLjY2LDU4LjYxYzMuMzQsMCw2LjYtMS43NCw4LjM5LTQuODQsMi42Ny00LjYzLDEuMDktMTAuNTUtMy41NC0xMy4yMkwxNC41MiwyMC45M2MtNC42My0yLjY3LTEwLjU1LTEuMDktMTMuMjIsMy41NHMtMS4wOSwxMC41NSwzLjU0LDEzLjIybDMzLjk5LDE5LjYyYzEuNTMsLjg4LDMuMTksMS4zLDQuODMsMS4zWiIgLz4KCQkJPHBhdGggY2xhc3M9ImNscy0xIgoJCQkJZD0iTTc3LjQ3LDU4LjYxYzEuNjQsMCwzLjMxLS40Miw0LjgzLTEuM2wzMy45OS0xOS42Mi0yMy42OS04LjY3LTE5Ljk3LDExLjUzYy00LjYzLDIuNjctNi4yMSw4LjU5LTMuNTQsMTMuMjIsMS43OCwzLjEsNS4wNCw0Ljg0LDguMzgsNC44NFoiIC8+CgkJCTxwYXRoIGNsYXNzPSJjbHMtMyIKCQkJCWQ9Ik0xMTEuNDQsMzguOTljMy4zNCwwLDYuNi0xLjc0LDguMzktNC44NCwyLjY3LTQuNjMsMS4wOS0xMC41NS0zLjU0LTEzLjIyTDgyLjMsMS4zMWMtNC42My0yLjY3LTEwLjU1LTEuMDktMTMuMjIsMy41NC0yLjY3LDQuNjMtMS4wOSwxMC41NSwzLjU0LDEzLjIybDMzLjk5LDE5LjYyYzEuNTIsLjg4LDMuMTksMS4zLDQuODMsMS4zWiIgLz4KCQk8L2c+Cgk8L2c+Cjwvc3ZnPgo=" alt="">
@@ -300,46 +308,25 @@
                   <!-- <div class="hover-content w-fit"></div> -->
               </div>
               <div class="work2 w-full flex items-center min-h-[60px] border-b border-b-slate-800 border-dashed group">
+                  <div class="work-logo w-14 flex justify-center items-center overflow-hidden rounded">
+                      <img class="size-auto object-contain scale-75 bg-green-950 ta-ta overflow-hidden rounded" src="https://www.socialwinterofcode.com/SWOC_W_Black.png" alt="">
+                  </div>
+                  <div class="work-position w-fit flex-1 px-2">SWOC[Social Winter Of Code] Contributor</div>
+                  <div class="duration w-fit px-2 max-w-[80px] md:max-w-[180px] lg:max-w-fit">December 2024</div>
+              </div>
+              <div class="work3 w-full flex items-center min-h-[60px] border-b border-b-slate-800 border-dashed group">
                   <div class="work-logo w-14 flex justify-center items-center">
                       <img class="size-auto object-contain scale-75 bg-green-950 ta-ta" src="https://hacktoberfest.com/_next/static/media/logo-hacktoberfest-11--beige.2b2fdfcb.svg" alt="">
                   </div>
                   <div class="work-position w-fit flex-1 px-2">Completed HactoberFest'24 OpenSource Contribution Event</div>
                   <div class="duration w-fit px-2 max-w-[80px] md:max-w-[180px] lg:max-w-fit">October 2024</div>
-                  <!-- <div class="hover-content w-fit">
-                      <img class="object-contain ta-ta hidden absolute scale-x-0 scale-y-0 group-hover:block group-hover:scale-x-1 group-hover:scale-y-1" src="images/holopin.jpeg" alt="">
+                  <!-- <div class="hover-content w-fit ease-[cubic-bezier(0.95,0.05,0.795,0.035)]">
+                      <img class="object-contain ta-ta absolute top-[-50%] left-0 w-fit h-fit scale-y-0 opacity-0" src="images/holopin.jpeg" alt="">
                   </div> -->
               </div>
           </div>
       </section>
 
-      <!--
-      find . -type f \
-          \( -name "*.py" -o -name "*.html" -o -name "*.css" -o -name "*.js" -o -name "*.jsx" -o -name "*.ts" -o -name "*.tsx" -o -name "*.md" \) \
-          -not \( \
-          -path "*/.git*" -o \
-          -path "*/**/vanila-tilt.js" -o \
-          -path "*/**/experience.css" -o \
-          -path "*/**/modern-normalise.css" -o \
-          -path "*/node_modules/*" -o \
-          -path "*/dist/*" -o \
-          -path "*/build/*" -o \
-          -path "*/lighthouse/*" -o \
-          -path "*/venv/*" -o \
-          -path "*/env/*" -o \
-          -path "*/__pycache__/*" -o \
-          -path "*/.vscode/*" -o \
-          -path "*/.idea/*" -o \
-          -path "*/fonts/*" -o \
-          -path "*/icons/*" -o \
-          -path "*/images/*" -o \
-          -path "*/static/*" -o \
-          -path "*/locale/*" -o \
-          -path "*/.next/*" -o \
-          -path "*/.nuxt/*" -o \
-          -path "*/.svelte-kit/*" \
-          \) \
-          -print0 | xargs -0 wc -l | awk '{total += $1} END {print "Total lines:", total}'
-    -->
 
       <!-- ACADEMICS -->
       <section id="s-last" class="sec-L">
