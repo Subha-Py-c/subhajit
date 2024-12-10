@@ -39,9 +39,9 @@ import "../images/projects-imgs/opencanvas.jpeg";
 import "../images/projects-imgs/krishisearch.jpeg";
 import "../images/projects-imgs/relaxingmelody.jpeg";
 
-import "../images/iiest2.jpg";
-import "../images/iiest3.jpeg";
-import "../images/iiest4.jpg";
+import "../images/iiest1.jpeg";
+import "../images/iiest4.jpeg";
+import "../images/iiest6.jpeg";
 import "../images/bhs1.gif";
 import "../images/bhs2.jpg";
 import "../images/bhs3.gif";

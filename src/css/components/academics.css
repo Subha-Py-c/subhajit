@@ -89,16 +89,16 @@
 .academics__card__container {
     position: relative;
     top: calc(-24vh);
-    left: 40%;
-    width: 700px;
-    height: 260px;
+    left: calc(40% - 4vw);
+    width: fit-content;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
 
     & .acad__card {
-        width: 160px;
-        height: 260px;
+        width: 320px;
+        height: 180px;
         border-radius: 10px;
         background-color: var(--card-container-color);
         overflow: hidden;
@@ -139,7 +139,13 @@
     & .firstcard1 {
         width: 300px;
         height: 220px;
+
+        & img {
+            transform: scale(1.3);
+        }
     }
+
+    /* & .firstcard2{} */
 }
 
 /* pri 1 */
@@ -160,26 +166,36 @@
     opacity: 1;
 }
 
+/* bhs3 */
 .acad__institutions:nth-child(3):hover .firstcard3 {
     transition-delay: 0.15s;
-    transform: rotateZ(5deg) scaleY(1);
+    transform: translateX(-30px) rotateZ(0deg) scaleY(1);
     opacity: 1;
 }
 
 /* cclg 1 */
 .acad__institutions:nth-child(4):hover .secondcard3 {
-    transform: rotateZ(5deg) scaleY(1);
+    transform: rotateZ(5deg) scaleY(1) translateX(30px);
     opacity: 1;
+    width: 250px;
+    height: 166.5px;
+    & img {
+        transform: scale(1.2);
+    }
 }
 .acad__institutions:nth-child(4):hover .secondcard1 {
     transition-delay: 0.1s;
     transform: rotateZ(-5deg) scaleY(1);
     opacity: 1;
+    width: 250px;
+    height: 166.5px;
 }
 .acad__institutions:nth-child(4):hover .thirdcard2 {
     transition-delay: 0.2s;
-    transform: translateY(-20px) scaleY(1);
+    transform: translateY(-20px) scaleY(1) translateX(-30px);
     opacity: 1;
+    width: 250px;
+    height: 166.5px;
 }
 
 /* --------------------------{media queries}-------------------------------------------- */

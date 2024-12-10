@@ -22,8 +22,8 @@
 }
 /* ------------------------ */
 .projects-wrapper {
-    box-sizing: border-box;
     /* border: 1px solid red; */
+    box-sizing: border-box;
     margin-top: 6vh;
     padding: 0 10vw 0 10vw;
     display: grid;
