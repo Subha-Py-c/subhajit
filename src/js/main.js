@@ -45,6 +45,3 @@ import "../images/iiest6.jpeg";
 import "../images/bhs1.gif";
 import "../images/bhs2.jpg";
 import "../images/bhs3.gif";
-
-// importing files
-// import "../assets/demo-cv.pdf";

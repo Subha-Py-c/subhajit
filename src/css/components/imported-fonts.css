@@ -5,94 +5,68 @@
 /* ------------------------{Custom Fonts}-------------------------------------------- */
 
 @font-face {
-  font-family: content;
-  src: url(../../assets/fonts/content.woff) format("woff");
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: normal;
-  unicode-range: u + 0020-00fe;
+    font-family: content;
+    src: url("../../assets/fonts/content.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    unicode-range: u + 0020-00fe;
 }
 
 @font-face {
-  font-family: title;
-  src: url(../../assets/fonts/title.woff) format("woff");
-  font-style: normal;
-  font-weight: 100;
-  font-stretch: normal;
+    font-family: title;
+    src: url("../../assets/fonts/title.woff") format("woff");
+    font-style: normal;
+    font-weight: 100;
+    font-stretch: normal;
 }
-/* 
-@font-face {
-  font-family: "LoveRegular";
-  src: url("https://assets.awwwards.com/assets/fonts/love/Love-Regular.woff");
-  font-style: normal;
-  font-weight: 200;
-} */
-
-/* ------------------------{Tangerine Fonts}-------------------------------------------- */
-/* 
-@font-face {
-  font-family: "Tangerine", cursive;
-  src: url("../../fonts/Tangerine/Tangerine-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-} */
 
 @font-face {
-  font-family: "Tangerine-Bold", cursive;
-  src: url("../../fonts/Tangerine/tangerine.woff2") format("woff2");
-  font-display: swap;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Tangerine-Bold", cursive;
+    src: url("../../fonts/Tangerine/tangerine.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
 }
 
 /* -------------------------------------------------------------------- */
 
 @font-face {
-  font-display: swap;
-  font-family: Dahlia;
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../fonts/dahlia.woff2") format("woff2");
+    font-display: swap;
+    font-family: Dahlia;
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../fonts/dahlia.woff2") format("woff2");
 }
 
 @font-face {
-  font-display: swap;
-  font-family: Mondia;
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../fonts/mondia.woff2") format("woff2");
+    font-display: swap;
+    font-family: Mondia;
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../fonts/mondia.woff2") format("woff2");
 }
 
 @font-face {
-  font-display: swap;
-  font-family: MondiaThin;
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../fonts/mondia-thin.woff2") format("woff2");
+    font-display: swap;
+    font-family: MondiaThin;
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../fonts/mondia-thin.woff2") format("woff2");
 }
 
-@font-face {
-  font-display: swap;
-  font-family: MilitaryScribe;
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../fonts/scribe.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "JetBrains Mono";
-  src: url("../../fonts/JetBrainsMono-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
-/* 
-@font-face {
-  font-family: Inter;
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url('../../fonts/inter.woff2') format('woff2');
+/* @font-face {
+    font-display: swap;
+    font-family: MilitaryScribe;
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../fonts/scribe.woff2") format("woff2");
 } */
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("../../fonts/JetBrainsMono-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}

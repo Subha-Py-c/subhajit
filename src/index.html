@@ -53,69 +53,86 @@
     <!-- Google Site Verification -->
     <meta name="google-site-verification" content="jIVdEnFRKf147BsXlqxUbFmbI68bjnY_diljF3hS8RE" />
 
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
     <!-- loader css here for first loading -->
-    <link rel="preload" href="fonts/scribe.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/dahlia.woff2" as="font" type="font/woff2" crossorigin="anonymous" importance="high"/>
     <style>
       @font-face {
-        font-family: MilitaryScribe;
+        font-family: Dahlia;
         font-style: normal;
         font-weight: 400;
-        src: url("fonts/scribe.woff2") format("woff2");
+        src: url("fonts/dahlia.woff2") format("woff2");
       }
 
-      div#loader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: #000;
-        color: aliceblue;
-        font-size: 7.4rem;
-        font-family: MilitaryScribe;
-        z-index: 999999999;
+      #loader {
+          z-index: 999999999;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          overflow: hidden;
+          pointer-events: none;
+          pointer-events: none;
+          background-color: transparent;
+          font-kerning: none;
 
-        display: grid;
-        place-items: center;
+          & .loading__text {
+              font-family: Dahlia;
+              font-size: 4rem;
+              font-weight: 750;
+              display: grid;
+              place-items: center;
+              width: 300px;
+              height: 150px;
+              position: absolute;
+              top: calc(50vh - 75px);
+              left: calc(50vw - 150px);
+              font-kerning: none;
+              background-color: transparent;
+              color: white;
+              opacity: 0;
 
-        overflow: hidden;
-        pointer-events: none;
-        font-kerning: none;
+              @media (max-width: 768px) {
+                font-size: 3rem;
+              }
 
-        @media (width < 768px) {
-          font-size: 3rem;
-        }
-      }
-
-      #loader.hideLoader {
-        display: none;
-        /* z-index: -111111111;
-        font-size: 0;
-        transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
-        animation: hideLoader 1s cubic-bezier(0.19, 1, 0.22, 1); */
-      }
-
-      @keyframes hideLoader{
-        0%{font-size: 7.4rem;}
-        80%{opacity: 1; font-size: 0;}
-        100%{opacity: 0;}
+              & .word {
+                  height: fit-content;
+                  overflow: hidden;
+                  display: flex !important;
+              }
+              & .char {
+                  height: fit-content;
+                  background-color: transparent;
+              }
+          }
+          & .loader__slide1 {
+              background-color: black;
+              width: 100%;
+              height: 50%;
+          }
+          & .loader__slide2 {
+              background-color: black;
+              width: 100%;
+              height: 50%;
+          }
       }
 
       html.invert #loader {
-        background-color: white;
-        color: black;
+          filter: invert(1);
+        background-color: transparent;
       }
 
-      @media (width < 768px) {
+      @media screen and (max-width: 768px) {
         #loader {
           font-size: 3rem;
         }
       }
     </style>
-
-    <!-- Preconnect to external resources -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
   </head>
 
   <body>
@@ -123,45 +140,16 @@
       Please enable JavaScript to visit this website.
     </noscript>
 
-    <div id="loader" class="loading">
-        <!-- Welcome -->
+    <div id="loader" class="loader">
+        <div class="loading__text">Welcome</div>
+        <div class="loader__slide1"></div>
+        <div class="loader__slide2"></div>
     </div>
-    <script>
-      // DOMContentLoaded only waits until html loading, but window.addEventListener waits for all resources to load
-      window.addEventListener("load", () => {
-        const loader = document.getElementById("loader");
-        const texts = ["S.Gorai.", "S.Gorai. .", "S.Gorai. . ."];
-        // const texts = ["Welcome.", "Welcome. .", "Welcome. . ."];
-
-        texts.forEach((text, index) => {
-          setTimeout(
-            () => {
-              loader.innerText = text;
-            },
-            450 * (index + 1),
-          );
-        });
-
-        setTimeout(() => {
-          loader.style.display = "none";
-          // loader.classList.add("hideLoader");
-        }, 1700);
-        // 1350 --> 1700
-
-        setTimeout(() => {
-          const paragraphs = document.querySelectorAll(".about-section .about-content p");
-          paragraphs.forEach((paragraph) => {
-            paragraph.classList.add("appear-gradually");
-          });
-        }, 2000);
-        setTimeout(() => {
-          const paragraphs = document.querySelectorAll("#s1 > div > div > p");
-          paragraphs.forEach((paragraph) => {
-            paragraph.classList.add("appear-gradually");
-          });
-        }, 2000);
-      });
-    </script>
+    <!-- loader js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="js/loader.js" defer></script>
 
     <a class="blog" target="_blank" rel="noopener" href="https://myopencanvas.pages.dev">
       Blog
@@ -273,14 +261,14 @@
       </section>
 
       <!-- experience -->
-      <section class="experience-section bg-inherit relative w-[100vw] h-fit pt-[0vh] md:pt-[7.5vh] lg:pt-[15vh] pb-[10vh] md:pb-[15vh] lg:pb-[25vh]">
+      <section class="experience-section relative w-[100vw] h-fit pt-[0vh] md:pt-[7.5vh] lg:pt-[15vh] pb-[10vh] md:pb-[15vh] lg:pb-[25vh]">
             <h4 id="EX">
                 <span class="exps underline-sp headerSpan header__texts experience--heading" style="display: inline !important;">
                     Experience
                 </span>
             </h4>
           <div class="work-container relative w-full h-fit pl-[20px] md:pl-[100px] pr-[20px] md:pr-[120px] pt-[15px] md:pt-[30px] text-xl md:text-2xl">
-              <div class="work1 w-full flex items-center min-h-[60px] border-b border-b-slate-800 border-dashed">
+              <div class="work1 w-full flex items-center min-h-[60px] border-b border-b-slate-800 border-dashed group">
                   <div class="work-logo w-14 flex justify-center items-center">
                       <img class="size-auto object-contain scale-75 ta-ta" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjEuMTMgNTguNjEiPgoJPGRlZnM+CgkJPHN0eWxlPgoJCQkuY2xzLTEgewoJCQlmaWxsOiAjZmJiYzA0OwoJCQl9CgoJCQkuY2xzLTIgewoJCQlmaWxsOiAjNDI4NWY0OwoJCQl9CgoJCQkuY2xzLTMgewoJCQlmaWxsOiAjMzRhODUzOwoJCQl9CgoJCQkuY2xzLTQgewoJCQlmaWxsOiAjZWE0MzM1OwoJCQl9CgkJPC9zdHlsZT4KCTwvZGVmcz4KCTxnIGlkPSJMYXllcl8xLTIiIGRhdGEtbmFtZT0iTGF5ZXIgMSI+CgkJPGc+CgkJCTxwYXRoIGNsYXNzPSJjbHMtNCIKCQkJCWQ9Ik0yOC44NCwyOS40MmwxOS42Ny0xMS4zNmM0LjYzLTIuNjcsNi4yMS04LjU5LDMuNTQtMTMuMjJDNDkuMzgsLjIxLDQzLjQ2LTEuMzgsMzguODMsMS4zTDQuODQsMjAuOTJsMjQsOC41WiIgLz4KCQkJPHBhdGggY2xhc3M9ImNscy0yIgoJCQkJZD0iTTQzLjY2LDU4LjYxYzMuMzQsMCw2LjYtMS43NCw4LjM5LTQuODQsMi42Ny00LjYzLDEuMDktMTAuNTUtMy41NC0xMy4yMkwxNC41MiwyMC45M2MtNC42My0yLjY3LTEwLjU1LTEuMDktMTMuMjIsMy41NHMtMS4wOSwxMC41NSwzLjU0LDEzLjIybDMzLjk5LDE5LjYyYzEuNTMsLjg4LDMuMTksMS4zLDQuODMsMS4zWiIgLz4KCQkJPHBhdGggY2xhc3M9ImNscy0xIgoJCQkJZD0iTTc3LjQ3LDU4LjYxYzEuNjQsMCwzLjMxLS40Miw0LjgzLTEuM2wzMy45OS0xOS42Mi0yMy42OS04LjY3LTE5Ljk3LDExLjUzYy00LjYzLDIuNjctNi4yMSw4LjU5LTMuNTQsMTMuMjIsMS43OCwzLjEsNS4wNCw0Ljg0LDguMzgsNC44NFoiIC8+CgkJCTxwYXRoIGNsYXNzPSJjbHMtMyIKCQkJCWQ9Ik0xMTEuNDQsMzguOTljMy4zNCwwLDYuNi0xLjc0LDguMzktNC44NCwyLjY3LTQuNjMsMS4wOS0xMC41NS0zLjU0LTEzLjIyTDgyLjMsMS4zMWMtNC42My0yLjY3LTEwLjU1LTEuMDktMTMuMjIsMy41NC0yLjY3LDQuNjMtMS4wOSwxMC41NSwzLjU0LDEzLjIybDMzLjk5LDE5LjYyYzEuNTIsLjg4LDMuMTksMS4zLDQuODMsMS4zWiIgLz4KCQk8L2c+Cgk8L2c+Cjwvc3ZnPgo=" alt="">
                   </div>
@@ -1067,13 +1055,8 @@
       <div class="cursor" id="cursor"></div>
     </main>
 
-    <!-- gsap + lenis -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-    <!-- <script defer src="https://unpkg.com/split-type"></script> -->
     <script>
-      // Initialize smooth scroll
       // const lenis = new Lenis();
       const lenis = new Lenis({
         duration: 1.2,
@@ -1086,19 +1069,10 @@
       }
       requestAnimationFrame(raf);
     </script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script> -->
 
 
     <!-- main.js -->
-    <script type="module" src="js/main.js"></script>
-    <!-- <script type="text/javascript">
-    	VanillaTilt.init(document.querySelector("#skill-list"), {
-    		max: 5,
-    		speed: 400,
-            transition:true,
-            easing:"cubic-bezier(.03,.98,.52,.99)",
-    	});
-    </script> -->
+    <script type="module" src="js/main.js" defer></script>
     <!-- Cloudflare Web Analytics -->
     <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f05e25fc21414732bf14800935663c6d"}'></script>
     <!-- End Cloudflare Web Analytics -->

@@ -168,7 +168,7 @@
 
 /* bhs3 */
 .acad__institutions:nth-child(3):hover .firstcard3 {
-    transition-delay: 0.15s;
+    transition-delay: 0.05s;
     transform: translateX(-30px) rotateZ(0deg) scaleY(1);
     opacity: 1;
 }

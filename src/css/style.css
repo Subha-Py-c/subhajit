@@ -143,6 +143,10 @@ section {
     z-index: 71;
 }
 
+html.invert section {
+    background-color: rgb(238, 238, 238);
+}
+
 span.underline {
     display: inline;
 }
