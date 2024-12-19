@@ -1,123 +1,123 @@
 html {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 :root {
-    /* OVERALL BACKGROUND SECTION
+  /* OVERALL BACKGROUND SECTION
   -----------------------------------------------------------------------*/
-    --bg3: rgb(236, 210, 203);
-    --tc: rgb(0 0 0);
+  --bg3: rgb(236, 210, 203);
+  --tc: rgb(0 0 0);
 
-    /* Dark mode color:x use -> 255-x
+  /* Dark mode color:x use -> 255-x
   -----------------------------------------------------------------------*/
-    --dark-mode-bg: rgb(238, 238, 238);
-    --dark-mode-font: rgb(0, 0, 0);
-    --dark-mode-d1-2-3-bg: rgb(40, 40, 40);
-    --dark-mode-d1-2-3-font: rgb(10, 10, 10);
-    --dark-mode-d1-2-3-border: #cdcdcd;
+  --dark-mode-bg: rgb(238, 238, 238);
+  --dark-mode-font: rgb(0, 0, 0);
+  --dark-mode-d1-2-3-bg: rgb(40, 40, 40);
+  --dark-mode-d1-2-3-font: rgb(10, 10, 10);
+  --dark-mode-d1-2-3-border: #cdcdcd;
 
-    /* HERO SECTION
+  /* HERO SECTION
   -----------------------------------------------------------------------*/
-    --hero-section-clr: rgb(250, 222, 208);
-    --hero-section-border-clr: rgba(210, 182, 168, 1);
-    --divv3-clr: var(--hero-section-clr);
+  --hero-section-clr: rgb(250, 222, 208);
+  --hero-section-border-clr: rgba(210, 182, 168, 1);
+  --divv3-clr: var(--hero-section-clr);
 
-    /* NAV SECTION
+  /* NAV SECTION
   -----------------------------------------------------------------------*/
-    --nav-li-clr: rgb(122, 117, 107);
-    --nav-li-bgclr: rgb(220, 192, 178);
-    --nav-li-border-clr: rgba(95, 95, 95, 0.371);
+  --nav-li-clr: rgb(122, 117, 107);
+  --nav-li-bgclr: rgb(220, 192, 178);
+  --nav-li-border-clr: rgba(95, 95, 95, 0.371);
 
-    /* SKILLS SECTION
+  /* SKILLS SECTION
   -----------------------------------------------------------------------*/
-    --card-container-color: rgb(246, 220, 213);
-    --skill-list-color: rgba(246, 220, 213, 0.5);
-    --skill-list-clicked-clr: rgb(0, 0, 0);
-    --mark-clr: rgb(230, 202, 188);
+  --card-container-color: rgb(246, 220, 213);
+  --skill-list-color: rgba(246, 220, 213, 0.5);
+  --skill-list-clicked-clr: rgb(0, 0, 0);
+  --mark-clr: rgb(230, 202, 188);
 
-    /* .skill__box{  background-color: var(--card-container-color);} */
-    /* progress bar background clr : --bg3 */
+  /* .skill__box{  background-color: var(--card-container-color);} */
+  /* progress bar background clr : --bg3 */
 
-    /* PROJECTS SECTION
+  /* PROJECTS SECTION
   -----------------------------------------------------------------------*/
-    --projects-card-clr: var(--card-container-color);
+  --projects-card-clr: var(--card-container-color);
 
-    /* CONTACT SECTION
+  /* CONTACT SECTION
   -----------------------------------------------------------------------*/
-    --email-box-color: var(--card-container-color);
-    --btn-hover-bg: var(--email-box-color);
-    --text-area-bg: var(--bg3);
-    --input-bg: var(--bg3);
+  --email-box-color: var(--card-container-color);
+  --btn-hover-bg: var(--email-box-color);
+  --text-area-bg: var(--bg3);
+  --input-bg: var(--bg3);
 
-    --submit-button-color: #37474f;
-    --s-btn-text-color: #ffffff;
+  --submit-button-color: #37474f;
+  --s-btn-text-color: #ffffff;
 
-    /* others */
-    /* bisque = rgb(255, 228, 196) */
-    --margin-left: 70px;
+  /* others */
+  /* bisque = rgb(255, 228, 196) */
+  --margin-left: 70px;
 
-    /* font-main */
-    --heading-text-size: 4em;
-    --heading-weight: 550;
-    --heading-line-space: -0.05em;
-    --introduction-text-size: 1.5em;
-    --paragraph-text-size: 1.15em;
-    --hello-mega-font-size: 11.8rem;
-    --font-size: 1.2rem;
-    --difference: 10px;
+  /* font-main */
+  --heading-text-size: 4em;
+  --heading-weight: 550;
+  --heading-line-space: -0.05em;
+  --introduction-text-size: 1.5em;
+  --paragraph-text-size: 1.15em;
+  --hello-mega-font-size: 11.8rem;
+  --font-size: 1.2rem;
+  --difference: 10px;
 
-    --bg1: rgba(0, 0, 0, 0.5);
-    --bg2: rgb(0, 0, 0, 1);
-    --bg33: rgb(215, 202, 179);
+  --bg1: rgba(0, 0, 0, 0.5);
+  --bg2: rgb(0, 0, 0, 1);
+  --bg33: rgb(215, 202, 179);
 
-    /* positioning */
-    /* t:25, r:20 */
-    --top: 40px;
-    --right: 80px;
-    /* redefined in projects.css */
+  /* positioning */
+  /* t:25, r:20 */
+  --top: 40px;
+  --right: 80px;
+  /* redefined in projects.css */
 
-    /* delays */
-    --transition-delay: 0.2s;
-    --transition-duration: 0.3s;
+  /* delays */
+  --transition-delay: 0.2s;
+  --transition-duration: 0.3s;
 
-    /* radius */
-    --radius: 45px;
-    --rr: 30px;
+  /* radius */
+  --radius: 45px;
+  --rr: 30px;
 
-    /* z-index */
-    --z-value: 100;
-    --cursor-z-index: 9999999999;
-    --svg-z-index: 9999999;
+  /* z-index */
+  --z-value: 100;
+  --cursor-z-index: 9999999999;
+  --svg-z-index: 9999999;
 }
 
 body {
-    background-color: var(--bg3);
-    color: var(--tc);
-    font-family: "Poppins", sans-serif;
-    padding: 0;
-    margin: 10px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+  background-color: var(--bg3);
+  color: var(--tc);
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */
 #viewers {
-    margin-left: var(--margin-left);
+  margin-left: var(--margin-left);
 }
 
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */
 
 .header__texts {
-    font-family: "Chillax-Bold", sans-serif;
-    font-family: "Dahlia", sans-serif;
+  font-family: "Chillax-Bold", sans-serif;
+  font-family: "Dahlia", sans-serif;
 }
 
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */
 a {
-    color: rgb(152, 14, 88);
-    text-decoration: none;
-    scroll-behavior: smooth;
+  color: rgb(152, 14, 88);
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 /* a:hover { */
@@ -129,85 +129,85 @@ a {
 /* } */
 
 a:active {
-    color: rgb(255, 162, 0);
+  color: rgb(255, 162, 0);
 }
 
 section {
-    height: 100vh;
-    background-color: var(--bg3);
-    width: 100%;
-    max-width: 1536px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    z-index: 71;
+  height: 100vh;
+  background-color: var(--bg3);
+  width: 100%;
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 71;
 }
 
 html.invert section {
-    background-color: rgb(238, 238, 238);
+  background-color: rgb(238, 238, 238);
 }
 
 span.underline {
-    display: inline;
+  display: inline;
 }
 
 html.lenis,
 html.lenis body {
-    height: auto;
+  height: auto;
 }
 
 .lenis.lenis-smooth {
-    scroll-behavior: auto !important;
+  scroll-behavior: auto !important;
 }
 
 .lenis.lenis-smooth [data-lenis-prevent] {
-    overscroll-behavior: contain;
+  overscroll-behavior: contain;
 }
 
 .lenis.lenis-stopped {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .lenis.lenis-smooth iframe {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */
 
 /* sm */
 @media (max-width: 640px) {
-    :root {
-        --hello-mega-font-size: 4rem;
-        --margin-left: 20px;
-        --heading-text-size: 2.8em;
-        --heading-weight: 550;
-        --heading-line-space: -0.03em;
-        --introduction-text-size: 1.15em;
-        --paragraph-text-size: 1em;
-        --top: 15px;
-        --right: 10px;
-    }
+  :root {
+    --hello-mega-font-size: 4rem;
+    --margin-left: 20px;
+    --heading-text-size: 2.8em;
+    --heading-weight: 550;
+    --heading-line-space: -0.03em;
+    --introduction-text-size: 1.15em;
+    --paragraph-text-size: 1em;
+    --top: 15px;
+    --right: 10px;
+  }
 
-    .sec5 {
-        font-size: 0.5em;
-    }
+  .sec5 {
+    font-size: 0.5em;
+  }
 }
 
 /* xs */
 @media (max-width: 475px) {
-    :root {
-        --hello-mega-font-size: 3.4rem;
-        --margin-left: 20px;
-        --heading-text-size: 2.2em;
-        --heading-weight: 550;
-        --heading-line-space: -0.03em;
-        --introduction-text-size: 0.85em;
-        --paragraph-text-size: 0.7em;
-        --top: 15px;
-        --right: 10px;
-    }
+  :root {
+    --hello-mega-font-size: 3.4rem;
+    --margin-left: 20px;
+    --heading-text-size: 2.2em;
+    --heading-weight: 550;
+    --heading-line-space: -0.03em;
+    --introduction-text-size: 0.85em;
+    --paragraph-text-size: 0.7em;
+    --top: 15px;
+    --right: 10px;
+  }
 
-    .sec5 {
-        font-size: 0.5em;
-    }
+  .sec5 {
+    font-size: 0.5em;
+  }
 }
