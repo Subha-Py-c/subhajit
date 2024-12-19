@@ -27,15 +27,6 @@
     opacity: 0;
 }
 
-.word,
-.line {
-    overlay: hidden;
-    box-sizing: content-box;
-}
-.char {
-    padding: 5px;
-}
-
 /* -------------------------------------------------------------------- */
 
 h1 {
