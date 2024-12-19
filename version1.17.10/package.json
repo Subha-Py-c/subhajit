@@ -1,0 +1,52 @@
+{
+    "name": "port-folio-latest",
+    "version": "1.0.0",
+    "description": "My portfolio website",
+    "main": "src/js/main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack serve --open --mode development",
+        "build": "webpack --mode production",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist",
+        "build-tailwind": "npx tailwindcss -i ./src/index.css -o ./src/css/components/experience.css",
+        "watch-tailwind": "npx tailwindcss -i ./src/index.css -o ./src/css/components/experience.css --watch",
+        "done": "npm run build && git add . && git commit -m 'done' && git push origin main && npm run deploy && clear"
+    },
+    "keywords": [
+        "Subhajit",
+        "Gorai",
+        "IIEST",
+        "portfolio",
+        "website",
+        "HTML",
+        "CSS",
+        "JavaScript"
+    ],
+    "author": "Subhajit Gorai",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/core": "^7.26.0",
+        "@babel/preset-env": "^7.26.0",
+        "babel-loader": "^9.2.1",
+        "clean-webpack-plugin": "^4.0.0",
+        "concurrently": "^9.1.0",
+        "copy-webpack-plugin": "^12.0.2",
+        "css-loader": "^7.1.1",
+        "file-loader": "^6.2.0",
+        "gh-pages": "^6.1.1",
+        "html-loader": "^5.0.0",
+        "html-webpack-plugin": "^5.6.3",
+        "image-webpack-loader": "^8.1.0",
+        "style-loader": "^4.0.0",
+        "svg-inline-loader": "^0.8.2",
+        "tailwindcss": "^3.4.16",
+        "webpack": "^5.97.1",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^5.2.0",
+        "webpack-manifest-plugin": "^5.0.0"
+    },
+    "dependencies": {
+        "gsap": "^3.12.5"
+    }
+}
