@@ -1,4 +1,5 @@
 import React from "react";
+import "./scrollbar.css";
 import IntroSection from "./IntroSection/IntroSection";
 import ExperienceSection from "./ExperienceSection/ExperienceSection";
 import AcademicsSection from "./AcademicsSection/AcademicsSection";
