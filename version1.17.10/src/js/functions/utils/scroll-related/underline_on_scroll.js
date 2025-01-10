@@ -1,13 +1,11 @@
 const lineObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            //   console.log(entry.target);
-            entry.target.classList.add("active");
-        } else {
-            //   console.log('not intersecting');
-            entry.target.classList.remove("active");
-        }
-    });
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("active");
+    } else {
+      entry.target.classList.remove("active");
+    }
+  });
 });
 
 const headers = document.querySelectorAll(".headerSpan");

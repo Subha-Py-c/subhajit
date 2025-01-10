@@ -5,10 +5,7 @@ const ExperienceSection = () => {
     return (
         <section className="experience-section relative w-[100vw] h-fit pt-[0vh] md:pt-[7.5vh] lg:pt-[15vh] pb-[10vh] md:pb-[15vh] lg:pb-[25vh]">
             <h4 id="EX">
-                <span
-                    className="exps underline-sp headerSpan header__texts experience--heading"
-                    style="display: inline !important"
-                >
+                <span className="exps underline-sp headerSpan header__texts experience--heading">
                     Experience
                 </span>
             </h4>

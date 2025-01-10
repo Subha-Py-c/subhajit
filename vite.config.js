@@ -11,7 +11,8 @@ export default defineConfig({
             open: true, // Automatically opens the visualization report
         }),
     ],
-    base: "/subhajit/", // Replace with your GitHub repository name
+    // base: "/subhajit/", // Replace with your GitHub repository name
+    base: "/", // Replace with your GitHub repository name
     build: {
         outDir: "dist", // Output directory for production build
         sourcemap: true, // Generate sourcemaps for debugging production code

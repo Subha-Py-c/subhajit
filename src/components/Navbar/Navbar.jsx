@@ -1,66 +1,112 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
-    return (
-        <div className="nav flexed" id="nav">
-            <div className="ul full" id="ul">
-                <div className="li">
-                    <span className="sp">
-                        <a href="#s1" className="link link--thebe">
-                            Home
-                        </a>
-                    </span>
-                </div>
-                <div className="li">
-                    <span className="sp">
-                        <a href="#EX" className="link link--thebe">
-                            Experience
-                        </a>
-                    </span>
-                </div>
-                <div className="li">
-                    <span className="sp">
-                        <a href="#s-last" className="link link--thebe">
-                            Academics
-                        </a>
-                    </span>
-                </div>
-                <div className="li">
-                    <span className="sp">
-                        <a href="#SK" className="link link--thebe">
-                            Skills
-                        </a>
-                    </span>
-                </div>
-                <div className="li">
-                    <span className="sp">
-                        <a href="#div3" className="link link--thebe">
-                            Projects
-                        </a>
-                    </span>
-                </div>
-                <div className="li">
-                    <span className="sp">
-                        <a href="#s4-contacts" className="link link--thebe">
-                            Contact
-                        </a>
-                    </span>
-                </div>
-            </div>
-            {/* <script>
-                const liElms = document.querySelectorAll('#nav .li');
+    const [isNavOpen, setIsNavOpen] = useState(false);
+    const [activeIndices, setActiveIndices] = useState(new Set());
+    const [hoveredIndex, setHoveredIndex] = useState(null);
 
-                liElms.forEach((li) => {
-                    const insideAnchor = li.querySelector('a.link');
-                    li.addEventListener('mouseover', () => {
-                        insideAnchor.classList.add('hover-effect');
+    const navItems = [
+        { href: "#s1", text: "Home" },
+        { href: "#EX", text: "Experience" },
+        { href: "#s-last", text: "Academics" },
+        { href: "#SK", text: "Skills" },
+        { href: "#div3", text: "Projects" },
+        { href: "#s4-contacts", text: "Contact" },
+    ];
+
+    const toggleNav = (open) => {
+        setIsNavOpen(open);
+        if (open) {
+            navItems.forEach((_, index) => {
+                setTimeout(() => {
+                    setActiveIndices((prev) => new Set([...prev, index]));
+                }, index * 50);
+            });
+        } else {
+            navItems.forEach((_, index) => {
+                setTimeout(() => {
+                    setActiveIndices((prev) => {
+                        const newSet = new Set([...prev]);
+                        newSet.delete(index);
+                        return newSet;
                     });
-                    li.addEventListener('mouseout', () => {
-                        insideAnchor.classList.remove('hover-effect');
-                    });
+                }, index * 50);
+            });
+        }
+    };
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 5000) {
+                const handleLiClick = (event) => {
+                    const link = event.currentTarget.querySelector("a");
+                    if (link) {
+                        link.click();
+                    }
+                };
+
+                const lis = document.querySelectorAll(".li");
+                lis.forEach((li) => {
+                    li.addEventListener("click", handleLiClick);
                 });
-              </script> */}
+
+                return () => {
+                    lis.forEach((li) => {
+                        li.removeEventListener("click", handleLiClick);
+                    });
+                };
+            }
+        };
+
+        handleResize();
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
+    return (
+        <div
+            className="nav flexed"
+            id="nav"
+            style={{ height: isNavOpen ? "75vh" : "0vh" }}
+        >
+            <div className="ul full" id="ul">
+                {navItems.map((item, index) => (
+                    <div
+                        className={`li ${activeIndices.has(index) ? "active" : ""}`}
+                        key={index}
+                        onMouseEnter={() => setHoveredIndex(index)}
+                        onMouseLeave={() => setHoveredIndex(null)}
+                    >
+                        <span
+                            className={`sp ${hoveredIndex === index ? "active" : ""}`}
+                        >
+                            <a href={item.href} className="link link--thebe">
+                                {item.text}
+                            </a>
+                        </span>
+                    </div>
+                ))}
+            </div>
+
+            <button
+                className="nav-menu"
+                style={{ display: isNavOpen ? "none" : "flex" }}
+                onClick={() => toggleNav(true)}
+            >
+                Menu
+            </button>
+
+            <button
+                className="close-icon"
+                style={{ display: isNavOpen ? "flex" : "none" }}
+                onClick={() => toggleNav(false)}
+            >
+                Close
+            </button>
         </div>
     );
 };

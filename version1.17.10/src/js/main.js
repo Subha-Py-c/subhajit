@@ -1,17 +1,17 @@
 // importing js
 import "./gsap.js";
-import "./functions/cursor-functions/cursor.js";
-import "./functions/cursor-functions/hiding-cursor.js";
-import "./functions/contacts.js";
-import "./functions/nav-js/nav-appear-and-toggle-svg.js";
-import "./functions/nav-js/dim.js";
-import "./functions/hello.js";
-import "./functions/skills-js/skill-card.js";
-import "./functions/project-js/project.js";
-import "./functions/utils/dark-mode.js";
-import "./functions/utils/hidden-classes.js";
-import "./functions/utils/scroll-related/smooth-scrolling.js";
-import "./functions/utils/scroll-related/underline_on_scroll.js";
+// import "./functions/cursor-functions/cursor.js";
+// import "./functions/cursor-functions/hiding-cursor.js";
+// import "./functions/contacts.js";
+// import "./functions/nav-js/nav-appear-and-toggle-svg.js";
+// import "./functions/nav-js/dim.js";
+// import "./functions/hello.js";
+// import "./functions/skills-js/skill-card.js";
+// import "./functions/project-js/project.js";
+// import "./functions/utils/dark-mode.js";
+// import "./functions/utils/hidden-classes.js";
+// import "./functions/utils/scroll-related/smooth-scrolling.js";
+// import "./functions/utils/scroll-related/underline_on_scroll.js";
 // import "./vanila-tilt.js";
 
 // importing css

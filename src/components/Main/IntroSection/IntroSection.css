@@ -377,7 +377,7 @@ body.progress {
     &:hover {
         text-decoration-style: solid;
         color: inherit;
-        cursor: url("../../assets/images/a2.png"), auto;
+        cursor: url("/images/a2.png"), auto;
     }
 }
 

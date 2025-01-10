@@ -83,82 +83,6 @@
             crossorigin="anonymous"
             importance="high"
         />
-        <style>
-            @font-face {
-                font-family: Dahlia;
-                font-style: normal;
-                font-weight: 400;
-                src: url("fonts/dahlia.woff2") format("woff2");
-            }
-
-            #loader {
-                z-index: 999999999;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100vh;
-                overflow: hidden;
-                pointer-events: none;
-                pointer-events: none;
-                background-color: transparent;
-                font-kerning: none;
-
-                & .loading__text {
-                    font-family: Dahlia;
-                    font-size: 4rem;
-                    font-weight: 750;
-                    display: grid;
-                    place-items: center;
-                    width: 300px;
-                    height: 150px;
-                    height: auto;
-                    position: absolute;
-                    top: calc(50vh - 75px);
-                    left: calc(50vw - 150px);
-                    font-kerning: none;
-                    background-color: transparent;
-                    color: white;
-                    opacity: 0;
-
-                    @media (max-width: 768px) {
-                        font-size: 3rem;
-                    }
-
-                    & .word {
-                        height: fit-content;
-                        height: auto;
-                        overflow: hidden;
-                        display: flex !important;
-                    }
-                    & .char {
-                        height: auto;
-                        background-color: transparent;
-                    }
-                }
-                & .loader__slide1 {
-                    background-color: black;
-                    width: 100%;
-                    height: 50%;
-                }
-                & .loader__slide2 {
-                    background-color: black;
-                    width: 100%;
-                    height: 50%;
-                }
-            }
-
-            html.invert #loader {
-                filter: invert(1);
-                background-color: transparent;
-            }
-
-            @media screen and (max-width: 768px) {
-                #loader {
-                    font-size: 3rem;
-                }
-            }
-        </style>
         <!-- Google Site Verification -->
         <meta
             name="google-site-verification"
@@ -170,11 +94,11 @@
         <div id="root"></div>
         <script type="module" src="/src/main.jsx"></script>
         <!-- Cloudflare Web Analytics -->
-        <script
+        <!-- <script
             defer
             src="https://static.cloudflareinsights.com/beacon.min.js"
             data-cf-beacon='{"token": "f05e25fc21414732bf14800935663c6d"}'
-        ></script>
+        ></script> -->
         <!-- End Cloudflare Web Analytics -->
     </body>
 </html>

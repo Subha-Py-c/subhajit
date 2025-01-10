@@ -1,16 +1,113 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.css";
 
 const Header = () => {
+    const [isDarkMode, setIsDarkMode] = useState(false);
+    // Constants for strong text colors
+    const STRONG_COLOR_LIGHT = "rgb(0, 0, 0)";
+    const STRONG_COLOR_DARK = "rgb(242, 28, 121)";
+
+    useEffect(() => {
+        // Initialize dark mode from localStorage
+        const savedDarkMode = localStorage.getItem("darkMode") === "true";
+        setIsDarkMode(savedDarkMode);
+        applyDarkMode(savedDarkMode);
+    }, []);
+
+    const applyDarkMode = (isDark) => {
+        const root = document.documentElement;
+        const handElements = document.querySelectorAll(".ta-ta");
+        const strongElements = document.getElementsByTagName("strong");
+        if (isDark) {
+            root.classList.add("invert");
+            handElements.forEach(
+                (element) => (element.style.filter = "invert(100%)"),
+            );
+            Array.from(strongElements).forEach((el) => {
+                el.style.color = STRONG_COLOR_DARK;
+            });
+        } else {
+            root.classList.remove("invert");
+            handElements.forEach(
+                (element) => (element.style.filter = "invert(0%)"),
+            );
+            Array.from(strongElements).forEach((el) => {
+                el.style.color = STRONG_COLOR_LIGHT;
+            });
+        }
+    };
+
+    const easeInOutCubic = (t) => {
+        return t < 0.5
+            ? 4 * t * t * t
+            : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+    };
+
+    const scrollToTarget = (targetOffset, duration) => {
+        const startingY = window.pageYOffset;
+        const diff = targetOffset - startingY;
+        let start;
+
+        window.requestAnimationFrame(function step(timestamp) {
+            if (!start) start = timestamp;
+            const time = timestamp - start;
+            const percent = Math.min(time / duration, 1);
+            const easedT = easeInOutCubic(percent);
+            window.scrollTo(0, startingY + diff * easedT);
+            if (time < duration) {
+                window.requestAnimationFrame(step);
+            }
+        });
+    };
+
+    useEffect(() => {
+        const handleAnchorClick = (e) => {
+            const href = e.currentTarget.getAttribute("href");
+            if (href.startsWith("#") || !href.startsWith("http")) {
+                e.preventDefault();
+                const targetId = href;
+                const target = document.querySelector(targetId);
+                if (!target) return;
+                const targetRect = target.getBoundingClientRect();
+                const targetOffset = targetRect.top + window.pageYOffset;
+                const scrollDistance = Math.abs(targetOffset - window.scrollY);
+                const scrollDuration = Math.min(1000, scrollDistance);
+                scrollToTarget(targetOffset, scrollDuration);
+            }
+        };
+
+        document.querySelectorAll("a").forEach((anchor) => {
+            anchor.addEventListener("click", handleAnchorClick);
+        });
+
+        // Cleanup
+        return () => {
+            document.querySelectorAll("a").forEach((anchor) => {
+                anchor.removeEventListener("click", handleAnchorClick);
+            });
+        };
+    }, []);
+    const toggleDarkMode = () => {
+        const newDarkMode = !isDarkMode;
+        setIsDarkMode(newDarkMode);
+        localStorage.setItem("darkMode", newDarkMode);
+        applyDarkMode(newDarkMode);
+    };
+
     return (
         <header className="flexed justify-between">
-            <button id="invert-button" className="filters">
-                sun-icon
-                <i id="sun-icon" className="fas fa-sun"></i>
-                <i id="moon-icon" className="fas fa-moon"></i>
+            <button
+                id="invert-button"
+                className="filters"
+                onClick={toggleDarkMode}
+            >
+                {isDarkMode ? (
+                    <i id="moon-icon" className="fas fa-moon"></i>
+                ) : (
+                    <i id="sun-icon" className="fas fa-sun"></i>
+                )}
             </button>
-
-            {/* <!-- nav ham icon --> */}
+            {/* nav ham icon */}
             <div className="nav-menu">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -37,8 +134,7 @@ const Header = () => {
                     <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z"></path>
                 </svg>
             </div>
-
-            {/* <!-- nav close icon --> */}
+            {/* nav close icon */}
             <div id="cl-icon" className="close-icon">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

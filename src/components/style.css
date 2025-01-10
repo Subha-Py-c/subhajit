@@ -89,7 +89,7 @@ html {
     --cursor-z-index: 9999999999;
     --svg-z-index: 9999999;
 }
-
+#root,
 body {
     background-color: var(--bg3);
     color: var(--tc);
@@ -112,7 +112,10 @@ body {
     font-family: "Chillax-Bold", sans-serif;
     font-family: "Dahlia", sans-serif;
 }
-
+.exps,
+.headerSpan {
+    display: inline !important;
+}
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */
 a {
     color: rgb(152, 14, 88);
