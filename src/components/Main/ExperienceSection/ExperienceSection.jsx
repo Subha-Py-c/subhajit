@@ -1,5 +1,7 @@
 import "./ExperienceSection.css";
 
+// the classes are slightly different so efficient Mapping is not possible
+
 const ExperienceSection = () => {
     return (
         <section className="experience-section relative w-[100vw] h-fit pt-[0vh] md:pt-[7.5vh] lg:pt-[15vh] pb-[10vh] md:pb-[15vh] lg:pb-[25vh]">
@@ -9,7 +11,7 @@ const ExperienceSection = () => {
                 </span>
             </h4>
             <div className="work-container relative w-full h-fit pl-[20px] md:pl-[100px] pr-[20px] md:pr-[120px] pt-[15px] md:pt-[30px] text-xl md:text-2xl">
-                <div className="work1 w-full flex items-center min-h-[60px] border-b border-b-slate-800 border-dashed group">
+                <div className="w-full flex items-center min-h-[60px] border-b border-b-slate-800 border-dashed group">
                     <div className="work-logo w-14 flex justify-center items-center">
                         <img
                             className="size-auto object-contain scale-75 ta-ta"
@@ -25,7 +27,7 @@ const ExperienceSection = () => {
                         October 2024 - Present
                     </div>
                 </div>
-                <div className="work2 w-full flex items-center min-h-[60px] border-b border-b-slate-800 border-dashed group">
+                <div className="w-full flex items-center min-h-[60px] border-b border-b-slate-800 border-dashed group">
                     <div className="work-logo w-14 flex justify-center items-center overflow-hidden rounded">
                         <img
                             className="size-auto object-contain scale-75 bg-green-950 ta-ta overflow-hidden rounded"
@@ -40,7 +42,7 @@ const ExperienceSection = () => {
                         December 2024
                     </div>
                 </div>
-                <div className="work3 w-full flex items-center min-h-[60px] border-b border-b-slate-800 border-dashed group">
+                <div className="w-full flex items-center min-h-[60px] border-b border-b-slate-800 border-dashed group">
                     <div className="work-logo w-14 flex justify-center items-center">
                         <img
                             className="size-auto object-contain scale-75 bg-green-950 ta-ta"

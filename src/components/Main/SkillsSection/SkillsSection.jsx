@@ -30,26 +30,169 @@ const SkillsSection = () => {
                     <br />
                     Node.js, Express, <b>Flask</b>, SQL databases [SQLite,
                     PostgreSQL]
+                    <br />
+                    <br />
                 </>
             ),
         },
-        // Add other card elements here...
+        {
+            title: "UI/UX",
+            value: "70%",
+            content: (
+                <>
+                    <em>
+                        <u>Tools:</u>
+                    </em>
+                    <br />
+                    Figma, GIMP
+                    <br />
+                    <br />
+                    <em>
+                        <u>Libraries:</u>
+                    </em>
+                    <br />
+                    GSAP, AOS, tilt.js, Typed.js, LENIS(locomotive scroll),
+                    Split-type
+                    <br />
+                    <br />
+                </>
+            ),
+        },
+        {
+            title: "Data Structures",
+            value: "85%",
+            content: (
+                <>
+                    <em>
+                        <u>Languages:</u>
+                    </em>
+                    <br />
+                    Python, C, C++
+                    <br />
+                    <br />
+                    <em>
+                        <u>Concepts:</u>
+                    </em>
+                    <br />
+                    Time &amp; Space Complexity, Function call Stack, Array,
+                    String, Stack, Queue, LinkedList, Tree, Heap, Searching,
+                    Sorting, Greedy, Trie
+                    <br />
+                    <br />
+                </>
+            ),
+        },
+        {
+            title: "Python",
+            value: "85%",
+            content: (
+                <>
+                    <em>
+                        <u>Concepts:</u>
+                    </em>
+                    <br />
+                    OOPs, DSA, Data Visualisation using numpy & matplotlib[small
+                    scale], Web Development[flask]
+                    <br />
+                    <br />
+                    <em>
+                        <u>Some libraries I have used in personal projects:</u>
+                    </em>
+                    <br />• numpy, matplotlib, PIL, Tesseract, OpenCV,
+                    reportlab, bs4, selenium etc
+                    <br />
+                    <br />
+                </>
+            ),
+        },
+        {
+            title: "Web Scraping",
+            value: "60%",
+            content: (
+                <>
+                    <em>
+                        <u>Libraries:</u>
+                    </em>
+                    <br />
+                    requests, BeautifulSoup, Selenium
+                    <br />
+                    <br />
+                    <em>
+                        <u>api:</u>
+                    </em>
+                    <br />
+                    Scrapeowl
+                    <br />
+                </>
+            ),
+        },
+        {
+            title: "Collaboration",
+            value: "70%",
+            content: (
+                <>
+                    Can easily collaborate with team members using GitHub
+                    <br />
+                    <em>
+                        <u>Collaboration experience:</u>
+                    </em>
+                    <br />
+                    Hactoberfest &apos; 24, College GDG Dev Team
+                    <br />
+                    <br />
+                </>
+            ),
+        },
     ];
 
     // Mobile skills data
     const mobileSkills = [
         {
-            icon: "assets/icons/web-dev.svg",
+            icon: "/icons/web-dev.svg",
             title: "Web Development",
             value: "70%",
         },
-        { icon: "assets/icons/ui-ux.svg", title: "UI-UX", value: "70%" },
+        { icon: "/icons/ui-ux.svg", title: "UI-UX", value: "70%" },
         {
-            icon: "assets/icons/data-str.svg",
+            icon: "/icons/data-str.svg",
             title: "Data Structures",
             value: "85%",
         },
-        // Add other mobile skills...
+        {
+            icon: "/icons/python.svg",
+            title: "PYTHON",
+            value: "85%",
+        },
+        {
+            icon: "/icons/web-scraping.svg",
+            title: "Web Scraping",
+            value: "60%",
+        },
+        {
+            icon: "/icons/node.svg",
+            title: "Node + Express",
+            value: "70%",
+        },
+        {
+            icon: "/icons/react.svg",
+            title: "React",
+            value: "75%",
+        },
+        {
+            icon: "/icons/js.svg",
+            title: "JavaScript",
+            value: "75%",
+        },
+        {
+            icon: "/icons/git.svg",
+            title: "Git & GitHub",
+            value: "70%",
+        },
+        {
+            icon: "/icons/shell.svg",
+            title: "Flask",
+            value: "85%",
+        },
     ];
 
     useEffect(() => {

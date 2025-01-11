@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./Navbar.css";
+import Header from "../Header/Header";
 
 const Navbar = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -92,21 +93,7 @@ const Navbar = () => {
                 ))}
             </div>
 
-            <button
-                className="nav-menu"
-                style={{ display: isNavOpen ? "none" : "flex" }}
-                onClick={() => toggleNav(true)}
-            >
-                Menu
-            </button>
-
-            <button
-                className="close-icon"
-                style={{ display: isNavOpen ? "flex" : "none" }}
-                onClick={() => toggleNav(false)}
-            >
-                Close
-            </button>
+            <Header isNavOpen={isNavOpen} toggleNav={toggleNav} />
         </div>
     );
 };

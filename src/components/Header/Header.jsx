@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import "./Header.css";
+import PropTypes from "prop-types";
 
-const Header = () => {
+const Header = ({ isNavOpen, toggleNav }) => {
     const [isDarkMode, setIsDarkMode] = useState(false);
     // Constants for strong text colors
     const STRONG_COLOR_LIGHT = "rgb(0, 0, 0)";
@@ -108,7 +109,11 @@ const Header = () => {
                 )}
             </button>
             {/* nav ham icon */}
-            <div className="nav-menu">
+            <div
+                className="nav-menu"
+                style={{ display: isNavOpen ? "none" : "flex" }}
+                onClick={() => toggleNav(true)}
+            >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
@@ -135,7 +140,12 @@ const Header = () => {
                 </svg>
             </div>
             {/* nav close icon */}
-            <div id="cl-icon" className="close-icon">
+            <div
+                id="cl-icon"
+                className="close-icon"
+                style={{ display: isNavOpen ? "flex" : "none" }}
+                onClick={() => toggleNav(false)}
+            >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="100"
@@ -151,3 +161,8 @@ const Header = () => {
 };
 
 export default Header;
+
+Header.propTypes = {
+    isNavOpen: PropTypes.bool,
+    toggleNav: PropTypes.func,
+};

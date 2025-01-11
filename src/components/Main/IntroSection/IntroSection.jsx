@@ -23,7 +23,7 @@ const IntroSection = () => {
             headers.forEach((header) => lineObserver.unobserve(header));
             lineObserver.disconnect();
         };
-    }, []); // Empty dependency array means this runs once on mount
+    }, []);
 
     return (
         <section id="s1" className="sec1">
@@ -43,8 +43,8 @@ const IntroSection = () => {
                             </div>
                         </span>
                     </h2>
-                    <div className="about-content mt-8 col-span-9 md:col-span-12">
-                        <p className="hero-p col-span-12 mb-4 introduction">
+                    <div className="about-content is-mt-l col-9 col-md-12">
+                        <p className="hero-p col-12 is-mb-ms introduction">
                             MERN &amp; Flask Stack Developer / Web Designer.
                             Information Technology student at{" "}
                             <a
@@ -58,20 +58,21 @@ const IntroSection = () => {
                             . Interested in Deep Learning and Blockchain
                             technologies.
                             <span
-                                className={`flexed transition-all duration-300 ${
+                                id="profileImg"
+                                className={`${
                                     isImageVisible
-                                        ? "opacity-100 scale-y-100 rotate-7"
-                                        : "opacity-0 scale-y-0 rotate-7"
+                                        ? "opacity-100 scale-y-100 rotate-[7deg]"
+                                        : "opacity-0"
                                 }`}
                             >
                                 <img
                                     src="/images/me2.png"
-                                    alt="Profile"
+                                    alt="Profile Picture"
                                     className="ta-ta"
                                 />
                             </span>
                         </p>
-                        <p className="hero-p col-span-6 xs:col-span-12 mb-4 text-sm">
+                        <p className="hero-p col-6 col-xs-12 is-mb-s is-xs">
                             Nothing more to say, thanks for visiting my website.
                             Don &apos; t forget to explore my projects. I &apos;
                             m eager to collaborate with interested people.
