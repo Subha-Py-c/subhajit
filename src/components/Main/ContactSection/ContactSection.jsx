@@ -33,7 +33,7 @@ const ContactSection = () => {
         },
         {
             href: "https://x.com/Subhaji09951021",
-            icon: "twitter.svg",
+            icon: "/icons/twitter.svg",
             label: "X (twitter)",
             isExternal: true,
         },
