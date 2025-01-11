@@ -10,6 +10,7 @@ if (isNavOpen) {
     main.classList.remove("nav-open");
 }
 
+// ---------
 const liElements = document.querySelectorAll('.li');
 const sp = document.querySelectorAll('.sp');
 
