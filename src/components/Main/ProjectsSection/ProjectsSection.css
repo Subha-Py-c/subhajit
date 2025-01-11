@@ -40,9 +40,8 @@ details {
     margin-left: 10vw;
     margin-right: 10vw;
     display: grid;
-    /* place-items: center; */
     gap: 0vh;
-    grid-template-rows: 0rem 13.33rem 13.33rem 3rem 13.33rem 13.33rem 3rem 13.33rem 13.33rem;
+    grid-template-rows: 0 13.33rem 13.33rem 3rem 13.33rem 13.33rem 3rem 13.33rem 13.33rem;
     grid-template-columns: repeat(6, 13.33rem);
     transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
 
