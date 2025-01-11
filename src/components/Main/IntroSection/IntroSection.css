@@ -22,7 +22,136 @@
     opacity: 0;
 }
 
-/* -------------------------------------------------------------------- */
+#s1 {
+    --s1-height: 100vh;
+    height: var(--s1-height);
+    max-height: var(--s1-height);
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 18vh;
+}
+
+#profileImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5vh;
+    left: 30%;
+    z-index: 30;
+    background: transparent;
+    width: 256px;
+    height: 256px;
+    width: calc(300px * 0.7);
+    height: calc(400px * 0.7);
+    border-radius: 15px;
+    overflow: hidden;
+    transform: scaleY(0) rotateZ(7deg);
+    opacity: 0;
+    transform-origin: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #s1 {
+        padding-top: 24vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #s1 > div > div > div > p.hero-p.col-12.is-mb-ms.introduction {
+        margin-top: 10vh;
+    }
+    #profileImg {
+        width: 90px;
+        height: 120px;
+    }
+}
+
+.college_url {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+
+    &:hover {
+        text-decoration-style: solid;
+        color: inherit;
+        cursor: url("/images/a2.png"), auto;
+    }
+}
+
+span.s3,
+span.s5 {
+    display: inline;
+
+    & span {
+        display: inline;
+    }
+}
+
+.about-section {
+    margin-top: 0vw;
+}
+
+.about-section h2.hero-h2 span:first-child {
+    text-align: right;
+    margin-right: 6vw;
+    opacity: 0;
+    height: 0;
+}
+
+.about-section h2.hero-h2 span:nth-child(2) {
+    margin-left: 40vw;
+    opacity: 0;
+    height: 0;
+}
+
+.about-section h2.hero-h2 span:nth-child(3) {
+    margin-left: 0;
+}
+
+.about-section h2.hero-h2 span:nth-child(3) div {
+    display: inline-block;
+}
+
+.about-section h2.hero-h2 span:nth-child(3) div.disable {
+    opacity: 0.064;
+}
+
+.about-section .about-content p {
+    line-height: 1em;
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.about-section .about-content p.appear-gradually {
+    opacity: 1;
+    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+#s1 > div > div > p {
+    opacity: 0;
+}
+
+#s1 > div > div > p.appear-gradually {
+    opacity: 1;
+    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+html.is-device .about-section {
+    margin-top: 4vw;
+}
+
+.introduction {
+    font-kerning: none;
+}
 
 h1 {
     font-family: title, serif;
@@ -311,143 +440,6 @@ body.progress {
     .page-home .hero-section .hero-content .sub-three {
         margin-left: 28vw;
     }
-}
-
-/* -----
-      This
-
-      is Hero sections
------ */
-#s1 {
-    --s1-height: 105vh;
-    height: var(--s1-height);
-    max-height: var(--s1-height);
-    position: relative;
-    /* z-index: 73; */
-    box-sizing: border-box;
-    padding-top: 18vh;
-}
-
-#profileImg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 5vh;
-    left: 30%;
-    z-index: 30;
-    background: transparent;
-    width: 256px;
-    height: 256px;
-    width: calc(300px * 0.7);
-    height: calc(400px * 0.7);
-    border-radius: 15px;
-    overflow: hidden;
-    transform: scaleY(0) rotateZ(7deg);
-    opacity: 0;
-    transform-origin: center;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
-    & img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
-@media screen and (min-width: 1025px) {
-    #s1 {
-        padding-top: 24vh;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #s1 > div > div > div > p.hero-p.col-12.is-mb-ms.introduction {
-        margin-top: 10vh;
-    }
-    #profileImg {
-        width: 90px;
-        height: 120px;
-    }
-}
-
-.college_url {
-    text-decoration: underline;
-    text-decoration-style: dashed;
-    text-decoration-color: black;
-    text-decoration-thickness: 2px;
-
-    &:hover {
-        text-decoration-style: solid;
-        color: inherit;
-        cursor: url("/images/a2.png"), auto;
-    }
-}
-
-span.s3,
-span.s5 {
-    display: inline;
-
-    & span {
-        display: inline;
-    }
-}
-
-.about-section {
-    margin-top: 0vw;
-}
-
-.about-section h2.hero-h2 span:first-child {
-    text-align: right;
-    margin-right: 6vw;
-    opacity: 0;
-    height: 0;
-}
-
-.about-section h2.hero-h2 span:nth-child(2) {
-    margin-left: 40vw;
-    opacity: 0;
-    height: 0;
-}
-
-.about-section h2.hero-h2 span:nth-child(3) {
-    margin-left: 0;
-}
-
-.about-section h2.hero-h2 span:nth-child(3) div {
-    display: inline-block;
-}
-
-.about-section h2.hero-h2 span:nth-child(3) div.disable {
-    opacity: 0.064;
-}
-
-.about-section .about-content p {
-    line-height: 1em;
-    opacity: 0;
-    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.about-section .about-content p.appear-gradually {
-    opacity: 1;
-    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-#s1 > div > div > p {
-    opacity: 0;
-}
-
-#s1 > div > div > p.appear-gradually {
-    opacity: 1;
-    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-html.is-device .about-section {
-    margin-top: 4vw;
-}
-
-.introduction {
-    font-kerning: none;
 }
 
 @media (max-width: 1440px) {

@@ -2,3 +2,4 @@ make responsive for larger screens
 Set to Auto height instead of FIxed
 Add new project
 Profile Pic Should Appear on hover:dev
+Loading Problem
