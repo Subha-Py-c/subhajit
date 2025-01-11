@@ -25,13 +25,6 @@ const ThanksSection = () => {
             <div className="hid" ref={hiddenRef}>
                 <h1>Thanks For Visiting</h1>
             </div>
-            <div>
-                <script
-                    defer
-                    src="https://static.cloudflareinsights.com/beacon.min.js"
-                    data-cf-beacon='{"token": "f05e25fc21414732bf14800935663c6d"}'
-                ></script>
-            </div>
         </section>
     );
 };
