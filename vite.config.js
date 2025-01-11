@@ -8,7 +8,7 @@ export default defineConfig({
         react(),
         compression(), // Enable gzip compression for production
         visualizer({
-            open: true, // Automatically opens the visualization report
+            open: false, // Automatically opens the visualization report
         }),
     ],
     // base: "/subhajit/", // Replace with your GitHub repository name
