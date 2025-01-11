@@ -18,8 +18,12 @@ const Loader = () => {
             const text = new SplitType(".loading__text", {
                 types: "words, chars",
             });
+
+            // time durations
             const textDuration = 1;
-            const sliderDuration = 1.42;
+            // const sliderDuration = 1.42;
+            const sliderDuration = 0.7;
+            // total = textDuration + sliderDuration
 
             const animationTimer = setTimeout(() => {
                 gsap.to(text.chars, {

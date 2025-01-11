@@ -94,6 +94,7 @@ const ContactSection = () => {
                                         <img
                                             src={link.icon}
                                             alt={`${link.label} icon`}
+                                            className="size-6"
                                         />
                                         <span className="s4">
                                             <span className="s5">

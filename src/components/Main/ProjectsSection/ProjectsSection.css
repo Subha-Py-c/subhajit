@@ -26,6 +26,11 @@ summary {
 details {
     line-height: 1.5rem;
 }
+@media screen and (min-width: 1025px) {
+    details {
+        line-height: 1.1rem;
+    }
+}
 /* ------------------------ */
 .projects-wrapper {
     /* border: 1px solid red; */

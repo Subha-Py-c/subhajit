@@ -25,14 +25,20 @@ const ThanksSection = () => {
                 observer.unobserve(hiddenRef.current);
             }
         };
-    }, []); // Empty dependency array since we only want to run this once
+    }, []); // Empty dependency array since we only want to run this once,
 
     return (
         <section id="s5-thanks" className="sec5">
-            <div className="hidden" ref={hiddenRef}>
+            <div className="" ref={hiddenRef}>
                 <h1>Thanks For Visiting</h1>
             </div>
-            <div id="viewers"></div>
+            <div>
+                <script
+                    defer
+                    src="https://static.cloudflareinsights.com/beacon.min.js"
+                    data-cf-beacon='{"token": "f05e25fc21414732bf14800935663c6d"}'
+                ></script>
+            </div>
         </section>
     );
 };

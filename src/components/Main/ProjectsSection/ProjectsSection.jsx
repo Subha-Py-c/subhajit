@@ -96,7 +96,7 @@ const ProjectsSection = () => {
 
             <div className="projects-wrapper full" ref={projectWrapperRef}>
                 {projects.map((project, index) => (
-                    <div className="project" key={index}>
+                    <div className={`project project${index + 1}`} key={index}>
                         <div
                             className={`project__data ${clickedIndex === index ? "clicked" : ""}`}
                         >
