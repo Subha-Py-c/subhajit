@@ -21,7 +21,7 @@ const Loader = () => {
 
             // time durations
             const textDuration = 1;
-            // const sliderDuration = 1.42;
+            // const sliderDuration = 1.4;
             const sliderDuration = 0.7;
             // total = textDuration + sliderDuration
 
