@@ -137,10 +137,14 @@ const SkillsSection = () => {
                                     className="card-elem"
                                     data-value={elem.value}
                                     style={{
-                                        display:
+                                        display: "block",
+                                        opacity: activeIndex === index ? 1 : 0,
+                                        visibility:
                                             activeIndex === index
-                                                ? "block"
-                                                : "none",
+                                                ? "visible"
+                                                : "hidden",
+                                        position: "absolute", // else the cards will be placed at different positions
+                                        transition: "all 0.4s ease-out",
                                     }}
                                 >
                                     <p>
@@ -162,6 +166,8 @@ const SkillsSection = () => {
                                                     activeIndex === index
                                                         ? elem.value
                                                         : "0%",
+                                                transition:
+                                                    "width 0.4s ease-out",
                                             }}
                                         />
                                     </span>
@@ -205,6 +211,7 @@ const SkillsSection = () => {
                                     className="growth ta-ta"
                                     style={{
                                         width: getProgressWidth(skill.value),
+                                        transition: "width 0.4s ease-out",
                                     }}
                                 />
                             </span>

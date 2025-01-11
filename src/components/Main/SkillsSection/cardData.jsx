@@ -8,23 +8,21 @@ const cardElements = [
                     <u>Frontend:</u>
                 </em>
                 <br />
-                HTML, CSS, JavaScript, SASS, Tailwind CSS,{" "}
-                <b>jQuery, ReactJS</b>
+                HTML, CSS, JavaScript, SCSS, TailwindCSS, <b>React</b>
                 <br />
                 <br />
                 <em>
                     <u>Backend:</u>
                 </em>
                 <br />
-                Node.js, Express, <b>Flask</b>, SQL databases [SQLite,
-                PostgreSQL]
+                Node, Express, <b>Flask</b>, SQL [SQLite, MySQL, PostgreSQL]
                 <br />
                 <br />
             </>
         ),
     },
     {
-        title: "UI/UX",
+        title: "UI/UX Design",
         value: "70%",
         content: (
             <>
@@ -39,8 +37,7 @@ const cardElements = [
                     <u>Libraries:</u>
                 </em>
                 <br />
-                GSAP, AOS, tilt.js, Typed.js, LENIS(locomotive scroll),
-                Split-type
+                GSAP, Split-type, LENIS
                 <br />
                 <br />
             </>
@@ -56,15 +53,16 @@ const cardElements = [
                 </em>
                 <br />
                 Python, C, C++
-                <br />
-                <br />
-                <em>
+                {/* <br />
+                <br /> */}
+                {/* <em>
                     <u>Concepts:</u>
-                </em>
-                <br />
+                </em> */}
+                {/* <br />
                 Time &amp; Space Complexity, Function call Stack, Array, String,
                 Stack, Queue, LinkedList, Tree, Heap, Searching, Sorting,
-                Greedy, Trie
+                Greedy, Trie */}
+                {/* Instead add rankings */}
                 <br />
                 <br />
             </>
@@ -79,15 +77,14 @@ const cardElements = [
                     <u>Concepts:</u>
                 </em>
                 <br />
-                OOPs, DSA, Data Visualisation using numpy & matplotlib[small
-                scale], Web Development[flask]
+                OOPs, DSA, Web Development[flask]
                 <br />
                 <br />
                 <em>
                     <u>Some libraries I have used in personal projects:</u>
                 </em>
-                <br />• numpy, matplotlib, PIL, Tesseract, OpenCV, reportlab,
-                bs4, selenium etc
+                <br />
+                numpy, PIL, Tesseract, OpenCV, bs4, selenium ...
                 <br />
                 <br />
             </>
@@ -124,6 +121,7 @@ const cardElements = [
                 <em>
                     <u>Collaboration experience:</u>
                 </em>
+                <br />
                 <br />
                 Hactoberfest &apos; 24, College GDG Dev Team
                 <br />
