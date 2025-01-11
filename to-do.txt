@@ -1,5 +1,4 @@
 make responsive for larger screens
 Set to Auto height instead of FIxed
-address nav issues
 Add new project
 Profile Pic Should Appear on hover:dev

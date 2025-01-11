@@ -56,7 +56,7 @@ html.invert main.nav-open {
     transition-timing-function: cubic-bezier(0.7, 0, 0.2, 1);
 }
 .link--thebe.hover-effect::before {
-    transform-origin: 100% 50%;
+    transform-origin: 0% 50%;
     transform: scale3d(1, 2, 1);
     transition-timing-function: cubic-bezier(0.7, 0, 0.2, 1);
 }
@@ -66,8 +66,7 @@ html.invert main.nav-open {
     top: calc(100% + 4px);
     transform-origin: 100% 50%;
     transform: scale3d(0, 1, 1);
-    transition: transform 0.4s 0s cubic-bezier(0.2, 1, 0.8, 1);
-    /* 0.1 -> 0 */
+    transition: transform 0.4s 0.1s cubic-bezier(0.2, 1, 0.8, 1);
 }
 
 .link--thebe:hover::after {

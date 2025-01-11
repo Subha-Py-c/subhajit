@@ -2,29 +2,6 @@ import { useState, useEffect } from "react";
 import "./Navbar.css";
 import Header from "../Header/Header";
 
-/*
-const main = document.querySelector("main");
-if (isNavOpen) {
-    main.classList.add("nav-open");
-} else {
-    main.classList.remove("nav-open");
-}
-
-// ---------
-const liElements = document.querySelectorAll('.li');
-const sp = document.querySelectorAll('.sp');
-
-liElements.forEach((li, index) => {
-  li.addEventListener('mouseover', () => {
-    sp[index].classList.add('active');
-  });
-
-  li.addEventListener('mouseout', () => {
-    sp[index].classList.remove('active');
-  });
-});
-*/
-
 const Navbar = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
     const [activeIndices, setActiveIndices] = useState(new Set());
@@ -38,6 +15,18 @@ const Navbar = () => {
         { href: "#div3", text: "Projects" },
         { href: "#s4-contacts", text: "Contact" },
     ];
+
+    // Handle main element class toggling
+    useEffect(() => {
+        const main = document.querySelector("main");
+        if (main) {
+            if (isNavOpen) {
+                main.classList.add("nav-open");
+            } else {
+                main.classList.remove("nav-open");
+            }
+        }
+    }, [isNavOpen]);
 
     const toggleNav = (open) => {
         setIsNavOpen(open);
@@ -60,6 +49,7 @@ const Navbar = () => {
         }
     };
 
+    // Handle mobile click events
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth < 5000) {
@@ -108,14 +98,16 @@ const Navbar = () => {
                         <span
                             className={`sp ${hoveredIndex === index ? "active" : ""}`}
                         >
-                            <a href={item.href} className="link link--thebe">
+                            <a
+                                href={item.href}
+                                className={`link link--thebe ${hoveredIndex === index ? "hover-effect" : ""}`}
+                            >
                                 {item.text}
                             </a>
                         </span>
                     </div>
                 ))}
             </div>
-
             <Header isNavOpen={isNavOpen} toggleNav={toggleNav} />
         </div>
     );
