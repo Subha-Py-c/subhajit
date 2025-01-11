@@ -4,32 +4,25 @@ const ThanksSection = () => {
     const hiddenRef = useRef(null);
 
     useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
+        const obs = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add("show");
+                    entry.target.classList.add("shw");
                 } else {
-                    entry.target.classList.remove("show");
+                    entry.target.classList.remove("shw");
                 }
             });
         });
 
         // Observe the hidden element if it exists
         if (hiddenRef.current) {
-            observer.observe(hiddenRef.current);
+            obs.observe(hiddenRef.current);
         }
-
-        // Cleanup observer on component unmount
-        return () => {
-            if (hiddenRef.current) {
-                observer.unobserve(hiddenRef.current);
-            }
-        };
     }, []); // Empty dependency array since we only want to run this once,
 
     return (
         <section id="s5-thanks" className="sec5">
-            <div className="" ref={hiddenRef}>
+            <div className="hid" ref={hiddenRef}>
                 <h1>Thanks For Visiting</h1>
             </div>
             <div>
