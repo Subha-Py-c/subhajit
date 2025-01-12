@@ -6,6 +6,7 @@
 
 #s3-projects {
     height: auto;
+    /* border: 1px solid blue; */
 }
 
 .project-heading-container {
@@ -247,9 +248,6 @@ html.invert .project__image {
 }
 
 @media screen and (max-width: 1025px) {
-    #s3-projects {
-        padding-top: 30vh;
-    }
     #project-heading {
         font-size: xx-large;
     }

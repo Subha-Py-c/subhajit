@@ -34,7 +34,10 @@ const AcademicsSection = () => {
     }, []);
 
     return (
-        <section id="s-last" className="sec-L">
+        <section
+            id="s-last"
+            className="sec-L pb-[25vh] md:pb-[32vh] lg:pb-[40vh]"
+        >
             <div
                 itemScope
                 itemType="http://schema.org/EducationalOccupationalCredential"

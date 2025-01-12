@@ -3,12 +3,12 @@
     --left-dist: 60px;
     --radius: 10px;
     --institute__data__height: 114px;
-    /* 134.5px */
 }
 
 #s-last {
     position: relative;
-    height: 125vh;
+    height: auto;
+    /* border: 1px solid salmon; */
 }
 
 .academic__container {
@@ -20,10 +20,8 @@
 }
 
 .acad__header {
-    padding-top: 90px;
     margin: 30px;
     margin-top: 0;
-    padding-top: 130px;
     margin-left: var(--margin-left);
     font-size: var(--heading-text-size);
     font-weight: var(--heading-weight);
@@ -199,13 +197,6 @@
 }
 
 /* --------------------------{media queries}-------------------------------------------- */
-/* @media (width > 1536px) {
-  #s-last {
-    height: 110vh;
-  }
-} */
-
-/* lg */
 @media (width > 768px) and (width < 1025px) {
     :root {
         --top-val-b1: 146vh;
@@ -223,15 +214,12 @@
         padding-bottom: 10px;
         pointer-events: all !important;
     }
-    #s-last {
-        height: 95vh;
-    }
+
     .hidden {
         font-size: 0.6em;
     }
 }
 
-/* md */
 @media (max-width: 768px) {
     :root {
         --top-val-b1: 146vh;
@@ -248,9 +236,7 @@
         padding-left: var(--left-dist);
         padding-bottom: 10px;
     }
-    #s-last {
-        height: 115vh;
-    }
+
     .hidden {
         font-size: 0.6em;
     }
@@ -274,9 +260,6 @@
         --padding-left-val: 30px;
         --left-val: 25px;
         --inc: 85px;
-    }
-    #s-last {
-        height: 120vh;
     }
 
     .ball-pointer {

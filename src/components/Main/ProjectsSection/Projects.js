@@ -32,7 +32,8 @@ const projects = [
     {
         title: "Portfolio",
         summary: "This portfolio website you are in right now.",
-        description: "A portfolio Website to easily introduce me to everyone.",
+        description:
+            "A portfolio Website to easily introduce myself to everyone.",
         type: "Solo Project",
         technologies: ["React", "TailwindCSS", "GSAP", "figma"],
         link: "https://github.com/Subha-Py-c/subhajit",

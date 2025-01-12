@@ -21,7 +21,10 @@ const ThanksSection = () => {
     }, []); // Empty dependency array since we only want to run this once,
 
     return (
-        <section id="s5-thanks" className="sec5">
+        <section
+            id="s5-thanks"
+            className="sec5 pt-[25vh] pb-[50vh] md:pb-[32vh] lg:pb-[40vh]"
+        >
             <div className="hid" ref={hiddenRef}>
                 <h1>Thanks For Visiting</h1>
             </div>

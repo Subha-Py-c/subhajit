@@ -65,7 +65,10 @@ const ContactSection = () => {
     }, []);
 
     return (
-        <section id="s4-contacts" className="sec4">
+        <section
+            id="s4-contacts"
+            className="sec4 pb-[25vh] md:pb-[32vh] lg:pb-[40vh]"
+        >
             <h4 className="expC">
                 <span
                     className="underline-sp headerSpan header__texts inline"
@@ -122,7 +125,7 @@ const ContactSection = () => {
                         </span>
                         {/* Message box */}
                         <div
-                            className="box ta-taX flex-col"
+                            className="box flex-col"
                             style={{ display: isFormVisible ? "flex" : "none" }}
                         >
                             <form
@@ -208,7 +211,7 @@ const ContactSection = () => {
                         target="_blank"
                         href="https://drive.google.com/file/d/1UIkDtRNXdytYzERmwnCE-35yjhMJ2WXD/view?usp=sharing"
                     >
-                        •Curriculam Vitae•
+                        Curriculam Vitae
                     </a>
                 </div>
             </div>

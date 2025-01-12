@@ -80,7 +80,10 @@ const ProjectsSection = () => {
     }, []);
 
     return (
-        <section id="s3-projects" className="sec3">
+        <section
+            id="s3-projects"
+            className="sec3 pb-[25vh] md:pb-[32vh] lg:pb-[40vh]"
+        >
             {/* anchor div */}
             <div id="div3" style={{ width: 0, height: 0, opacity: 0 }}></div>
 

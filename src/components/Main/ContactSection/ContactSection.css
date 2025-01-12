@@ -8,19 +8,13 @@
 
 #s4-contacts {
     box-sizing: border-box;
-    padding-top: 8vh;
-    margin-top: 50vh;
-    margin-bottom: 30vh;
-    height: 100vh;
-    /* border: 3px solid green; */
+    height: auto;
 }
 
 #s5-thanks {
-    height: 40vh;
-    font-family: "MilitaryScribe", sans-serif;
+    height: auto;
     font-size: 1.3em;
     text-decoration: none !important;
-    padding-bottom: 70vh;
 }
 
 .expC {
@@ -295,13 +289,6 @@
         padding-right: 50px;
     }
 
-    #s4-contacts {
-        height: 100vh;
-        padding-top: 4vh;
-        margin-bottom: 0vh;
-        margin-top: 20vh;
-    }
-
     #contact-heading {
         font-size: xx-large;
     }
@@ -354,11 +341,5 @@
             width: 100px;
             height: 30px;
         }
-    }
-}
-
-@media (max-width: 768px) {
-    #s4-contacts {
-        height: 130vh;
     }
 }

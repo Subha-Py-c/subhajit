@@ -4,7 +4,7 @@ import "./ExperienceSection.css";
 
 const ExperienceSection = () => {
     return (
-        <section className="experience-section relative w-[100vw] h-fit pt-[0vh] md:pt-[7.5vh] lg:pt-[15vh] pb-[10vh] md:pb-[15vh] lg:pb-[25vh]">
+        <section className="experience-section relative w-[100vw] h-fit pt-[0vh] md:pt-[7.5vh] lg:pt-[15vh] pb-[25vh] md:pb-[32vh] lg:pb-[40vh]">
             <h4 id="EX">
                 <span className="exps underline-sp headerSpan header__texts experience--heading">
                     Experience
@@ -20,7 +20,7 @@ const ExperienceSection = () => {
                         />
                     </div>
                     <div className="work-position w-fit flex-1 px-2">
-                        GDSC[Google Developer Student Club] IIEST SHibpur,
+                        GDSC[Google Developer Student Club] IIEST Shibpur,
                         Development Team Member
                     </div>
                     <div className="duration w-fit px-2 max-w-[80px] md:max-w-[180px] lg:max-w-fit">
@@ -36,7 +36,7 @@ const ExperienceSection = () => {
                         />
                     </div>
                     <div className="work-position w-fit flex-1 px-2">
-                        SWOC[Social Winter Of Code] Contributor
+                        SWOC[Social Winter Of Code] Contributor, OpenSource
                     </div>
                     <div className="duration w-fit px-2 max-w-[80px] md:max-w-[180px] lg:max-w-fit">
                         December 2024
@@ -51,7 +51,8 @@ const ExperienceSection = () => {
                         />
                     </div>
                     <div className="work-position w-fit flex-1 px-2">
-                        Completed HactoberFest|24 OpenSource Contribution Event
+                        Completed HactoberFest&apos;24 OpenSource Contribution
+                        Event
                     </div>
                     <div className="duration w-fit px-2 max-w-[80px] md:max-w-[180px] lg:max-w-fit">
                         October 2024

@@ -11,13 +11,13 @@
 /* ------- SKILLS ------------------------------------------------------ */
 
 #s2-skills {
-    height: 125vh;
+    height: 120vh;
+    /* border: 1px solid black; */
 }
 
 .d3 {
     position: relative;
     margin: 0;
-    padding-top: 90px;
 }
 
 #SK,
@@ -278,17 +278,17 @@ html.invert .inverse2 {
 }
 
 /* ------------------------{MEDIA QUERY}-------------------------------------------- */
-@media (width > 768px) and (width < 1025px) {
-    #s2-skills {
-        height: 100vh;
-    }
-
+@media screen and (max-width: 1025px) {
     :root {
         --card-container-width: 150px;
         --card-container-height: 350px;
         --margin-dist: 150px;
         --card-font-size: 0.8em;
         --s-list-font-size: 1.2em;
+    }
+
+    #s2-skills {
+        height: auto;
     }
 
     .skill-wrapper {
@@ -300,31 +300,11 @@ html.invert .inverse2 {
     }
 }
 
-/* sm */
-@media (max-width: 768px) {
-    #s2-skills {
-        height: 140vh;
-    }
-
-    :root {
-        --card-container-width: 150px;
-        --card-container-height: 350px;
-        --margin-dist: 150px;
-        --card-font-size: 0.8em;
-        --s-list-font-size: 1.2em;
-    }
-
-    .skill-wrapper {
-        display: none;
-    }
-
-    .skill__container {
-        display: grid;
-    }
-
+@media screen and (max-width: 768px) {
     #skill {
         font-size: xx-large;
     }
+
     #SS {
         margin-bottom: 3vh;
     }

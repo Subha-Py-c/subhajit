@@ -197,7 +197,10 @@ const SkillsSection = () => {
                 </div>
 
                 {/* Mobile View */}
-                <div className="skill__container" ref={skillContainerRef}>
+                <div
+                    className="skill__container pb-[25vh] md:pb-[32vh] lg:pb-[40vh]"
+                    ref={skillContainerRef}
+                >
                     {mobileSkills.map((skill, index) => (
                         <div
                             key={index}
