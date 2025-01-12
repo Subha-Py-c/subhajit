@@ -4,7 +4,7 @@ const projects = [
         summary: "A neat platform for reading news.",
         description:
             "A rss reader with clutterless UI to read news without advertisements, along with summary of each news available. Many other mindblowing features available.",
-        type: "Solo Project",
+        type: "Personal Project",
         technologies: [
             "Backend: flask, SQL(postgresql + sqlite)",
             "Frontend: React, TailwindCSS, figma",
@@ -16,10 +16,10 @@ const projects = [
     },
     {
         title: "encryptease",
-        summary: "Encrypt your data easily. (fun app)",
+        summary: "Encrypt messages or files easily.",
         description:
             "A powerful webapp to encrypt messages and files easily that are highly secure and cannot be decrypted without the encryption KEY.",
-        type: "Solo Project",
+        type: "Personal Project",
         technologies: [
             "flask",
             "Cryptography Module (python)",
@@ -31,19 +31,18 @@ const projects = [
     },
     {
         title: "Portfolio",
-        summary: "This portfolio website you are in right now.",
+        summary: "This portfolio website you are visiting right now.",
         description:
             "A portfolio Website to easily introduce myself to everyone.",
-        type: "Solo Project",
+        type: "Personal Project",
         technologies: ["React", "TailwindCSS", "GSAP", "figma"],
         link: "https://github.com/Subha-Py-c/subhajit",
         image: "/images/projects-imgs/portfolio.jpeg",
     },
     {
         title: "opencanvas.blog",
-        summary: "A retro blogging site for everyone.",
-        description:
-            "Currently IN MAKING. various blogs and journals will be published here later on.",
+        summary: "A retro site for any type of written ART.",
+        description: "Currently IN MAKING.",
         type: "Collaborative project",
         technologies: [
             // "Mongo - Express - React - Node [MERN]",
@@ -56,19 +55,19 @@ const projects = [
     },
     {
         title: "Zentunes",
-        summary: "Ear-soothing music anywhere.",
+        summary: "Beautiful collection of some special genres of Music.",
         description:
             "A music streaming platform for retro lovers. Some development is yet to do, sorry!!",
-        type: "Solo Project",
+        type: "Personal Project",
         technologies: ["HTML", "CSS", "JavaScript", "SCSS"],
         link: "https://zentunes.netlify.app",
         image: "/images/projects-imgs/krishisearch.jpeg",
     },
     {
         title: "Maze Battle Game",
-        summary: "Player vs CPU maze runnig game",
+        summary: "Player vs CPU maze running game",
         description: "",
-        type: "Solo Project",
+        type: "Personal Project",
         technologies: ["JavaScript", "CSS", "HTML"],
         link: "https://mazebattle.netlify.app",
         image: "/images/projects-imgs/relaxingmelody.jpeg",
