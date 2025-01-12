@@ -15,7 +15,7 @@ const projects = [
         image: "/images/projects-imgs/lumifeed.jpeg",
     },
     {
-        title: "encryptease",
+        title: "EncryptEase",
         summary: "Encrypt messages or files easily.",
         description:
             "A powerful webapp to encrypt messages and files easily that are highly secure and cannot be decrypted without the encryption KEY.",
@@ -50,7 +50,7 @@ const projects = [
             // "websocket",
             "...",
         ],
-        link: "https://dream-world-coder.github.io/opencanvas/hero/",
+        link: "https://opencanvas/hero/",
         image: "/images/projects-imgs/opencanvas.jpeg",
     },
     {
