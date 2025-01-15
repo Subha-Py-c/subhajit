@@ -1,0 +1,221 @@
+import { useEffect, useRef, useState } from "react";
+// import "./ProjectsSection.css";
+import "./newP.css";
+import projects from "./Projects";
+import { ExternalLink, ArrowUpRight } from "lucide-react";
+
+const ProjectsSection = () => {
+    const projectWrapperRef = useRef(null);
+    const [clickedIndex, setClickedIndex] = useState(null);
+    const [activeIndex, setActiveIndex] = useState(null);
+
+    useEffect(() => {
+        const projectWrapper = projectWrapperRef.current;
+        const smallCards = projectWrapper.querySelectorAll(".project");
+        const projectImgs = projectWrapper.querySelectorAll(
+            ".project__image img",
+        );
+        const projectChildren = [...projectImgs];
+        let initialPositions = new Map();
+        const coeff = 100;
+        const coeff2 = 0.05;
+
+        // Mouse move animation for desktop
+        const handleMouseMove = (ev) => {
+            if (
+                window.innerWidth > 1025 &&
+                !/Mobi|Android/i.test(navigator.userAgent)
+            ) {
+                smallCards.forEach((card, index) => {
+                    const baseTransform = `${ev.pageX / coeff}px, ${ev.pageY / coeff}px, 0`;
+                    const extraOffset = index === 3 ? " - 10.33rem" : "";
+                    card.style.transform = `translate3d(calc(${baseTransform}${extraOffset}))`;
+                });
+            }
+        };
+
+        // Parallax scroll effect
+        const parallaxScrollHandler = () => {
+            projectChildren.forEach((child) => {
+                const initialTop = initialPositions.get(child);
+                const offsetY = (window.scrollY - initialTop) * coeff2;
+                child.style.transform = `translate3d(0, ${offsetY * 1.618}px, 0)`;
+            });
+        };
+
+        const startParallax = () => {
+            projectChildren.forEach((child) => {
+                initialPositions.set(
+                    child,
+                    child.getBoundingClientRect().top + window.scrollY,
+                );
+            });
+            window.addEventListener("scroll", parallaxScrollHandler);
+        };
+
+        const stopParallax = () => {
+            window.removeEventListener("scroll", parallaxScrollHandler);
+        };
+
+        // Intersection Observer
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        startParallax();
+                    } else {
+                        stopParallax();
+                    }
+                });
+            },
+            { threshold: 0.1 },
+        );
+
+        document.addEventListener("mousemove", handleMouseMove);
+        observer.observe(projectWrapper);
+        startParallax();
+
+        return () => {
+            // so when is it gonna removed?
+            document.removeEventListener("mousemove", handleMouseMove);
+            stopParallax();
+            observer.disconnect();
+        };
+    }, []);
+
+    return (
+        <section
+            id="s3-projects"
+            className="sec3 pb-[25vh] md:pb-[32vh] lg:pb-[40vh]"
+        >
+            {/* anchor div */}
+            <div id="div3" style={{ width: 0, height: 0, opacity: 0 }}></div>
+
+            <h4 id="EN" className="project-heading-container">
+                <span
+                    id="project-heading"
+                    className="exp underline-sp headerSpan header__texts"
+                    style={{ display: "inline" }}
+                >
+                    Selected Projects
+                </span>
+            </h4>
+
+            <div className="projects-wrapper full" ref={projectWrapperRef}>
+                {/* {projects.map((project, index) => (
+                    <div className={`project project${index + 1}`} key={index}>
+                        <div
+                            className={`project__data ${clickedIndex === index ? "clicked" : ""}`}
+                        >
+                            <h2>{project.title}</h2>
+                            <details>
+                                <summary>{project.summary}</summary>
+                                {project.description}
+                                <em>-- {project.type}</em>
+                                Technologies used:
+                                <ul>
+                                    {project.technologies.map((tech, i) => (
+                                        <li key={i}>{tech}</li>
+                                    ))}
+                                </ul>
+                            </details>
+                            <a
+                                rel="noopener"
+                                target="_blank"
+                                href={project.link}
+                            >
+                                visit
+                                <img
+                                    src="/icons/open-in-tab.svg"
+                                    alt="open in new tab"
+                                />
+                            </a>
+                        </div>
+                        <div
+                            className="project__image ta-ta"
+                            onClick={() => setClickedIndex(index)}
+                        >
+                            <img src={project.image} alt={project.title} />
+                        </div>
+                    </div>
+                ))} */}
+                <div className="space-y-8">
+                    {projects.map((project, idx) => (
+                        <div
+                            key={project.title}
+                            className="group relative border-t border-white/10 pt-8 pb-16 px-4 md:px-8 cursor-pointer overflow-hidden"
+                            onMouseEnter={() => setActiveIndex(idx)}
+                            onMouseLeave={() => setActiveIndex(null)}
+                        >
+                            <div className="grid md:grid-cols-2 gap-8">
+                                {/* Left Content */}
+                                <div className="space-y-6">
+                                    <div className="flex items-start justify-between">
+                                        <h2 className="text-3xl md:text-4xl font-light group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r from-blue-400 to-purple-400 transition-all duration-500">
+                                            {project.title}
+                                        </h2>
+                                        <a
+                                            href={project.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 hover:scale-110 transform"
+                                        >
+                                            <ArrowUpRight className="w-6 h-6" />
+                                        </a>
+                                    </div>
+
+                                    <p className="text-lg text-white/60 font-light max-w-md">
+                                        {project.summary}
+                                    </p>
+
+                                    <div className="space-y-4 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100">
+                                        <p className="text-sm text-white/80">
+                                            {project.description}
+                                        </p>
+
+                                        <div className="flex flex-wrap gap-3">
+                                            {project.technologies.map(
+                                                (tech, i) => (
+                                                    <span
+                                                        key={i}
+                                                        className="px-4 py-2 text-sm border border-white/20 rounded-full hover:bg-white/5 transition-colors"
+                                                    >
+                                                        {tech}
+                                                    </span>
+                                                ),
+                                            )}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Right Content - Image */}
+                                <div className="relative h-64 md:h-96 overflow-hidden rounded-lg">
+                                    <div
+                                        className="absolute inset-0 bg-cover bg-center transform transition-transform duration-700 group-hover:scale-110"
+                                        style={{
+                                            backgroundImage: `url(${project.image})`,
+                                            backgroundPosition: "center",
+                                        }}
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                </div>
+                            </div>
+
+                            {/* Animated Line */}
+                            <div className="absolute bottom-0 left-0 w-full h-[1px] bg-white/10">
+                                <div className="h-full bg-gradient-to-r from-blue-400 to-purple-400 w-0 group-hover:w-full transition-all duration-700" />
+                            </div>
+
+                            {/* Project Type Badge */}
+                            <div className="absolute top-8 right-8 px-4 py-2 border border-white/20 rounded-full text-sm opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200">
+                                {project.type}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default ProjectsSection;

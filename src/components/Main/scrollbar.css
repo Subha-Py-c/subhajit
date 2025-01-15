@@ -6,12 +6,18 @@
     /* display: none !important; */
     width: 10px !important;
 }
-#root::-webkit-scrollbar {
+#root::-webkit-scrollbar,
+#root::-moz-scrollbar,
+#root::-o-scrollbar {
     width: 0 !important;
 }
-body::-webkit-scrollbar {
+body::-webkit-scrollbar,
+body::-moz-scrollbar,
+body::-o-scrollbar {
     width: 0 !important;
 }
-html::-webkit-scrollbar {
+html::-webkit-scrollbar,
+html::-moz-scrollbar,
+html::-o-scrollbar {
     width: 0 !important;
 }

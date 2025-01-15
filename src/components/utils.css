@@ -1,3 +1,8 @@
+mark {
+    background: #ff0;
+    color: #000;
+}
+
 @keyframes underline {
     0% {
         width: 0;
@@ -102,23 +107,6 @@
     justify-content: center;
 }
 
-.flex-col {
-    flex-direction: column;
-}
-
-.align-center {
-    align-items: center;
-}
-
-.align-start {
-    align-items: flex-start;
-}
-
-/* text-align */
-.text-center {
-    text-align: center;
-}
-
 .f-gap-1 {
     gap: calc(0.5rem);
 }
@@ -127,48 +115,14 @@
     gap: calc(1rem);
 }
 
-.fixed {
-    position: fixed;
-}
-
-.absolute {
-    position: absolute;
-}
-
-.relative {
-    position: relative;
-}
-
-.block {
-    display: block;
-}
-
-/* centering */
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .cen {
     margin-left: auto;
     margin-right: auto;
 }
 
-/* grid */
-.grid {
-    display: grid;
-}
-
 .grid-col-3 {
     grid-template-columns: repeat(3, 1fr);
 }
-
-.p-5 {
-    padding: 5rem;
-}
-
 .p-top-1 {
     padding-top: 1rem;
 }
@@ -183,26 +137,6 @@
 
 .p-top-4 {
     padding-top: 4rem;
-}
-
-/* border */
-/* .border{border: 1px solid var(--border-color);} */
-.border {
-    border: 1px solid;
-}
-
-/* border-radius */
-.rounded {
-    border-radius: 0.5rem;
-}
-
-/* text-decoration */
-.dotted {
-    text-decoration: dotted;
-}
-
-.border-bottom {
-    border-bottom: 1px solid var(--border-color);
 }
 
 /* a tags */
@@ -334,9 +268,7 @@ select {
 }
 
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html input[type="button"] {
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
@@ -380,27 +312,12 @@ fieldset {
     padding: 0.35em 0.625em 0.75em;
 }
 
-legend {
-    border: 0;
-    padding: 0;
-}
-
 textarea {
     overflow: auto;
 }
 
 optgroup {
     font-weight: 700;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-td,
-th {
-    padding: 0;
 }
 
 .col-1 {
@@ -783,11 +700,6 @@ body {
     margin: 0;
 }
 
-audio:not([controls]) {
-    display: none;
-    height: 0;
-}
-
 [hidden],
 template {
     display: none;
@@ -813,11 +725,6 @@ strong {
 
 dfn {
     font-style: italic;
-}
-
-mark {
-    background: #ff0;
-    color: #000;
 }
 
 small {

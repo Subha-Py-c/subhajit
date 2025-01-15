@@ -89,7 +89,12 @@ html {
     --cursor-z-index: 9999999999;
     --svg-z-index: 9999999;
 }
-#root,
+#root {
+    background-color: var(--bg3);
+    color: var(--tc);
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+}
 body {
     background-color: var(--bg3);
     color: var(--tc);
@@ -97,7 +102,6 @@ body {
     padding: 0;
     margin: 10px;
     overflow-x: hidden;
-    overflow-y: scroll;
     scroll-behavior: smooth;
 }
 

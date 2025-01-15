@@ -1,0 +1,38 @@
+#s3-projects {
+    height: auto;
+    /* border: 1px solid blue; */
+}
+
+.project-heading-container {
+    position: relative;
+    margin: 0;
+    padding-top: 0px;
+    width: 100%;
+}
+
+.exp {
+    margin: 200px 30px 30px var(--margin-left);
+    font-size: var(--heading-text-size);
+    font-weight: var(--heading-weight);
+}
+summary {
+    margin-bottom: 10px;
+}
+details {
+    line-height: 1.5rem;
+}
+@media screen and (min-width: 1025px) {
+    details {
+        line-height: 1.1rem;
+    }
+}
+/* ------------------------ */
+.projects-wrapper {
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    margin-top: 6vh;
+    width: fit-content !important;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
