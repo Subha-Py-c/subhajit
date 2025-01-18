@@ -103,21 +103,20 @@
             object-fit: cover;
             border-radius: 10px;
             z-index: 15;
-            /* border: 1px solid #afafaf; */
         }
     }
 
     & .card1 {
         z-index: 10;
-        transform: rotateZ(-5deg) scaleY(0);
+        transform: rotateZ(-5deg);
     }
     & .card2 {
         z-index: 9;
-        transform: translateY(-20px) scaleY(0);
+        transform: translateY(-20px);
     }
     & .card3 {
         z-index: 8;
-        transform: rotateZ(5deg) scaleY(0);
+        transform: rotateZ(5deg);
     }
 
     /* pri studies */
@@ -140,32 +139,32 @@
 
 /* pri 1 */
 .acad__institutions:nth-child(1):hover .firstcard2 {
-    transform: translateY(-20px) scaleY(1);
+    transform: translateY(-20px);
     opacity: 1;
 }
 
 /* bhs 1 */
 .acad__institutions:nth-child(2):hover .firstcard1 {
-    transform: rotateZ(-5deg) scaleY(1);
+    transform: rotateZ(-5deg);
     opacity: 1;
 }
 
 /* bhs2 */
 .acad__institutions:nth-child(3):hover .secondcard2 {
-    transform: translateY(-20px) scaleY(1);
+    transform: translateY(-20px);
     opacity: 1;
 }
 
 /* bhs3 */
 .acad__institutions:nth-child(3):hover .firstcard3 {
     transition-delay: 0.05s;
-    transform: translateX(-30px) rotateZ(0deg) scaleY(1);
+    transform: translateX(-30px) rotateZ(0deg);
     opacity: 1;
 }
 
 /* cclg 1 */
 .acad__institutions:nth-child(4):hover .secondcard3 {
-    transform: rotateZ(5deg) scaleY(1) translateX(30px);
+    transform: rotateZ(5deg) translateX(30px);
     opacity: 1;
     width: 250px;
     height: 166.5px;
@@ -175,14 +174,14 @@
 }
 .acad__institutions:nth-child(4):hover .secondcard1 {
     transition-delay: 0.1s;
-    transform: rotateZ(-5deg) scaleY(1);
+    transform: rotateZ(-5deg);
     opacity: 1;
     width: 250px;
     height: 166.5px;
 }
 .acad__institutions:nth-child(4):hover .thirdcard2 {
     transition-delay: 0.2s;
-    transform: translateY(-20px) scaleY(1) translateX(-30px);
+    transform: translateY(-20px) translateX(-30px);
     opacity: 1;
     width: 250px;
     height: 166.5px;
