@@ -21,18 +21,37 @@ summary {
 details {
     line-height: 1.5rem;
 }
-@media screen and (min-width: 1025px) {
-    details {
-        line-height: 1.1rem;
-    }
-}
-/* ------------------------ */
+
 .projects-wrapper {
-    /* border: 1px solid red; */
     box-sizing: border-box;
     margin-top: 6vh;
     width: fit-content !important;
     margin-left: 10vw;
     margin-right: 10vw;
     transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media screen and (min-width: 1025px) {
+    details {
+        line-height: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #project-heading {
+        font-size: xx-large;
+    }
+    .projects-wrapper {
+        margin-top: 6vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects-wrapper {
+        margin-top: 2vh;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
 }

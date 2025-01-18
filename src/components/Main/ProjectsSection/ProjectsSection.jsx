@@ -82,7 +82,7 @@ const ProjectsSection = () => {
                 {projects.map((project, idx) => (
                     <div
                         key={project.title}
-                        className="group relative border-b border-slate-700/30 pt-8 pb-16 px-4 md:px-8 cursor-pointer overflow-hidden hover:bg-[#F2E5BF]/20"
+                        className="group relative border-b border-slate-700/30 pt-8 pb-16 px-4 md:px-8 cursor-default overflow-hidden hover:bg-[#F2E5BF]/20"
                         onMouseEnter={() => setActiveIndex(idx)}
                         onMouseLeave={() => setActiveIndex(null)}
                     >
@@ -109,7 +109,7 @@ const ProjectsSection = () => {
                                     </a>
                                 </div>
 
-                                <p className="text-lg text-black/60 font-light max-w-md">
+                                <p className="text-lg text-black/60 font-medium max-w-md">
                                     {project.summary}
                                 </p>
 
@@ -132,7 +132,7 @@ const ProjectsSection = () => {
                             </div>
 
                             {/* Right Content - Image */}
-                            <div className="relative h-64 md:h-96 overflow-hidden rounded-lg ta-ta">
+                            <div className="relative mt-4 h-64 md:h-96 overflow-hidden rounded-lg ta-ta">
                                 <div className="absolute flex items-center justify-center inset-0 transform transition-all duration-700 overflow-hidden">
                                     <img
                                         src={project.image}

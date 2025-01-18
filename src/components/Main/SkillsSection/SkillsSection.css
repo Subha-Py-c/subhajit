@@ -74,9 +74,8 @@ html.invert mark {
 
 /* ------- for phone ----------------------------------------------- */
 .skill__container {
-    /* border: 1px solid; */
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10vw;
+    margin-right: 10vw;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -86,8 +85,10 @@ html.invert mark {
     display: none;
 }
 
-.skill__container .skill__box svg {
+.skill__container .skill__box img {
     display: block;
+    width: 60%;
+    height: 60%;
 }
 
 .skill__box {
@@ -309,8 +310,9 @@ html.invert .inverse2 {
         margin-bottom: 3vh;
     }
 
-    #SK > div.skill__container > div > img {
-        width: 100px;
-        height: 100px;
+    .skill__container .skill__box img {
+        display: block;
+        width: 40%;
+        height: 40%;
     }
 }

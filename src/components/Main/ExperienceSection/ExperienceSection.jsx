@@ -1,5 +1,3 @@
-import "./ExperienceSection.css";
-
 // the classes are slightly different so efficient Mapping is not possible
 
 const ExperienceSection = () => {
