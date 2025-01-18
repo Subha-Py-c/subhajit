@@ -7,58 +7,58 @@ const ProjectsSection = () => {
     const projectWrapperRef = useRef(null);
     const [activeIndex, setActiveIndex] = useState(null);
 
-    // useEffect(() => {
-    //     const projectWrapper = projectWrapperRef.current;
-    //     const projectImgs = projectWrapper.querySelectorAll(".parallaxImgs");
-    //     const projectChildren = [...projectImgs];
-    //     let initialPositions = new Map();
-    //     const coeff2 = 0.05;
+    useEffect(() => {
+        const projectWrapper = projectWrapperRef.current;
+        const projectImgs = projectWrapper.querySelectorAll(".parallaxImgs");
+        const projectChildren = [...projectImgs];
+        let initialPositions = new Map();
+        const coeff2 = 0.05;
 
-    //     // Parallax scroll effect
-    //     const parallaxScrollHandler = () => {
-    //         projectChildren.forEach((child) => {
-    //             const initialTop = initialPositions.get(child);
-    //             const offsetY = (window.scrollY - initialTop) * coeff2;
-    //             child.style.transform = `translate3d(0, ${offsetY * 1.618}px, 0)`;
-    //         });
-    //     };
+        // Parallax scroll effect
+        const parallaxScrollHandler = () => {
+            projectChildren.forEach((child) => {
+                const initialTop = initialPositions.get(child);
+                const offsetY = (window.scrollY - initialTop) * coeff2;
+                child.style.transform = `translate3d(0, ${offsetY * 1.618}px, 0)`;
+            });
+        };
 
-    //     const startParallax = () => {
-    //         projectChildren.forEach((child) => {
-    //             initialPositions.set(
-    //                 child,
-    //                 child.getBoundingClientRect().top + window.scrollY,
-    //             );
-    //         });
-    //         window.addEventListener("scroll", parallaxScrollHandler);
-    //     };
+        const startParallax = () => {
+            projectChildren.forEach((child) => {
+                initialPositions.set(
+                    child,
+                    child.getBoundingClientRect().top + window.scrollY,
+                );
+            });
+            window.addEventListener("scroll", parallaxScrollHandler);
+        };
 
-    //     const stopParallax = () => {
-    //         window.removeEventListener("scroll", parallaxScrollHandler);
-    //     };
+        const stopParallax = () => {
+            window.removeEventListener("scroll", parallaxScrollHandler);
+        };
 
-    //     // Intersection Observer
-    //     const obsv = new IntersectionObserver(
-    //         (entries) => {
-    //             entries.forEach((entry) => {
-    //                 if (entry.isIntersecting) {
-    //                     startParallax();
-    //                 } else {
-    //                     stopParallax();
-    //                 }
-    //             });
-    //         },
-    //         { threshold: 0.1 },
-    //     );
+        // Intersection Observer
+        const obsv = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        startParallax();
+                    } else {
+                        stopParallax();
+                    }
+                });
+            },
+            { threshold: 0.1 },
+        );
 
-    //     obsv.observe(projectWrapper);
-    //     startParallax();
+        obsv.observe(projectWrapper);
+        startParallax();
 
-    //     return () => {
-    //         stopParallax();
-    //         obsv.disconnect();
-    //     };
-    // }, []);
+        return () => {
+            stopParallax();
+            obsv.disconnect();
+        };
+    }, []);
 
     return (
         <section

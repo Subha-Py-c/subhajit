@@ -3,7 +3,7 @@ const academicsData = [
         level: "Pimary Studies",
         institution: "Narendranath School",
         year: "2010-2015",
-        grade: " A+",
+        // grade: " A+",
         images: [
             {
                 src: "/images/girl.webp",
@@ -15,7 +15,7 @@ const academicsData = [
         level: "Secondary Education",
         institution: "Bishnupur High School",
         year: "2015-2021",
-        grade: " 96.42%",
+        // grade: " 96.42%",
         images: [
             {
                 src: "/images/bhs3.gif",
@@ -27,7 +27,7 @@ const academicsData = [
         level: "Higher Secondary Education",
         institution: "Bishnupur High School",
         year: "2021-2023",
-        grade: " 88%",
+        // grade: " 88%",
         images: [
             {
                 src: "/images/bhs2.jpg",
@@ -43,7 +43,7 @@ const academicsData = [
         level: "B.Tech in Information Technology",
         institution: "IIEST Shibpur",
         year: "2023-present",
-        grade: " 8.46",
+        // grade: " 8.46",
         images: [
             {
                 src: "/images/iiest1.jpeg",

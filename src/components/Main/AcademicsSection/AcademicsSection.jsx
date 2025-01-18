@@ -88,12 +88,12 @@ const AcademicsSection = () => {
                                         </span>
                                     </span>
                                     <br />
-                                    <span className="s2 relative">
+                                    {/* <span className="s2 relative">
                                         <span className="s3 relative">
                                             <em className="grade">Grade:</em>
                                             {academic.grade}
                                         </span>
-                                    </span>
+                                    </span> */}
                                 </div>
                                 <div
                                     className="ball-pointer"
