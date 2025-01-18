@@ -89,7 +89,7 @@ const ProjectsSection = () => {
                         <div className="grid md:grid-cols-2 gap-8">
                             {/* Left Content */}
                             <div className="space-y-6">
-                                <div className="flex items-start justify-between">
+                                <div className="flex items-center justify-between md:justify-start gap-0 md:gap-16">
                                     <h2 className="text-3xl md:text-4xl font-[400] font-serif group-hover:bg-clip-text transition-all duration-500">
                                         {project.title}
                                     </h2>
@@ -97,7 +97,7 @@ const ProjectsSection = () => {
                                         href={project.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="opacity-100 md:opacity-0 group-hover:opacity-100
+                                        className="block opacity-100 md:opacity-0 group-hover:opacity-100
                                         transition-all duration-500 transform
                                         flexed f-gap-1 rounded-full
                                         box-content px-3 py-1
@@ -122,7 +122,7 @@ const ProjectsSection = () => {
                                         {project.technologies.map((tech, i) => (
                                             <span
                                                 key={i}
-                                                className="px-4 py-2 text-sm border border-[#CB6040] bg-[#FD8B51] rounded-full hover:bg-[#FD8B51]/75 transition-colors"
+                                                className="px-4 py-2 text-sm border border-[#00ac94] bg-[#00ac94]/60 rounded-full hover:bg-[#00ac94]/100 transition-colors"
                                             >
                                                 {tech}
                                             </span>
