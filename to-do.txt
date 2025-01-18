@@ -1,6 +1,2 @@
--- make responsive for larger screens
--- Set to Auto height instead of FIxed -- DONE
--- Add new project
--- NavBar fix -- DONE
 Profile Pic Should Appear on hover:dev
 Loading Problem

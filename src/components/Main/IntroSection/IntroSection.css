@@ -64,16 +64,6 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    #s1 > div > div > div > p.hero-p.col-12.is-mb-ms.introduction {
-        margin-top: 10vh;
-    }
-    #profileImg {
-        width: 90px;
-        height: 120px;
-    }
-}
-
 .college_url {
     text-decoration: underline;
     text-decoration-style: dashed;
@@ -183,10 +173,22 @@ h2.hero-h2 {
     text-align: right;
     white-space: nowrap;
 }
+@media screen and (min-width: 1540px) {
+    h2.hero-h2 {
+        font-size: 18vw;
+    }
+}
 
 @media screen and (max-width: 768px) {
     h2.hero-h2 {
         font-size: 19vw;
+    }
+    #s1 > div > div > div > p.introduction {
+        margin-top: 10vh;
+    }
+    #profileImg {
+        width: 90px;
+        height: 120px;
     }
 }
 
@@ -201,7 +203,7 @@ p.hero-p {
     font-size: 60px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1540px) {
     p.hero-p {
         font-size: 40px;
     }

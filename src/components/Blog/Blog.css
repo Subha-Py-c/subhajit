@@ -47,7 +47,20 @@ a.blog:hover svg {
     }
 }
 
-@media (width > 768px) {
+@media (min-width: 1536px) {
+    a.blog {
+        box-sizing: content-box;
+        padding: 3px 10px;
+        font-size: 1.25rem;
+
+        & svg {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+    }
+}
+
+@media (min-width: 769px) {
     a.blog {
         font-size: 1.25rem;
 
@@ -58,7 +71,7 @@ a.blog:hover svg {
     }
 }
 
-@media (width <=768px) {
+@media (width <= 768px) {
     a.blog {
         font-size: 1.5rem;
 
