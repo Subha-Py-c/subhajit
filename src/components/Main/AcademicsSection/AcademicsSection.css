@@ -2,13 +2,12 @@
     --padding-left-val: 170px;
     --left-dist: 60px;
     --radius: 10px;
-    --institute__data__height: 114px;
+    --institute__data__height: 86px;
 }
 
 #s-last {
     position: relative;
     height: auto;
-    /* border: 1px solid salmon; */
 }
 
 .academic__container {
@@ -77,13 +76,6 @@
     left: calc(((-1) * var(--left-dist)) - var(--radius));
 }
 
-/*
-<div class="academics__card__container">
-  <div class="acad__card card1"></div>
-  <div class="acad__card card2"></div>
-  <div class="acad__card card3"></div>
-</div>
-*/
 .academics__card__container {
     position: relative;
     top: calc(-24vh);
@@ -197,7 +189,7 @@
 }
 
 /* --------------------------{media queries}-------------------------------------------- */
-@media (width > 768px) and (width < 1025px) {
+@media screen and (max-width: 1025px) {
     :root {
         --top-val-b1: 146vh;
         --padding-left-val: 30px;
@@ -205,7 +197,7 @@
         --left-val: 35px;
         --inc: 155px;
         --radius: 5px;
-        --institute__data__height: 110px;
+        --institute__data__height: 100px;
     }
 
     .acad__institutions {
@@ -220,23 +212,7 @@
     }
 }
 
-@media (max-width: 768px) {
-    :root {
-        --top-val-b1: 146vh;
-        --padding-left-val: 30px;
-        --left-dist: 30px;
-        --left-val: 35px;
-        --inc: 155px;
-        --radius: 5px;
-        --institute__data__height: 110px;
-    }
-
-    .acad__institutions {
-        height: 175px;
-        padding-left: var(--left-dist);
-        padding-bottom: 10px;
-    }
-
+@media screen and (max-width: 768px) {
     .hidden {
         font-size: 0.6em;
     }
@@ -256,7 +232,7 @@
 
 @media (max-width: 640px) {
     :root {
-        --institute__data__height: 128px;
+        --institute__data__height: 118px;
         --padding-left-val: 30px;
         --left-val: 25px;
         --inc: 85px;

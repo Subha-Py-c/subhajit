@@ -7,6 +7,8 @@ const Loader = () => {
     useEffect(() => {
         // Initialize text opacity when component mounts (similar to DOMContentLoaded)
         const loadingText = document.querySelector(".loading__text");
+
+        // initial wait to load the font
         const initTimer = setTimeout(() => {
             if (loadingText) {
                 loadingText.style.opacity = 1;
@@ -106,7 +108,7 @@ const Loader = () => {
 
         // Start the removal animation when window loads
         const handleLoad = () => {
-            removeLoader(150);
+            removeLoader(0);
         };
 
         window.addEventListener("load", handleLoad);
