@@ -96,7 +96,7 @@ const Header = ({ isNavOpen, toggleNav }) => {
     };
 
     return (
-        <header className="flexed justify-between">
+        <header className="flex items-center justify-between">
             <button
                 id="invert-button"
                 className="filters"

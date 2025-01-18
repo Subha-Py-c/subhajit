@@ -37,7 +37,7 @@
 .growth {
     display: flex;
     position: relative;
-    height: 12px;
+    height: 100%;
     width: 0%;
     border-radius: 6px;
     background-color: rgb(0, 172, 148);
@@ -304,6 +304,11 @@ html.invert .inverse2 {
 @media screen and (max-width: 768px) {
     #skill {
         font-size: xx-large;
+    }
+
+    .progress-bar {
+        height: 8px;
+        border-radius: 4px;
     }
 
     #SS {

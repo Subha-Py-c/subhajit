@@ -2,7 +2,7 @@
     --padding-left-val: 170px;
     --left-dist: 60px;
     --radius: 10px;
-    --institute__data__height: 86px;
+    --institute__data__height: 78px;
 }
 
 #s-last {
@@ -197,7 +197,7 @@
         --left-val: 35px;
         --inc: 155px;
         --radius: 5px;
-        --institute__data__height: 100px;
+        --institute__data__height: 92px;
     }
 
     .acad__institutions {
@@ -232,7 +232,7 @@
 
 @media (max-width: 640px) {
     :root {
-        --institute__data__height: 118px;
+        --institute__data__height: 106px;
         --padding-left-val: 30px;
         --left-val: 25px;
         --inc: 85px;

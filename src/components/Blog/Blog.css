@@ -9,7 +9,6 @@ a.blog {
     position: fixed;
     top: calc(var(--top) - 10px);
     left: calc(var(--right) - var(--extra-len));
-    border-radius: 15px;
     height: 46px;
     width: 100px;
     display: flex;

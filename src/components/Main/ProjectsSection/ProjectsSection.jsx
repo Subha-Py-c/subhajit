@@ -109,16 +109,16 @@ const ProjectsSection = () => {
                                     </a>
                                 </div>
 
-                                <p className="text-lg text-black/60 font-medium max-w-md">
+                                <p className="text-xl text-black/60 font-medium max-w-md">
                                     {project.summary}
                                 </p>
 
-                                <div className="space-y-4 opacity-100 md:opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100">
-                                    <p className="text-sm text-black/80">
+                                <div className="space-y-6 opacity-100 md:opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100">
+                                    <p className="text-md lg:text-sm text-black/80">
                                         {project.description}
                                     </p>
 
-                                    <div className="flex flex-wrap gap-3">
+                                    <div className="flex flex-wrap gap-1 md:gap-3">
                                         {project.technologies.map((tech, i) => (
                                             <span
                                                 key={i}
@@ -132,7 +132,7 @@ const ProjectsSection = () => {
                             </div>
 
                             {/* Right Content - Image */}
-                            <div className="relative mt-4 h-64 md:h-96 overflow-hidden rounded-lg ta-ta">
+                            <div className="relative mt-6 h-64 md:h-96 overflow-hidden rounded-lg ta-ta">
                                 <div className="absolute flex items-center justify-center inset-0 transform transition-all duration-700 overflow-hidden">
                                     <img
                                         src={project.image}

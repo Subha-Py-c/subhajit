@@ -207,7 +207,11 @@ const SkillsSection = () => {
                             data-value={skill.value}
                             className="skill__box"
                         >
-                            <img src={skill.icon} alt={skill.title} />
+                            <img
+                                className="mb-3"
+                                src={skill.icon}
+                                alt={skill.title}
+                            />
                             {skill.title}
                             <span className="progress-bar flexed">
                                 <span
