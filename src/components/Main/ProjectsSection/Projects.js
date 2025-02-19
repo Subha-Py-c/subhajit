@@ -1,9 +1,27 @@
 const projects = [
     {
-        title: "opencanvas.blog",
+        title: "myClassroom",
+        summary: "Distraction-free platform for focused selfstudy",
+        description:
+            "webapp to create courses from youtube playlists. Design own courses, study without any ads or distractions. Track course progress, to-do, goals, study hours.",
+        type: "Personal project",
+        technologies: [
+            "flask",
+            "yt_dlp",
+            "MongoDB",
+            "pymongo",
+            "jwt",
+            "React",
+            "TailwindCSS",
+        ],
+        link: "https://github.com/Dream-World-Coder/myClassroom",
+        image: "/images/projects-imgs/myclassroom.jpeg",
+    },
+    {
+        title: "myOPENCANVAS",
         summary: "A site for art-lovers to browse and share all types of arts.",
         description: "Currently IN MAKING.",
-        type: "Collaborative project",
+        type: "Personal project",
         technologies: [
             "MongoDB",
             "Express",
@@ -13,8 +31,19 @@ const projects = [
             "TailwindCSS",
             "SCSS",
         ],
-        link: "https://www.opencanvas.blog",
-        image: "/images/projects-imgs/opencanvas.jpeg",
+        link: "https://www.myopencanvas.in",
+        image: "/images/projects-imgs/myopencanvas.jpeg",
+    },
+    {
+        title: "markdown2pdf",
+        summary:
+            "Highquality markdown, latex editor and pdf converter for free",
+        description:
+            "webapp to edit markdown documents and latex, insert images, links. Easily export to PDF/txt/md. completely free.",
+        type: "Personal project",
+        technologies: ["React", "TailwindCSS"],
+        link: "https://www.opencanvas.blog/markdown2pdf",
+        image: "/images/projects-imgs/md2pdf.jpeg",
     },
     {
         title: "LumiFeed",
@@ -26,7 +55,7 @@ const projects = [
             "Backend: Flask, SQL(postgresql + sqlite)",
             "Frontend: React, TailwindCSS, figma",
             "Web Scraping [requests, bs4], AI Summary api",
-            "Monolothic architecture, BAAS webapp",
+            "Monolothic architecture, SAAS webapp",
         ],
         link: "https://lumifeed.netlify.app",
         image: "/images/projects-imgs/lumifeed.jpeg",
@@ -66,7 +95,7 @@ const projects = [
         type: "Personal Project",
         technologies: ["React", "TailwindCSS", "JavaScript", "UI design"],
         link: "https://bangla-calendar.vercel.app",
-        image: "/images/projects-imgs/b-cal.jpg",
+        image: "/images/projects-imgs/tithirekha.jpeg",
     },
     {
         title: "Zentunes",

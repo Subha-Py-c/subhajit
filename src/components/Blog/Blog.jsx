@@ -3,7 +3,7 @@ import "./Blog.css";
 const Blog = () => {
     return (
         <a
-            className="blog rounded-full"
+            className="blog rounded-2xl"
             target="_blank"
             rel="noopener"
             href="https://myopencanvas.pages.dev"
