@@ -8,61 +8,14 @@ const cardElements = [
                     <u>Frontend:</u>
                 </em>
                 <br />
-                HTML, CSS, JavaScript, SCSS, TailwindCSS, <b>React</b>
+                React, TypeScript, TailwindCSS, GSAP
                 <br />
                 <br />
                 <em>
                     <u>Backend:</u>
                 </em>
                 <br />
-                Node, Express, <b>Flask</b>, SQL [SQLite, MySQL, PostgreSQL]
-                <br />
-                <br />
-            </>
-        ),
-    },
-    {
-        title: "UI/UX Design",
-        value: "70%",
-        content: (
-            <>
-                <em>
-                    <u>Tools:</u>
-                </em>
-                <br />
-                Figma, GIMP
-                <br />
-                <br />
-                <em>
-                    <u>Libraries:</u>
-                </em>
-                <br />
-                GSAP, Split-type, LENIS
-                <br />
-                <br />
-            </>
-        ),
-    },
-    {
-        title: "Data Structures",
-        value: "85%",
-        content: (
-            <>
-                <em>
-                    <u>Languages:</u>
-                </em>
-                <br />
-                Python, C, C++
-                {/* <br />
-                <br /> */}
-                {/* <em>
-                    <u>Concepts:</u>
-                </em> */}
-                {/* <br />
-                Time &amp; Space Complexity, Function call Stack, Array, String,
-                Stack, Queue, LinkedList, Tree, Heap, Searching, Sorting,
-                Greedy, Trie */}
-                {/* Instead add rankings */}
+                Flask, SQL, Express, MongoDB, Node
                 <br />
                 <br />
             </>
@@ -73,18 +26,28 @@ const cardElements = [
         value: "85%",
         content: (
             <>
-                <em>
-                    <u>Concepts:</u>
-                </em>
-                <br />
-                OOPs, DSA, Web Development[flask]
+                Skilled in python (primary programming language)
                 <br />
                 <br />
-                <em>
-                    <u>Some libraries I have used in personal projects:</u>
-                </em>
+                besides python I use: C, C++, JavaScript
                 <br />
-                numpy, PIL, Tesseract, OpenCV, bs4, selenium ...
+                <br />
+            </>
+        ),
+    },
+    {
+        title: "Core Subjects",
+        value: "85%",
+        content: (
+            <>
+                <ul className="list-disc ml-6">
+                    <li>Data Structures and Algorithms</li>
+                    <li>Relational Database Management Systems</li>
+                    <li>
+                        Digital Logic, Computer Organisation &amp; Architecture
+                    </li>
+                    <li>Object Oriented System Design</li>
+                </ul>
                 <br />
                 <br />
             </>
@@ -102,12 +65,6 @@ const cardElements = [
                 requests, BeautifulSoup, Selenium
                 <br />
                 <br />
-                <em>
-                    <u>api:</u>
-                </em>
-                <br />
-                Scrapeowl
-                <br />
             </>
         ),
     },
@@ -117,13 +74,12 @@ const cardElements = [
         content: (
             <>
                 Can easily collaborate with team members using GitHub
-                <br />
+                <br /> <br />
                 <em>
-                    <u>Collaboration experience:</u>
+                    <u>Experience:</u>
                 </em>
                 <br />
-                <br />
-                Hactoberfest &apos; 24, College GDG Dev Team
+                GDSC Development Team, Hactoberfest&apos;24
                 <br />
                 <br />
             </>
