@@ -147,7 +147,7 @@ const SkillsSection = () => {
                                         transition: "all 0.4s ease-out",
                                     }}
                                 >
-                                    <p>
+                                    <p className="mb-4">
                                         <em>
                                             <mark>{elem.title}</mark>
                                         </em>
