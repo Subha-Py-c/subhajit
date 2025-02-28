@@ -35,7 +35,7 @@ const IntroSection = () => {
                         <span id="b-c">
                             Subha
                             <div
-                                className="disable imgShow"
+                                className="disable imgShow z-20"
                                 onMouseEnter={() => setIsImageVisible(true)}
                                 onMouseLeave={() => setIsImageVisible(false)}
                             >
@@ -45,8 +45,8 @@ const IntroSection = () => {
                     </h2>
                     <div className="about-content is-mt-l col-9 col-md-12">
                         <p className="hero-p col-12 is-mb-ms introduction">
-                            MERN &amp; Flask Stack Developer / Web Designer.
-                            Information Technology student at{" "}
+                            Full Stack Developer • Information Technology
+                            undergrad at{" "}
                             <a
                                 className="college_url"
                                 href="https://www.iiests.ac.in"
@@ -55,27 +55,27 @@ const IntroSection = () => {
                             >
                                 IIEST Shibpur
                             </a>
-                            . Interested in Deep Learning and Blockchain
-                            technologies.
+                            . Interested in Physics and Decentralised
+                            Technologies.
                             <span
                                 id="profileImg"
-                                className={`${
+                                className={`block  rotate-[7deg] ${
                                     isImageVisible
-                                        ? "opacity-100 scale-y-100 rotate-[7deg]"
+                                        ? "opacity-100 scale-y-100"
                                         : "opacity-0"
                                 }`}
                             >
                                 <img
                                     src="/images/me2.png"
                                     alt="Profile Picture"
-                                    className="ta-ta"
+                                    className="ta-ta size-full"
                                 />
                             </span>
                         </p>
                         <p className="hero-p col-6 col-xs-12 is-mb-s is-xs">
-                            Nothing more to say, thanks for visiting my website.
-                            Don &apos; t forget to explore my projects. I &apos;
-                            m eager to collaborate with interested people.
+                            Thanks for visiting my website. Don&apos;t forget to
+                            explore my projects. I&apos;m eager to EAGER TO
+                            CONNECT &amp; COLLABORATE.
                         </p>
                     </div>
                 </div>
