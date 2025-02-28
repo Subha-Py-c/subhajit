@@ -1,5 +1,14 @@
 const projects = [
     {
+        title: "OpenCanvas",
+        summary: "A site for art-lovers to browse and share all types of arts.",
+        description: "Currently IN MAKING.",
+        type: "Personal project",
+        technologies: ["Next.js"],
+        link: "https://www.opencanvas.blog",
+        image: "/images/projects-imgs/opencanvas.jpeg",
+    },
+    {
         title: "myClassroom",
         summary: "Distraction-free platform for focused selfstudy",
         description:
@@ -17,23 +26,7 @@ const projects = [
         link: "https://github.com/Dream-World-Coder/myClassroom",
         image: "/images/projects-imgs/myclassroom.jpeg",
     },
-    {
-        title: "myOPENCANVAS",
-        summary: "A site for art-lovers to browse and share all types of arts.",
-        description: "Currently IN MAKING.",
-        type: "Personal project",
-        technologies: [
-            "MongoDB",
-            "Express",
-            "React",
-            "Node",
-            "MERN",
-            "TailwindCSS",
-            "SCSS",
-        ],
-        link: "https://www.myopencanvas.in",
-        image: "/images/projects-imgs/myopencanvas.jpeg",
-    },
+
     {
         title: "markdown2pdf",
         summary:
@@ -41,7 +34,7 @@ const projects = [
         description:
             "webapp to edit markdown documents and latex, insert images, links. Easily export to PDF/txt/md. completely free.",
         type: "Personal project",
-        technologies: ["React", "TailwindCSS"],
+        technologies: ["React", "TailwindCSS", "jsPDF"],
         link: "https://www.opencanvas.blog/markdown2pdf",
         image: "/images/projects-imgs/md2pdf.jpeg",
     },
@@ -97,16 +90,16 @@ const projects = [
         link: "https://bangla-calendar.vercel.app",
         image: "/images/projects-imgs/tithirekha.jpeg",
     },
-    {
-        title: "Zentunes",
-        summary: "Beautiful collection of some special genres of Music.",
-        description:
-            "A music streaming platform for retro lovers. Some development is yet to do, sorry!!",
-        type: "Personal Project",
-        technologies: ["HTML", "CSS", "JavaScript", "SCSS"],
-        link: "https://zentunes.netlify.app",
-        image: "/images/projects-imgs/krishisearch.jpeg",
-    },
+    // {
+    //     title: "Zentunes",
+    //     summary: "Beautiful collection of some special genres of Music.",
+    //     description:
+    //         "A music streaming platform for retro lovers. Some development is yet to do, sorry!!",
+    //     type: "Personal Project",
+    //     technologies: ["HTML", "CSS", "JavaScript", "SCSS"],
+    //     link: "https://zentunes.netlify.app",
+    //     image: "/images/projects-imgs/krishisearch.jpeg",
+    // },
     {
         title: "Maze Battle Game",
         summary: "Player vs CPU maze running game",
