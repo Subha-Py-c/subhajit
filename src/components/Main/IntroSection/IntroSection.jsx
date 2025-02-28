@@ -66,7 +66,7 @@ const IntroSection = () => {
                                 }`}
                             >
                                 <img
-                                    src="/images/me2.png"
+                                    src="/images/me.jpeg"
                                     alt="Profile Picture"
                                     className="ta-ta size-full"
                                 />
