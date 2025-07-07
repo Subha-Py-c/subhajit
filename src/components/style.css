@@ -179,6 +179,29 @@ html.lenis body {
   pointer-events: none;
 }
 
+/* --- */
+
+.work-container ul {
+  list-style-type: disc !important;
+  text-transform: none !important;
+  padding-left: 2rem;
+}
+.work-container ul li {
+  text-decoration-line: underline !important;
+  text-decoration-style: dashed !important;
+  text-decoration-thickness: 1px;
+}
+
+.work-container ul li:hover {
+  text-decoration-style: solid !important;
+}
+
+.work-container ul li a {
+  text-decoration: none !important;
+}
+
+/* --- */
+
 .reg {
   z-index: 20;
 }
