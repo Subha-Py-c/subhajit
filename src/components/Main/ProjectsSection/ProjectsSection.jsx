@@ -27,7 +27,7 @@ const ProjectsSection = () => {
             key={project.title}
             className="group relative border-dashed border-b border-slate-700/30 pt-8 pb-16 px-4 md:px-8 cursor-default overflow-hidden hover:bg-[#F2E5BF]/20"
           >
-            <div className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-8">
+            <div className="flex flex-col md:flex-row justify-center md:justify-between items-start md:items-center gap-8">
               {/* Left : content */}
               <div className="space-y-6">
                 <div className="flex items-center justify-between md:justify-start gap-0 md:gap-16">
