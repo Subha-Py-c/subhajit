@@ -21,7 +21,7 @@ node_modules
 dist
 dist-ssr
 *.local
-
+*.yaml
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -34,3 +34,4 @@ dist-ssr
 *.sw?
 stats.html
 package-lock.json
+DATA

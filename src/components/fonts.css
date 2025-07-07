@@ -1,42 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
 
 @font-face {
-    font-family: content;
-    src: url("/fonts/content.woff") format("woff");
-    font-style: normal;
-    font-weight: 400;
-    font-stretch: normal;
-    unicode-range: u + 0020-00fe;
+  font-family: content;
+  src: url("/fonts/content.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  unicode-range: u + 0020-00fe;
 }
 
 @font-face {
-    font-family: title;
-    src: url("/fonts/title.woff") format("woff");
-    font-style: normal;
-    font-weight: 100;
-    font-stretch: normal;
+  font-family: title;
+  src: url("/fonts/title.woff") format("woff");
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: normal;
 }
 
 @font-face {
-    font-display: swap;
-    font-family: Dahlia;
-    font-style: normal;
-    font-weight: 400;
-    src: url("/fonts/dahlia.woff2") format("woff2");
+  font-family: Dahlia;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/dahlia.woff2") format("woff2");
 }
 
 @font-face {
-    font-display: swap;
-    font-family: Mondia;
-    font-style: normal;
-    font-weight: 400;
-    src: url("/fonts/mondia.woff2") format("woff2");
+  font-family: Mondia;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/mondia.woff2") format("woff2");
 }
 
 @font-face {
-    font-display: swap;
-    font-family: MondiaThin;
-    font-style: normal;
-    font-weight: 400;
-    src: url("/fonts/mondia-thin.woff2") format("woff2");
+  font-family: MondiaThin;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/mondia-thin.woff2") format("woff2");
 }

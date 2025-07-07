@@ -2,86 +2,77 @@ import { useState, useEffect } from "react";
 import "./IntroSection.css";
 
 const IntroSection = () => {
-    const [isImageVisible, setIsImageVisible] = useState(false);
+  const [isImageVisible, setIsImageVisible] = useState(false);
 
-    useEffect(() => {
-        const lineObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("active");
-                } else {
-                    entry.target.classList.remove("active");
-                }
-            });
-        });
+  useEffect(() => {
+    const lineObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        } else {
+          entry.target.classList.remove("active");
+        }
+      });
+    });
 
-        const headers = document.querySelectorAll(".headerSpan");
-        headers.forEach((header) => lineObserver.observe(header));
+    const headers = document.querySelectorAll(".headerSpan");
+    headers.forEach((header) => lineObserver.observe(header));
 
-        // Cleanup observer on component unmount
-        return () => {
-            headers.forEach((header) => lineObserver.unobserve(header));
-            lineObserver.disconnect();
-        };
-    }, []);
+    return () => {
+      headers.forEach((header) => lineObserver.unobserve(header));
+      lineObserver.disconnect();
+    };
+  }, []);
 
-    return (
-        <section id="s1" className="sec1">
-            <div className="section about-section">
-                <div className="grid grid-full">
-                    <h2 className="hero-h2">
-                        <span>I</span>
-                        <span>Am</span>
-                        <span id="b-c">
-                            Subha
-                            <div
-                                className="disable imgShow z-20"
-                                onMouseEnter={() => setIsImageVisible(true)}
-                                onMouseLeave={() => setIsImageVisible(false)}
-                            >
-                                /Dev
-                            </div>
-                        </span>
-                    </h2>
-                    <div className="about-content is-mt-l col-9 col-md-12">
-                        <p className="hero-p col-12 is-mb-ms introduction">
-                            Full Stack Developer • Information Technology
-                            undergrad at{" "}
-                            <a
-                                className="college_url"
-                                href="https://www.iiests.ac.in"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                IIEST Shibpur
-                            </a>
-                            . Interested in Physics and Decentralised
-                            Technologies.
-                            <span
-                                id="profileImg"
-                                className={`block  rotate-[7deg] ${
-                                    isImageVisible
-                                        ? "opacity-100 scale-y-100"
-                                        : "opacity-0"
-                                }`}
-                            >
-                                <img
-                                    src="/images/me.jpeg"
-                                    alt="Profile Picture"
-                                    className="ta-ta size-full"
-                                />
-                            </span>
-                        </p>
-                        <p className="hero-p col-6 col-xs-12 is-mb-s is-xs">
-                            Thanks for visiting my website. Don&apos;t forget to
-                            explore my projects. I&apos;m eager to EAGER TO
-                            CONNECT &amp; COLLABORATE.
-                        </p>
-                    </div>
-                </div>
+  return (
+    <section id="s1" className="sec1">
+      <div className="section intro__section">
+        <div className="p-6">
+          <h2 className="hero-h2 flex flex-col justify-center items-end">
+            <div className="">Hi, I&apos;m Subhajit</div>
+            <div
+              className="disable imgShow z-20"
+              onMouseEnter={() => setIsImageVisible(true)}
+              onMouseLeave={() => setIsImageVisible(false)}
+            >
+              A CS Undergraduate @BESU
             </div>
-        </section>
-    );
+          </h2>
+          <div className="intro__content">
+            <p className="hero-p introduction">
+              Made it to my Fifth Semester at{" "}
+              <a
+                className="college_url"
+                href="https://www.iiests.ac.in"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                BESU
+              </a>
+              . I love building stuff, strongly interested in Full Stack Web
+              Development and Decentralised Technologies.
+              <span
+                id="profileImg"
+                className={`block  rotate-[7deg] ${
+                  isImageVisible ? "opacity-100 scale-y-100" : "opacity-0"
+                }`}
+              >
+                <img
+                  src="/images/me.jpeg"
+                  alt="Profile Picture"
+                  className="ta-ta size-full"
+                />
+              </span>
+            </p>
+            <p className="hero-p is-xs">
+              Thanks for visiting. Don&apos;t forget to explore my projects.
+              I&apos;m eager to EAGER TO CONNECT &amp; COLLABORATE.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default IntroSection;
