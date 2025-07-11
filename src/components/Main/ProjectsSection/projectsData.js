@@ -60,7 +60,7 @@ const projects = [
       "Web Scraping",
       "AI Summary(API)",
     ],
-    link: "https://lumifeed.netlify.app",
+    link: "https://lumifeed.vercel.app",
     image: "/images/projects-imgs/lumifeed.jpeg",
   },
 

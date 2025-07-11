@@ -5,7 +5,7 @@ const ExperienceTimeline = ({ data: experiences = [] }) => {
     const baseClasses =
       "inline-flex items-center px-3 py-1.5 rounded-xl text-sm font-medium transition-colors";
     const typeClasses = {
-      plain: "bg-[#B2CD9C] text-black hover:bg-[#B2CD9C]",
+      plain: "bg-[#B2CD9C] text-black hover:bg-[#B2CD9C] ta-ta",
       color: "bg-purple-900 text-white hover:bg-purple-800",
     };
 

@@ -1,111 +1,115 @@
 /*------- root ------------------------------------------------------ */
 
 :root {
-    --card-container-width: 650px;
-    --card-container-height: 400px;
-    --margin-dist: 100px;
-    --card-font-size: 1.3em;
-    --s-list-font-size: 2em;
+  --card-container-width: 650px;
+  --card-container-height: 400px;
+  --margin-dist: 100px;
+  --card-font-size: 1.3em;
+  --s-list-font-size: 2em;
 }
 
 /* ------- SKILLS ------------------------------------------------------ */
 
 #s2-skills {
-    height: 120vh;
-    /* border: 1px solid black; */
+  height: 120vh;
+  /* border: 1px solid black; */
 }
 
 .d3 {
-    position: relative;
-    margin: 0;
+  position: relative;
+  margin: 0;
 }
 
 #SK,
 #SS {
-    border: none;
+  border: none;
 }
 
 .progress-bar {
-    margin-top: 10px;
-    display: flex;
-    height: 12px;
-    background-color: var(--bg3);
-    width: 100%;
-    border-radius: 6px;
-    justify-content: flex-start !important;
+  margin-top: 10px;
+  display: flex;
+  height: 12px;
+  background-color: var(--bg3);
+  width: 100%;
+  border-radius: 6px;
+  justify-content: flex-start !important;
 }
 .growth {
-    display: flex;
-    position: relative;
-    height: 100%;
-    width: 0%;
-    border-radius: 6px;
-    background-color: rgb(0, 172, 148);
-    transition: all 0.4s ease-out;
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 0%;
+  border-radius: 6px;
+  background-color: rgb(0, 172, 148);
+  transition: all 0.4s ease-out;
 }
 
 mark {
-    background-color: #ff0;
-    font-size: larger;
-    border-radius: 15px;
-    margin-bottom: 1.5rem;
-    font-size: 36px;
-    font-family: title, serif;
-    font-weight: lighter;
+  background-color: #ff0;
+  font-size: larger;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+  font-size: 36px;
+  font-family: title, serif;
+  font-weight: lighter;
 }
 
 html.invert mark {
-    color: white;
-    background: var(--mark-clr);
+  color: white;
+  background: var(--mark-clr);
 }
 
 /* exps = skill heading span */
 .exps {
-    padding-top: 30px;
-    margin-left: var(--margin-left);
-    margin-top: 100px;
-    font-size: var(--heading-text-size);
-    font-weight: var(--heading-weight);
+  padding-top: 30px;
+  margin-left: var(--margin-left);
+  margin-top: 100px;
+  font-size: var(--heading-text-size);
+  font-weight: var(--heading-weight);
 
-    @media (max-width: 768px) {
-        font-size: xx-large;
-    }
+  @media (max-width: 768px) {
+    font-size: xx-large;
+  }
 }
 
 /* ------- for phone ----------------------------------------------- */
 .skill__container {
-    margin-left: 10vw;
-    margin-right: 10vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, auto);
-    gap: 20px;
-    font-family: "Mondia", sans-serif;
-    display: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 20px;
+  font-family: "Mondia", sans-serif;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .skill__container .skill__box img {
-    display: block;
-    width: 60%;
-    height: 60%;
+  display: block;
+  width: 60%;
+  height: 60%;
 }
 
 .skill__box {
-    border-radius: 15px;
-    background-color: var(--card-container-color);
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: small;
+  border-radius: 15px;
+  background-color: var(--card-container-color);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: small;
 }
 
 @media (width < 1025px) {
-    html.invert .progress-bar {
-        background-color: white;
-    }
+  html.invert .progress-bar {
+    background-color: white;
+  }
 }
 
 /* skill wrapper has 2 childs> card container and skill list/ s-list */
@@ -115,92 +119,92 @@ html.invert mark {
 --------------------------------------------------------- */
 
 .skill-wrapper {
-    margin-top: 6vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin-top: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #skill-list {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    margin-right: calc(7vw + 60px);
-    margin-left: 60px;
-    border-radius: 15px;
-    width: 600px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin-right: calc(7vw + 60px);
+  margin-left: 60px;
+  border-radius: 15px;
+  width: 600px;
 
-    font-family: "Mondia", sans-serif;
-    font-weight: 200;
-    font-size: var(--s-list-font-size);
+  font-family: "Mondia", sans-serif;
+  font-weight: 200;
+  font-size: var(--s-list-font-size);
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 
-    position: relative;
-    transform: translateX(60vh) rotateZ(-5deg);
-    transition: cubic-bezier(1, 0, 0, 1);
-    opacity: 0;
-    box-shadow:
-        -40px 20px 20px rgba(100, 100, 100, 0.1),
-        -40px 20px 40px rgba(100, 100, 100, 0.2);
+  position: relative;
+  transform: translateX(60vh) rotateZ(-5deg);
+  transition: cubic-bezier(1, 0, 0, 1);
+  opacity: 0;
+  box-shadow:
+    -40px 20px 20px rgba(100, 100, 100, 0.1),
+    -40px 20px 40px rgba(100, 100, 100, 0.2);
 }
 
 html.invert #skill-list {
-    box-shadow:
-        -40px 20px 20px rgba(200, 200, 200, 0.1),
-        -40px 20px 40px rgba(200, 200, 200, 0.2);
+  box-shadow:
+    -40px 20px 20px rgba(200, 200, 200, 0.1),
+    -40px 20px 40px rgba(200, 200, 200, 0.2);
 }
 
 .card-container {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    transform: translateX(-60vh) rotateZ(5deg);
-    opacity: 0;
+  transform: translateX(-60vh) rotateZ(5deg);
+  opacity: 0;
 }
 html.invert .card-container {
-    color: white;
+  color: white;
 }
 
 .card {
-    width: calc(var(--card-container-width) - 20px);
-    height: calc(var(--card-container-height) - 20px);
-    border-radius: 30px;
-    background-color: var(--card-container-color);
-    padding: 0px 30px 0px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: var(--card-font-size);
-    border: 1px solid rgb(226, 200, 193);
-    /* box-shadow: 3px 3px 0 rgb(226, 200, 193); */
-    -webkit-box-reflect: below 0px
-        linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
-    -moz-box-reflect: below 0px
-        linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  width: calc(var(--card-container-width) - 20px);
+  height: calc(var(--card-container-height) - 20px);
+  border-radius: 30px;
+  background-color: var(--card-container-color);
+  padding: 0px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: var(--card-font-size);
+  border: 1px solid rgb(226, 200, 193);
+  /* box-shadow: 3px 3px 0 rgb(226, 200, 193); */
+  -webkit-box-reflect: below 0px
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  -moz-box-reflect: below 0px
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
 
-    &:hover {
-        box-shadow: none;
-    }
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 html.invert .card {
-    border: 1px solid rgb(35, 35, 35);
-    /* box-shadow: 3px 3px 0 rgb(35, 35, 35); */
+  border: 1px solid rgb(35, 35, 35);
+  /* box-shadow: 3px 3px 0 rgb(35, 35, 35); */
 
-    &:hover {
-        box-shadow: none;
-    }
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 /* -------------------------------------------------
@@ -208,116 +212,116 @@ html.invert .card {
 ---------------------------------------------------- */
 
 .inverse2 {
-    position: relative;
-    width: 100%;
-    z-index: 80;
-    padding-right: 10px;
-    height: 60px;
-    transition:
-        transform 0.5s ease-out,
-        opacity 0.5s ease-out;
-    animation: padd 400ms forwards;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    background-color: var(--skill-list-color);
-    border-right: 1px solid rgb(246, 220, 217);
-    border-left: 1px solid rgb(226, 200, 193);
+  position: relative;
+  width: 100%;
+  z-index: 80;
+  padding-right: 10px;
+  height: 60px;
+  transition:
+    transform 0.5s ease-out,
+    opacity 0.5s ease-out;
+  animation: padd 400ms forwards;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: var(--skill-list-color);
+  border-right: 1px solid rgb(246, 220, 217);
+  border-left: 1px solid rgb(226, 200, 193);
 }
 
 html.invert .inverse2 {
-    border-right: 2px solid rgb(180, 180, 180);
-    border-left: 1px solid rgb(207, 207, 207);
+  border-right: 2px solid rgb(180, 180, 180);
+  border-left: 1px solid rgb(207, 207, 207);
 }
 
 .first-x {
-    border-radius: 15px 15px 0 0px;
+  border-radius: 15px 15px 0 0px;
 }
 
 .lst {
-    border-radius: 0px 0 15px 15px;
-    border-bottom: 1px solid rgb(246, 220, 217);
+  border-radius: 0px 0 15px 15px;
+  border-bottom: 1px solid rgb(246, 220, 217);
 }
 
 @keyframes padd {
-    0% {
-        padding-left: 30px;
-    }
+  0% {
+    padding-left: 30px;
+  }
 
-    100% {
-        padding-left: 10px;
-    }
+  100% {
+    padding-left: 10px;
+  }
 }
 
 .card-elem {
-    display: none;
-    width: 65%;
+  display: none;
+  width: 65%;
 }
 
 .card-elem:nth-child(1) {
-    display: block;
-    width: 65%;
+  display: block;
+  width: 65%;
 }
 
 .list-elem.clicked {
-    /* background-color: var(--skill-list-clicked-clr); */
-    background-color: rgb(226, 200, 193);
-    color: black;
+  /* background-color: var(--skill-list-clicked-clr); */
+  background-color: rgb(226, 200, 193);
+  color: black;
 }
 
 .strech {
-    background-color: transparent;
-    font-size: 0px;
-    width: 0px;
-    transition-duration: 0.3s;
+  background-color: transparent;
+  font-size: 0px;
+  width: 0px;
+  transition-duration: 0.3s;
 }
 
 .strech.active {
-    transition-duration: 0.3s;
-    font-size: 30px;
-    width: 35px;
+  transition-duration: 0.3s;
+  font-size: 30px;
+  width: 35px;
 }
 
 /* ------------------------{MEDIA QUERY}-------------------------------------------- */
 @media screen and (max-width: 1025px) {
-    :root {
-        --card-container-width: 150px;
-        --card-container-height: 350px;
-        --margin-dist: 150px;
-        --card-font-size: 0.8em;
-        --s-list-font-size: 1.2em;
-    }
+  :root {
+    --card-container-width: 150px;
+    --card-container-height: 350px;
+    --margin-dist: 150px;
+    --card-font-size: 0.8em;
+    --s-list-font-size: 1.2em;
+  }
 
-    #s2-skills {
-        height: auto;
-    }
+  #s2-skills {
+    height: auto;
+  }
 
-    .skill-wrapper {
-        display: none;
-    }
+  .skill-wrapper {
+    display: none;
+  }
 
-    .skill__container {
-        display: grid;
-    }
+  .skill__container {
+    display: grid;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    #skill {
-        font-size: xx-large;
-    }
+  #skill {
+    font-size: xx-large;
+  }
 
-    .progress-bar {
-        height: 8px;
-        border-radius: 4px;
-    }
+  .progress-bar {
+    height: 8px;
+    border-radius: 4px;
+  }
 
-    #SS {
-        margin-bottom: 3vh;
-    }
+  #SS {
+    margin-bottom: 3vh;
+  }
 
-    .skill__container .skill__box img {
-        display: block;
-        width: 40%;
-        height: 40%;
-    }
+  .skill__container .skill__box img {
+    display: block;
+    width: 40%;
+    height: 40%;
+  }
 }

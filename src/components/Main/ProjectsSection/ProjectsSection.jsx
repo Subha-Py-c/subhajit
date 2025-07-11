@@ -72,7 +72,7 @@ const ProjectsSection = () => {
               </div>
 
               {/* Right : image */}
-              <div className="relative mt-6 h-64 aspect-video overflow-hidden ta-ta bg-[#dcc2bb] rounded-lg opacity-0 transform transition-all duration-700 group-hover:opacity-100">
+              <div className="relative mt-6 h-64 aspect-video overflow-hidden ta-ta bg-[#dcc2bb] rounded-lg opacity-100 lg:opacity-0 transform transition-all duration-700 group-hover:opacity-100">
                 <div className="absolute flex items-center justify-center inset-0 transform transition-all duration-700 overflow-hidden">
                   <img
                     src={project.image}
