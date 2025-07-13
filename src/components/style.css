@@ -121,23 +121,6 @@ body {
   display: inline !important;
 }
 /* •—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—••—•—•—•—•—•—• */
-a {
-  color: rgb(152, 14, 88);
-  text-decoration: none;
-  scroll-behavior: smooth;
-}
-
-/* a:hover { */
-/* background: linear-gradient(to right, red, rgb(255, 162, 0)); */
-/* -webkit-background-clip: text; */
-/* background-clip: text; */
-/* color: transparent; */
-/* border-bottom: 1px dotted #efefef; */
-/* } */
-
-a:active {
-  color: rgb(255, 162, 0);
-}
 
 section {
   height: 100vh;

@@ -204,6 +204,7 @@
   :root {
     --left-dist: 30px;
     --radius: 7.5px;
+    --institute__data__height: 75px;
   }
 
   .ball-pointer {

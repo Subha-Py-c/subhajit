@@ -28,7 +28,6 @@ const AcademicsSection = () => {
     });
 
     return () => {
-      // Cleanup ScrollTrigger on unmount
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);

@@ -246,17 +246,6 @@ h1 {
   text-align: left;
 }
 
-a {
-  position: relative;
-  text-decoration: none;
-  font-family: Content, sans-serif;
-  outline: none;
-  color: inherit;
-  text-transform: uppercase;
-  overflow: hidden;
-  cursor: pointer;
-}
-
 body {
   width: 100%;
   height: 100%;
