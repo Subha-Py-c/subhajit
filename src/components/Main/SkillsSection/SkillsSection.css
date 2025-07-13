@@ -144,19 +144,21 @@ html.invert mark {
   align-items: flex-end;
 
   position: relative;
-  transform: translateX(60vh) rotateZ(-5deg);
+  /* transform: translateX(60vh) rotateZ(-5deg); */
   transition: cubic-bezier(1, 0, 0, 1);
   opacity: 0;
-  box-shadow:
+  /* box-shadow:
     -40px 20px 20px rgba(100, 100, 100, 0.1),
     -40px 20px 40px rgba(100, 100, 100, 0.2);
+  */
 }
 
-html.invert #skill-list {
-  box-shadow:
+/* html.invert #skill-list { */
+/* box-shadow:
     -40px 20px 20px rgba(200, 200, 200, 0.1),
     -40px 20px 40px rgba(200, 200, 200, 0.2);
-}
+  */
+/* } */
 
 .card-container {
   width: 100%;
@@ -186,15 +188,28 @@ html.invert .card-container {
   flex-direction: column;
   justify-content: center;
   font-size: var(--card-font-size);
-  border: 1px solid rgb(226, 200, 193);
+  /* border: 1px solid rgb(226, 200, 193); */
   /* box-shadow: 3px 3px 0 rgb(226, 200, 193); */
-  -webkit-box-reflect: below 0px
+  /* -webkit-box-reflect: below 0px
     linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
   -moz-box-reflect: below 0px
-    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); */
+
+  border: 1px solid rgb(206, 180, 173);
 
   &:hover {
     box-shadow: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    width: calc(var(--card-container-width) - 46px);
+    height: calc(var(--card-container-height) - 20px);
+    border: 1px solid rgb(206, 180, 173);
+    border-radius: 30px;
+    z-index: -1;
   }
 }
 
@@ -204,6 +219,10 @@ html.invert .card {
 
   &:hover {
     box-shadow: none;
+  }
+
+  &::after {
+    border: 1px solid rgb(35, 35, 35);
   }
 }
 
@@ -268,6 +287,23 @@ html.invert .inverse2 {
   background-color: rgb(226, 200, 193);
   color: black;
 }
+.list-elem.clicked::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 4px);
+  left: 0;
+  width: 50%;
+  height: 8px;
+  z-index: 60;
+  /* background-color: rgb(226, 200, 193); */
+  transform: translateX(-100%);
+  background-image: url("/icons/la.svg");
+  background-size: contain;
+}
+
+/* html.invert .list-elem.clicked::before { */
+/* background-color: #ccc; */
+/* } */
 
 .strech {
   background-color: transparent;

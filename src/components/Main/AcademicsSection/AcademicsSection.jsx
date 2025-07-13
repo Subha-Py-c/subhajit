@@ -56,7 +56,10 @@ const AcademicsSection = () => {
                 >
                   <span className="s2 relative">
                     <span className="s3 relative">
-                      <strong className="inst" itemProp="educationalLevel">
+                      <strong
+                        className="inst font-[title]"
+                        itemProp="educationalLevel"
+                      >
                         {academic.level}
                       </strong>
                     </span>
