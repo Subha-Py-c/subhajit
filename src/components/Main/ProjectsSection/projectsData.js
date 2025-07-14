@@ -94,7 +94,7 @@ const projects = [
   },
 
   {
-    title: "TithiRekha[তিথিরেখা]",
+    title: "TithiRekha",
     summary: "Modern themed Bangla Calendar.",
     description: "A webapp to easily check bengali date and occations.",
     technologies: ["React", "TailwindCSS", "Web Scraping"],
